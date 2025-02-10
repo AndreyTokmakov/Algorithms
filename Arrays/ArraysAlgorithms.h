@@ -21,7 +21,8 @@ namespace ArraysAlgorithms
     void Two_Sum_Less_Than_K();
     void Add_Digits();
     void Best_Time_Buy_and_Sell_Stock();
-
+    void Single_Number();
+    void Median_of_Two_Sorted_Arrays();
 }
 
 #endif //ARRAYS_ALGORITHMS_H

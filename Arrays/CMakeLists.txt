@@ -15,6 +15,8 @@ add_executable(${PROJECT_NAME}
 		algorithms/Two_Sum_Less_Than_K.cpp
 		algorithms/Add_Digits.cpp
 		algorithms/Best_Time_Buy_and_Sell_Stock.cpp
+		algorithms/Single_Number.cpp
+		algorithms/Median_of_Two_Sorted_Arrays.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")
