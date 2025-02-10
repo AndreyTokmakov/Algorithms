@@ -16,6 +16,7 @@ add_executable(${PROJECT_NAME}
     	algorithms/Check_If_Palindrome.cpp
     	algorithms/Find_Nth_Element_FromTheEnd.cpp
     	algorithms/Remove_N_Node_From_End.cpp
+    	algorithms/Merge_Two_Lists.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")

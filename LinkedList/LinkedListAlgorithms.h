@@ -20,6 +20,7 @@ namespace LinkedListAlgorithms
     void Check_If_Palindrome();
     void Find_Nth_Element_FromTheEnd();
     void Remove_N_Node_From_End();
+    void Merge_Two_Lists();
 }
 
 #endif //LINKED_LIST_ALGORITHMS_H
