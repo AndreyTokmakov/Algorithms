@@ -8,6 +8,10 @@ add_compile_options(-c -Wall -Wextra -O3 -std=c++26)
 
 add_executable(${PROJECT_NAME}
     	main.cpp
+		StringAlgorithms.h
+		Remove_Adjacent_Duplicates.cpp
+		Other.cpp
+		common.h
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")
