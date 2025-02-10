@@ -7,8 +7,9 @@ Copyright   : Your copyright notice
 Description :
 ============================================================================**/
 
-#include "common.h"
-#include "ArraysAlgorithms.h"
+#include "../common.h"
+#include "../ArraysAlgorithms.h"
+
 
 /**
  * Given an array A of integers and integer K, return the maximum S such that there exists

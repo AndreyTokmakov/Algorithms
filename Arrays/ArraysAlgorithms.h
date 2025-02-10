@@ -19,6 +19,8 @@ namespace ArraysAlgorithms
     void MidPoint();
     void Fixed_Point_SmallestIndex_ValueEqualIndex();
     void Two_Sum_Less_Than_K();
+    void Add_Digits();
+    void Best_Time_Buy_and_Sell_Stock();
 
 }
 

@@ -7,8 +7,8 @@ Copyright   : Your copyright notice
 Description :
 ============================================================================**/
 
-#include "common.h"
-#include "ArraysAlgorithms.h"
+#include "../common.h"
+#include "../ArraysAlgorithms.h"
 
 #include <random>
 #include <cassert>
@@ -3552,47 +3552,6 @@ namespace Numeric
 }
 
 namespace Numeric
-{   /**
-    You are given an array prices where prices[i] is the price of a given stock on the ith day.
-    You want to maximize your profit by choosing a single day to buy one stock and choosing a
-    different day in the future to sell that stock.
-    Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
-
-    Example 1: Input: prices = [7,1,5,3,6,4]  Output: 5
-        Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5.
-        Note that buying on day 2 and selling on day 1 is not allowed because you must buy before you sell.
-
-    Example 2: Input: prices = [7,6,4,3,1] Output: 0
-        Explanation: In this case, no transactions are done and the max profit = 0.
-    */
-
-    int best_time_buy_and_sell_stock(const std::vector<int>& prices)
-    {
-        int maxProfit = 0;
-        for (int minPrice = prices[0]; const int currentStockPrice : prices) {
-            maxProfit = std::max(maxProfit, currentStockPrice - minPrice);
-            minPrice = std::min(minPrice, currentStockPrice);
-        }
-        return maxProfit;
-    }
-
-    void Best_Time_Buy_and_Sell_Stock()
-    {
-        for (const std::pair<std::vector<int>, int>& data: std::vector<std::pair<std::vector<int>, int>>{
-                {{7,1,5,3,6,4}, 5},
-                {{7,6,4,3,1}, 0},
-                {{7,8,1,5,3,6,4}, 5},
-        }) {
-            if (const auto actual = best_time_buy_and_sell_stock(data.first); actual != data.second)
-            {
-                std::cout << "Expected value is " << data.second << ", Actual: " << actual << std::endl;
-            }
-        }
-    }
-}
-
-
-namespace Numeric
 {
     int single_number(const std::vector<int>& nums)
     {
@@ -3618,44 +3577,6 @@ namespace Numeric
         {
             std::cout << single_number(data.first) << std::endl;
         }
-    }
-}
-
-namespace Numeric
-{
-    int add_digits(int value)
-    {
-        int tmp = 0;
-        while (value > 9) {
-            tmp = value; value = 0;
-            while (tmp > 9) {
-                value += tmp % 10;
-                tmp = tmp / 10;
-            }
-            value += tmp;
-        }
-        return value;
-    }
-
-    /**
-    Given an integer num, repeatedly add all its digits until the result has only one digit, and return it.
-    Example 1:  Input: num = 38     Explanation: The process is
-                Output: 2           38 --> 3 + 8 --> 11
-                                    11 --> 1 + 1 --> 2
-                                    Since 2 has only one digit, return it.
-    */
-    void AddDigits()
-    {
-        for (const auto& [value, expected]: std::vector<std::pair<int, int>>{
-            {10, 1}, {38, 2}, {123, 6}, {1234, 1},
-            {8888, 5}, {99992, 2}
-        }) {
-            if (const auto actual = add_digits(value); expected != actual) {
-                std::cerr << expected << " != " << actual << std::endl;
-                return;
-            }
-        }
-        std::cout << "OK: All tests passed\n";
     }
 }
 
@@ -3917,11 +3838,7 @@ void ArraysAlgorithms::Other()
 
     // Median_of_Two_Sorted_Arrays();
 
-    // Best_Time_Buy_and_Sell_Stock();
-
     // Single_Number();
-
-    // AddDigits();
 
     /** Degree_Of_Array degreeOfArray: With same occurrences of duplicated elements **/
     // Numeric::Min_Length_SubArray_WithSameDegree();

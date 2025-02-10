@@ -8,11 +8,13 @@ add_compile_options(-c -Wall -Wextra -O3 -std=c++26)
 
 add_executable(${PROJECT_NAME}
     	main.cpp
-		other.cpp
-		Reverse_Bits.cpp
-		MidPoint.cpp
-		FixedPointSmallestIndexValueEqualIndex.cpp
-		Two_Sum_Less_Than_K.cpp
+		algorithms/other.cpp
+		algorithms/Reverse_Bits.cpp
+		algorithms/MidPoint.cpp
+		algorithms/FixedPointSmallestIndexValueEqualIndex.cpp
+		algorithms/Two_Sum_Less_Than_K.cpp
+		algorithms/Add_Digits.cpp
+		algorithms/Best_Time_Buy_and_Sell_Stock.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")

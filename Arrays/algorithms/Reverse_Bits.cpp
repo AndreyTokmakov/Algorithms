@@ -7,8 +7,9 @@ Copyright   : Your copyright notice
 Description :
 ============================================================================**/
 
-#include "common.h"
-#include "ArraysAlgorithms.h"
+#include "../common.h"
+#include "../ArraysAlgorithms.h"
+
 
 /**
 Reverse bits of a given 32 bits unsigned integer.

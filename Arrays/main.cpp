@@ -17,7 +17,9 @@ int main([[maybe_unused]] int argc,
     // ArraysAlgorithms::Reverse_Bits();
     // ArraysAlgorithms::MidPoint();
     // ArraysAlgorithms::Fixed_Point_SmallestIndex_ValueEqualIndex();
-    ArraysAlgorithms::Two_Sum_Less_Than_K();
+    // ArraysAlgorithms::Two_Sum_Less_Than_K();
+    // ArraysAlgorithms::Add_Digits();
+    ArraysAlgorithms::Best_Time_Buy_and_Sell_Stock();
 
 	return EXIT_SUCCESS;
 }

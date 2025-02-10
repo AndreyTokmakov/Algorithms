@@ -7,8 +7,9 @@ Copyright   : Your copyright notice
 Description :
 ============================================================================**/
 
-#include "common.h"
-#include "ArraysAlgorithms.h"
+#include "../common.h"
+#include "../ArraysAlgorithms.h"
+
 
 
 /**
