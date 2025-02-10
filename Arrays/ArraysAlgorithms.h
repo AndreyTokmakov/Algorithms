@@ -23,6 +23,10 @@ namespace ArraysAlgorithms
     void Best_Time_Buy_and_Sell_Stock();
     void Single_Number();
     void Median_of_Two_Sorted_Arrays();
+    void Reverse_To_Make_Equal();
+    void Is_Reversed_Equals();
+    void Find_Top_K_Frequent_Numbers();
+    void Find_SubArrays_SumZero();
 }
 
 #endif //ARRAYS_ALGORITHMS_H

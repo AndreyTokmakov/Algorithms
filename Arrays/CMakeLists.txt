@@ -17,6 +17,10 @@ add_executable(${PROJECT_NAME}
 		algorithms/Best_Time_Buy_and_Sell_Stock.cpp
 		algorithms/Single_Number.cpp
 		algorithms/Median_of_Two_Sorted_Arrays.cpp
+		algorithms/Reverse_To_Make_Equal.cpp
+		algorithms/Is_Reversed_Equals.cpp
+		algorithms/Find_Top_K_Frequent_Numbers.cpp
+		algorithms/Find_SubArrays_SumZero.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")

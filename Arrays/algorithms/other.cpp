@@ -2747,39 +2747,9 @@ namespace Numeric
 
     //----------------------------------------------------------------------------------------//
 
-    bool _are_reversed_equal(std::vector<int> &v1, std::vector<int> &v2) {
-        if (v1.size() != v2.size())
-            return false;
-        size_t start = 0, end = v2.size() - 1;
-
-        /* Get first from START different element: */
-        for (start = 0; start < v2.size() && v1[start] == v2[start]; start++) {}
-        if ((v1.size() - 1) == start)
-            return true;
-        /* Get first from END different element: */
-        for (end = v2.size() - 1; end >= start && v1[end] == v2[end]; end--) {}
-
-        /* Check if */
-        for (size_t pos = start, i = 0; pos <= end; pos++, i++) {
-            if (v1[pos] != v2[end - i])
-                return false;
-        }
-        return true;
-    }
 
 
-    void ReverseToMakeEqual() {
-        {
-            std::vector<int> v1 = {1, 3, 6, 2, 4}, v2 = {1, 2, 6, 3, 4};
-            std::cout << std::boolalpha << _are_reversed_equal(v1, v2) << std::endl;
-        }
-        {
-            std::vector<int> v1 = {1, 5, 6, 7, 4}, v2 = {1, 7, 6, 5, 4};
-            std::cout << std::boolalpha << _are_reversed_equal(v1, v2) << std::endl;
-        }
-    }
 
-    //-----------------------------------------------------------------------------//
 
     void Missmatch_Sorted_Vectors() {
         const std::vector<int> vect1 = {4, 6, 8, 9};
@@ -2854,46 +2824,6 @@ namespace Numeric
             std::vector<int> vect2 = {1, 2, 3, 110, 5};
 
             __Missmatch2(vect1.begin(), vect1.end(), vect2.begin(), vect2.end());
-        }
-    }
-
-    //----------------------------------------------------------------------------------------//
-
-    bool _is_reversed_equals(const std::vector<int> &v1, const std::vector<int> &v2) {
-        if (v1.size() != v2.size())
-            return false;
-        //std::vector<int>::const_iterator iter2 = v2.end() - 1;  // and --iter2 in FOR loop
-        std::vector<int>::const_reverse_iterator iter2 = v2.rbegin();
-        for (std::vector<int>::const_iterator iter1 = v1.begin(); v1.end() != iter1; ++iter1, ++iter2) {
-            if (*iter1 != *iter2)
-                return false;
-        }
-        return true;
-    }
-
-    bool _is_reversed_equals_2(const std::vector<int> &v1, const std::vector<int> &v2) {
-        const int size = static_cast<int>(v1.size());
-        if (size != static_cast<int>(v2.size()))
-            return false;
-
-        for (int left = 0, right = size - 1; left < size; ++left, --right) {
-            if (v1[left] != v2[right])
-                return false;
-        }
-
-        return true;
-    }
-
-    void IsReversedEquals() {
-        for (const VectorPair<int> &data: std::vector<VectorPair<int>>{
-                {{1, 2, 3},                   {3, 2, 1}},
-                {{1, 2, 3},                   {3, 2, 2}},
-                {{1, 2, 3, 4, 5, 6, 7, 8, 9}, {9, 8, 7, 6, 4, 4, 3, 2, 1}}
-        }) {
-            std::cout << std::boolalpha
-                      << _is_reversed_equals(data.first, data.second) << ' '
-                      << _is_reversed_equals_2(data.first, data.second) << ' '
-                      << std::equal(data.first.begin(), data.first.end(), data.second.rbegin()) << std::endl;
         }
     }
 
@@ -2982,44 +2912,6 @@ namespace Numeric
             _Subarray_With_Given_Sum_All(Numeric, X);
         }
         */
-    }
-
-    //--------------------------------------------------------------------------------------//
-
-    void _find_subArrays_sum_zero_SLOW(const std::vector<int> &Numeric) {
-        for (size_t i = 0; i < Numeric.size(); i++) {
-            for (size_t n = i, sum = 0; n < Numeric.size(); n++) {
-                sum += Numeric[n];
-                if (0 == sum) {
-                    std::cout << "Subarray [" << i << ".." << n << "]" << std::endl;
-                }
-            }
-        }
-    }
-
-    void _find_subArrays_sum_zero(const std::vector<int> &Numeric) {
-        std::unordered_multimap<int, int> map = {{0, -1}};
-        for (size_t i = 0, sum = 0; i < Numeric.size(); i++) {
-            sum += Numeric[i];
-
-            // As soon as we meet sum in the map, it means that there is at least one subarray with
-            // the sum 0. And the beginning of this list (lists) has a second index in the map
-            if (auto iter = map.find(sum); map.end() != iter) {
-                while (iter != map.end() && iter->first == static_cast<int>(sum)) {
-                    std::cout << "Subarray [" << iter->second + 1 << ".." << i << "]" << std::endl;
-                    iter++;
-                }
-            }
-            map.insert({sum, i});
-        }
-    }
-
-    void Find_SubArrays_SumZero() {
-        // const std::vector<int> Numeric = { 3,4,-7,3,1,3,1,-4,-2,-2};
-        const std::vector<int> Numeric = {1, 3, 2, -5, 3};
-        _find_subArrays_sum_zero(Numeric);
-        std::cout << std::endl;
-        _find_subArrays_sum_zero_SLOW(Numeric);
     }
 
     //----------------------------------------------------------------------------------------------------------
@@ -3126,42 +3018,6 @@ namespace Numeric
         }) {
             const auto result = degreeOfArray(input);
             std::cout << "Result = " << result << std::endl;
-        }
-    }
-}
-
-namespace Numeric
-{
-    std::vector<int> _top_K_Frequent(const std::vector<int>& nums, int k)
-    {
-        std::unordered_map<int, int> counter;
-        for (int v: nums)
-            ++counter[v];
-
-        std::map<int, std::vector<int>> freqs;
-        for (const auto [val, N]: counter)
-            freqs[N].emplace_back(val);
-
-        std::vector<int> out;
-        out.reserve(k);
-        for (auto iter = freqs.rbegin(); freqs.rend() != iter; ++iter) {
-            std::sort(iter->second.begin(), iter->second.end());
-            for (auto &&s: iter->second) {
-                out.push_back(s);
-                if (--k == 0)
-                    return out;
-            }
-        }
-        return out;
-    }
-
-    void Find_Top_K_Frequent_Numbers()
-    {
-        for (const std::pair<std::vector<int>, int>& data: std::vector<std::pair<std::vector<int>, int>> {
-                {{1,1,1,2,2,3}, 2} // ==> { 1,2 }
-        })
-        {
-            std::cout << _top_K_Frequent(data.first, data.second) << std::endl;
         }
     }
 }
@@ -3760,8 +3616,6 @@ void ArraysAlgorithms::Other()
     // Numeric::Missmatch_Sorted_Vectors();
     // Numeric::Missmatch_Tests();
     // Numeric::IsPermutation();
-    // Numeric::IsReversedEquals();
-    // Numeric::ReverseToMakeEqual();
     // Numeric::MaxSum_of_NonConsecutive_Elements_In_Array();
 
     // Boundaries::Maximum_Area_Between_Boundaries();

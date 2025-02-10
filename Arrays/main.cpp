@@ -21,7 +21,11 @@ int main([[maybe_unused]] int argc,
     // ArraysAlgorithms::Add_Digits();
     // ArraysAlgorithms::Best_Time_Buy_and_Sell_Stock();
     // ArraysAlgorithms::Single_Number();
-    ArraysAlgorithms::Median_of_Two_Sorted_Arrays();
+    // ArraysAlgorithms::Median_of_Two_Sorted_Arrays();
+    // ArraysAlgorithms::Reverse_To_Make_Equal();
+    // ArraysAlgorithms::Is_Reversed_Equals();
+    // ArraysAlgorithms::Find_Top_K_Frequent_Numbers();
+    ArraysAlgorithms::Find_SubArrays_SumZero();
 
 	return EXIT_SUCCESS;
 }
