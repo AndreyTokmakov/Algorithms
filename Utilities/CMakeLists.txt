@@ -15,6 +15,7 @@ add_library(utils
 # include all components
 add_executable(${PROJECT_NAME}
         main.cpp
+        ../Arrays/ArraysAlgorithms.h
 )
 
 target_link_libraries(${PROJECT_NAME}
