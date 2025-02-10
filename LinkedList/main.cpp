@@ -1,0 +1,23 @@
+/**============================================================================
+Name        : main.cpp
+Created on  : 14.01.2025
+Author      : Andrei Tokmakov
+Version     : 1.0
+Copyright   : Your copyright notice
+Description : LinkedList algorithms entry point
+============================================================================**/
+
+#include <iomanip>
+#include "LinkedListAlgorithms.h"
+
+int main([[maybe_unused]] int argc,
+		 [[maybe_unused]] char** argv)
+{
+    // LinkedListAlgorithms::Other();
+    // LinkedListAlgorithms::Check_List_Is_Cycled();
+    // LinkedListAlgorithms::Reverse_List();
+    LinkedListAlgorithms::Check_If_Palindrome();
+
+
+	return EXIT_SUCCESS;
+}

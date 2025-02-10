@@ -12,5 +12,6 @@ else()
 endif()
 
 add_subdirectory(Arrays)
+add_subdirectory(LinkedList)
 add_subdirectory(Strings)
 add_subdirectory(Utilities)
