@@ -10,6 +10,9 @@ add_executable(${PROJECT_NAME}
     	main.cpp
 		other.cpp
 		Reverse_Bits.cpp
+		MidPoint.cpp
+		FixedPointSmallestIndexValueEqualIndex.cpp
+		Two_Sum_Less_Than_K.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")

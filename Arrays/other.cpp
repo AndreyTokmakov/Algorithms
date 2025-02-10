@@ -45,28 +45,7 @@ namespace Numeric
     }
 }
 
-namespace Numeric
-{
-    int midpoint(int a, int b) {
-        return a / 2 + b / 2 + static_cast<int>((a & 1) && (b & 1));
-    }
 
-    void MidPoint()
-    {
-        for (const auto& [values, expected]: std::vector<std::pair<std::pair<int, int>, int>>{
-                {{1,1}, 1}, {{2,2}, 2},
-                {{3,5}, 4},
-                {{8,5}, 6},
-
-        }) {
-            if (const int actual = midpoint(values.first, values.second); expected != actual) {
-                std::cerr << expected << " != " << actual << std::endl;
-                return;
-            }
-        }
-        std::cout << "OK: All tests passed\n";
-    }
-}
 
 namespace Numeric
 {
@@ -3806,78 +3785,9 @@ namespace Numeric::Backtracking
 }
 
 
-namespace Numeric
-{
-    int two_sum_less_than_k(std::vector<int> values, const int K)
-    {
-        std::sort(values.begin(), values.end());
-        int result = -1;
-        for (int left = 0, right = values.size() - 1; left < right; )
-        {
-            if (int sum = values[left] + values[right]; sum < K) {
-                result = std::max(result, sum);
-                ++left;
-            } else {
-                --right;
-            }
-        }
-        return result;
-    }
-
-
-    /**
-     * Given an array A of integers and integer K, return the maximum S such that there exists
-     * i < j with A[i] + A[j] = S and S < K. If no i, j exist satisfying this equation, return -1.
-     * Example: Input: A = [34,23,1,24,75,33,54,8], K = 60 --> Output: 58
-     * Example: Input: A = [10,20,30], K = 15              --> Output: -1
-     */
-    void Two_Sum_Less_Than_K()
-    {
-        std::cout << two_sum_less_than_k({34,23,1,24,75,33,54,8}, 60) << std::endl;
-        std::cout << two_sum_less_than_k({10,20,30}, 15) << std::endl;
-    }
-}
-
-
-namespace Numeric::BinarySearchAlgorithms
-{
-    int fixed_point(const std::vector<int>& values)
-    {
-        int leftIdx = 0, rightIdx = values.size() - 1;
-        while (leftIdx < rightIdx)
-        {
-            int middle = (leftIdx + rightIdx) >> 1;
-            if (values[middle] < middle) {
-                leftIdx = middle + 1;
-            } else {
-                rightIdx = middle;
-            }
-        }
-        return values[leftIdx] == leftIdx ? leftIdx : -1;
-    }
-
-    /**
-     * Given an array A of distinct integers sorted in ascending order, return the smallest index i that
-     * satisfies A[i] == i. Return -1 if no such i exists.
-     * Example: [-10,-5,0,3,7]     -> 3
-     * Example: [0,2,5,8,17]       -> 0
-     * Example: [-10,-5,3,4,7,9]   -> -1
-    **/
-    void Fixed_Point__SmallestIndex_ValueEqualIndex()
-    {
-        std::cout << fixed_point({-10,-5,0,3,7}) << std::endl;
-        std::cout << fixed_point({0,2,5,8,17}) << std::endl;
-        std::cout << fixed_point({-10,-5,3,4,7,9}) << std::endl;
-    }
-}
-
 void ArraysAlgorithms::Other()
 {
-    // BinarySearchAlgorithms::Fixed_Point__SmallestIndex_ValueEqualIndex();
-
     // Numeric::isPowerOf2();
-
-    // Numeric::MidPoint();
 
     // Numeric::Rotate_Array();
 
@@ -4000,8 +3910,6 @@ void ArraysAlgorithms::Other()
     // Numeric::MaxSum_of_NonConsecutive_Elements_In_Array();
 
     // Boundaries::Maximum_Area_Between_Boundaries();
-
-    // Two_Sum_Less_Than_K();
 
     // Numeric::Rank();
 

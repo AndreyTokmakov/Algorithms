@@ -16,6 +16,10 @@ namespace ArraysAlgorithms
     void Other();
 
     void Reverse_Bits();
+    void MidPoint();
+    void Fixed_Point_SmallestIndex_ValueEqualIndex();
+    void Two_Sum_Less_Than_K();
+
 }
 
 #endif //ARRAYS_ALGORITHMS_H
