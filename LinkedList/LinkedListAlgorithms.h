@@ -18,6 +18,8 @@ namespace LinkedListAlgorithms
     void Check_List_Is_Cycled();
     void Reverse_List();
     void Check_If_Palindrome();
+    void Find_Nth_Element_FromTheEnd();
+    void Remove_N_Node_From_End();
 }
 
 #endif //LINKED_LIST_ALGORITHMS_H

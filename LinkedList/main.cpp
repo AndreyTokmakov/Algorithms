@@ -16,7 +16,9 @@ int main([[maybe_unused]] int argc,
     // LinkedListAlgorithms::Other();
     // LinkedListAlgorithms::Check_List_Is_Cycled();
     // LinkedListAlgorithms::Reverse_List();
-    LinkedListAlgorithms::Check_If_Palindrome();
+    // LinkedListAlgorithms::Check_If_Palindrome();
+    // LinkedListAlgorithms::Find_Nth_Element_FromTheEnd();
+    LinkedListAlgorithms::Remove_N_Node_From_End();
 
 
 	return EXIT_SUCCESS;

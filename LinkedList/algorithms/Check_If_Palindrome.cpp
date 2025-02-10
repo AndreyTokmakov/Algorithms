@@ -26,13 +26,11 @@ namespace
             node = node->next;
         }
 
-        typename std::forward_list<T>::const_iterator iter = list.cbegin();
         node = root;
-        while (nullptr != node) {
+        for (auto iter = list.cbegin(); nullptr != node; ++iter) {
             if (node->data != *iter)
                 return false;
             node = node->next;
-            ++iter;
         }
         return true;
     }
@@ -78,8 +76,6 @@ namespace
 
         return true;
     }
-
-
 }
 
 void LinkedListAlgorithms::Check_If_Palindrome()
