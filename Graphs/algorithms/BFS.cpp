@@ -22,26 +22,20 @@ namespace
 
     public:
 
-        void addEdge(value_type v, value_type w) {
+        Graph& addEdge(const value_type v, const value_type w) {
             nodes[v].push_back(w);
             nodes[w].push_back(v);
+            return *this;
         }
 
-        [[nodiscard]]
-        inline size_t size() const noexcept {
-            return this->nodes.size();
-        }
-
-        const std::vector<value_type>& operator[](size_t index) const {
-            return this->nodes.at(index);
+        const std::vector<value_type>& operator[](const value_type node) const {
+            return this->nodes.at(node);
         }
     };
 
     void bfs(const Graph& graphs, int s)
     {
-        std::vector<bool> visited(graphs.size(), false);
-
-        visited[s] = true;
+        std::map<int, bool> visited {{ s, true },};
         std::deque<int> queue { s }; // deque contains 1-st node
 
         while (!queue.empty()) {
@@ -49,28 +43,20 @@ namespace
             queue.pop_front();
             std::cout << s << " ";
 
-            for (const auto& nodes = graphs[s]; int it: nodes) {
-                if (!visited[it]) {
-                    visited[it] = true;
+            for (const std::vector<int>& nodes = graphs[s]; int it: nodes) {
+                if (visited.emplace(it, true).second) {
                     queue.push_back(it);
                 }
             }
         }
     }
-
 }
 
 void GraphsAlgorithms::BFS()
 {
-    // Create a graph given in the above diagram
     Graph graphs;
-
-    graphs.addEdge(0, 1);
-    graphs.addEdge(0, 9);
-    graphs.addEdge(1, 2);
-    graphs.addEdge(2, 0);
-    graphs.addEdge(2, 3);
-    graphs.addEdge(9, 3);
+    graphs.addEdge(0, 1).addEdge(0, 9).addEdge(1, 2)
+        .addEdge(2, 0).addEdge(2, 3).addEdge(9, 3);
 
     std::cout << "Following is Breadth First Traversal (starting from vertex 2):" << std::endl;
     bfs(graphs, 2);

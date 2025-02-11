@@ -14,9 +14,9 @@ int main([[maybe_unused]] int argc,
 		 [[maybe_unused]] char** argv)
 {
 	// GraphsAlgorithms::Other();
-	// GraphsAlgorithms::BFS();
+	GraphsAlgorithms::BFS();
 	// GraphsAlgorithms::DFS();
-	GraphsAlgorithms::DFS_NonRecur();
+	// GraphsAlgorithms::DFS_NonRecur();
 
 
 	return EXIT_SUCCESS;
