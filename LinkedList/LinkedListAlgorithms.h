@@ -21,6 +21,8 @@ namespace LinkedListAlgorithms
     void Find_Nth_Element_FromTheEnd();
     void Remove_N_Node_From_End();
     void Merge_Two_Lists();
+    void Insert_Into_Sorted_List();
+    void Delete_Nodes_By_Value();
 }
 
 #endif //LINKED_LIST_ALGORITHMS_H

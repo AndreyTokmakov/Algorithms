@@ -18,7 +18,9 @@ int main([[maybe_unused]] int argc,
     // LinkedListAlgorithms::Reverse_List();
     // LinkedListAlgorithms::Check_If_Palindrome();
     // LinkedListAlgorithms::Find_Nth_Element_FromTheEnd();
-    LinkedListAlgorithms::Remove_N_Node_From_End();
+    // LinkedListAlgorithms::Remove_N_Node_From_End();
+    // LinkedListAlgorithms::Insert_Into_Sorted_List();
+    LinkedListAlgorithms::Delete_Nodes_By_Value();
 
 
 	return EXIT_SUCCESS;
