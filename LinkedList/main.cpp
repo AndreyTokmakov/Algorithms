@@ -20,8 +20,11 @@ int main([[maybe_unused]] int argc,
     // LinkedListAlgorithms::Find_Nth_Element_FromTheEnd();
     // LinkedListAlgorithms::Remove_N_Node_From_End();
     // LinkedListAlgorithms::Insert_Into_Sorted_List();
-    LinkedListAlgorithms::Delete_Nodes_By_Value();
+    // LinkedListAlgorithms::Delete_Nodes_By_Value();
     // LinkedListAlgorithms::Delete_Node_By_Position();
+    // LinkedListAlgorithms::Get_Length();
+    // LinkedListAlgorithms::Find_Middle_Element();
+    LinkedListAlgorithms::Delete_Duplicates();
 
 
 	return EXIT_SUCCESS;

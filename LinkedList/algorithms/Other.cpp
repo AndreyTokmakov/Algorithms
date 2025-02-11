@@ -60,57 +60,6 @@ namespace LinkedListAlgorithms
     }
 
 
-    template<typename T>
-    size_t _get_length(Node<T>* root) {
-        size_t len = 0;
-        while (nullptr != root) {
-            root = root->next;
-            len++;
-        }
-        return len; // Return root
-    }
-
-    template<typename T>
-    size_t _get_length_2(const Node<T>* root) {
-        return nullptr == root ? 0 : 1 + _get_length_2(root->next);
-    }
-
-    void GetLength() {
-        Node<int>* root = InitList({ 1,2,3,4,5,6,7,8,9 });
-        PrintList(root);
-        std::cout << "Length: " << _get_length(root) << std::endl;
-        std::cout << "Length: " << _get_length_2(root) << std::endl;
-    }
-
-    void findMiddle(const Node<int>* root) {
-        size_t steps = 0;
-        const Node<int>* mid = root;
-        while (nullptr != root) {
-            root = root->next;
-            if (0 == (steps++) % 2)
-                mid = mid->next;
-        }
-        std::cout << mid->data << std::endl;
-    }
-
-    void findMiddle2(const Node<int>* root) {
-        const Node<int>* slow = root, *fast = root;
-        while (nullptr != fast && nullptr != fast->next) {
-            fast = fast->next->next;
-            slow = slow->next;
-        }
-        std::cout << slow->data << std::endl;
-    }
-
-    void FindMiddleElement() {
-        Node<int>* root = InitList({ 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20 });
-
-        findMiddle(root);
-        findMiddle2(root);
-
-    }
-
-
 
     template<typename T>
     Node<int>* _delete_K_node_from_the_end(Node<T>* root, int K) {
@@ -169,78 +118,6 @@ namespace LinkedListAlgorithms
         PrintList(list);
         list = _move_to_the_end(list, 2);
         PrintList(list);
-    }
-
-    //----------------------------------------------------------------------//
-
-    template<typename T>
-    Node<int>* delete_duplices(Node<T>* root) {
-        Node<T>* prev = root, * next = nullptr != root ? root->next : nullptr;
-        std::unordered_set<T> tmp = { root->data };
-
-        while (nullptr != next) {
-            if (true == tmp.insert(next->data).second) {
-                prev->next = next;
-                prev = prev->next;
-            }
-            next = next->next;
-        }
-        return root;
-    }
-
-    template<typename T>
-    void remove_duplicates(Node<T>* node) {
-        Node<T>* previous = nullptr;
-        std::unordered_set<T> tmp;
-
-        while (nullptr != node) {
-            if (false == tmp.insert(node->data).second)
-                previous->next = node->next;
-            else
-                previous = node;
-            node = previous->next;
-        }
-    }
-
-    template<typename T>
-    void remove_duplicates_2(Node<T>* node) {
-        Node<T>* previous = nullptr;
-        std::unordered_set<T> tmp;
-
-        while (nullptr != node) {
-            if (false == tmp.insert(node->data).second) {
-                previous->next = node->next;
-                node = previous->next;
-            }
-            previous = node;
-            if (nullptr == node)
-                return;
-            node = node->next;
-        }
-    }
-
-    void Delete_Duplicates()
-    {
-        std::cout << "--------------------- Test1: ------------------\n" << std::endl;
-        {
-            Node<int>* list = InitList({ 1,2,3,3,4,5,6,6,7,8 });
-            PrintList(list, "  -->  ");
-            PrintList(delete_duplices(list), "\n\n");
-        }
-        std::cout << "\n--------------------- Test2: ------------------\n" << std::endl;
-        {
-            Node<int>* list = InitList({ 1,2,3,3,4,5,6,6,7,8 });
-            PrintList(list, "  -->  ");
-            remove_duplicates(list);
-            PrintList(list);
-        }
-        std::cout << "\n--------------------- Test3: ------------------\n" << std::endl;
-        {
-            Node<int>* list = InitList({ 1,2,3,3,4,5,6,6,7,8 });
-            PrintList(list, "  -->  ");
-            remove_duplicates_2(list);
-            PrintList(list);
-        }
     }
 
     //----------------------------------------------------------------------//

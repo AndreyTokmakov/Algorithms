@@ -20,6 +20,9 @@ add_executable(${PROJECT_NAME}
 		algorithms/Insert_Into_Sorted_List.cpp
 		algorithms/Delete_Nodes_By_Value.cpp
 		algorithms/Delete_Node_By_Position.cpp
+		algorithms/Get_Length.cpp
+		algorithms/Find_Middle_Element.cpp
+		algorithms/Delete_Duplicates.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")

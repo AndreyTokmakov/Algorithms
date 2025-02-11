@@ -24,6 +24,9 @@ namespace LinkedListAlgorithms
     void Insert_Into_Sorted_List();
     void Delete_Nodes_By_Value();
     void Delete_Node_By_Position();
+    void Get_Length();
+    void Find_Middle_Element();
+    void Delete_Duplicates();
 }
 
 #endif //LINKED_LIST_ALGORITHMS_H
