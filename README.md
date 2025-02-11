@@ -17,7 +17,7 @@ Nothing special, just an attempt to structure and study C++ algorithms
 
 <a name="Requirements"></a>
 ## Project requirements
-- C++26 (.. but will compile even with C++17)
+- C++23 (.. but will compile even with C++17 ... just need to update CMakeList files)
 - Cmake
 
 <a name="Build"></a>
@@ -27,4 +27,4 @@ Nothing special, just an attempt to structure and study C++ algorithms
 - Clone the project repo: `git clone https://github.com/AndreyTokmakov/Algorithms.git`
 - Move to the project folder: `cd Algorithms`
 - Configure project build (with cmake): `cmake -DCMAKE_BUILD_TYPE=Release -B./build`
-- Build and compile solution: `cd build && make -j4`,
+- Build and compile solution: `cd build && make -j4`
