@@ -23,6 +23,7 @@ namespace LinkedListAlgorithms
     void Merge_Two_Lists();
     void Insert_Into_Sorted_List();
     void Delete_Nodes_By_Value();
+    void Delete_Node_By_Position();
 }
 
 #endif //LINKED_LIST_ALGORITHMS_H
