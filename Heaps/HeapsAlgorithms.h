@@ -1,5 +1,5 @@
 /**============================================================================
-Name        : GraphsAlgorithms.h
+Name        : HeapsAlgorithms.h
 Created on  : 11.02.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
@@ -10,16 +10,12 @@ Description :
 #ifndef GRAPHS_ALGORITHMS_H
 #define GRAPHS_ALGORITHMS_H
 
-namespace GraphsAlgorithms
+namespace HeapsAlgorithms
 {
     // FIXME: Breakdown into a separate functions
     void Other();
 
-    void BFS();
-    void DFS();
-    void DFS_NonRecur();
     void Detect_Cycle();
-    void Find_Shortest_Path();
 }
 
 #endif //GRAPHS_ALGORITHMS_H

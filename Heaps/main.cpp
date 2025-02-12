@@ -4,22 +4,16 @@ Created on  : 11.02.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
 Copyright   : Your copyright notice
-Description : Graphs algorithms entry point
+Description : Heaps algorithms entry point
 ============================================================================**/
 
 #include <iomanip>
-#include "GraphsAlgorithms.h"
+#include "HeapsAlgorithms.h"
 
 int main([[maybe_unused]] int argc,
 		 [[maybe_unused]] char** argv)
 {
-	// GraphsAlgorithms::Other();
-	// GraphsAlgorithms::BFS();
-	// GraphsAlgorithms::DFS();
-	// GraphsAlgorithms::DFS_NonRecur();
-	// GraphsAlgorithms::Detect_Cycle();
-	GraphsAlgorithms::Find_Shortest_Path();
-
+	HeapsAlgorithms::Detect_Cycle();
 
 	return EXIT_SUCCESS;
 }

@@ -7,8 +7,8 @@ Copyright   : Your copyright notice
 Description :
 ============================================================================**/
 
-#include "common.h"
-#include "GraphsAlgorithms.h"
+#include "../common.h"
+#include "../GraphsAlgorithms.h"
 
 #include <iostream>
 #include <deque>
@@ -54,57 +54,6 @@ namespace GraphsAlgorithms::Find_Mother_Vertex {
 
 		// Start from one vertex, for example:  0 -->1 and search for node = 3
 		g.DFS_FindMotherVertex(0, 3, 1);
-	}
-}
-
-namespace GraphsAlgorithms::Detect_Cycle {
-
-	class Graph
-	{
-	public:
-		std::map<int, bool> visited;
-		std::map<int, bool> track;
-		std::map<int, std::vector<int>> nodes;
-
-		void addEdge(int v, int w) {
-			nodes[v].push_back(w);
-		}
-
-		void DFS_IsCycled(int v) {
-			if (visited[v] == false) {
-				visited[v] = true;
-				track[v] = true;
-
-				std::cout << v << "  | " << std::boolalpha << track[v] << std::endl;
-
-				for (const auto id : nodes[v])
-					if (visited[id] == false)
-						DFS_IsCycled(id);
-
-				track[v] = false;
-				visited[v] = false;
-			}
-		}
-
-		void IsCycled() {
-			for (const auto& [k, v] : nodes)
-				DFS_IsCycled(k);
-		}
-	};
-
-	void Test()
-	{
-		// Create a graph given in the above diagram
-		Graph g;
-		g.addEdge(0, 1);
-		g.addEdge(0, 9);
-		g.addEdge(1, 2);
-		g.addEdge(2, 0);
-		g.addEdge(2, 3);
-		g.addEdge(9, 3);
-		g.addEdge(3, 0);
-
-		g.IsCycled();
 	}
 }
 
@@ -442,68 +391,6 @@ namespace GraphsAlgorithms::Find_MinimumNumberEdges {
 
 		auto edges = g.findMinimumNumberEdges(1, 5);
 		std::cout << edges << std::endl;
-	}
-}
-
-namespace GraphsAlgorithms::Find_Shortest_Path
-{
-	struct  Graph
-	{
-		std::map<int, std::vector<int>> nodes;
-		std::vector<int> path;
-		std::vector<int> shortest;
-		int maxId {0};
-
-		void addEdge(int from, int to) {
-			nodes[from].push_back(to);
-			maxId = std::max(std::max(from, to), maxId) ;
-		}
-
-		void FindPaths(int v, int node_to_find)
-		{
-			path.clear();
-			shortest.clear();
-			std::vector<bool> visited(maxId + 1, false);
-
-			findPath(v, node_to_find, visited);
-		}
-
-		void findPath(int from, int to, std::vector<bool>& visited) {
-			visited[from] = true;
-			path.push_back(from);
-
-			if (from == to) {
-				if (shortest.empty() || shortest.size() > path.size())
-					shortest.assign(path.begin(), path.end());
-			}
-			else {
-				for (const auto id : nodes[from])
-					if (!visited[id])
-						findPath(id, to, visited);
-			}
-
-			path.pop_back();
-			visited[from] = false;
-		}
-
-		void print_max() {
-			std::cout << "shortest_path = " << shortest << std::endl;
-		}
-	};
-
-	void Test()
-	{
-		Graph g;
-		g.addEdge(0, 1);
-		g.addEdge(0, 2);
-		g.addEdge(0, 3);
-		g.addEdge(2, 0);
-		g.addEdge(2, 1);
-		g.addEdge(1, 3);
-
-
-		g.FindPaths(2, 3);
-		g.print_max();
 	}
 }
 
