@@ -1,5 +1,5 @@
-# PricePointBook
-Demo PricePointBook
+# Algorithms
+Demo Algorithms
 
 1. [Overview](#Overview)
 2. [Download](#Download)
