@@ -27,6 +27,9 @@ namespace LinkedListAlgorithms
     void Get_Length();
     void Find_Middle_Element();
     void Delete_Duplicates();
+    void Move_All_Occurrences_To_The_End();
+    void Delete_K_Element_From_the_End();
+    void Delete_Duplicates_SortedList();
 }
 
 #endif //LINKED_LIST_ALGORITHMS_H

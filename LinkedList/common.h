@@ -29,20 +29,18 @@ namespace LinkedListAlgorithms
         data_type data;
         Node* next { nullptr };
 
-    public:
         explicit Node(data_type value) : data { value }, next { nullptr } {
         }
 
         Node(data_type value, Node* nxt) : data { value }, next { nxt } {
         }
 
-    public:
-        /** Operators reload. **/
-        friend std::ostream& operator<<(std::ostream& stream, const Node<data_type>& node);
+        template<typename  Ty>
+        friend std::ostream& operator<<(std::ostream& stream, const Node<Ty>& node);
     };
 
-    template<typename T>
-    std::ostream& operator<<(std::ostream& stream, const Node<T>& node)
+    template<typename Ty>
+    std::ostream& operator<<(std::ostream& stream, const Node<Ty>& node)
     {
         stream << node.data;
         return stream;

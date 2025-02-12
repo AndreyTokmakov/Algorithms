@@ -24,7 +24,10 @@ int main([[maybe_unused]] int argc,
     // LinkedListAlgorithms::Delete_Node_By_Position();
     // LinkedListAlgorithms::Get_Length();
     // LinkedListAlgorithms::Find_Middle_Element();
-    LinkedListAlgorithms::Delete_Duplicates();
+    // LinkedListAlgorithms::Delete_Duplicates();
+    // LinkedListAlgorithms::Move_All_Occurrences_To_The_End();
+    LinkedListAlgorithms::Delete_K_Element_From_the_End();
+    LinkedListAlgorithms::Delete_Duplicates_SortedList();
 
 
 	return EXIT_SUCCESS;

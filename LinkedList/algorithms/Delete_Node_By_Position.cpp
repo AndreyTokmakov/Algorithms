@@ -64,6 +64,7 @@ namespace
             }
             root = previous->next;
         }
+        return root;
     }
 
 

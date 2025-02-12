@@ -23,6 +23,9 @@ add_executable(${PROJECT_NAME}
 		algorithms/Get_Length.cpp
 		algorithms/Find_Middle_Element.cpp
 		algorithms/Delete_Duplicates.cpp
+		algorithms/Move_All_Occurrences_To_The_End.cpp
+		algorithms/Delete_K_Element_From_the_End.cpp
+		algorithms/Delete_Duplicates_SortedList.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")
