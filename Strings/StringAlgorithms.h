@@ -19,6 +19,8 @@ namespace StringAlgorithms
     void Find_If_String_IsSubstring_OfAnother();
     void Find_Longest_Substring_With_K_Distinct_Characters();
     void Find_First_K_Chars_Encountered_Once();
+    void Is_Palindrome();
+    void Remove_Chars_Of_One_String_FromAnother();
 }
 
 #endif //STRING_ALGORITHMS_H

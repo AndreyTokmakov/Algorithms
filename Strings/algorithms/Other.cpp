@@ -37,33 +37,6 @@ namespace Strings
 {
     using namespace StringAlgorithms;
 
-    bool _is_palindrome_1(const std::string &str) {
-        return std::equal(str.begin(),
-                          str.begin() + std::ssize(str) / 2,
-                          str.rbegin());
-    }
-
-    bool _is_palindrome_2(const std::string &string1) {
-        return std::equal(string1.begin(), string1.end(), string1.rbegin());
-    }
-
-    bool _is_palindrome_3(const std::string &word) {
-        for (size_t index = 0; index < word.size() / 2; index++) {
-            if (tolower(word.at(index)) != tolower(word.at(word.size() - index - 1)))
-                return false;
-        }
-        return true;
-    }
-
-    void Palindrome_Test() {
-        for (const auto &str: {"deleveled", "malayalam", "bab", "balam"}) {
-            std::cout << str << ": " << std::boolalpha << _is_palindrome_1(str)
-                      << " " << _is_palindrome_2(str)
-                      << " " << _is_palindrome_3(str) << std::endl;
-        }
-    }
-
-    //--------------------------------------------------------------------------------------//
 
     size_t __palindrom_length(const std::string &str, size_t start, size_t end) {
         size_t length = 0;
@@ -243,30 +216,6 @@ namespace Strings
     void Find_All_Palindrome_In_String() {
         std::string str = "lgooglaabbaae";
         _find_all_palindrome_substrings(str);
-    }
-
-    //--------------------------------------------------------------------------------------//
-
-    void _removeCharsOfOneString_FromAnother(std::string &text, const std::string &mask) {
-        char dups[256] = {0};
-        for (const char c: mask)
-            dups[c] = 1;
-
-        size_t index = 0;
-        for (char c: text) {
-            if (0 == dups[c])
-                text[index++] = c;
-        }
-        text.resize(index);
-    }
-
-    void RemoveCharsOfOneString_FromAnother() {
-        std::string text = "AAAAAAABBBBBCCCCCCCDDDDDDDDEEEEEEFFFFFFF";
-        const std::string mask = "AF";
-
-        std::cout << text << std::endl;
-        _removeCharsOfOneString_FromAnother(text, mask);
-        std::cout << text << std::endl;
     }
 
     //--------------------------------------------------------------------------------------//
