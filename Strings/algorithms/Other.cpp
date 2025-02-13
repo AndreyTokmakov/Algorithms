@@ -7,8 +7,8 @@ Copyright   : Your copyright notice
 Description :
 ============================================================================**/
 
-#include "common.h"
-#include "StringAlgorithms.h"
+#include "../common.h"
+#include "../StringAlgorithms.h"
 
 #include <iostream>
 #include <string>
@@ -1277,100 +1277,6 @@ namespace Strings
         }
     }
 
-    //---------------------------------------------------------------------------------------//
-
-    void Find_First_K_Chars_Occured_Once()
-    {
-        std::string str = "AZBCDBAGHCHFAC";
-        int k = 4;
-
-        int chars[256] = { 0 };
-        for (const auto c : str)
-            chars[c]++;
-        for (const auto c : str) {
-            if (1 == chars[c]) {
-                std::cout << c << ::std::endl;
-                if (0 == --k)
-                    break;
-            }
-        }
-    }
-
-    //--------------------------------------------------------------------------------------//
-
-    int find_longestsubstring_with_k_distinctcharacters(const std::string& str, size_t K)
-    {
-        int chars[256] = { 0 };
-
-        [[maybe_unused]]
-        int max_len = 0;
-
-        for (size_t i = 0; i < str.size(); i++) {
-            int distink_left = K, n = i;
-            memset(chars, 0, sizeof(chars));
-            while (n < str.size()) {
-                if (0 == chars[str[n]]++ && 0 == distink_left--) {
-                    break;
-                }
-                std::cout << str[n];
-                n++;
-            }
-            std::cout << std::endl;
-        }
-
-        return 0;
-    }
-
-    void Find_LongestSubstring_With_K_DistinctCharacters()
-    {
-        std::string str = "aaabaaaaadddddccccccggggg";
-        find_longestsubstring_with_k_distinctcharacters(str, 2);
-    }
-
-    //--------------------------------------------------------------------------------------//
-
-    bool is_substring(const std::string& text, const std::string& str)
-    {
-        for (size_t i = 0, len = text.length() - str.length(); i <= len; ++i) {
-            if (text[i] == str[0]) {
-                size_t k = i, n = 0;
-                while (text[k++] == str[n++]) {
-                    if (n == str.length())
-                        return true;
-                }
-            }
-        }
-        return false;
-    }
-
-    bool is_substring_ex(const std::string& text, const std::string& str)
-    {
-        const size_t textLength = text.length(), strLen = str.length();
-        for (size_t idx = 0, n = 0; idx <= textLength - strLen; ++idx) {
-            for (n = 0; n < strLen && text[n + idx] == str[n]; ++n) { /** **/ }
-            if (strLen == n)
-                return true;
-        }
-        return false;
-    }
-    void Find_If_String_IsSubstring_OfAnother()
-    {
-        std::vector<std::pair<std::pair<std::string, std::string>, bool>> testData {
-                { {"qw34er333345tyui34op", "345"}, true },
-                { {"1234512345", "123"}, true },
-                { {"1234512345", "3456"}, false },
-                { {"123456789", "789"}, true },
-        };
-
-        for (const auto& [values, expected]: testData)
-        {
-            std::cout << "Is '" << values.first << "' is substring of '" << values.second << "' = "
-                      << std::boolalpha
-                      << is_substring(values.first, values.second) << " | "
-                      << is_substring_ex(values.first, values.second) << " | expected = " << expected
-                      << std::endl;
-        }
-    }
 
     //--------------------------------------------------------------------------------------//
 

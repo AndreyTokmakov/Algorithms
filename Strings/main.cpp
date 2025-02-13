@@ -15,7 +15,10 @@ int main([[maybe_unused]] int argc,
 		 [[maybe_unused]] char** argv)
 {
     // StringAlgorithms::Other();
-    StringAlgorithms::Remove_Adjacent_Duplicates();
+    // StringAlgorithms::Remove_Adjacent_Duplicates();
+    // StringAlgorithms::Find_If_String_IsSubstring_OfAnother();
+    // StringAlgorithms::Find_Longest_Substring_With_K_Distinct_Characters();
+    StringAlgorithms::Find_First_K_Chars_Encountered_Once();
 
 
 

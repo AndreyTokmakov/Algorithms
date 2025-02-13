@@ -7,8 +7,8 @@ Copyright   : Your copyright notice
 Description :
 ============================================================================**/
 
-#include "common.h"
-#include "StringAlgorithms.h"
+#include "../common.h"
+#include "../StringAlgorithms.h"
 
 #include <string>
 #include <iostream>
