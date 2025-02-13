@@ -33,6 +33,9 @@ namespace Utilities
 
         ~ScopedTimer();
     };
+
+    [[nodiscard]]
+    int randomIntegerInRange(int from = 0, int until = 1000);
 };
 
 #endif //CPPPROJECTS_UTILITIES_H

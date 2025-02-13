@@ -9,6 +9,22 @@ Description : Utilities.cpp
 
 #include "Utilities.h"
 #include <iostream>
+#include <random>
+
+namespace
+{
+    std::random_device randomDevice{};
+    std::mt19937 generator(randomDevice());
+}
+
+namespace Utilities
+{
+
+    [[nodiscard]]
+    int randomIntegerInRange(const int from, const int until) {
+        return std::uniform_int_distribution<int>{from, until}(generator);
+    }
+}
 
 
 namespace Utilities
