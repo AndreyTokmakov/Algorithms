@@ -22,6 +22,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Move_Chars_To_End.cpp
 		algorithms/Move_Zeros_To_End.cpp
 		algorithms/Find_Last_Not_Of.cpp
+		algorithms/Print_1_0_Instead_Wildcards.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")

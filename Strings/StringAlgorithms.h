@@ -28,6 +28,8 @@ namespace StringAlgorithms
     void Move_Chars_To_End();
     void Move_Zeros_To_End();
     void Find_Last_Not_Of();
+    void Find_Last_Not_Of();
+    void Print_1_0_Instead_Wildcards();
 }
 
 #endif //STRING_ALGORITHMS_H

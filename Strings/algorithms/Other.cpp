@@ -858,47 +858,6 @@ namespace Strings
 
     //--------------------------------------------------------------------------------------//
 
-    void print(std::string str, size_t pos) {
-        if (str.length() == pos) {
-            std::cout << str << std::endl;
-            return;
-        }
-        if ('?' == str[pos]) {
-            str[pos] = '0';
-            print(str, pos + 1);
-            str[pos] = '1';
-            print(str, pos + 1);
-        }
-        else {
-            print(str, pos + 1);
-        }
-    }
-
-    void Print_1_0_Instead_Wildcards() {
-        const std::string text = "1??0?101";
-        print(text, 0);
-    }
-
-    //--------------------------------------------------------------------------------------//
-
-    void print_2(const std::string& str) {
-        std::deque<std::string> strings{ str };
-        size_t wildPos = std::string::npos;
-        while (std::string::npos != (wildPos = strings.front().find('?'))) {
-            strings.emplace_back(strings.front())[wildPos] = '0';
-            strings.emplace_back(strings.front())[wildPos] = '1';
-            strings.pop_front();
-        }
-        std::for_each(strings.begin(), strings.end(), [](const auto& s) { std::cout << s << std::endl; });
-    }
-
-    void Print_1_0_Instead_Wildcards_2() {
-        const std::string text = "2?3?4";
-        print_2(text);
-    }
-
-    //--------------------------------------------------------------------------------------//
-
     void FindDuplicateSymbols() {
         const std::string text = "1234567829dabcdfGGG";
         int chars[256] = {};

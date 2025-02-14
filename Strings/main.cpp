@@ -27,7 +27,8 @@ int main([[maybe_unused]] int argc,
     // StringAlgorithms::Check_If_Strings_Rotate_Rotate_Equals();
     // StringAlgorithms::Move_Chars_To_End();
     // StringAlgorithms::Move_Zeros_To_End();
-    StringAlgorithms::Find_Last_Not_Of();
+    // StringAlgorithms::Find_Last_Not_Of();
+    StringAlgorithms::Print_1_0_Instead_Wildcards();
 
 
 
