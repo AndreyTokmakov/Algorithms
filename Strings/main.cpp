@@ -22,7 +22,11 @@ int main([[maybe_unused]] int argc,
     // StringAlgorithms::Is_Palindrome();
     // StringAlgorithms::Remove_Chars_Of_One_String_FromAnother();
     // StringAlgorithms::Top_K_Frequent_Words();
-    StringAlgorithms::Remove_Duplicates_Chars();
+    // StringAlgorithms::Remove_Duplicates_Chars();
+    // StringAlgorithms::Reverse_String();
+    // StringAlgorithms::Check_If_Strings_Rotate_Rotate_Equals();
+    // StringAlgorithms::Move_Chars_To_End();
+    StringAlgorithms::Move_Zeros_To_End();
 
 
 

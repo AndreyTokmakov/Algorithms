@@ -17,6 +17,10 @@ add_executable(${PROJECT_NAME}
 		algorithms/Remove_Chars_Of_One_String_FromAnother.cpp
 		algorithms/Top_K_Frequent_Words.cpp
 		algorithms/Remove_Duplicates_Chars.cpp
+		algorithms/Reverse_String.cpp
+		algorithms/Check_If_Strings_Rotate_Rotate_Equals.cpp
+		algorithms/Move_Chars_To_End.cpp
+		algorithms/Move_Zeros_To_End.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")

@@ -23,6 +23,10 @@ namespace StringAlgorithms
     void Remove_Chars_Of_One_String_FromAnother();
     void Top_K_Frequent_Words();
     void Remove_Duplicates_Chars();
+    void Reverse_String();
+    void Check_If_Strings_Rotate_Rotate_Equals();
+    void Move_Chars_To_End();
+    void Move_Zeros_To_End();
 }
 
 #endif //STRING_ALGORITHMS_H
