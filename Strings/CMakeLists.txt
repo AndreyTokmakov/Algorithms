@@ -15,6 +15,8 @@ add_executable(${PROJECT_NAME}
 		algorithms/Find_First_K_Chars_Encountered_Once.cpp
 		algorithms/Is_Palindrome.cpp
 		algorithms/Remove_Chars_Of_One_String_FromAnother.cpp
+		algorithms/Top_K_Frequent_Words.cpp
+		algorithms/Remove_Duplicates_Chars.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")

@@ -10,9 +10,15 @@ Description :
 #ifndef STRING_ALGORITHMS_COMMON_H
 #define STRING_ALGORITHMS_COMMON_H
 
+
+#include <string>
+#include <iostream>
+
 #include <string>
 #include <vector>
 #include <set>
+#include <map>
+#include <unordered_map>
 
 namespace StringAlgorithms
 {
