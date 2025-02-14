@@ -27,6 +27,7 @@ namespace StringAlgorithms
     void Check_If_Strings_Rotate_Rotate_Equals();
     void Move_Chars_To_End();
     void Move_Zeros_To_End();
+    void Find_Last_Not_Of();
 }
 
 #endif //STRING_ALGORITHMS_H

@@ -21,6 +21,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Check_If_Strings_Rotate_Rotate_Equals.cpp
 		algorithms/Move_Chars_To_End.cpp
 		algorithms/Move_Zeros_To_End.cpp
+		algorithms/Find_Last_Not_Of.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")
