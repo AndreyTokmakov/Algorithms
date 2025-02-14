@@ -28,7 +28,9 @@ int main([[maybe_unused]] int argc,
     // StringAlgorithms::Move_Chars_To_End();
     // StringAlgorithms::Move_Zeros_To_End();
     // StringAlgorithms::Find_Last_Not_Of();
-    StringAlgorithms::Print_1_0_Instead_Wildcards();
+    // StringAlgorithms::Print_1_0_Instead_Wildcards();
+    // StringAlgorithms::Find_First_Char_Encountered_Once();
+    StringAlgorithms::Check_If_Two_Strings_Are_Permutation();
 
 
 

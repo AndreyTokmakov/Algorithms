@@ -30,6 +30,8 @@ namespace StringAlgorithms
     void Find_Last_Not_Of();
     void Find_Last_Not_Of();
     void Print_1_0_Instead_Wildcards();
+    void Find_First_Char_Encountered_Once();
+    void Check_If_Two_Strings_Are_Permutation();
 }
 
 #endif //STRING_ALGORITHMS_H

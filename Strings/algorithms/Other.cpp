@@ -873,47 +873,6 @@ namespace Strings
 
     //--------------------------------------------------------------------------------------//
 
-    void firstNonRepeatingChar(const std::string& str)
-    {
-        std::pair<int, int> arr[256];
-        for (int i = 0; str[i]; i++) {
-            arr[str[i]].first += 1;
-            arr[str[i]].second = i;
-        }
-
-        int pos = std::numeric_limits<int>::max();
-        for (int i = 0; i < 256; i++) {
-            if (arr[i].first == 1) {
-                pos = std::min(pos, arr[i].second);
-            }
-        }
-        std::cout << "Result = " << str[pos] << std::endl;
-    }
-
-    void firstNonRepeatingChar_GOOD(const std::string& str)
-    {
-        int chars[256]{ 0 };
-        for (char c : str)
-            chars[c]++;
-
-        for (char c : str) {
-            if (1 == chars[c]) {
-                std::cout << "Result = " << c << std::endl;
-                break;
-            }
-        }
-    }
-
-    void Find_First_Char_Occured_Once()
-    {
-        const std::string str { "geeksforgeeks" };
-        firstNonRepeatingChar(str);
-        firstNonRepeatingChar_GOOD(str);
-    }
-
-
-    //--------------------------------------------------------------------------------------//
-
     bool __check_parentheses(const std::string& str) {
         std::stack<char> stack;
         for (const char c : str) {
@@ -1143,40 +1102,6 @@ namespace Strings
 
         std::cout << "Test1: " << _minimum_length_substrings(text, mask) << std::endl;
         std::cout << "Test2: " << _minimum_length_substrings_2(text, mask) << std::endl;
-    }
-
-    //--------------------------------------------------------------------------------------//
-
-    bool _are_permutation(const std::string& str1, const std::string& str2) {
-        if (str1.length() != str2.length())
-            return false;
-
-        int32_t chars[256] = { 0 };
-        for (char c : str1)
-            chars[c]++;
-        for (char c : str2)
-            if (0 > --chars[c])
-                return false;
-        return true;
-    }
-
-    // Write a function to check whether two given strings are Permutation of each other or not.
-    // A Permutation of a string is another string that contains same characters, only the order
-    // of characters can be different. For example, �abcd� and �dabc� are Permutation of each other.
-    void CheckIfTwoStringsArePermutation()
-    {
-        std::vector<std::pair<std::pair<std::string, std::string> , bool>> testData {
-                {{"test", "estt"}, true},
-                {{"ABBAACCDDD", "BACDBACDAD"}, true},
-                {{"ABCDDDDBA", "ABCCDDDBA"}, false},
-                {{"abcd", "bbbb"}, false},
-        };
-
-        for (const auto& [data, expected]: testData)
-        {
-            std::cout << std::boolalpha << _are_permutation(data.first, data.second)
-                      << ", expected = " << std::boolalpha << expected << std::endl;
-        }
     }
 
     //--------------------------------------------------------------------------------------//
