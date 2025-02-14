@@ -32,6 +32,7 @@ namespace StringAlgorithms
     void Print_1_0_Instead_Wildcards();
     void Find_First_Char_Encountered_Once();
     void Check_If_Two_Strings_Are_Permutation();
+    void Are_Anagrams();
 }
 
 #endif //STRING_ALGORITHMS_H

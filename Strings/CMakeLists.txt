@@ -25,6 +25,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Print_1_0_Instead_Wildcards.cpp
 		algorithms/Find_First_Char_Encountered_Once.cpp
 		algorithms/Check_If_Two_Strings_Are_Permutation.cpp
+		algorithms/Are_Anagrams.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")
