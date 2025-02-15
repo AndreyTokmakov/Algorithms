@@ -353,28 +353,6 @@ namespace Numeric
 
 namespace Numeric
 {
-    bool is_palindrome(const int value)
-    {
-        if (0 > value)
-            return false;
-        long reversed = 0, number = value;
-        while (0 != number) {
-            reversed = reversed * 10 + number % 10;
-            number = number / 10;
-        }
-        return reversed == value;
-    }
-
-    void IsPalindrome() {
-        for (const int v: std::vector<int>{
-                121, 234
-        }) {
-            std::cout << "Is (" << v << ") palidrome: " << std::boolalpha << is_palindrome(v) << std::endl;
-        }
-    }
-
-    //---------------------------------------------------------------------------//
-
     // Move items to their places
     void RearangeArray() {
         int Numeric[] = {8, 7, 6, 3, 4, 9, 2, 1, 0, 5};

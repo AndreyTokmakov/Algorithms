@@ -23,6 +23,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Find_SubArrays_SumZero.cpp
 		algorithms/Reverse_Number.cpp
 		algorithms/Find_Element_Encountered_Only_Once.cpp
+		algorithms/Is_Palindrome.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")

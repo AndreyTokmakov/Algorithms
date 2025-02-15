@@ -27,7 +27,8 @@ int main([[maybe_unused]] int argc,
     // ArraysAlgorithms::Find_Top_K_Frequent_Numbers();
     // ArraysAlgorithms::Find_SubArrays_SumZero();
     // ArraysAlgorithms::Reverse_Number();
-    ArraysAlgorithms::Find_Element_Encountered_Only_Once();
+    // ArraysAlgorithms::Find_Element_Encountered_Only_Once();;
+    ArraysAlgorithms::Is_Palindrome();;
 
 	return EXIT_SUCCESS;
 }

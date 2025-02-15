@@ -30,6 +30,7 @@ namespace LinkedListAlgorithms
     void Move_All_Occurrences_To_The_End();
     void Delete_K_Element_From_the_End();
     void Delete_Duplicates_SortedList();
+    void Add_Two_Numbers();
 }
 
 #endif //LINKED_LIST_ALGORITHMS_H

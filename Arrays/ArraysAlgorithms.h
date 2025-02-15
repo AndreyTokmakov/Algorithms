@@ -29,6 +29,7 @@ namespace ArraysAlgorithms
     void Find_SubArrays_SumZero();
     void Reverse_Number();
     void Find_Element_Encountered_Only_Once();
+    void Is_Palindrome();
 }
 
 #endif //ARRAYS_ALGORITHMS_H
