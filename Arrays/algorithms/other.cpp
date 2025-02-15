@@ -353,34 +353,6 @@ namespace Numeric
 
 namespace Numeric
 {
-    int reverse_number(int number)
-    {
-        int reversed = 0;
-        while (0 != number) {
-            reversed = reversed * 10 + number % 10;
-            number = number / 10;
-        }
-        return reversed;
-    }
-
-    void ReverseNumber()
-    {
-        for (const auto& [value, expected]: std::vector<IntPair> {
-                {123, 321}, {210, 12}, { -173, -371},
-                {1234567, 7654321},
-                {-4030, -304},
-        }) {
-            if (const auto actual = reverse_number(value); expected != actual) {
-                std::cerr << expected << " != " << actual << std::endl;
-                return;
-            }
-        }
-        std::cout << "OK: All tests passed\n";
-    }
-}
-
-namespace Numeric
-{
     bool is_palindrome(const int value)
     {
         if (0 > value)
@@ -2294,7 +2266,7 @@ namespace Numeric
     }
 
 
-    void Find_ONE_Element_Occured_Once() {
+    void Find_ONE_Element_Ocured_Once() {
         {
             int Numeric[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9, 22, 1, 2, 3, 4, 5,
                              6, 7, 8, 9};

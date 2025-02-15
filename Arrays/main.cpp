@@ -25,7 +25,9 @@ int main([[maybe_unused]] int argc,
     // ArraysAlgorithms::Reverse_To_Make_Equal();
     // ArraysAlgorithms::Is_Reversed_Equals();
     // ArraysAlgorithms::Find_Top_K_Frequent_Numbers();
-    ArraysAlgorithms::Find_SubArrays_SumZero();
+    // ArraysAlgorithms::Find_SubArrays_SumZero();
+    // ArraysAlgorithms::Reverse_Number();
+    ArraysAlgorithms::Find_Element_Encountered_Only_Once();
 
 	return EXIT_SUCCESS;
 }

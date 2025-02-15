@@ -27,6 +27,8 @@ namespace ArraysAlgorithms
     void Is_Reversed_Equals();
     void Find_Top_K_Frequent_Numbers();
     void Find_SubArrays_SumZero();
+    void Reverse_Number();
+    void Find_Element_Encountered_Only_Once();
 }
 
 #endif //ARRAYS_ALGORITHMS_H

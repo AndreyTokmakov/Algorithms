@@ -21,6 +21,8 @@ add_executable(${PROJECT_NAME}
 		algorithms/Is_Reversed_Equals.cpp
 		algorithms/Find_Top_K_Frequent_Numbers.cpp
 		algorithms/Find_SubArrays_SumZero.cpp
+		algorithms/Reverse_Number.cpp
+		algorithms/Find_Element_Encountered_Only_Once.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")
