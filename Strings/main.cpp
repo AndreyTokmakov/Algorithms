@@ -32,7 +32,9 @@ int main([[maybe_unused]] int argc,
     // StringAlgorithms::Find_First_Char_Encountered_Once();
     // StringAlgorithms::Check_If_Two_Strings_Are_Permutation();
     // StringAlgorithms::Are_Anagrams();
-    StringAlgorithms::Calc_Parentheses_3_Bracket();
+    // StringAlgorithms::Calc_Parentheses_3_Bracket();
+    // StringAlgorithms::Longest_Substring_Without_Repeating_Characters();
+    StringAlgorithms::Longest_Substring_Without_Repeating_Characters_2();
 
 
 

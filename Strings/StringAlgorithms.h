@@ -33,6 +33,8 @@ namespace StringAlgorithms
     void Check_If_Two_Strings_Are_Permutation();
     void Are_Anagrams();
     void Calc_Parentheses_3_Bracket();
+    void Longest_Substring_Without_Repeating_Characters();
+    void Longest_Substring_Without_Repeating_Characters_2();
 }
 
 #endif //STRING_ALGORITHMS_H

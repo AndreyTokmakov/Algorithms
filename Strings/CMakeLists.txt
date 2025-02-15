@@ -27,6 +27,8 @@ add_executable(${PROJECT_NAME}
 		algorithms/Check_If_Two_Strings_Are_Permutation.cpp
 		algorithms/Are_Anagrams.cpp
 		algorithms/Calc_Parentheses_3_Bracket.cpp
+		algorithms/Longest_Substring_Without_Repeating_Characters.cpp
+		algorithms/Longest_Substring_Without_Repeating_Characters_2.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")
