@@ -6,6 +6,7 @@ Demo Algorithms
 3. [Requirements](#Requirements)
 4. [Build](#Build)
 5. [String Algorithms](#string_algorithms])
+6. [Math and Arrays Algorithms](#math_arrays_algorithms])
 
 <a name="Overview"></a>
 ## Overview
@@ -50,3 +51,21 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [Reverse_String](https://github.com/AndreyTokmakov/Algorithms/blob/d6d4dfc40ded255cb55ef8c019008e5f1063785c/Strings/algorithms/Reverse_String.cpp#L21)<br/>
 -  [Top_K_Frequent_Words](https://github.com/AndreyTokmakov/Algorithms/blob/d6d4dfc40ded255cb55ef8c019008e5f1063785c/Strings/algorithms/Top_K_Frequent_Words.cpp#L20)<br/>
 -  [Calc_Parentheses_3_Bracket](https://github.com/AndreyTokmakov/Algorithms/blob/d6d4dfc40ded255cb55ef8c019008e5f1063785c/Strings/algorithms/Calc_Parentheses_3_Bracket.cpp#L19)<br/>
+-  [Longest_Substring_Without_Repeating_Characters](https://github.com/AndreyTokmakov/Algorithms/blob/5f523bcea1a49736dc1e04b086ad564a1fb82109/Strings/algorithms/Longest_Substring_Without_Repeating_Characters.cpp#L20)<br/>
+-  [Longest_Substring_Without_Repeating_Characters_2](https://github.com/AndreyTokmakov/Algorithms/blob/5f523bcea1a49736dc1e04b086ad564a1fb82109/Strings/algorithms/Longest_Substring_Without_Repeating_Characters_2.cpp#L20)<br/>
+
+<a name="math_arrays_algorithms"></a>
+## Math and Arrays Algorithms
+-  [Add_Digits](https://github.com/AndreyTokmakov/Algorithms/blob/5f523bcea1a49736dc1e04b086ad564a1fb82109/Arrays/algorithms/Add_Digits.cpp#L23) <br/>
+-  [Best_Time_Buy_and_Sell_Stock](https://github.com/AndreyTokmakov/Algorithms/blob/5f523bcea1a49736dc1e04b086ad564a1fb82109/Arrays/algorithms/Best_Time_Buy_and_Sell_Stock.cpp#L30) <br/>
+-  [Find_Element_Encountered_Only_Once](https://github.com/AndreyTokmakov/Algorithms/blob/5f523bcea1a49736dc1e04b086ad564a1fb82109/Arrays/algorithms/Find_Element_Encountered_Only_Once.cpp#L26) <br/>
+-  [Find_SubArrays_SumZero](https://github.com/AndreyTokmakov/Algorithms/blob/5f523bcea1a49736dc1e04b086ad564a1fb82109/Arrays/algorithms/Find_SubArrays_SumZero.cpp#L15) <br/>
+-  [Find_Top_K_Frequent_Numbers](https://github.com/AndreyTokmakov/Algorithms/blob/5f523bcea1a49736dc1e04b086ad564a1fb82109/Arrays/algorithms/Find_Top_K_Frequent_Numbers.cpp#L16) <br/>
+-  [Is_Reversed_Equals](https://github.com/AndreyTokmakov/Algorithms/blob/5f523bcea1a49736dc1e04b086ad564a1fb82109/Arrays/algorithms/Is_Reversed_Equals.cpp#L15) <br/>
+-  [Median_of_Two_Sorted_Arrays](https://github.com/AndreyTokmakov/Algorithms/blob/5f523bcea1a49736dc1e04b086ad564a1fb82109/Arrays/algorithms/Median_of_Two_Sorted_Arrays.cpp#L26) <br/>
+-  [MidPoint](https://github.com/AndreyTokmakov/Algorithms/blob/5f523bcea1a49736dc1e04b086ad564a1fb82109/Arrays/algorithms/MidPoint.cpp#L16) <br/>
+-  [Reverse_Bits](https://github.com/AndreyTokmakov/Algorithms/blob/5f523bcea1a49736dc1e04b086ad564a1fb82109/Arrays/algorithms/Reverse_Bits.cpp#L26) <br/>
+-  [Reverse_Number](https://github.com/AndreyTokmakov/Algorithms/blob/5f523bcea1a49736dc1e04b086ad564a1fb82109/Arrays/algorithms/Reverse_Number.cpp#L25) <br/>
+-  [Reverse_To_Make_Equal](https://github.com/AndreyTokmakov/Algorithms/blob/5f523bcea1a49736dc1e04b086ad564a1fb82109/Arrays/algorithms/Reverse_To_Make_Equal.cpp#L16) <br/>
+-  [Single_Number](https://github.com/AndreyTokmakov/Algorithms/blob/5f523bcea1a49736dc1e04b086ad564a1fb82109/Arrays/algorithms/Single_Number.cpp#L29) <br/>
+-  [Two_Sum_Less_Than_K](https://github.com/AndreyTokmakov/Algorithms/blob/5f523bcea1a49736dc1e04b086ad564a1fb82109/Arrays/algorithms/Two_Sum_Less_Than_K.cpp#L23) <br/>

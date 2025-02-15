@@ -37,10 +37,10 @@ namespace
     void firstNonRepeatingChar_GOOD(const std::string& str)
     {
         int chars[256]{ 0 };
-        for (char c : str)
+        for (const char c : str)
             chars[c]++;
 
-        for (char c : str) {
+        for (const char c : str) {
             if (1 == chars[c]) {
                 std::cout << "Result = " << c << std::endl;
                 break;
