@@ -43,7 +43,7 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [Find_Longest_Substring_With_K_Distinct_Characters](https://github.com/AndreyTokmakov/Algorithms/blob/d6d4dfc40ded255cb55ef8c019008e5f1063785c/Strings/algorithms/Find_Longest_Substring_With_K_Distinct_Characters.cpp#L22)<br/>
 -  [Move_Chars_To_End](https://github.com/AndreyTokmakov/Algorithms/blob/d6d4dfc40ded255cb55ef8c019008e5f1063785c/Strings/algorithms/Move_Chars_To_End.cpp#L21)<br/>
 -  [Move_Zeros_To_End](https://github.com/AndreyTokmakov/Algorithms/blob/d6d4dfc40ded255cb55ef8c019008e5f1063785c/Strings/algorithms/Move_Zeros_To_End.cpp#L21)<br/>
--  [Move_Zeros_To_End](https://github.com/AndreyTokmakov/Algorithms/blob/d6d4dfc40ded255cb55ef8c019008e5f1063785c/Strings/algorithms/Print_1_0_Instead_Wildcards.cpp#L23)<br/>
+-  [Print_1_0_Instead_Wildcards](https://github.com/AndreyTokmakov/Algorithms/blob/d6d4dfc40ded255cb55ef8c019008e5f1063785c/Strings/algorithms/Print_1_0_Instead_Wildcards.cpp#L23)<br/>
 -  [Remove_Adjacent_Duplicates](https://github.com/AndreyTokmakov/Algorithms/blob/d6d4dfc40ded255cb55ef8c019008e5f1063785c/Strings/algorithms/Remove_Adjacent_Duplicates.cpp#L30)<br/>
 -  [Remove_Chars_Of_One_String_FromAnother](https://github.com/AndreyTokmakov/Algorithms/blob/d6d4dfc40ded255cb55ef8c019008e5f1063785c/Strings/algorithms/Remove_Chars_Of_One_String_FromAnother.cpp#L20)<br/>
 -  [Remove_Duplicates_Chars](https://github.com/AndreyTokmakov/Algorithms/blob/d6d4dfc40ded255cb55ef8c019008e5f1063785c/Strings/algorithms/Remove_Duplicates_Chars.cpp#L20)<br/>
