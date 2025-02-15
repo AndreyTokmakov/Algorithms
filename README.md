@@ -5,6 +5,7 @@ Demo Algorithms
 2. [Download](#Download)
 3. [Requirements](#Requirements)
 4. [Build](#Build)
+5. [String Algorithms](#string_algorithms])
 
 <a name="Overview"></a>
 ## Overview
@@ -28,3 +29,7 @@ Nothing special, just an attempt to structure and study C++ algorithms
 - Move to the project folder: `cd Algorithms`
 - Configure project build (with cmake): `cmake -DCMAKE_BUILD_TYPE=Release -B./build`
 - Build and compile solution: `cd build && make -j4`
+
+<a name="string_algorithms"></a>
+## String Algorithms
+-  [Is_Palindrome](https://github.com/AndreyTokmakov/Algorithms/blob/bcb2d0be438634c1ccb0971cad4301397bded964/Strings/algorithms/Is_Palindrome.cpp#L20) <br/>

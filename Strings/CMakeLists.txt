@@ -26,6 +26,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Find_First_Char_Encountered_Once.cpp
 		algorithms/Check_If_Two_Strings_Are_Permutation.cpp
 		algorithms/Are_Anagrams.cpp
+		algorithms/Calc_Parentheses_3_Bracket.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")

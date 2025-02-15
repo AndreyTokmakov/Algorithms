@@ -31,7 +31,8 @@ int main([[maybe_unused]] int argc,
     // StringAlgorithms::Print_1_0_Instead_Wildcards();
     // StringAlgorithms::Find_First_Char_Encountered_Once();
     // StringAlgorithms::Check_If_Two_Strings_Are_Permutation();
-    StringAlgorithms::Are_Anagrams();
+    // StringAlgorithms::Are_Anagrams();
+    StringAlgorithms::Calc_Parentheses_3_Bracket();
 
 
 

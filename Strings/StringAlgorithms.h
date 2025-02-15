@@ -28,11 +28,11 @@ namespace StringAlgorithms
     void Move_Chars_To_End();
     void Move_Zeros_To_End();
     void Find_Last_Not_Of();
-    void Find_Last_Not_Of();
     void Print_1_0_Instead_Wildcards();
     void Find_First_Char_Encountered_Once();
     void Check_If_Two_Strings_Are_Permutation();
     void Are_Anagrams();
+    void Calc_Parentheses_3_Bracket();
 }
 
 #endif //STRING_ALGORITHMS_H
