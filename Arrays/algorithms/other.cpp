@@ -1046,109 +1046,8 @@ namespace Numeric
 
         std::cout << max2 + max1 << std::endl;
     }
-
-    //======================================================================================//
-
-    template<typename T>
-    void removeElement(std::vector<T> &nums, const T value) {
-        size_t pos = 0;
-        for (T &entry: nums)
-            if (value != entry)
-                std::swap(nums[pos++], entry);
-
-        nums.resize(pos);
-        nums.shrink_to_fit();
-    }
-
-    void RemoveElement() {
-        // std::vector nums { 0, 0, 1, 1, 1, 2, 2, 3, 3, 4 };
-        std::vector nums{1, 2, 3, 1, 2, 3, 1, 2, 3, 4, 5, 6, 7, 2, 2, 2, 33};
-        std::cout << nums << std::endl;
-
-        removeElement(nums, 2);
-        std::cout << nums << std::endl;
-    }
 }
 
-namespace Numeric
-{
-    template<typename T>
-    void removeDuplicates(std::vector<T> &nums)
-    {
-        std::unordered_set<T> duplicates{};
-        size_t pos = 0;
-        for (size_t idx = 0; idx < nums.size(); ++idx)
-            if (true == duplicates.insert(nums[idx]).second)
-                std::swap(nums[pos++], nums[idx]);
-
-        nums.resize(pos);
-        nums.shrink_to_fit();
-    }
-
-    void RemoveDuplicates()
-    {
-        // std::vector nums { 0, 0, 1, 1, 1, 2, 2, 3, 3, 4 };
-        std::vector nums{0, 1, 1, 2, 2, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5};
-        std::cout << nums << std::endl;
-
-        removeDuplicates(nums);
-        std::cout << nums << std::endl;
-    }
-}
-
-namespace Numeric
-{
-    bool contains_duplicate(const std::vector<int> &nums) {
-        std::unordered_set<int> set(nums.begin(), nums.end());
-        return nums.size() != set.size();
-    }
-
-    void Contains_Duplicate()
-    {
-        for (const std::vector<int> &values: std::vector<std::vector<int>>{
-                {1, 2, 3, 4, 5},
-                {1, 2, 3, 4, 5, 3}
-        }) {
-            std::cout << std::boolalpha << contains_duplicate(values) << std::endl;
-        }
-    }
-}
-
-namespace Numeric
-{
-    size_t remove_duplicates_sorted(std::vector<int> &nums)
-    {
-        size_t pos = 0;
-        if (nums.empty())
-            return pos;
-        for (size_t idx = 1; idx < nums.size(); ++idx) {
-            if (nums[pos] != nums[idx]) {
-                nums[++pos] = nums[idx];
-            }
-        }
-        nums.resize(++pos);
-        nums.shrink_to_fit();
-        return pos;
-    }
-
-    void RemoveDuplicates_SortedArray()
-    {
-        for (auto& [values, expected]: std::vector<VectorPair<int>> {
-                {{}, {}},
-                {{0, 1, 2}, {0, 1, 2}},
-                {{0, 0, 1, 1, 1, 2, 2, 3, 3, 4}, {0, 1, 2, 3, 4}} ,
-                {{0, 1, 1, 2, 2, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5}, {0, 1, 2, 3, 4, 5}}
-        })
-        {
-            remove_duplicates_sorted(values);
-            if (values != expected) {
-                std::cerr << expected << " != " << expected << std::endl;
-                return;
-            }
-        }
-        std::cout << "OK: All tests passed\n";
-    }
-}
 
 namespace Numeric
 {
@@ -1999,72 +1898,6 @@ namespace Numeric
 
     //--------------------------------------------------------------------------------------//
 
-    int __SmallestMissingPositiveNumber(const std::vector<int> &A) {
-        const auto minmax = std::minmax_element(A.begin(), A.end());
-        int min = *minmax.first, max = *minmax.second;
-        if (1 > max || min > 1)
-            return 1;
-
-        std::unordered_set<int> set(A.begin(), A.end());
-        for (int i = std::max(1, min); i < max; i++)
-            if (set.end() == set.find(i))
-                return i;
-
-        return max + 1;
-    }
-
-    int __SmallestMissingPositiveNumber2(const std::vector<int> &A) {
-        std::unordered_set<int> set;
-        int min = std::numeric_limits<int>::max(), max = std::numeric_limits<int>::min();
-        for (int i: A) {
-            if (i > max)
-                max = i;
-            if (min > i)
-                min = i;
-            if (i > 0)
-                set.insert(i);
-        }
-        if (1 > max || min > 1)
-            return 1;
-
-        for (int i = std::max(1, min); i < max; i++)
-            if (set.end() == set.find(i))
-                return i;
-
-        return max + 1;
-    }
-
-    int __SmallestMissingPositiveNumber_FAST(std::vector<int> nums) {
-        const int size = static_cast<int>(nums.size());
-        std::ios::sync_with_stdio(0);
-        std::cin.tie(0);
-        for (int i = 0; i < size; ++i)
-            while (nums[i] > 0 && nums[i] <= size && nums[i] != nums[nums[i] - 1])
-                std::swap(nums[i], nums[nums[i] - 1]);
-
-        for (int i = 0; i < size; ++i)
-            if (nums[i] != i + 1)
-                return i + 1;
-
-        return size + 1;
-    }
-
-    void Find_Smallest_Missing_Positive_Number() {
-        for (const std::vector<int> &numbers: std::vector<std::vector<int>>{
-                {-1,      0, 1},
-                {1,       3, 6,       4, 1, 2},
-                {3,       4, 5,       6},
-                {-999999, 4, 9999999, 6}
-        }) {
-            std::cout << __SmallestMissingPositiveNumber(numbers) << " "
-                      << __SmallestMissingPositiveNumber2(numbers) << " "
-                      << __SmallestMissingPositiveNumber_FAST(numbers)
-                      << std::endl;
-        }
-    }
-
-    //--------------------------------------------------------------------------------------//
-
     // Note: Sequence should start from 1
     void _find_repeating_and_missing(const std::vector<int> &values) {
         std::unordered_set<int> nums;
@@ -2226,40 +2059,6 @@ namespace Numeric
             const std::vector<int> result2 = product_of_array_except_self_ex(values);
 
             std::cout << result1 << std::endl << result2 << std::endl << std::endl;
-        }
-    }
-
-    //--------------------------------------------------------------------------------------//
-
-    void Find_Elements_Occured_Once() {
-        int Numeric[] = {1, 1, 2, 2, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 9, 9, 9};
-
-        std::unordered_set<int> tmp;
-        for (int val: Numeric)
-            if (auto result = tmp.insert(val); false == result.second)
-                tmp.erase(result.first);
-
-        for (int i: tmp)
-            std::cout << i << std::endl;
-    }
-
-
-    void Find_ONE_Element_Ocured_Once() {
-        {
-            int Numeric[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9, 22, 1, 2, 3, 4, 5,
-                             6, 7, 8, 9};
-            int result = 0;
-            for (int val: Numeric)
-                result ^= val;
-            std::cout << result << std::endl;
-        }
-        {
-            int Numeric[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 33, 1, 2, 3, 4, 5, 6, 7, 8, 9, 33, 1, 2, 3, 4, 5, 6, 7, 8, 9, 33, 1, 2, 3,
-                             4, 5, 6, 7, 8, 9, 22, 22};
-            int result = 0;
-            for (int val: Numeric)
-                result ^= val;
-            std::cout << result << std::endl;
         }
     }
 
@@ -3518,10 +3317,7 @@ void ArraysAlgorithms::Other()
     // Numeric::Find_DifferentPairs_SumK();
     // Numeric::Find_3_Elements_SumX_Sorted();
 
-    // Numeric::RemoveElement();
-    // Numeric::RemoveDuplicates();
-    // Numeric::Contains_Duplicate();
-    // Numeric::RemoveDuplicates_SortedArray();
+
     // Numeric::DeleteFromArray();
 
     // Numeric::Find_The_Majority_Element();
@@ -3539,7 +3335,6 @@ void ArraysAlgorithms::Other()
     // Numeric::Find_K_MissingNumber_Sorted();
     // Numeric::Find_K_MissingNumber();
 
-    // Numeric::Find_Smallest_Missing_Positive_Number();
     // Numeric::Find_Repeating_And_Missing();
     // Numeric::FindTheDuplicateValue();
 

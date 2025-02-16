@@ -30,6 +30,11 @@ namespace ArraysAlgorithms
     void Reverse_Number();
     void Find_Element_Encountered_Only_Once();
     void Is_Palindrome();
+    void Remove_Duplicates();
+    void Remove_Duplicates_From_Sorted_Array();
+    void Remove_Element();
+    void Contains_Duplicate();
+    void Find_Smallest_Missing_Positive_Number();
 }
 
 #endif //ARRAYS_ALGORITHMS_H

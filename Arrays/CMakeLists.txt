@@ -24,6 +24,11 @@ add_executable(${PROJECT_NAME}
 		algorithms/Reverse_Number.cpp
 		algorithms/Find_Element_Encountered_Only_Once.cpp
 		algorithms/Is_Palindrome.cpp
+		algorithms/Remove_Duplicates_From_Sorted_Array.cpp
+		algorithms/Remove_Duplicates.cpp
+		algorithms/Remove_Element.cpp
+		algorithms/Contains_Duplicate.cpp
+		algorithms/Find_Smallest_Missing_Positive_Number.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")

@@ -28,7 +28,12 @@ int main([[maybe_unused]] int argc,
     // ArraysAlgorithms::Find_SubArrays_SumZero();
     // ArraysAlgorithms::Reverse_Number();
     // ArraysAlgorithms::Find_Element_Encountered_Only_Once();;
-    ArraysAlgorithms::Is_Palindrome();;
+    // ArraysAlgorithms::Is_Palindrome();
+    // ArraysAlgorithms::Remove_Duplicates_From_Sorted_Array();
+    // ArraysAlgorithms::Remove_Duplicates();
+    // ArraysAlgorithms::Remove_Element();
+    // ArraysAlgorithms::Contains_Duplicate();
+    ArraysAlgorithms::Find_Smallest_Missing_Positive_Number();
 
 	return EXIT_SUCCESS;
 }

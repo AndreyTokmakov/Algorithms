@@ -26,10 +26,10 @@ namespace
     double median_of_two_sorted_arrays(const std::vector<int>& nums1,
                                        const std::vector<int>& nums2)
     {
-        const int size1 = std::ssize(nums1), size2 = std::ssize(nums2);
-        const int steps = (size1 + size2) / 2;
+        const long size1 = std::ssize(nums1), size2 = std::ssize(nums2);
+        const long steps = (size1 + size2) / 2 + 1;
         int m1 = 0, m2 = 0;
-        for (int n = 0, idx1 = 0, idx2 = 0; n <= steps; ++n)
+        for (int n = 0, idx1 = 0, idx2 = 0; n < steps; ++n)
         {
             m1 = m2;
             if (size1 > idx1 && size2 > idx2)
