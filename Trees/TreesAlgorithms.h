@@ -23,6 +23,8 @@ namespace TreesAlgorithms
     void Sorted_Array_To_Binary_Tree();
     void Sorted_Array_To_Binary_Tree_NonRecursive();
     void Find_Lowest_Common_Ancestor();
+    void Count_Elements();
+    void Get_Tree_Depth();
 }
 
 #endif //TREES_ALGORITHMS_H

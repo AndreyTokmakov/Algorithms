@@ -21,7 +21,9 @@ int main([[maybe_unused]] int argc,
 	// TreesAlgorithms::Find_N_th_Smallest_Element();
 	// TreesAlgorithms::Sorted_Array_To_Binary_Tree();
 	// TreesAlgorithms::Sorted_Array_To_Binary_Tree_NonRecursive();
-	TreesAlgorithms::Find_Lowest_Common_Ancestor();
+	// TreesAlgorithms::Find_Lowest_Common_Ancestor();
+	// TreesAlgorithms::Count_Elements();
+	TreesAlgorithms::Get_Tree_Depth();
 
 
 	return EXIT_SUCCESS;

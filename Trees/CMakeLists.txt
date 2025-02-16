@@ -17,6 +17,8 @@ add_executable(${PROJECT_NAME}
 		algorithms/Sorted_Array_To_Binary_Tree.cpp
 		algorithms/Sorted_Array_To_Binary_Tree_NonRecursive.cpp
 		algorithms/Find_Lowest_Common_Ancestor.cpp
+		algorithms/Count_Elements.cpp
+		algorithms/Get_Tree_Depth.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")
