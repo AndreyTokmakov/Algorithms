@@ -16,6 +16,10 @@ namespace TreesAlgorithms
     void Other();
 
     void Find_N_th_MinElement();
+    void Largest_Element_In_Each_Level();
+    void Find_Min_and_Max_Element_Recursive();
+    void Find_Min_and_Max_Element_NonRecursive();
+    void Find_N_th_Smallest_Element();
 }
 
 #endif //TREES_ALGORITHMS_H

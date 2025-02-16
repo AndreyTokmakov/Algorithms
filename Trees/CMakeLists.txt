@@ -10,6 +10,10 @@ add_executable(${PROJECT_NAME}
     	main.cpp
 		algorithms/Other.cpp
 		algorithms/Find_N_th_MinElement.cpp
+		algorithms/Largest_Element_In_Each_Level.cpp
+		algorithms/Find_Min_and_Max_Element_Recursive.cpp
+		algorithms/Find_Min_and_Max_Element_NonRecursive.cpp
+		algorithms/Find_N_th_Smallest_Element.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")

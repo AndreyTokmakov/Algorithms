@@ -23,22 +23,6 @@ Description :
 #include <cassert>
 #include <cmath>
 
-namespace TreesAlgorithms
-{
-    template<typename T>
-    std::ostream& operator<<(std::ostream& stream, const std::vector<T>& vect) {
-        for (const T& entry : vect)
-            stream << entry << ' ';
-        return stream;
-    }
-
-    template<typename T>
-    std::ostream& operator<<(std::ostream& stream, const std::list<T>& vect) {
-        for (const T& entry : vect)
-            stream << entry << ' ';
-        return stream;
-    }
-}
 
 namespace BinTree
 {
@@ -80,6 +64,25 @@ namespace BinTree
             root = insert(value, root);
         return root;
     }
+}
+
+namespace TreesAlgorithms
+{
+    template<typename T>
+    std::ostream& operator<<(std::ostream& stream, const std::vector<T>& vect) {
+        for (const T& entry : vect)
+            stream << entry << ' ';
+        return stream;
+    }
+
+    template<typename T>
+    std::ostream& operator<<(std::ostream& stream, const std::list<T>& vect) {
+        for (const T& entry : vect)
+            stream << entry << ' ';
+        return stream;
+    }
+
+    using Node = BinTree::Node;
 }
 
 
