@@ -5,9 +5,9 @@ Demo Algorithms
 2. [Download](#Download)
 3. [Requirements](#Requirements)
 4. [Build](#Build)
-5. [String Algorithms](#string_algorithms])
-6. [Math and Arrays Algorithms](#math_arrays_algorithms])
-7. [Linked List](#Linked List])
+5. [String Algorithms](#string_algorithms)
+6. [Math and Arrays Algorithms](#math_arrays_algorithms)
+7. [Linked List](#linked_list)
 
 <a name="Overview"></a>
 ## Overview
