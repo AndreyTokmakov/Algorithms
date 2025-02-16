@@ -7,6 +7,7 @@ Demo Algorithms
 4. [Build](#Build)
 5. [String Algorithms](#string_algorithms])
 6. [Math and Arrays Algorithms](#math_arrays_algorithms])
+7. [Linked List](#Linked List])
 
 <a name="Overview"></a>
 ## Overview
@@ -31,7 +32,7 @@ Nothing special, just an attempt to structure and study C++ algorithms
 - Configure project build (with cmake): `cmake -DCMAKE_BUILD_TYPE=Release -B./build`
 - Build and compile solution: `cd build && make -j4`
 
-<a name="string_algorithms"></a>
+<a id="string_algorithms"></a>
 ## String Algorithms
 -  [Is_Palindrome](https://github.com/AndreyTokmakov/Algorithms/blob/bcb2d0be438634c1ccb0971cad4301397bded964/Strings/algorithms/Is_Palindrome.cpp#L20) <br/>
 -  [Are_Anagrams](https://github.com/AndreyTokmakov/Algorithms/blob/d6d4dfc40ded255cb55ef8c019008e5f1063785c/Strings/algorithms/Are_Anagrams.cpp#L22)<br/>
@@ -54,7 +55,7 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [Longest_Substring_Without_Repeating_Characters](https://github.com/AndreyTokmakov/Algorithms/blob/5f523bcea1a49736dc1e04b086ad564a1fb82109/Strings/algorithms/Longest_Substring_Without_Repeating_Characters.cpp#L20)<br/>
 -  [Longest_Substring_Without_Repeating_Characters_2](https://github.com/AndreyTokmakov/Algorithms/blob/5f523bcea1a49736dc1e04b086ad564a1fb82109/Strings/algorithms/Longest_Substring_Without_Repeating_Characters_2.cpp#L20)<br/>
 
-<a name="math_arrays_algorithms"></a>
+<a id="math_arrays_algorithms"></a>
 ## Math and Arrays Algorithms
 -  [Add_Digits](https://github.com/AndreyTokmakov/Algorithms/blob/5f523bcea1a49736dc1e04b086ad564a1fb82109/Arrays/algorithms/Add_Digits.cpp#L23) <br/>
 -  [Best_Time_Buy_and_Sell_Stock](https://github.com/AndreyTokmakov/Algorithms/blob/5f523bcea1a49736dc1e04b086ad564a1fb82109/Arrays/algorithms/Best_Time_Buy_and_Sell_Stock.cpp#L30) <br/>
@@ -69,3 +70,22 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [Reverse_To_Make_Equal](https://github.com/AndreyTokmakov/Algorithms/blob/5f523bcea1a49736dc1e04b086ad564a1fb82109/Arrays/algorithms/Reverse_To_Make_Equal.cpp#L16) <br/>
 -  [Single_Number](https://github.com/AndreyTokmakov/Algorithms/blob/5f523bcea1a49736dc1e04b086ad564a1fb82109/Arrays/algorithms/Single_Number.cpp#L29) <br/>
 -  [Two_Sum_Less_Than_K](https://github.com/AndreyTokmakov/Algorithms/blob/5f523bcea1a49736dc1e04b086ad564a1fb82109/Arrays/algorithms/Two_Sum_Less_Than_K.cpp#L23) <br/>
+
+<a id="linked_list"></a>
+## Linked List
+-  [Add_Two_Numbers](https://github.com/AndreyTokmakov/Algorithms/blob/102d26b9776287516bc34c0e73da4d3fa11f3e21/LinkedList/algorithms/Add_Two_Numbers.cpp#L27)<br/>
+-  [Check_If_Palindrome](https://github.com/AndreyTokmakov/Algorithms/blob/102d26b9776287516bc34c0e73da4d3fa11f3e21/LinkedList/algorithms/Check_If_Palindrome.cpp#L20)<br/>
+-  [Check_List_Is_Cycled](https://github.com/AndreyTokmakov/Algorithms/blob/102d26b9776287516bc34c0e73da4d3fa11f3e21/LinkedList/algorithms/Check_List_Is_Cycled.cpp#L20)<br/>
+-  [Delete_Duplicates](https://github.com/AndreyTokmakov/Algorithms/blob/102d26b9776287516bc34c0e73da4d3fa11f3e21/LinkedList/algorithms/Delete_Duplicates.cpp#L20)<br/>
+-  [Delete_Duplicates_SortedList](https://github.com/AndreyTokmakov/Algorithms/blob/102d26b9776287516bc34c0e73da4d3fa11f3e21/LinkedList/algorithms/Delete_Duplicates_SortedList.cpp#L18)<br/>
+-  [Delete_K_Element_From_the_End](https://github.com/AndreyTokmakov/Algorithms/blob/102d26b9776287516bc34c0e73da4d3fa11f3e21/LinkedList/algorithms/Delete_K_Element_From_the_End.cpp#L18)<br/>
+-  [Delete_Node_By_Position](https://github.com/AndreyTokmakov/Algorithms/blob/102d26b9776287516bc34c0e73da4d3fa11f3e21/LinkedList/algorithms/Delete_Node_By_Position.cpp#L19C25-L19C26)<br/>
+-  [Delete_Nodes_By_Value](https://github.com/AndreyTokmakov/Algorithms/blob/102d26b9776287516bc34c0e73da4d3fa11f3e21/LinkedList/algorithms/Delete_Nodes_By_Value.cpp#L18)<br/>
+-  [Find_Middle_Element](https://github.com/AndreyTokmakov/Algorithms/blob/102d26b9776287516bc34c0e73da4d3fa11f3e21/LinkedList/algorithms/Find_Middle_Element.cpp#L17)<br/>
+-  [Find_Nth_Element_FromTheEnd](https://github.com/AndreyTokmakov/Algorithms/blob/102d26b9776287516bc34c0e73da4d3fa11f3e21/LinkedList/algorithms/Find_Nth_Element_FromTheEnd.cpp#L20)<br/>
+-  [Get_Length](https://github.com/AndreyTokmakov/Algorithms/blob/102d26b9776287516bc34c0e73da4d3fa11f3e21/LinkedList/algorithms/Get_Length.cpp#L18)<br/>
+-  [Insert_Into_Sorted_List](https://github.com/AndreyTokmakov/Algorithms/blob/102d26b9776287516bc34c0e73da4d3fa11f3e21/LinkedList/algorithms/Insert_Into_Sorted_List.cpp#L18)<br/>
+-  [Merge_Two_Lists](https://github.com/AndreyTokmakov/Algorithms/blob/102d26b9776287516bc34c0e73da4d3fa11f3e21/LinkedList/algorithms/Merge_Two_Lists.cpp#L19)<br/>
+-  [Move_All_Occurrences_To_The_End](https://github.com/AndreyTokmakov/Algorithms/blob/102d26b9776287516bc34c0e73da4d3fa11f3e21/LinkedList/algorithms/Move_All_Occurrences_To_The_End.cpp#L19)<br/>
+-  [Remove_N_Node_From_End](https://github.com/AndreyTokmakov/Algorithms/blob/102d26b9776287516bc34c0e73da4d3fa11f3e21/LinkedList/algorithms/Remove_N_Node_From_End.cpp#L18)<br/>
+-  [Reverse_List](https://github.com/AndreyTokmakov/Algorithms/blob/102d26b9776287516bc34c0e73da4d3fa11f3e21/LinkedList/algorithms/Reverse_List.cpp#L18)<br/>
