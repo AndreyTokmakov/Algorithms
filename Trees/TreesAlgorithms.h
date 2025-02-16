@@ -20,6 +20,9 @@ namespace TreesAlgorithms
     void Find_Min_and_Max_Element_Recursive();
     void Find_Min_and_Max_Element_NonRecursive();
     void Find_N_th_Smallest_Element();
+    void Sorted_Array_To_Binary_Tree();
+    void Sorted_Array_To_Binary_Tree_NonRecursive();
+    void Find_Lowest_Common_Ancestor();
 }
 
 #endif //TREES_ALGORITHMS_H

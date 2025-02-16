@@ -14,6 +14,9 @@ add_executable(${PROJECT_NAME}
 		algorithms/Find_Min_and_Max_Element_Recursive.cpp
 		algorithms/Find_Min_and_Max_Element_NonRecursive.cpp
 		algorithms/Find_N_th_Smallest_Element.cpp
+		algorithms/Sorted_Array_To_Binary_Tree.cpp
+		algorithms/Sorted_Array_To_Binary_Tree_NonRecursive.cpp
+		algorithms/Find_Lowest_Common_Ancestor.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")

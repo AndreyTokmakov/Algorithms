@@ -18,7 +18,10 @@ int main([[maybe_unused]] int argc,
 	// TreesAlgorithms::Largest_Element_In_Each_Level();
 	// TreesAlgorithms::Find_Min_and_Max_Element_Recursive();
 	// TreesAlgorithms::Find_Min_and_Max_Element_NonRecursive();
-	TreesAlgorithms::Find_N_th_Smallest_Element();
+	// TreesAlgorithms::Find_N_th_Smallest_Element();
+	// TreesAlgorithms::Sorted_Array_To_Binary_Tree();
+	// TreesAlgorithms::Sorted_Array_To_Binary_Tree_NonRecursive();
+	TreesAlgorithms::Find_Lowest_Common_Ancestor();
 
 
 	return EXIT_SUCCESS;
