@@ -273,40 +273,6 @@ namespace Numeric
 
     //---------------------------------------------------------------------------//
 
-    int test1(int a, int b) {
-        int count = 0;
-        while (a >= b) {
-            a -= b;
-            count++;
-        }
-        return count;
-    }
-
-    int test2(int a, int b) {
-        int count = 0, result = b;
-        while (a > result) {
-            result += b;
-            count++;
-        }
-        return count;
-    }
-
-    void Devide_WithDevisionOperator() {
-        {
-            int a = 15, b = 2;
-            std::cout << a << "/" << b << " = " << test1(a, b) << std::endl;
-            std::cout << a << "/" << b << " = " << test2(a, b) << std::endl;
-        }
-        {
-            int a = 1511, b = 22;
-            std::cout << a << "/" << b << " = " << test1(a, b) << std::endl;
-            std::cout << a << "/" << b << " = " << test2(a, b) << std::endl;
-        }
-    }
-
-    //---------------------------------------------------------------------------//
-
-
     // Print characters along the collection starting from the 0 - end with the specified offset: NULL should be ignored
     //  [1, 2, null, null, 3, 4, 5] -> [3, 4, 4, 4, 5, null, null]  with Offet = 2
     //  [0, 1, 2, null, null, 3, 4, 5] -> [2, 3, 4, 4, 4, 5, null, null] with Offet = 2
@@ -594,35 +560,8 @@ namespace Numeric
         }
     }
 
-    //---------------------------------------------------------------------------//
-
-    int __max_sum_subarray(const std::vector<int> &Numeric) {
-        int max_before = Numeric.front(), max = max_before;
-        for (size_t index = 1; index < Numeric.size(); index++) {
-            max_before = std::max(max_before + Numeric[index], Numeric[index]);
-            max = std::max(max, max_before);
-        }
-        return max;
-    }
-
-    void MaximumSumSubarray_Kadane() {
-        {
-            std::vector<int> Numeric = {1, -3, 2, 1, -1};
-            int X = __max_sum_subarray(Numeric);
-            assert(3 == X);
-            std::cout << "Max sum subarray for [" << Numeric << "] is = " << X << std::endl;
-        }
-        {
-            std::vector<int> Numeric = {-1, 4, -2, 5, -5, 2, -20, 6};
-            int X = __max_sum_subarray(Numeric);
-            assert(7 == X);
-            std::cout << "Max sum subarray for [" << Numeric << "] is = " << X << std::endl;
-        }
-    }
 
     //---------------------------------------------------------------------------//
-
-//---------------------------------------------------------------------------//
     void printArray(const std::vector<int> &vect, size_t start, size_t end) {
         std::cout << "[ ";
         while (end >= start)

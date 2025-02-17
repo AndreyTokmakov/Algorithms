@@ -3,7 +3,7 @@
 =======================================================================================================================================
 
 /**============================================================================
-Name        : Is_Power_Of2.cpp
+Name        : Sort_Array_By_Parity.cpp
 Created on  : 16.01.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
@@ -22,7 +22,7 @@ namespace
 
 }
 
-void ArraysAlgorithms::Is_Power_Of2()
+void ArraysAlgorithms::Sort_Array_By_Parity()
 {
 
 }
@@ -39,13 +39,9 @@ FinabochiNumeric
 							Algoritms: Add to README
 =======================================================================================================================================
 
-594. Longest Harmonious Subsequence
-Is_Prime
-Coins_Change_Problem
-Get_Number_Of_Digit
-Greatest_Common_Divisor
-Least_Common_Multiple
-__isPowerOf2
+Maximum_Sum_SubArray_Algorithms_Kadane
+Divide_With_Division_Operator
+Sort_Array_By_Parity
 
 
 Trees

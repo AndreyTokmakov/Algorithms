@@ -42,7 +42,10 @@ int main([[maybe_unused]] int argc,
     // ArraysAlgorithms::Least_Common_Multiple();
     // ArraysAlgorithms::Is_Power_Of2();
     // ArraysAlgorithms::Find_The_Majority_Element();
-    ArraysAlgorithms::Can_Jump();
+    // ArraysAlgorithms::Can_Jump();
+    // ArraysAlgorithms::Divide_With_Division_Operator();
+    ArraysAlgorithms::Maximum_Sum_SubArray_Algorithms_Kadane();
+    ArraysAlgorithms::Sort_Array_By_Parity();
 
 	return EXIT_SUCCESS;
 }
