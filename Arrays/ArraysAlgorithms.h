@@ -42,6 +42,8 @@ namespace ArraysAlgorithms
     void Greatest_Common_Divisor();
     void Least_Common_Multiple();
     void Is_Power_Of2();
+    void Find_The_Majority_Element();
+    void Can_Jump();
 }
 
 #endif //ARRAYS_ALGORITHMS_H

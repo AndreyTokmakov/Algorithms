@@ -40,7 +40,9 @@ int main([[maybe_unused]] int argc,
     // ArraysAlgorithms::Get_Number_Of_Digit();
     // ArraysAlgorithms::Greatest_Common_Divisor();
     // ArraysAlgorithms::Least_Common_Multiple();
-    ArraysAlgorithms::Is_Power_Of2();
+    // ArraysAlgorithms::Is_Power_Of2();
+    // ArraysAlgorithms::Find_The_Majority_Element();
+    ArraysAlgorithms::Can_Jump();
 
 	return EXIT_SUCCESS;
 }

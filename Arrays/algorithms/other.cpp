@@ -2603,31 +2603,6 @@ namespace Numeric
 
 namespace Numeric
 {
-    bool canJump(const std::vector<int>& nums) {
-        size_t step = 0;
-        for (size_t idx = 0; idx < nums.size(); ++idx) {
-            // std::cout << "idx: " << idx << ", step: " << step << std::endl;
-            if (step >= idx) {
-                step = std::max(idx + nums[idx], step);
-            } else
-                break;
-        }
-        return step > nums.size();
-    };
-
-
-    // Given an array of non-negative integers, you are initially positioned at the first index of the array.
-    // Each element in the array represents your maximum jump length at that position.
-    // Determine if you are able to reach the last index.
-    // Input: [2,3,1,1,4] --> True, [3,2,1,0,4] --> False
-    void CanJump() {
-        // std::vector<int> vect {2,1,2,0,4};
-        std::vector<int> vect {3,0,3,0,4};
-
-        std::cout << std::boolalpha << canJump(vect) << std::endl;
-    }
-
-    //---------------------------------------------------------------------------------------
 
     // [1,2,3,1]   -> 1 + 3 = 4
     // [2,7,9,3,1] -> 2 + 9 + 1 = 12
@@ -2791,49 +2766,6 @@ namespace Numeric
         for (int i: result)
             std::cout << i <<  ' ';
         std::cout << std::endl;
-    }
-}
-
-namespace Numeric
-{
-    /** Problem:
-    Given an array of integers as std::vector<int>, return
-    the majority element (guaranteed to be present).
-
-    A majority element has more than size/2 number of instances in the array.
-
-    There is a solution that runs in O(n) time and O(1) space.
-    **/
-
-    int majority_element(const std::vector<int>& nums)
-    {
-        int major = 0;
-        for (size_t count = 0; auto v : nums) {
-            if (0 == count) {
-                major = v;
-                count = 1;
-            } else if (v == major) {
-                ++count;
-            } else {
-                --count;
-            }
-        }
-        return major;
-    }
-
-    void Find_The_Majority_Element()
-    {
-        for (const std::vector<int>& v: std::vector<std::vector<int>> {
-                // {0},
-                // {1,1,1,2},
-                {2,2,1,1,1},
-                // {1,0,1,2,1,3,1,5},
-                // {1,2,3,4,5,6,6,6,6,6,6,6},
-        })
-        {
-            const int major = majority_element(v);
-            std::cout << "[ " << v << "] ==> " << major << std::endl;
-        }
     }
 }
 

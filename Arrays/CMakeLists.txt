@@ -36,6 +36,8 @@ add_executable(${PROJECT_NAME}
 		algorithms/Greatest_Common_Divisor.cpp
 		algorithms/Least_Common_Multiple.cpp
 		algorithms/Is_Power_Of2.cpp
+		algorithms/Find_The_Majority_Element.cpp
+		algorithms/Can_Jump.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")
