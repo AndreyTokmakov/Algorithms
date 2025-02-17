@@ -76,6 +76,13 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [Remove_Element](https://github.com/AndreyTokmakov/Algorithms/blob/6df0032f61d3cca0c0c9ed8eb4aa1a6ca2747eb8/Arrays/algorithms/Remove_Element.cpp#L19)<br/>
 -  [Contains_Duplicate](https://github.com/AndreyTokmakov/Algorithms/blob/6df0032f61d3cca0c0c9ed8eb4aa1a6ca2747eb8/Arrays/algorithms/Contains_Duplicate.cpp#L18)<br/>
 -  [Find_Smallest_Missing_Positive_Number](https://github.com/AndreyTokmakov/Algorithms/blob/6df0032f61d3cca0c0c9ed8eb4aa1a6ca2747eb8/Arrays/algorithms/Find_Smallest_Missing_Positive_Number.cpp#L17)<br/>
+-  [Longest_Harmonious_Subsequence](https://github.com/AndreyTokmakov/Algorithms/blob/8f8f2ff22cf57719ab5af2c65ccdcb2ab090979e/Arrays/algorithms/Longest_Harmonious_Subsequence.cpp#L25)<br/>
+-  [Is_Prime](https://github.com/AndreyTokmakov/Algorithms/blob/8f8f2ff22cf57719ab5af2c65ccdcb2ab090979e/Arrays/algorithms/Is_Prime.cpp#L18)<br/>
+-  [Coins_Change_Problem](https://github.com/AndreyTokmakov/Algorithms/blob/8f8f2ff22cf57719ab5af2c65ccdcb2ab090979e/Arrays/algorithms/Coins_Change_Problem.cpp#L19)<br/>
+-  [Get_Number_Of_Digit](https://github.com/AndreyTokmakov/Algorithms/blob/8f8f2ff22cf57719ab5af2c65ccdcb2ab090979e/Arrays/algorithms/Get_Number_Of_Digit.cpp#L18)<br/>
+-  [Greatest_Common_Divisor](https://github.com/AndreyTokmakov/Algorithms/blob/8f8f2ff22cf57719ab5af2c65ccdcb2ab090979e/Arrays/algorithms/Greatest_Common_Divisor.cpp#L27)<br/>
+-  [Least_Common_Multiple](https://github.com/AndreyTokmakov/Algorithms/blob/8f8f2ff22cf57719ab5af2c65ccdcb2ab090979e/Arrays/algorithms/Least_Common_Multiple.cpp#L18)<br/>
+-  [Is_Power_Of2](https://github.com/AndreyTokmakov/Algorithms/blob/8f8f2ff22cf57719ab5af2c65ccdcb2ab090979e/Arrays/algorithms/Is_Power_Of2.cpp#L18)<br/>
 
 <a id="linked_list"></a>
 ## Linked List
@@ -106,3 +113,6 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [Largest_Element_In_Each_Level](https://github.com/AndreyTokmakov/Algorithms/blob/6df0032f61d3cca0c0c9ed8eb4aa1a6ca2747eb8/Trees/algorithms/Largest_Element_In_Each_Level.cpp#L18)<br/>
 -  [Sorted_Array_To_Binary_Tree](https://github.com/AndreyTokmakov/Algorithms/blob/6df0032f61d3cca0c0c9ed8eb4aa1a6ca2747eb8/Trees/algorithms/Sorted_Array_To_Binary_Tree.cpp#L18)<br/>
 -  [Sorted_Array_To_Binary_Tree_NonRecursive](https://github.com/AndreyTokmakov/Algorithms/blob/6df0032f61d3cca0c0c9ed8eb4aa1a6ca2747eb8/Trees/algorithms/Sorted_Array_To_Binary_Tree_NonRecursive.cpp#L17)<br/>
+-  [Find_Lowest_Common_Ancestor](https://github.com/AndreyTokmakov/Algorithms/blob/8f8f2ff22cf57719ab5af2c65ccdcb2ab090979e/Trees/algorithms/Find_Lowest_Common_Ancestor.cpp#L17)<br/>
+-  [Count_Elements](https://github.com/AndreyTokmakov/Algorithms/blob/8f8f2ff22cf57719ab5af2c65ccdcb2ab090979e/Trees/algorithms/Count_Elements.cpp#L22)<br/>
+-  [Get_Tree_Depth](https://github.com/AndreyTokmakov/Algorithms/blob/8f8f2ff22cf57719ab5af2c65ccdcb2ab090979e/Trees/algorithms/Get_Tree_Depth.cpp#L23)<br/>
