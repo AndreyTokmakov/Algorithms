@@ -33,7 +33,14 @@ int main([[maybe_unused]] int argc,
     // ArraysAlgorithms::Remove_Duplicates();
     // ArraysAlgorithms::Remove_Element();
     // ArraysAlgorithms::Contains_Duplicate();
-    ArraysAlgorithms::Find_Smallest_Missing_Positive_Number();
+    // ArraysAlgorithms::Find_Smallest_Missing_Positive_Number();
+    // ArraysAlgorithms::Longest_Harmonious_Subsequence();
+    // ArraysAlgorithms::Is_Prime();
+    // ArraysAlgorithms::Coins_Change_Problem();
+    // ArraysAlgorithms::Get_Number_Of_Digit();
+    // ArraysAlgorithms::Greatest_Common_Divisor();
+    // ArraysAlgorithms::Least_Common_Multiple();
+    ArraysAlgorithms::Is_Power_Of2();
 
 	return EXIT_SUCCESS;
 }

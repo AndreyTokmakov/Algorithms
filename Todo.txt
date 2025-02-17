@@ -3,7 +3,7 @@
 =======================================================================================================================================
 
 /**============================================================================
-Name        : Get_Tree_Depth.cpp
+Name        : Is_Power_Of2.cpp
 Created on  : 16.01.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
@@ -12,17 +12,17 @@ Description :
 ============================================================================**/
 
 #include "../common.h"
-#include "../TreesAlgorithms.h"
+#include "../ArraysAlgorithms.h"
 
 
 namespace
 {
-    using namespace TreesAlgorithms;
+    using namespace ArraysAlgorithms;
 
 
 }
 
-void TreesAlgorithms::Get_Tree_Depth()
+void ArraysAlgorithms::Is_Power_Of2()
 {
 
 }
@@ -32,10 +32,21 @@ void TreesAlgorithms::Get_Tree_Depth()
 							Algoritms: Today | 3 НОВЫХ алгоритма ежедневно
 =======================================================================================================================================
 
+FinabochiNumeric
+
 
 =======================================================================================================================================
 							Algoritms: Add to README
 =======================================================================================================================================
+
+594. Longest Harmonious Subsequence
+Is_Prime
+Coins_Change_Problem
+Get_Number_Of_Digit
+Greatest_Common_Divisor
+Least_Common_Multiple
+__isPowerOf2
+
 
 Trees
 	-	Count_Elements
@@ -136,6 +147,9 @@ Trees:
 				Google Algoritms | /home/andtokm/Documents/Books/Algorithms/Google Algoritms.pdf
 =======================================================================================================================================
 
+[+] 	594. Longest Harmonious Subsequence
+
+
 Backtracking
 	47. Permutations II
 	52. N-Queens II
@@ -160,7 +174,6 @@ Array
 	509. Fibonacci Number
 	561. Array Partition I
 	566. Reshape the Matrix
-	594. Longest Harmonious Subsequence
 	624. Maximum Distance in Arrays
 	653. Two Sum IV - Input is a BST
 	654. Maximum Binary Tree
@@ -243,8 +256,8 @@ Tree
 Math
 +	2. Add Two Numbers --> Linled List
 +	7. Reverse Integer  
-	9. Palindrome Number
-	136. Single Number
++	9. Palindrome Number
++	136. Single Number
 	172. Factorial Trailing Zeroes
 	202. Happy Number
 	217. Contains Duplicate

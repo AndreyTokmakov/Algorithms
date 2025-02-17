@@ -30,7 +30,7 @@ namespace
 void ArraysAlgorithms::Is_Palindrome()
 {
     for (const int v: std::vector<int>{
-            121, 234
+            121, 234, 123454321
     }) {
         std::cout << "Is (" << v << ") palindrome: " << std::boolalpha << is_palindrome(v) << std::endl;
     }

@@ -29,6 +29,13 @@ add_executable(${PROJECT_NAME}
 		algorithms/Remove_Element.cpp
 		algorithms/Contains_Duplicate.cpp
 		algorithms/Find_Smallest_Missing_Positive_Number.cpp
+		algorithms/Longest_Harmonious_Subsequence.cpp
+		algorithms/Is_Prime.cpp
+		algorithms/Coins_Change_Problem.cpp
+		algorithms/Get_Number_Of_Digit.cpp
+		algorithms/Greatest_Common_Divisor.cpp
+		algorithms/Least_Common_Multiple.cpp
+		algorithms/Is_Power_Of2.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")

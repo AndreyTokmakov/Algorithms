@@ -34,86 +34,6 @@ namespace
 
 namespace Numeric
 {
-    bool __isPowerOf2(int num) {
-        return num && !(num & (num - 1));
-    }
-
-    void isPowerOf2() {
-        for (const int32_t value: {8, 64, 61}) {
-            std::cout << value << " -> " << std::boolalpha << __isPowerOf2(value) << std::endl;
-        }
-    }
-}
-
-
-
-namespace Numeric
-{
-    int gsd_recur_1(int a, int b) {
-        return 0 == b ? a : gsd_recur_1(b, a % b);
-    }
-
-    template<typename Type>
-    std::enable_if_t<std::is_integral_v<Type>, Type> gsd_recur_2(Type a, Type b) {
-        return 0 == b ? a : gsd_recur_2(b, a % b);
-    }
-
-    int gsd_loop_1(int a, int b) {
-        while (b != 0) {
-            a = a % b;
-            std::swap(a, b);
-        }
-        return a;
-    }
-
-    int gsd_loop_2(int a, int b) {
-        while (true) {
-            if (a == 0)
-                return b;
-            b %= a;
-            if (b == 0)
-                return a;
-            a %= b;
-        }
-    }
-
-    void GreatestCommonDivisor()
-    {
-        for (const auto& [values, expected]: std::vector<std::pair<IntPair, int>>{
-                {{8, 3}, 1},
-                {{27, 18}, 9},
-                {{128, 40}, 8},
-        }) {
-            std::cout
-                    << gsd_recur_1(values.first, values.second) << " | "
-                    << gsd_recur_2(values.first, values.second) << " | "
-                    << gsd_loop_1(values.first, values.second) << " | "
-                    << gsd_loop_2(values.first, values.second) << " | "
-                    << " Expected: " << expected << std::endl;
-        }
-    }
-}
-
-namespace Numeric
-{
-    int __gcd__(int a, int b) {
-        while (b != 0) {
-            a = a % b;
-            std::swap(a, b);
-        }
-        return a;
-    }
-
-    int __lcm__(int a, int b) {
-        int gcd = __gcd__(a, b);
-        return gcd ? (a * b / gcd) : 0;
-    }
-
-    void LeastCommonMultiple() {
-
-        int a = 128, b = 40;
-        std::cout << __lcm__(a, b) << std::endl;
-    }
 
     //---------------------------------------------------------------------------//
 
@@ -327,27 +247,6 @@ namespace Numeric
             _find_finabochi_subset(v);
             _find_finabochi_subset_2(v);
         }
-    }
-
-    //---------------------------------------------------------------------------//
-
-    int _get_num_of_digits(int val) {
-        return val > 10 ? 1 + _get_num_of_digits(val / 10) : 1;
-    }
-
-    int _get_num_of_digits2(int val) {
-        int digits{1};
-        while (val > 9) {
-            val = val / 10;
-            ++digits;
-        }
-        return digits;
-    }
-
-    void GetNumberOfDigit() {
-        int val = 123432323;
-        std::cout << val << " = " << _get_num_of_digits(val) << std::endl;
-        std::cout << val << " = " << _get_num_of_digits2(val) << std::endl;
     }
 }
 
@@ -760,75 +659,6 @@ namespace Numeric
 
     void GetAllSubArrays_NonSequenced() {
         printAllSubArrays_NonSequenced({1, 2, 3, 4});
-    }
-
-    //---------------------------------------------------------------------------//
-
-    bool _check_is_prime_1(unsigned int value) {
-        if (1 == value || 2 == value)
-            return true;
-        else if (0 == value % 2 || 0 == value % 3)
-            return false;
-
-        for (unsigned int i = 5; i <= value / 2; i += 2) {
-            std::cout << " i = " << i << std::endl;
-            if (0 == value % i)
-                return false;
-        }
-        return true;
-    }
-
-    bool _check_is_prime_2(int value) {
-        if (1 == value || 2 == value)
-            return true;
-        else if (0 == value % 2 || 0 == value % 3)
-            return false;
-
-        for (int i = 5; (i * i) <= value; i += 2) {
-            std::cout << " i = " << i << std::endl;
-            if (0 == value % i)
-                return false;
-        }
-        return true;
-    }
-
-    void CheckIsPrime() {
-        /*
-        for (int i : {11, 15}) {
-            std::cout << "is " << i << " prime: " << std::boolalpha
-                      << _check_is_prime_1(11) << ", " << _check_is_prime_2(11) << std::endl;
-        }
-        */
-
-        std::cout << std::boolalpha << _check_is_prime_1(127) << std::endl;
-        std::cout << std::boolalpha << _check_is_prime_2(127) << std::endl;
-    }
-
-    //---------------------------------------------------------------------------//
-
-    bool _coins_change_problem(std::vector<int> coins, int target) {
-        if (coins.empty())
-            return false;
-
-        if (const auto sum = std::accumulate(coins.begin(), coins.end(), 0); sum == target) {
-            std::cout << sum << ": " << coins << std::endl;
-            return true;
-        }
-        for (size_t i = 0; i < coins.size(); ++i) {
-            std::vector<int> tmp(coins);
-            tmp.erase(tmp.begin() + i);
-            if (true == _coins_change_problem(tmp, target))
-                return true;
-        }
-        return false;
-    }
-
-    void CoinsChangeProblem() {
-        std::vector<int> coins{1, 1, 1, 44, 1, 1, 36, 1, 1};
-        constexpr int target = 82;
-
-        bool result = _coins_change_problem(coins, target);
-        std::cout << std::boolalpha << result << std::endl;
     }
 
     //---------------------------------------------------------------------------//

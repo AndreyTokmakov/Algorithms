@@ -35,6 +35,13 @@ namespace ArraysAlgorithms
     void Remove_Element();
     void Contains_Duplicate();
     void Find_Smallest_Missing_Positive_Number();
+    void Longest_Harmonious_Subsequence();
+    void Is_Prime();
+    void Coins_Change_Problem();
+    void Get_Number_Of_Digit();
+    void Greatest_Common_Divisor();
+    void Least_Common_Multiple();
+    void Is_Power_Of2();
 }
 
 #endif //ARRAYS_ALGORITHMS_H
