@@ -1,5 +1,5 @@
 /**============================================================================
-Name        : Divide_With_Division_Operator.cpp
+Name        : Divide_Without_Division_Operator.cpp
 Created on  : 16.01.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
@@ -36,7 +36,7 @@ namespace
     }
 }
 
-void ArraysAlgorithms::Divide_With_Division_Operator()
+void ArraysAlgorithms::Divide_Without_Division_Operator()
 {
     {
         int a = 15, b = 2;

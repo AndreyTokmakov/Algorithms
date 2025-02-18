@@ -44,7 +44,7 @@ namespace ArraysAlgorithms
     void Is_Power_Of2();
     void Find_The_Majority_Element();
     void Can_Jump();
-    void Divide_With_Division_Operator();
+    void Divide_Without_Division_Operator();
     void Maximum_Sum_SubArray_Algorithms_Kadane();
     void Sort_Array_By_Parity();
     void Contains_Nearby_Duplicates();

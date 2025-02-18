@@ -38,7 +38,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Is_Power_Of2.cpp
 		algorithms/Find_The_Majority_Element.cpp
 		algorithms/Can_Jump.cpp
-		algorithms/Divide_With_Division_Operator.cpp
+		algorithms/Divide_Without_Division_Operator.cpp
 		algorithms/Maximum_Sum_SubArray_Algorithms_Kadane.cpp
 		algorithms/Sort_Array_By_Parity.cpp
 		algorithms/Contains_Nearby_Duplicates.cpp

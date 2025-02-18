@@ -56,17 +56,7 @@ FinabochiNumeric
 =======================================================================================================================================
 
 Arrays:
-	-	Maximum_Sum_SubArray_Algorithms_Kadane
-	-	Divide_With_Division_Operator
-	-	Sort_Array_By_Parity
-	-	Contains_Nearby_Duplicates
-
-Trees
-	-	Count_Elements
-	-	Get_Tree_Depth
-
-Trees:
--  [ffffffffffff](ggggggggggggggggggggg)<br/>
+-  [ddddd](ddddddddddd)<br/>
 
 =======================================================================================================================================
 							Algoritms: Top Google Questions – Part 1
@@ -90,16 +80,18 @@ Trees:
 [+] 219. Contains Duplicate II
 
 
-
-
 34.  Find First and Last Position of Element in Sorted Array
 5.   Longest Palindromic Substring
 79.  Word Search
+8.   String to Integer (atoi)
+66.  Plus One
+136. Single Number
+137. Single Number II
+146. LRU Cache
 
 
 
 6. ZigZag Conversion
-8. String to Integer (atoi)
 11. Container With Most Water
 14. Longest Common Prefix
 24. Swap Nodes in Pairs
@@ -113,7 +105,6 @@ Trees:
 54. Spiral Matrix
 59. Spiral Matrix II
 60. Permutation Sequence
-66. Plus One
 67. Add Binary
 69. Sqrt(x)
 70. Climbing Stairs
@@ -139,11 +130,9 @@ Trees:
 121. Best Time to Buy and Sell Stock
 129. Sum Root to Leaf Numbers
 130. Surrounded Regions
-136. Single Number
-137. Single Number II
 144. Binary Tree Preorder Traversal
 145. Binary Tree Postorder Traversal
-146. LRU Cache
+
 153. Find Minimum in Rotated Sorted Array
 162. Find Peak Element
 163. Missing Ranges
