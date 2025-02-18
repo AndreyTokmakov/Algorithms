@@ -10,7 +10,7 @@ Demo Algorithms
 7. [Linked List](#linked_list)
 8. [Trees](#trees)
 9. [Graphs](#graphs)
-
+10. [Queues](#queues)
 
 <a name="Overview"></a>
 ## Overview
@@ -125,7 +125,6 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [Count_Elements](https://github.com/AndreyTokmakov/Algorithms/blob/8f8f2ff22cf57719ab5af2c65ccdcb2ab090979e/Trees/algorithms/Count_Elements.cpp#L22)<br/>
 -  [Get_Tree_Depth](https://github.com/AndreyTokmakov/Algorithms/blob/8f8f2ff22cf57719ab5af2c65ccdcb2ab090979e/Trees/algorithms/Get_Tree_Depth.cpp#L23)<br/>
 
-
 <a id="graphs"></a>
 ## Graphs
 -  [Breadth First Search](https://github.com/AndreyTokmakov/Algorithms/blob/f8facd684676b94336d8a66e406479b0436a6ac4/Graphs/algorithms/BFS.cpp#L55)<br/>
@@ -133,3 +132,8 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [DFS_NonRecur](https://github.com/AndreyTokmakov/Algorithms/blob/f8facd684676b94336d8a66e406479b0436a6ac4/Graphs/algorithms/DFS_NonRecur.cpp#L83)<br/>
 -  [Find_Shortest_Path](https://github.com/AndreyTokmakov/Algorithms/blob/f8facd684676b94336d8a66e406479b0436a6ac4/Graphs/algorithms/Find_Shortest_Path.cpp#L63)<br/>
 -  [Detect_Cycle](https://github.com/AndreyTokmakov/Algorithms/blob/f8facd684676b94336d8a66e406479b0436a6ac4/Graphs/algorithms/Detect_Cycle.cpp#L52)<br/>
+
+<a id="queues"></a>
+## Queues
+-  [Queue_Using_Stacks](https://github.com/AndreyTokmakov/Algorithms/blob/8129a6762c48c3cb28b8b032b977c66ef1e5e141/Queues/algorithms/Queue_Using_Stacks.cpp#L19)<br/>
+-  [Queue_Using_Stacks_Recursive](https://github.com/AndreyTokmakov/Algorithms/blob/8129a6762c48c3cb28b8b032b977c66ef1e5e141/Queues/algorithms/Queue_Using_Stacks_Recursive.cpp#L18)<br/>
