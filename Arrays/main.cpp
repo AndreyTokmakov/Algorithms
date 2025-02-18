@@ -46,7 +46,8 @@ int main([[maybe_unused]] int argc,
     // ArraysAlgorithms::Can_Jump();
     // ArraysAlgorithms::Divide_With_Division_Operator();
     // ArraysAlgorithms::Maximum_Sum_SubArray_Algorithms_Kadane();
-    ArraysAlgorithms::Sort_Array_By_Parity();
+    // ArraysAlgorithms::Sort_Array_By_Parity();
+    ArraysAlgorithms::Contains_Nearby_Duplicates();
 
 	return EXIT_SUCCESS;
 }

@@ -47,6 +47,7 @@ namespace ArraysAlgorithms
     void Divide_With_Division_Operator();
     void Maximum_Sum_SubArray_Algorithms_Kadane();
     void Sort_Array_By_Parity();
+    void Contains_Nearby_Duplicates();
 }
 
 #endif //ARRAYS_ALGORITHMS_H

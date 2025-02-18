@@ -41,6 +41,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Divide_With_Division_Operator.cpp
 		algorithms/Maximum_Sum_SubArray_Algorithms_Kadane.cpp
 		algorithms/Sort_Array_By_Parity.cpp
+		algorithms/Contains_Nearby_Duplicates.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")
