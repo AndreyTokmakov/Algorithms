@@ -29,6 +29,10 @@ add_executable(${PROJECT_NAME}
 		algorithms/Calc_Parentheses_3_Bracket.cpp
 		algorithms/Longest_Substring_Without_Repeating_Characters.cpp
 		algorithms/Longest_Substring_Without_Repeating_Characters_2.cpp
+		algorithms/To_Lower_Case.cpp
+		algorithms/Robot_Return_To_Origin.cpp
+		algorithms/String_To_Integer.cpp
+		algorithms/String_To_Integer_2.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")

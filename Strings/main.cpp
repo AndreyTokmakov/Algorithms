@@ -31,10 +31,14 @@ int main([[maybe_unused]] int argc,
     // StringAlgorithms::Print_1_0_Instead_Wildcards();
     // StringAlgorithms::Find_First_Char_Encountered_Once();
     // StringAlgorithms::Check_If_Two_Strings_Are_Permutation();
-    StringAlgorithms::Are_Anagrams();
+    // StringAlgorithms::Are_Anagrams();
     // StringAlgorithms::Calc_Parentheses_3_Bracket();
     // StringAlgorithms::Longest_Substring_Without_Repeating_Characters();
     // StringAlgorithms::Longest_Substring_Without_Repeating_Characters_2();
+    // StringAlgorithms::To_Lower_Case();
+    // StringAlgorithms::Robot_Return_To_Origin();
+    // StringAlgorithms::String_To_Integer();
+    StringAlgorithms::String_To_Integer_2();
 
 
 

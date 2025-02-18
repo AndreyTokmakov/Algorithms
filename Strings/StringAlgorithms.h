@@ -35,6 +35,10 @@ namespace StringAlgorithms
     void Calc_Parentheses_3_Bracket();
     void Longest_Substring_Without_Repeating_Characters();
     void Longest_Substring_Without_Repeating_Characters_2();
+    void To_Lower_Case();
+    void Robot_Return_To_Origin();
+    void String_To_Integer();
+    void String_To_Integer_2();
 }
 
 #endif //STRING_ALGORITHMS_H

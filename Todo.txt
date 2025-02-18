@@ -3,7 +3,7 @@
 =======================================================================================================================================
 
 /**============================================================================
-Name        : Contains_Nearby_Duplicates.cpp
+Name        : String_To_Integer.cpp
 Created on  : 18.01.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
@@ -12,17 +12,17 @@ Description :
 ============================================================================**/
 
 #include "../common.h"
-#include "../ArraysAlgorithms.h"
+#include "../StringAlgorithms.h"
 
 
 namespace
 {
-    using namespace ArraysAlgorithms;
+    using namespace StringAlgorithms;
 
 
 }
 
-void ArraysAlgorithms::Contains_Nearby_Duplicates()
+void StringAlgorithms::String_To_Integer()
 {
 
 }
@@ -54,6 +54,13 @@ FinabochiNumeric
 =======================================================================================================================================
 							Algoritms: Add to README
 =======================================================================================================================================
+
+String:
+	To_Lower_Case
+	Robot_Return_To_Origin
+	String_To_Integer
+	String_To_Integer_2
+
 
 Arrays:
 -  [ddddd](ddddddddddd)<br/>
@@ -154,6 +161,10 @@ Arrays:
 =======================================================================================================================================
 
 [+] 	594. Longest Harmonious Subsequence
+[+] 	709. To Lower Case
+
+[-] 	657. Robot Return to Origin
+
 
 
 Backtracking
@@ -172,7 +183,7 @@ Backtracking
 	976. Largest Perimeter Triangle
 	1198. Find Smallest Common Element in All Rows
 Array
-	1. Two Sum
++   1. Two Sum
 	73. Set Matrix Zeroes
 	167. Two Sum II - Input array is sorted
 	170. Two Sum III - Data structure design
@@ -287,16 +298,14 @@ Math
 	1295. Find Numbers with Even Number of Digits
 	1323. Maximum 69 Number
 String
-	20. Valid Parentheses
+[+]	20. Valid Parentheses
 	58. Length of Last Word
 	71. Simplify Path
-	344. Reverse String
+[+]	344. Reverse String
 	383. Ransom Note
 	500. Keyboard Row
 	557. Reverse Words in a String III
 	599. Minimum Index Sum of Two Lists
-	657. Robot Return to Origin
-	709. To Lower Case
 	771. Jewels and Stones
 	796. Rotate String
 	804. Unique Morse Code Words
