@@ -39,6 +39,8 @@ namespace StringAlgorithms
     void Robot_Return_To_Origin();
     void String_To_Integer();
     void String_To_Integer_2();
+    void Single_Row_Keyboard();
+    void Destination_City();
 }
 
 #endif //STRING_ALGORITHMS_H

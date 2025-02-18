@@ -38,7 +38,9 @@ int main([[maybe_unused]] int argc,
     // StringAlgorithms::To_Lower_Case();
     // StringAlgorithms::Robot_Return_To_Origin();
     // StringAlgorithms::String_To_Integer();
-    StringAlgorithms::String_To_Integer_2();
+    // StringAlgorithms::String_To_Integer_2();
+    // StringAlgorithms::Single_Row_Keyboard();
+    StringAlgorithms::Destination_City();
 
 
 

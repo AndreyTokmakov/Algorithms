@@ -3,7 +3,7 @@
 =======================================================================================================================================
 
 /**============================================================================
-Name        : String_To_Integer.cpp
+Name        : Destination_City.cpp
 Created on  : 18.01.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
@@ -22,7 +22,7 @@ namespace
 
 }
 
-void StringAlgorithms::String_To_Integer()
+void StringAlgorithms::Destination_City()
 {
 
 }
@@ -60,6 +60,8 @@ String:
 	Robot_Return_To_Origin
 	String_To_Integer
 	String_To_Integer_2
+	Single_Row_Keyboard
+	Destination_City
 
 
 Arrays:
@@ -162,12 +164,12 @@ Arrays:
 
 [+] 	594. Longest Harmonious Subsequence
 [+] 	709. To Lower Case
-
-[-] 	657. Robot Return to Origin
+[+] 	657. Robot Return to Origin
 
 
 
 Backtracking
+
 	47. Permutations II
 	52. N-Queens II
 	90. Subsets II
@@ -182,7 +184,9 @@ Backtracking
 	892. Surface Area of 3D Shapes
 	976. Largest Perimeter Triangle
 	1198. Find Smallest Common Element in All Rows
+
 Array
+
 +   1. Two Sum
 	73. Set Matrix Zeroes
 	167. Two Sum II - Input array is sorted
@@ -243,7 +247,9 @@ Array
 	1475. Final Prices With a Special Discount in a Shop
 	1481. Least Number of Unique Integers after K Removals
 	1491. Average Salary Excluding the Minimum and Maximum Salary
+
 Tree
+
 	104. Maximum Depth of Binary Tree
 	111. Minimum Depth of Binary Tree
 	144. Binary Tree Preorder Traversal
@@ -270,14 +276,16 @@ Tree
 	1457. Pseudo-Palindromic Paths in a Binary Tree
 	1469. Find All The Lonely Nodes
 	1490. Clone N-ary Tree
+
 Math
+
 +	2. Add Two Numbers --> Linled List
 +	7. Reverse Integer  
 +	9. Palindrome Number
 +	136. Single Number
 	172. Factorial Trailing Zeroes
 	202. Happy Number
-	217. Contains Duplicate
++	217. Contains Duplicate
 	258. Add Digits
 	263. Ugly Number
 	476. Number Complement
@@ -297,13 +305,15 @@ Math
 	1281. Subtract the Product and Sum of Digits of an Integer
 	1295. Find Numbers with Even Number of Digits
 	1323. Maximum 69 Number
+
 String
+
 [+]	20. Valid Parentheses
 	58. Length of Last Word
 	71. Simplify Path
 [+]	344. Reverse String
 	383. Ransom Note
-	500. Keyboard Row
+[+]	500. Keyboard Row
 	557. Reverse Words in a String III
 	599. Minimum Index Sum of Two Lists
 	771. Jewels and Stones
@@ -322,7 +332,7 @@ String
 	1108. Defanging an IP Address
 	1119. Remove Vowels from a String
 	1160. Find Words That Can Be Formed by Characters
-	1165. Single-Row Keyboard
++	1165. Single-Row Keyboard
 	1180. Count Substrings with Only One Distinct Letter
 	1221. Split a String in Balanced Strings
 	1236. Web Crawler
@@ -332,29 +342,36 @@ String
 	1427. Perform String Shifts
 	1432. Max Difference You Can Get From Changing an Integer
 	1433. Check If a String Can Break Another String
-	1436. Destination City
++	1436. Destination City
 	1446. Consecutive Characters
 	1451. Rearrange Words in a Sentence
 	1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence
 	1456. Maximum Number of Vowels in a Substring of Given Length
 	1487. Making File Names Unique
+
 Depth-First Search & Breadth-First Search
+
 	200. Number of Islands695. Max Area of Island
 	886. Possible Bipartition
 	1222. Queens That Can Attack the King
 	1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree
+
 Linked List
-	21. Merge Two Sorted Lists
-	61. Rotate List
-	876. Middle of the Linked List
+
++	21.   Merge Two Sorted Lists
+	61.   Rotate List
+	876.  Middle of the Linked List
 	1290. Convert Binary Number in a Linked List to Integer
 	1474. Delete N Nodes After M Nodes of a Linked List
+
 Bit Manipulation
+
 	338. Counting Bits
 	342. Power of Four
 	461. Hamming Distance
 	476. Number Complement
 	1486. XOR Operation in an Array
+
 Design Data Structure
 	359. Logger Rate Limiter
 	901. Online Stock Span

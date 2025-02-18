@@ -33,6 +33,8 @@ add_executable(${PROJECT_NAME}
 		algorithms/Robot_Return_To_Origin.cpp
 		algorithms/String_To_Integer.cpp
 		algorithms/String_To_Integer_2.cpp
+		algorithms/Single_Row_Keyboard.cpp
+		algorithms/Destination_City.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")
