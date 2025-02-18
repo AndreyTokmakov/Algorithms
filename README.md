@@ -9,6 +9,8 @@ Demo Algorithms
 6. [Math and Arrays Algorithms](#math_arrays_algorithms)
 7. [Linked List](#linked_list)
 8. [Trees](#trees)
+9. [Graphs](#graphs)
+
 
 <a name="Overview"></a>
 ## Overview
@@ -122,3 +124,12 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [Find_Lowest_Common_Ancestor](https://github.com/AndreyTokmakov/Algorithms/blob/8f8f2ff22cf57719ab5af2c65ccdcb2ab090979e/Trees/algorithms/Find_Lowest_Common_Ancestor.cpp#L17)<br/>
 -  [Count_Elements](https://github.com/AndreyTokmakov/Algorithms/blob/8f8f2ff22cf57719ab5af2c65ccdcb2ab090979e/Trees/algorithms/Count_Elements.cpp#L22)<br/>
 -  [Get_Tree_Depth](https://github.com/AndreyTokmakov/Algorithms/blob/8f8f2ff22cf57719ab5af2c65ccdcb2ab090979e/Trees/algorithms/Get_Tree_Depth.cpp#L23)<br/>
+
+
+<a id="graphs"></a>
+## Graphs
+-  [Breadth First Search](https://github.com/AndreyTokmakov/Algorithms/blob/f8facd684676b94336d8a66e406479b0436a6ac4/Graphs/algorithms/BFS.cpp#L55)<br/>
+-  [Depth First Search](https://github.com/AndreyTokmakov/Algorithms/blob/f8facd684676b94336d8a66e406479b0436a6ac4/Graphs/algorithms/DFS.cpp#L105)<br/>
+-  [DFS_NonRecur](https://github.com/AndreyTokmakov/Algorithms/blob/f8facd684676b94336d8a66e406479b0436a6ac4/Graphs/algorithms/DFS_NonRecur.cpp#L83)<br/>
+-  [Find_Shortest_Path](https://github.com/AndreyTokmakov/Algorithms/blob/f8facd684676b94336d8a66e406479b0436a6ac4/Graphs/algorithms/Find_Shortest_Path.cpp#L63)<br/>
+-  [Detect_Cycle](https://github.com/AndreyTokmakov/Algorithms/blob/f8facd684676b94336d8a66e406479b0436a6ac4/Graphs/algorithms/Detect_Cycle.cpp#L52)<br/>
