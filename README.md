@@ -83,6 +83,12 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [Greatest_Common_Divisor](https://github.com/AndreyTokmakov/Algorithms/blob/8f8f2ff22cf57719ab5af2c65ccdcb2ab090979e/Arrays/algorithms/Greatest_Common_Divisor.cpp#L27)<br/>
 -  [Least_Common_Multiple](https://github.com/AndreyTokmakov/Algorithms/blob/8f8f2ff22cf57719ab5af2c65ccdcb2ab090979e/Arrays/algorithms/Least_Common_Multiple.cpp#L18)<br/>
 -  [Is_Power_Of2](https://github.com/AndreyTokmakov/Algorithms/blob/8f8f2ff22cf57719ab5af2c65ccdcb2ab090979e/Arrays/algorithms/Is_Power_Of2.cpp#L18)<br/>
+-  [Find_The_Majority_Element](https://github.com/AndreyTokmakov/Algorithms/blob/69603dd9203873533bd66491f1936d57da357bd3/Arrays/algorithms/Find_The_Majority_Element.cpp#L27)<br/>
+-  [Can_Jump](https://github.com/AndreyTokmakov/Algorithms/blob/69603dd9203873533bd66491f1936d57da357bd3/Arrays/algorithms/Can_Jump.cpp#L25)<br/>
+-  [Maximum_Sum_SubArray_Algorithms_Kadane](https://github.com/AndreyTokmakov/Algorithms/blob/69603dd9203873533bd66491f1936d57da357bd3/Arrays/algorithms/Maximum_Sum_SubArray_Algorithms_Kadane.cpp#L18)<br/>
+-  [Divide_With_Division_Operator](https://github.com/AndreyTokmakov/Algorithms/blob/69603dd9203873533bd66491f1936d57da357bd3/Arrays/algorithms/Divide_With_Division_Operator.cpp#L18)<br/>
+-  [Sort_Array_By_Parity](https://github.com/AndreyTokmakov/Algorithms/blob/69603dd9203873533bd66491f1936d57da357bd3/Arrays/algorithms/Sort_Array_By_Parity.cpp#L24)<br/>
+-  [Contains_Nearby_Duplicates](https://github.com/AndreyTokmakov/Algorithms/blob/9e71d8a6e1a3d994c913d668ba4462c45358e71b/Arrays/algorithms/Contains_Nearby_Duplicates.cpp#L27)<br/>
 
 <a id="linked_list"></a>
 ## Linked List
