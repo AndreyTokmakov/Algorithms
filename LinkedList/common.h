@@ -39,6 +39,14 @@ namespace LinkedListAlgorithms
         friend std::ostream& operator<<(std::ostream& stream, const Node<Ty>& node);
     };
 
+    template<typename T>
+    std::ostream &operator<<(std::ostream &stream, const std::vector<T> &list)
+    {
+        for (const auto &i: list)
+            stream << " " << i;
+        return stream;
+    }
+
     template<typename Ty>
     std::ostream& operator<<(std::ostream& stream, const Node<Ty>& node)
     {
@@ -79,6 +87,17 @@ namespace LinkedListAlgorithms
             node = node->next;
         }
         return root;
+    }
+
+    template<typename T>
+    std::vector<T> List2Vector(const Node<T>* node)
+    {
+        std::vector<T> result;
+        while (nullptr != node) {
+            result.push_back(node->data);
+            node = node->next;
+        }
+        return result;
     }
 }
 

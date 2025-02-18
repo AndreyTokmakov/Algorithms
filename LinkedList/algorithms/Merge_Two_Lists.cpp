@@ -119,6 +119,12 @@ namespace
     }
 }
 
+// TODO: Another approach could be:
+//  - push all Lists into one Vector
+//  - sort vector
+//  - create list from Sorted Vector
+
+
 void LinkedListAlgorithms::Merge_Two_Lists()
 {
     // Merge_Two_Lists_Recur();

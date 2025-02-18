@@ -30,8 +30,17 @@ namespace
 
 void LinkedListAlgorithms::Delete_Duplicates_SortedList()
 {
-    Node<int>* list = InitList({ 1,2,3,3,4,5,6,6,6,6,7,8 });
-    PrintList(list, "  -->  ");
-    remove_duplicates_sorted(list);
-    PrintList(list);
+    using TestData = std::vector< std::pair<std::vector<int>, std::vector<int>> >;
+    for (const auto& [values, expected]:  TestData{
+        { {1,2,3,3,4,5,6,6,6,6,7,8}, {1,2,3,4,5,6,7,8} }
+    })
+    {
+        Node<int>* list = InitList(values);
+        remove_duplicates_sorted(list);
+        const std::vector<int> actual = List2Vector(list);
+        if (expected != actual) {
+            std::cerr << std::boolalpha << expected << " != " << actual << std::endl;
+        }
+    }
+    std::cout << "OK: All tests passed\n";
 }

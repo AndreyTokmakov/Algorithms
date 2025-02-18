@@ -29,6 +29,23 @@ void ArraysAlgorithms::Sort_Array_By_Parity()
 
 
 =======================================================================================================================================
+							Tests
+=======================================================================================================================================
+
+    using TestData = std::vector< std::pair<int, bool> >;
+    for (const auto& [value, expected]:  TestData{
+        { 8 , true }, {64, true}, { 61, false}
+    })
+    {
+        const auto actual = is_power_of_two(value);
+        if (expected != actual) {
+            std::cerr << std::boolalpha << expected << " != " << actual << std::endl;
+        }
+    }
+    std::cout << "OK: All tests passed\n";
+
+
+=======================================================================================================================================
 							Algoritms: Today | 3 НОВЫХ алгоритма ежедневно
 =======================================================================================================================================
 
@@ -65,17 +82,27 @@ Trees:
 [+] 41. First Missing Positive
 [+] 230. Kth Smallest Element in a BST
 [+] 55. Jump Game
+[+] 242. Valid Anagram
+[+] 231. Power of Two
+[+] 169. Majority Element
+[+] 237. Delete Node in a Linked List
 
+83. Remove Duplicates from Sorted List
 
+34. Find First and Last Position of Element in Sorted Array
+23. Merge k Sorted Lists
 5. Longest Palindromic Substring
+219. Contains Duplicate II
+79. Word Search
+
+
+
 6. ZigZag Conversion
 8. String to Integer (atoi)
 11. Container With Most Water
 14. Longest Common Prefix
-23. Merge k Sorted Lists
 24. Swap Nodes in Pairs
 33. Search in Rotated Sorted Array
-34. Find First and Last Position of Element in Sorted Array
 35. Search Insert Position
 38. Count and Say
 46. Permutations
@@ -94,10 +121,7 @@ Trees:
 75. Sort Colors
 77. Combinations
 78. Subsets
-79. Word Search
-80. Remove Duplicates from Sorted Array II
 81. Search in Rotated Sorted Array II
-83. Remove Duplicates from Sorted List
 84. Largest Rectangle in Histogram
 88. Merge Sorted Array
 94. Binary Tree Inorder Traversal
@@ -122,7 +146,6 @@ Trees:
 153. Find Minimum in Rotated Sorted Array
 162. Find Peak Element
 163. Missing Ranges
-169. Majority Element
 173. Binary Search Tree Iterator
 174. Dungeon Game
 198. House Robber
@@ -130,13 +153,10 @@ Trees:
 205. Isomorphic Strings
 207. Course Schedule
 208. Implement Trie (Prefix Tree)
-219. Contains Duplicate II
 221. Maximal Square
 222. Count Complete Tree Nodes
 226. Invert Binary Tree
-231. Power of Two
-237. Delete Node in a Linked List
-242. Valid Anagram
+
 246. Strobogrammatic Number
 
 =======================================================================================================================================
