@@ -34,12 +34,18 @@ namespace
 
 void ArraysAlgorithms::Sort_Array_By_Parity()
 {
-    std::vector<int> nums {3,1,2,4};
-    sort_array_by_parity(nums);
-
-    std::cout << "Sorted array: " << nums << std::endl;
-
-
-    //int v = 5;
-   // std::cout << (v & 1) << std::endl;
+    using TestData = std::vector< std::pair<std::vector<int>, std::vector<int>> >;
+    for (const auto& [values, expected]:  TestData{
+        { {3,1,2,4}, {2,4,3,1} },
+        { {}, {} },
+        { {1,2,3,4,5,6,7,8,9}, {2,4,6,8,5,3,7,1,9} },
+    })
+    {
+        std::vector<int> actual (values);
+        sort_array_by_parity(actual);
+        if (expected != actual) {
+            std::cerr << std::boolalpha << expected << " != " << actual << std::endl;
+        }
+    }
+    std::cout << "OK: All tests passed\n";
 }

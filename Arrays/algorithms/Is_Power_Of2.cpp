@@ -15,14 +15,22 @@ namespace
 {
     using namespace ArraysAlgorithms;
 
-    bool is_power_of_two(int num) {
+    bool is_power_of_two(const int num) {
         return num && !(num & (num - 1));
     }
 }
 
 void ArraysAlgorithms::Is_Power_Of2()
 {
-    for (const int32_t value: {8, 64, 61}) {
-        std::cout << value << " -> " << std::boolalpha << is_power_of_two(value) << std::endl;
+    using TestData = std::vector< std::pair<int, bool> >;
+    for (const auto& [value, expected]:  TestData{
+        { 8 , true }, {64, true}, { 61, false}
+    })
+    {
+        const auto actual = is_power_of_two(value);
+        if (expected != actual) {
+            std::cerr << std::boolalpha << expected << " != " << actual << std::endl;
+        }
     }
+    std::cout << "OK: All tests passed\n";
 }
