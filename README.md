@@ -77,7 +77,7 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [Contains_Duplicate](https://github.com/AndreyTokmakov/Algorithms/blob/6df0032f61d3cca0c0c9ed8eb4aa1a6ca2747eb8/Arrays/algorithms/Contains_Duplicate.cpp#L18)<br/>
 -  [Find_Smallest_Missing_Positive_Number](https://github.com/AndreyTokmakov/Algorithms/blob/6df0032f61d3cca0c0c9ed8eb4aa1a6ca2747eb8/Arrays/algorithms/Find_Smallest_Missing_Positive_Number.cpp#L17)<br/>
 -  [Longest_Harmonious_Subsequence](https://github.com/AndreyTokmakov/Algorithms/blob/8f8f2ff22cf57719ab5af2c65ccdcb2ab090979e/Arrays/algorithms/Longest_Harmonious_Subsequence.cpp#L25)<br/>
--  [Is_Prime](https://github.com/AndreyTokmakov/Algorithms/blob/8f8f2ff22cf57719ab5af2c65ccdcb2ab090979e/Arrays/algorithms/Is_Prime.cpp#L18)<br/>Divide_Without_Division_Operator
+-  [Is_Prime](https://github.com/AndreyTokmakov/Algorithms/blob/8f8f2ff22cf57719ab5af2c65ccdcb2ab090979e/Arrays/algorithms/Is_Prime.cpp#L18)<br/>
 -  [Coins_Change_Problem](https://github.com/AndreyTokmakov/Algorithms/blob/8f8f2ff22cf57719ab5af2c65ccdcb2ab090979e/Arrays/algorithms/Coins_Change_Problem.cpp#L19)<br/>
 -  [Get_Number_Of_Digit](https://github.com/AndreyTokmakov/Algorithms/blob/8f8f2ff22cf57719ab5af2c65ccdcb2ab090979e/Arrays/algorithms/Get_Number_Of_Digit.cpp#L18)<br/>
 -  [Greatest_Common_Divisor](https://github.com/AndreyTokmakov/Algorithms/blob/8f8f2ff22cf57719ab5af2c65ccdcb2ab090979e/Arrays/algorithms/Greatest_Common_Divisor.cpp#L27)<br/>
@@ -86,9 +86,9 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [Find_The_Majority_Element](https://github.com/AndreyTokmakov/Algorithms/blob/69603dd9203873533bd66491f1936d57da357bd3/Arrays/algorithms/Find_The_Majority_Element.cpp#L27)<br/>
 -  [Can_Jump](https://github.com/AndreyTokmakov/Algorithms/blob/69603dd9203873533bd66491f1936d57da357bd3/Arrays/algorithms/Can_Jump.cpp#L25)<br/>
 -  [Maximum_Sum_SubArray_Algorithms_Kadane](https://github.com/AndreyTokmakov/Algorithms/blob/69603dd9203873533bd66491f1936d57da357bd3/Arrays/algorithms/Maximum_Sum_SubArray_Algorithms_Kadane.cpp#L18)<br/>
--  [Divide_Without_Division_Operator](https://github.com/AndreyTokmakov/Algorithms/blob/69603dd9203873533bd66491f1936d57da357bd3/Arrays/algorithms/Divide_Without_Division_Operator.cpp#L18)<br/>
 -  [Sort_Array_By_Parity](https://github.com/AndreyTokmakov/Algorithms/blob/69603dd9203873533bd66491f1936d57da357bd3/Arrays/algorithms/Sort_Array_By_Parity.cpp#L24)<br/>
 -  [Contains_Nearby_Duplicates](https://github.com/AndreyTokmakov/Algorithms/blob/9e71d8a6e1a3d994c913d668ba4462c45358e71b/Arrays/algorithms/Contains_Nearby_Duplicates.cpp#L27)<br/>
+-  [Divide_Without_Division_Operator](https://github.com/AndreyTokmakov/Algorithms/blob/d8c4cc25914e549bf86bbe43241d2831b00e8286/Arrays/algorithms/Divide_Without_Division_Operator.cpp#L18)<br/>
 
 <a id="linked_list"></a>
 ## Linked List
