@@ -64,6 +64,7 @@ Trees:
 [+] 19. Remove Nth Node From End of List
 [+] 41. First Missing Positive
 [+] 230. Kth Smallest Element in a BST
+[+] 55. Jump Game
 
 
 5. Longest Palindromic Substring
@@ -82,7 +83,6 @@ Trees:
 51. N-Queens
 53. Maximum Subarray
 54. Spiral Matrix
-55. Jump Game
 59. Spiral Matrix II
 60. Permutation Sequence
 66. Plus One

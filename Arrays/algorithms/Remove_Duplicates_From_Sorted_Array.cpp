@@ -52,7 +52,7 @@ void ArraysAlgorithms::Remove_Duplicates_From_Sorted_Array()
     {
         remove_duplicates_sorted(values);
         if (values != expected) {
-            std::cerr << expected << " != " << expected << std::endl;
+            std::cerr << values << " != " << expected << std::endl;
             return;
         }
     }

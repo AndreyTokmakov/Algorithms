@@ -24,8 +24,7 @@ namespace
     void sort_array_by_parity(std::vector<int>& values)
     {
         for (int idx = 0; int& val: values) {
-            if (val & 1 == false) {
-                std::cout << val << std::endl;
+            if ((val & 1) == false) {
                 std::swap(values[idx++], val);
             }
         }
@@ -39,4 +38,8 @@ void ArraysAlgorithms::Sort_Array_By_Parity()
     sort_array_by_parity(nums);
 
     std::cout << "Sorted array: " << nums << std::endl;
+
+
+    //int v = 5;
+   // std::cout << (v & 1) << std::endl;
 }

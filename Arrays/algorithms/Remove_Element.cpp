@@ -44,7 +44,7 @@ void ArraysAlgorithms::Remove_Element()
 
         remove_element(values, elementsToRemove);
         if (values != expected) {
-            std::cerr << expected << " != " << expected << std::endl;
+            std::cerr << values << " != " << expected << std::endl;
             return;
         }
     }

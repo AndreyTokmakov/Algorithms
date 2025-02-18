@@ -33,15 +33,15 @@ namespace
         return true;
     }
 
-    bool _are_anagrams_faster(const std::string& str1, const std::string& str2)
+    bool are_anagrams_contains_only_lowercase(const std::string& str1, const std::string& str2)
     {
         if (str1.length() != str2.length())
             return false;
 
         std::array<int, 32> chars { 0 };
-        for (char c : str1)
+        for (const char c : str1)
             chars[c - 'a']++;
-        for (char c : str2)
+        for (const char c : str2)
             if (1 > chars[c - 'a']--)
                 return false;
         return true;
@@ -58,9 +58,17 @@ void StringAlgorithms::Are_Anagrams()
 
     for (const auto& [data, expected]: testData)
     {
+        const bool actual1 = _are_anagrams(data.first, data.second);
+        const bool actual2 = are_anagrams_contains_only_lowercase(data.first, data.second);
+
         std::cout << "Is '" << data.first << "' and '" << data.second << "' anagrams: "
-                  << std::boolalpha << _are_anagrams(data.first, data.second) << "  "
-                  << std::boolalpha << _are_anagrams_faster(data.first, data.second)
-                  << ", expected = " << std::boolalpha << expected << std::endl;
+                  << std::boolalpha << actual1 << " ,  " << actual2
+                  << ". expected = " << std::boolalpha << expected << std::endl;
+
+        if (actual1 != expected || actual2 != expected) {
+            std::cerr << actual1 << " != " << expected << " or " << actual2 << " != " << expected << std::endl;
+            return;
+        }
     }
+    std::cout << "OK: All tests passed\n";
 }
