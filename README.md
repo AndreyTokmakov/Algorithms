@@ -11,6 +11,7 @@ Demo Algorithms
 8. [Trees](#trees)
 9. [Graphs](#graphs)
 10. [Queues](#queues)
+11. [Stack](#stack)
 
 <a name="Overview"></a>
 ## Overview
@@ -137,3 +138,9 @@ Nothing special, just an attempt to structure and study C++ algorithms
 ## Queues
 -  [Queue_Using_Stacks](https://github.com/AndreyTokmakov/Algorithms/blob/8129a6762c48c3cb28b8b032b977c66ef1e5e141/Queues/algorithms/Queue_Using_Stacks.cpp#L19)<br/>
 -  [Queue_Using_Stacks_Recursive](https://github.com/AndreyTokmakov/Algorithms/blob/8129a6762c48c3cb28b8b032b977c66ef1e5e141/Queues/algorithms/Queue_Using_Stacks_Recursive.cpp#L18)<br/>
+
+<a id="stack"></a>
+## Stack:
+-  [MinStack](https://github.com/AndreyTokmakov/Algorithms/blob/1828fbee3016300002c24cafc209220f11dc0766/Stack/algorithms/MinStack.cpp#L20)<br/>
+-  [Stack_Using_One_Queue](https://github.com/AndreyTokmakov/Algorithms/blob/1828fbee3016300002c24cafc209220f11dc0766/Stack/algorithms/Stack_Using_One_Queue.cpp#L20)<br/>
+-  [Stack_Using_Two_Queues](https://github.com/AndreyTokmakov/Algorithms/blob/1828fbee3016300002c24cafc209220f11dc0766/Stack/algorithms/Stack_Using_Two_Queues.cpp#L19)<br/>
