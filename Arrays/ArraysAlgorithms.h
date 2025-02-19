@@ -51,6 +51,9 @@ namespace ArraysAlgorithms
     void Longest_Consecutive_Sequence();
     void Add_One_to_Integer_Array();
     void Sqrt();
+    void Min_Length_SubArray_WithSameDegree();
+    void Maximum_Area_Between_Boundaries();
+    void Calculate_Max_Hotel_Visitors();
 }
 
 #endif //ARRAYS_ALGORITHMS_H

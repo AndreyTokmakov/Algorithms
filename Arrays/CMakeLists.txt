@@ -45,6 +45,9 @@ add_executable(${PROJECT_NAME}
 		algorithms/Longest_Consecutive_Sequence.cpp
 		algorithms/Add_One_to_Integer_Array.cpp
 		algorithms/Sqrt.cpp
+		algorithms/Min_Length_SubArray_WithSameDegree.cpp
+		algorithms/Maximum_Area_Between_Boundaries.cpp
+		algorithms/Calculate_Max_Hotel_Visitors.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")

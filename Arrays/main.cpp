@@ -50,7 +50,10 @@ int main([[maybe_unused]] int argc,
     // ArraysAlgorithms::Contains_Nearby_Duplicates();
     // ArraysAlgorithms::Longest_Consecutive_Sequence();
     // ArraysAlgorithms::Add_One_to_Integer_Array();
-    ArraysAlgorithms::Sqrt();
+    // ArraysAlgorithms::Sqrt();
+    // ArraysAlgorithms::Min_Length_SubArray_WithSameDegree();
+    // ArraysAlgorithms::Maximum_Area_Between_Boundaries();
+    ArraysAlgorithms::Calculate_Max_Hotel_Visitors();
 
 	return EXIT_SUCCESS;
 }

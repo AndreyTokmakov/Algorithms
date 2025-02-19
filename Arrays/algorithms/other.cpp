@@ -2391,64 +2391,6 @@ namespace Numeric
     }
 }
 
-namespace Numeric
-{
-    struct Stats final
-    {
-        int count{0};
-        int start{0};
-        int end{0};
-
-        explicit Stats(int start = 0) : start{start} {}
-    };
-
-    int degreeOfArray(const std::vector<int>& values)
-    {
-        int maxOccurred = 0;
-        std::unordered_map<int, Stats> counter{};
-        for (int idx = 0; idx < values.size(); ++idx) {
-            const auto [iter, ok] = counter.emplace(values[idx], idx);
-            ++(iter->second.count);
-            iter->second.end = idx;
-            maxOccurred = std::max(maxOccurred, iter->second.count);
-        }
-
-        int minLength = values.size();
-        for (const auto &[key, stats]: counter) {
-            if (stats.count == maxOccurred)
-                minLength = std::min(minLength, stats.end - stats.start + 1);
-        }
-
-        return minLength;
-    }
-
-    /**  Degree of an Array
-     *
-     * Given a non-empty array of non-negative integers nums, the degree of this array is defined
-     * as the maximum frequency of any one of its elements.
-     * Your task is to find the smallest possible length of a (contiguous) subarray of nums, that has the same degree as nums.
-     *
-     * Explanation:
-     *   The input array has a degree of 2 because both elements 1 and 2 appear twice.
-     *   Of the subarrays that have the same degree:  [1, 2, 2, 3, 1], [1, 2, 2, 3], [2, 2, 3, 1], [1, 2, 2], [2, 2, 3], [2, 2]
-     *   The shortest length is 2. So return 2.
-     *
-     *  Explanation:
-     *    The degree is 3 because the element 2 is repeated 3 times.
-     *    So [2,2,3,1,4,2] is the shortest subarray, therefore returning 6.
-    */
-    void Min_Length_SubArray_WithSameDegree()
-    {
-        for (const std::vector<int> &input: std::vector<std::vector<int>>{
-                {1, 2, 2, 3, 1}, // -> 2
-                {2, 2, 3, 1, 4, 2}, // -> 6
-                {2, 1, 1, 2, 1, 3, 3, 3, 1, 3, 1, 3, 2} // -> 7
-        }) {
-            const auto result = degreeOfArray(input);
-            std::cout << "Result = " << result << std::endl;
-        }
-    }
-}
 
 namespace Numeric
 {
@@ -2543,32 +2485,7 @@ namespace Numeric::Intervals
 
     /**----------------------------------------------------------------------------------------------**/
 
-    void calc_max_hotel_visitors(const std::vector<std::pair<int, int>>& intervals)
-    {
-        int maxVisitors = 0;
-        std::unordered_map<int, int> tmp {};
-        for (const auto& [checkIn, checkOut]: intervals) {
-            for (auto day = checkIn; day <= checkOut; ++day) {
-                maxVisitors = std::max(maxVisitors, ++tmp[day]);
-            }
-        }
 
-        std::cout << "Max visitors: " << maxVisitors << std::endl;
-    }
-
-    // Посетители заселяюстя в отель, какое-то время там живут и выезжают
-    // Запись об этом выглядит как [день заселения, день выезда]
-    // Нужно посчитать максимальное количество посетителей проживших в отеле в один и тот же момент времени
-
-    void CalcMaxHotelVisitors()
-    {
-        const std::vector<std::pair<int, int>> checkIns {
-            {1, 2},
-            {1, 2}
-        };
-
-        calc_max_hotel_visitors(checkIns);
-    }
 }
 
 namespace Numeric
@@ -2615,71 +2532,6 @@ namespace Numeric
         for (int i: result)
             std::cout << i <<  ' ';
         std::cout << std::endl;
-    }
-}
-
-namespace Numeric::Boundaries
-{
-    size_t max_area(const std::vector<long> &height)
-    {
-        size_t max = 0;
-        for (size_t left = 0, right = height.size() - 1, area = 0; left != right;)
-        {
-            area = std::min(height[left], height[right]) * (right - left);
-            max = std::max(max, area);
-            if (height[left] <= height[right])
-                ++left;
-            else
-                --right;
-        }
-        return max;
-    }
-
-    long max_area_iter(const std::vector<long> &height)
-    {
-        auto left = height.begin();
-        auto right = std::prev(height.end());
-        long max = 0;
-        while (left != right) {
-            max = std::max(max, std::min(*left, *right) * (right - left));
-            if (*left <= *right)
-                ++left;
-            else
-                --right;
-        }
-        return max;
-    }
-
-    /**
-     * Problem
-     * Given information about the height of a boundary at each position as std::vector<int64_t>,
-     * determine the maximum area formed between any two boundaries.
-     * The area is the minimum height of the two boundaries multiplied by the distance.
-     *
-     * Solution:
-     * If we switch one of the boundaries, we are decreasing the distance, so the only way to improve
-     * the area is to switch the lower of the two boundaries.
-     * Switching the higher one decreases the distance without improving the height
-     * (because the height is dictated by the lower of the two boundaries).
-     * Therefore, to get the maximum, we can repeatedly apply this logic, keeping track of the maximum area as we go.
-    **/
-
-    void Maximum_Area_Between_Boundaries()
-    {
-        for (const auto &[heights, area_expected]: std::vector<std::pair<std::vector<long>, long>>{
-                {{1, 1},                               1},
-                {{1, 9, 1},                            2},
-                {{1, 3, 3,  1},                        3},
-                {{1, 3, 1,  3,  1},                    6},
-                {{1, 3, 8,  10, 3, 1},                 9},
-                {{1, 3, 8,  8,  3, 1},                 9},
-                {{1, 3, 10, 10, 3, 1},                 10},
-                {{1, 8, 6,  2,  5, 4,  8 ,3, 7},       49},
-                {{1, 2, 5,  3,  2, 12, 1, 3, 7, 8, 2}, 35}
-        }) {
-            std::cout << max_area(heights) << " " << max_area_iter(heights)
-                      << ", Expected: " << area_expected << std::endl;
-        }
     }
 }
 
