@@ -12,6 +12,7 @@ else()
 endif()
 
 add_subdirectory(Arrays)
+add_subdirectory(BinarySearch)
 add_subdirectory(Graphs)
 add_subdirectory(Heaps)
 add_subdirectory(Queues)

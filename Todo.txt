@@ -53,6 +53,12 @@ FinabochiNumeric
 
 1446. Consecutive Characters
 
+
+
+BinarySearch
+Find_Smallest_Letter_Greater_Than_Target
+
+
 =======================================================================================================================================
 							Algoritms: Add to README
 =======================================================================================================================================
@@ -88,12 +94,12 @@ String:
 [+] 8.   String to Integer (atoi)
 [+] 136. Single Number
 [+] 137. Single Number II
+[+] 66.  Plus One
 
 
 34.  Find First and Last Position of Element in Sorted Array
 5.   Longest Palindromic Substring
 79.  Word Search
-66.  Plus One
 146. LRU Cache
 
 
@@ -161,6 +167,7 @@ String:
 [+] 	594. Longest Harmonious Subsequence
 [+] 	709. To Lower Case
 [+] 	657. Robot Return to Origin
+
 
 
 
