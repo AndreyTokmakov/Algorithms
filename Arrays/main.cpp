@@ -44,10 +44,12 @@ int main([[maybe_unused]] int argc,
     // ArraysAlgorithms::Is_Power_Of2();
     // ArraysAlgorithms::Find_The_Majority_Element();
     // ArraysAlgorithms::Can_Jump();
-    ArraysAlgorithms::Divide_Without_Division_Operator();
+    // ArraysAlgorithms::Divide_Without_Division_Operator();
     // ArraysAlgorithms::Maximum_Sum_SubArray_Algorithms_Kadane();
     // ArraysAlgorithms::Sort_Array_By_Parity();
     // ArraysAlgorithms::Contains_Nearby_Duplicates();
+    // ArraysAlgorithms::Longest_Consecutive_Sequence();
+    ArraysAlgorithms::Add_One_to_Integer_Array();
 
 	return EXIT_SUCCESS;
 }

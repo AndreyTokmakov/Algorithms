@@ -51,39 +51,37 @@ namespace
 
     std::string destination_city(const std::vector<std::pair<std::string, std::string>>& paths)
     {
-        std::unordered_set<std::string> dests, origins;
+        std::unordered_set<std::string> destinations, origins;
         for (const auto& [from, to] : paths) {
-            dests.insert(to);
+            destinations.insert(to);
             origins.insert(from);
         }
         for (const auto& [from, to] : paths) {
-            dests.erase(from);
+            destinations.erase(from);
             origins.erase(to);
         }
 
-        return *dests.cbegin();
+        if (!origins.empty() && !destinations.empty() ) {
+            return *destinations.cbegin();
+        }
+        return {};
     }
 
 }
 
 void StringAlgorithms::Destination_City()
 {
+    using TestData = std::vector<std::pair<std::vector<std::pair<std::string, std::string>>, std::string>>;
+    for (const auto& [value, expected]:  TestData{
+        { {{"London","New York"}, {"New York","Lima"},{"Lima","Sao Paulo"}} , "Sao Paulo" },
+        { {{"B","C"}, {"D","B"},{"C","A"}} , "A" },
+        { {{"A","Z"}} , "Z" },
+    })
     {
-        std::vector<std::pair<std::string, std::string>> paths {
-            {"London","New York"}, {"New York","Lima"},{"Lima","Sao Paulo"},
-        };
-        std::cout << destination_city(paths) << std::endl;
+        const auto actual = destination_city(value);
+        if (expected != actual) {
+            std::cerr << std::boolalpha << expected << " != " << actual << std::endl;
+        }
     }
-    {
-        std::vector<std::pair<std::string, std::string>> paths {
-            {"B","C"}, {"D","B"},{"C","A"},
-        };
-        std::cout << destination_city(paths) << std::endl;
-    }
-    {
-        std::vector<std::pair<std::string, std::string>> paths {
-            {"A","Z"},
-        };
-        std::cout << destination_city(paths) << std::endl;
-    }
+    std::cout << "OK: All tests passed\n";
 }

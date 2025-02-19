@@ -48,6 +48,8 @@ namespace ArraysAlgorithms
     void Maximum_Sum_SubArray_Algorithms_Kadane();
     void Sort_Array_By_Parity();
     void Contains_Nearby_Duplicates();
+    void Longest_Consecutive_Sequence();
+    void Add_One_to_Integer_Array();
 }
 
 #endif //ARRAYS_ALGORITHMS_H

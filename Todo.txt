@@ -3,8 +3,8 @@
 =======================================================================================================================================
 
 /**============================================================================
-Name        : Destination_City.cpp
-Created on  : 18.01.2025
+Name        : Add_One_to_Integer_Array.cpp
+Created on  : 19.01.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
 Copyright   : Your copyright notice
@@ -12,17 +12,17 @@ Description :
 ============================================================================**/
 
 #include "../common.h"
-#include "../StringAlgorithms.h"
+#include "../ArraysAlgorithms.h"
 
 
 namespace
 {
-    using namespace StringAlgorithms;
+    using namespace ArraysAlgorithms;
 
 
 }
 
-void StringAlgorithms::Destination_City()
+void ArraysAlgorithms::Add_One_to_Integer_Array()
 {
 
 }
@@ -51,21 +51,19 @@ void StringAlgorithms::Destination_City()
 
 FinabochiNumeric
 
+1446. Consecutive Characters
+
 =======================================================================================================================================
 							Algoritms: Add to README
 =======================================================================================================================================
 
+Array:
+	Longest_Consecutive_Sequence
+	Add_One_to_Integer_Array
+
 String:
-	To_Lower_Case
-	Robot_Return_To_Origin
-	String_To_Integer
-	String_To_Integer_2
-	Single_Row_Keyboard
-	Destination_City
+-  [NAME](LINK)<br/>
 
-
-Arrays:
--  [ddddd](ddddddddddd)<br/>
 
 =======================================================================================================================================
 							Algoritms: Top Google Questions – Part 1
@@ -87,15 +85,15 @@ Arrays:
 [+] 83.  Remove Duplicates from Sorted List
 [+] 23.  Merge k Sorted Lists
 [+] 219. Contains Duplicate II
+[+] 8.   String to Integer (atoi)
+[+] 136. Single Number
+[+] 137. Single Number II
 
 
 34.  Find First and Last Position of Element in Sorted Array
 5.   Longest Palindromic Substring
 79.  Word Search
-8.   String to Integer (atoi)
 66.  Plus One
-136. Single Number
-137. Single Number II
 146. LRU Cache
 
 
@@ -141,7 +139,6 @@ Arrays:
 130. Surrounded Regions
 144. Binary Tree Preorder Traversal
 145. Binary Tree Postorder Traversal
-
 153. Find Minimum in Rotated Sorted Array
 162. Find Peak Element
 163. Missing Ranges
@@ -155,7 +152,6 @@ Arrays:
 221. Maximal Square
 222. Count Complete Tree Nodes
 226. Invert Binary Tree
-
 246. Strobogrammatic Number
 
 =======================================================================================================================================

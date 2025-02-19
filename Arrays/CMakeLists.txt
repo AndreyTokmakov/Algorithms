@@ -42,6 +42,8 @@ add_executable(${PROJECT_NAME}
 		algorithms/Maximum_Sum_SubArray_Algorithms_Kadane.cpp
 		algorithms/Sort_Array_By_Parity.cpp
 		algorithms/Contains_Nearby_Duplicates.cpp
+		algorithms/Longest_Consecutive_Sequence.cpp
+		algorithms/Add_One_to_Integer_Array.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")

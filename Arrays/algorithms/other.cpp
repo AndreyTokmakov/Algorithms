@@ -839,31 +839,6 @@ namespace Numeric
 
 namespace Numeric
 {
-    size_t _longest_consecutive_sequence(const std::vector<int> &Numeric)
-    {
-        std::unordered_set<int> tmp(Numeric.begin(), Numeric.end());
-        size_t count = 0;
-        for (int i: Numeric) {
-            size_t len = 0;
-            int val = i;
-            while (tmp.end() != tmp.find(val++))
-                len++;
-            count = std::max(count, len);
-        }
-        return count;
-    }
-
-    void Longest_Consecutive_Sequence()
-    {
-        const std::vector<int> Numeric = {100, 4, 200, 1, 3, 2};
-
-        size_t count = _longest_consecutive_sequence(Numeric);
-        std::cout << count << std::endl;
-    }
-}
-
-namespace Numeric
-{
     size_t findLongestSubArray(const std::vector<int> &vect1,
                                const std::vector<int> &vect2)
     {
@@ -1735,47 +1710,6 @@ namespace Numeric
                                                   {4, 3},
                                                   {2, 5}};
         _find_repeating_and_missing(pairs);
-    }
-
-    //--------------------------------------------------------------------------------------//
-
-    void __Add_One_To_Integer_Array(int *data, size_t length) {
-        int pos = static_cast<int>(length);
-        while (9 == data[--pos] && pos) {
-            data[pos] = 0;
-        }
-        if (-1 == pos)
-            std::cout << 1;
-        else
-            data[pos]++;
-
-        // PRINT
-        for (pos = 0; pos < static_cast<int>(length); ++pos)
-            std::cout << data[pos];
-        std::cout << std::endl;
-    }
-
-
-    void __Add_One_To_Integer_Array_2(std::span<int> data) {
-        std::deque<int> result{data.begin(), data.end()};
-        int pos = static_cast<int>(result.size());
-        while (9 == data[--pos] && pos) {
-            result[pos] = 0;
-        }
-        if (-1 == pos)
-            result.push_front(1);
-        else
-            result[pos]++;
-
-        std::cout << result << std::endl;
-
-    }
-
-    void Add_One_To_Integer_ArrayTest() {
-        int data[] = {1, 2, 3, 4, 5, 6, 7, 9, 9, 4};
-
-        // __Add_One_To_Integer_Array(data2, 4);
-        __Add_One_To_Integer_Array_2(data);
     }
 
     //--------------------------------------------------------------------------------------//
