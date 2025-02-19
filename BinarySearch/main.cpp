@@ -14,5 +14,7 @@ int main([[maybe_unused]] int argc,
 		 [[maybe_unused]] char** argv)
 {
 
+	BinarySearchAlgorithms::Find_Smallest_Letter_Greater_Than_Target();
+
 	return EXIT_SUCCESS;
 }

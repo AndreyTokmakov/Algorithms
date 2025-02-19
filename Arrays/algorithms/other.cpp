@@ -346,30 +346,6 @@ namespace Numeric
         getAngleOnClock(timeString);
     }
 
-    //---------------------------------------------------------------------------//
-
-    int _sqrt(int x) {
-        int left = 0, right = x, middle = 0, result = 0;
-        while (left <= right) {
-            middle = (right + left) / 2;
-            result = middle * middle;
-            if (result == x)
-                return middle;
-            else if (result > x)
-                right = middle - 1;
-            else
-                left = middle + 1;
-        }
-        return right;
-    }
-
-    void Sqrt() {
-        int s = _sqrt(9);
-        std::cout << s << std::endl;
-    }
-
-    //---------------------------------------------------------------------------//
-
     // Write a function that, given three integers A, B and K, returns the
     // number of integers within the range[A..B] that are divisible by K, i.e. :
 

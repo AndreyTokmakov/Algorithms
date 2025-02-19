@@ -35,6 +35,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/String_To_Integer_2.cpp
 		algorithms/Single_Row_Keyboard.cpp
 		algorithms/Destination_City.cpp
+		algorithms/Maximum_Consecutive_Characters_SubString.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")

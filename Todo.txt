@@ -3,7 +3,7 @@
 =======================================================================================================================================
 
 /**============================================================================
-Name        : Add_One_to_Integer_Array.cpp
+Name        : Sqrt.cpp
 Created on  : 19.01.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
@@ -22,7 +22,7 @@ namespace
 
 }
 
-void ArraysAlgorithms::Add_One_to_Integer_Array()
+void ArraysAlgorithms::Sqrt()
 {
 
 }
@@ -54,11 +54,6 @@ FinabochiNumeric
 1446. Consecutive Characters
 
 
-
-BinarySearch
-Find_Smallest_Letter_Greater_Than_Target
-
-
 =======================================================================================================================================
 							Algoritms: Add to README
 =======================================================================================================================================
@@ -66,6 +61,12 @@ Find_Smallest_Letter_Greater_Than_Target
 Array:
 	Longest_Consecutive_Sequence
 	Add_One_to_Integer_Array
+	Sqrt
+
+
+BinarySearch
+	Sqrt	
+	Find_Smallest_Letter_Greater_Than_Target
 
 String:
 -  [NAME](LINK)<br/>

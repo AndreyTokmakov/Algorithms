@@ -41,6 +41,7 @@ namespace StringAlgorithms
     void String_To_Integer_2();
     void Single_Row_Keyboard();
     void Destination_City();
+    void Maximum_Consecutive_Characters_SubString();
 }
 
 #endif //STRING_ALGORITHMS_H

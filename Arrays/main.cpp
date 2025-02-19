@@ -49,7 +49,8 @@ int main([[maybe_unused]] int argc,
     // ArraysAlgorithms::Sort_Array_By_Parity();
     // ArraysAlgorithms::Contains_Nearby_Duplicates();
     // ArraysAlgorithms::Longest_Consecutive_Sequence();
-    ArraysAlgorithms::Add_One_to_Integer_Array();
+    // ArraysAlgorithms::Add_One_to_Integer_Array();
+    ArraysAlgorithms::Sqrt();
 
 	return EXIT_SUCCESS;
 }

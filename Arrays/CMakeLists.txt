@@ -44,6 +44,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Contains_Nearby_Duplicates.cpp
 		algorithms/Longest_Consecutive_Sequence.cpp
 		algorithms/Add_One_to_Integer_Array.cpp
+		algorithms/Sqrt.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")

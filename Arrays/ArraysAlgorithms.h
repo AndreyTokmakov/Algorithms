@@ -50,6 +50,7 @@ namespace ArraysAlgorithms
     void Contains_Nearby_Duplicates();
     void Longest_Consecutive_Sequence();
     void Add_One_to_Integer_Array();
+    void Sqrt();
 }
 
 #endif //ARRAYS_ALGORITHMS_H

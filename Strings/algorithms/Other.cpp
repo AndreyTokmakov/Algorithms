@@ -487,41 +487,6 @@ namespace Strings
         }
     }
 
-    //--------------------------------------------------------------------------------------//
-
-    void __longestConsecutiveCharacters(const std::string &text) {
-        char c{};
-        size_t max_len = 1;
-        for (size_t idx = 1, len = 1; idx < text.length(); ++idx) {
-            if (text[idx - 1] != text[idx]) {
-                len = 1;
-            } else {
-                if (++len > max_len) {
-                    max_len = len;
-                    c = text[idx];
-                }
-            }
-        }
-        std::cout << " Max = " << max_len << " of " << c << std::endl;
-    }
-
-    void __longestConsecutiveCharacters2(const std::string &text) {
-        size_t max_len = 0;
-        char prev = text.back();
-        for (size_t len = 0; const char c: text) {
-            len = (c == prev) ? len + 1 : 1;
-            max_len = std::max(len, max_len);
-            prev = c;
-        }
-        std::cout << " Max = " << max_len << " of " << prev << std::endl;
-    }
-
-    void LongestConsecutiveCharacters() {
-        const std::string &text{"aabbbbbcccc"};
-        __longestConsecutiveCharacters(text);
-        __longestConsecutiveCharacters2(text);
-    }
-
     //---------------------------------------------------------------------------//
 
     double getAngleOnClock(std::string_view timeStr) {
