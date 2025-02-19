@@ -42,6 +42,7 @@ namespace StringAlgorithms
     void Single_Row_Keyboard();
     void Destination_City();
     void Maximum_Consecutive_Characters_SubString();
+    void Is_Words_Can_Be_Formed_by_Characters();
 }
 
 #endif //STRING_ALGORITHMS_H

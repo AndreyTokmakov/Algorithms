@@ -36,6 +36,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Single_Row_Keyboard.cpp
 		algorithms/Destination_City.cpp
 		algorithms/Maximum_Consecutive_Characters_SubString.cpp
+		algorithms/Is_Words_Can_Be_Formed_by_Characters.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")
