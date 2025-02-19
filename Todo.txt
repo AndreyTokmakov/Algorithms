@@ -51,9 +51,6 @@ void ArraysAlgorithms::Sqrt()
 
 FinabochiNumeric
 
-1446. Consecutive Characters
-
-
 =======================================================================================================================================
 							Algoritms: Add to README
 =======================================================================================================================================
@@ -179,8 +176,9 @@ Backtracking
 	90. Subsets II
 	1101. The Earliest Moment When Everyone Become Friends
 	1319. Number of Operations to Make Network Connected
-	Binary Search
-	69. Sqrt(x)
+
+Binary Search
++  	69. Sqrt(x)
 	275. H-Index II
 	367. Valid Perfect Square
 	441. Arranging Coins
@@ -347,7 +345,7 @@ String
 	1432. Max Difference You Can Get From Changing an Integer
 	1433. Check If a String Can Break Another String
 +	1436. Destination City
-	1446. Consecutive Characters
++	1446. Consecutive Characters
 	1451. Rearrange Words in a Sentence
 	1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence
 	1456. Maximum Number of Vowels in a Substring of Given Length

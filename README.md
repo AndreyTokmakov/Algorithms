@@ -12,6 +12,7 @@ Demo Algorithms
 9. [Graphs](#graphs)
 10. [Queues](#queues)
 11. [Stack](#stack)
+12. [BinarySearch](#binary_search)
 
 <a name="Overview"></a>
 ## Overview
@@ -64,7 +65,8 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [String_To_Integer_2](https://github.com/AndreyTokmakov/Algorithms/blob/2feec239c1f3f8ca954d0ee2704188ecd201b571/Strings/algorithms/String_To_Integer_2.cpp#L27)<br/>
 -  [Single_Row_Keyboard](https://github.com/AndreyTokmakov/Algorithms/blob/2feec239c1f3f8ca954d0ee2704188ecd201b571/Strings/algorithms/Single_Row_Keyboard.cpp#L44)<br/>
 -  [Destination_City](https://github.com/AndreyTokmakov/Algorithms/blob/2feec239c1f3f8ca954d0ee2704188ecd201b571/Strings/algorithms/Destination_City.cpp#L52)<br/>
-
+-  [Maximum_Consecutive_Characters_SubString](https://github.com/AndreyTokmakov/Algorithms/blob/608f9070c43f85c5ccb249ecb81985225af1a995/Strings/algorithms/Maximum_Consecutive_Characters_SubString.cpp#L28)<br/>
+-  [Is_Words_Can_Be_Formed_by_Characters](https://github.com/AndreyTokmakov/Algorithms/blob/608f9070c43f85c5ccb249ecb81985225af1a995/Strings/algorithms/Is_Words_Can_Be_Formed_by_Characters.cpp#L26)<br/>
 
 <a id="math_arrays_algorithms"></a>
 ## Math and Arrays Algorithms
@@ -99,6 +101,9 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [Sort_Array_By_Parity](https://github.com/AndreyTokmakov/Algorithms/blob/69603dd9203873533bd66491f1936d57da357bd3/Arrays/algorithms/Sort_Array_By_Parity.cpp#L24)<br/>
 -  [Contains_Nearby_Duplicates](https://github.com/AndreyTokmakov/Algorithms/blob/9e71d8a6e1a3d994c913d668ba4462c45358e71b/Arrays/algorithms/Contains_Nearby_Duplicates.cpp#L27)<br/>
 -  [Divide_Without_Division_Operator](https://github.com/AndreyTokmakov/Algorithms/blob/d8c4cc25914e549bf86bbe43241d2831b00e8286/Arrays/algorithms/Divide_Without_Division_Operator.cpp#L18)<br/>
+-  [Longest_Consecutive_Sequence](https://github.com/AndreyTokmakov/Algorithms/blob/608f9070c43f85c5ccb249ecb81985225af1a995/Arrays/algorithms/Longest_Consecutive_Sequence.cpp#L18)<br/>
+-  [Add_One_to_Integer_Array](https://github.com/AndreyTokmakov/Algorithms/blob/608f9070c43f85c5ccb249ecb81985225af1a995/Arrays/algorithms/Add_One_to_Integer_Array.cpp#L27)<br/>
+-  [Sqrt](https://github.com/AndreyTokmakov/Algorithms/blob/608f9070c43f85c5ccb249ecb81985225af1a995/Arrays/algorithms/Sqrt.cpp#L17)<br/>
 
 <a id="linked_list"></a>
 ## Linked List
@@ -151,3 +156,8 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [MinStack](https://github.com/AndreyTokmakov/Algorithms/blob/1828fbee3016300002c24cafc209220f11dc0766/Stack/algorithms/MinStack.cpp#L20)<br/>
 -  [Stack_Using_One_Queue](https://github.com/AndreyTokmakov/Algorithms/blob/1828fbee3016300002c24cafc209220f11dc0766/Stack/algorithms/Stack_Using_One_Queue.cpp#L20)<br/>
 -  [Stack_Using_Two_Queues](https://github.com/AndreyTokmakov/Algorithms/blob/1828fbee3016300002c24cafc209220f11dc0766/Stack/algorithms/Stack_Using_Two_Queues.cpp#L19)<br/>
+
+<a id="binary_search"></a>
+## BinarySearch:
+-  [Sqrt](https://github.com/AndreyTokmakov/Algorithms/blob/608f9070c43f85c5ccb249ecb81985225af1a995/Arrays/algorithms/Sqrt.cpp#L17)<br/>
+-  [Find_Smallest_Letter_Greater_Than_Target](https://github.com/AndreyTokmakov/Algorithms/blob/608f9070c43f85c5ccb249ecb81985225af1a995/BinarySearch/algorithms/Find_Smallest_Letter_Greater_Than_Target.cpp#L31C16-L31C17)<br/>
