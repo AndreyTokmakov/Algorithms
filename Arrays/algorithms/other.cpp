@@ -1876,14 +1876,14 @@ namespace Numeric
     }
 
     template<typename T>
-    int binary_search(const std::vector<T> &numbers,
+    bool binary_search(const std::vector<T> &nums,
                       const T value) {
-        size_t left = 0, right = numbers.size() - 1, idxMid = 0;
+        size_t left = 0, right = nums.size() - 1, idxMid = 0;
         while (right > (left + 1)) {
             idxMid = (left + right) / 2;
-            if (value == numbers[idxMid])
-                return numbers[idxMid];
-            if (numbers[idxMid] > value)
+            if (value == nums[idxMid])
+                return nums[idxMid];
+            if (nums[idxMid] > value)
                 right = idxMid;
             else
                 left = idxMid;

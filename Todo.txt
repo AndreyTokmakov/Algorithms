@@ -3,7 +3,7 @@
 =======================================================================================================================================
 
 /**============================================================================
-Name        : Check_Is_Tree_Symmetric.cpp
+Name        : Binary_Search.cpp
 Created on  : 20.01.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
@@ -12,17 +12,17 @@ Description :
 ============================================================================**/
 
 #include "../common.h"
-#include "../TreesAlgorithms.h"
+#include "../BinarySearchAlgorithms.h"
 
 
 namespace
 {
-    using namespace TreesAlgorithms;
+    using namespace BinarySearchAlgorithms;
 
 
 }
 
-void TreesAlgorithms::Check_Is_Tree_Symmetric()
+void BinarySearchAlgorithms::Binary_Search()
 {
 
 }
@@ -49,11 +49,26 @@ void TreesAlgorithms::Check_Is_Tree_Symmetric()
 							Algoritms: Today | 3 НОВЫХ алгоритма ежедневно
 =======================================================================================================================================
 
-FinabochiNumeric
+String: Top_K_Frequent_Words --> Heap ??
+
+
+
+3. heap/hash 
+    https://leetcode.com/problems/top-k-frequent-words/
+    https://leetcode.com/problems/top-k-frequent-elements/
+
+4. binary search 
+    https://leetcode.com/problems/guess-number-higher-or-lower/
+
+5. tree 
+    https://leetcode.com/problems/path-sum-ii/	
 
 =======================================================================================================================================
 							Algoritms: Add to README
 =======================================================================================================================================
+
+Binary Search:
+-	Binary_Search
 
 
 Arrays:
@@ -64,6 +79,7 @@ Arrays:
 Tree:
 -	Check_Is_Tree_Symmetric
 -	Check_Is_Trees_Identical
+-	Check_Is_Tree_Balanced
 
 
 Calculate_Max_Hotel_Visitors
@@ -423,24 +439,10 @@ Design Data Structure
 	https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/ 
 	https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/
 
-
  1. linked lists 
     https://leetcode.com/problems/merge-k-sorted-lists/
-    https://leetcode.com/problems/reverse-linked-list/
 
 2. dfs/bfs 
     https://leetcode.com/problems/number-of-islands/
     https://leetcode.com/problems/remove-invalid-parentheses/
-
-3. heap/hash 
-    https://leetcode.com/problems/top-k-frequent-words/
-    https://leetcode.com/problems/top-k-frequent-elements/
-
-4. binary search 
-    https://leetcode.com/problems/binary-search/
-    https://leetcode.com/problems/guess-number-higher-or-lower/
-
-5. tree 
-    https://leetcode.com/problems/balanced-binary-tree/
-    https://leetcode.com/problems/path-sum-ii/	
 

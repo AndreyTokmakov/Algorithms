@@ -13,8 +13,8 @@ Description : BinarySearch algorithms entry point
 int main([[maybe_unused]] int argc,
 		 [[maybe_unused]] char** argv)
 {
-
-	BinarySearchAlgorithms::Find_Smallest_Letter_Greater_Than_Target();
+	// BinarySearchAlgorithms::Find_Smallest_Letter_Greater_Than_Target();
+	BinarySearchAlgorithms::Binary_Search();
 
 	return EXIT_SUCCESS;
 }

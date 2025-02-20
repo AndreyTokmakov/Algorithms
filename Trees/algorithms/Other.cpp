@@ -462,38 +462,6 @@ namespace BinTreeTests {
         }
     }
 
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-    int _depth(BinTree::Node* node) {
-        if (nullptr == node)
-            return 0;
-        return 1  + std::max(_depth(node->left), _depth(node->right));
-    }
-
-    bool _isBalanced(BinTree::Node* node) {
-        if (nullptr == node)
-            return true;
-        return std::abs(_depth(node->left) - _depth(node->right)) <= 1 &&
-               _isBalanced(node->left) && _isBalanced(node->right);
-    }
-
-    void isTreeBalanced() {
-        BinTree::Node* root = new BinTree::Node(10);
-        root->right = new BinTree::Node(20);
-        root->right->left = new BinTree::Node(12);
-        root->right->right = new BinTree::Node(25);
-        // root->right->right->right = new BinTree::Node(35);
-        root->left = new BinTree::Node(2);
-
-        std::cout << "Balanced: " << std::boolalpha << _isBalanced(root) << std::endl;
-    }
-
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
     bool __is_full_binary_tree(const BinTree::Node* node) {
         if (nullptr == node)
             return true;

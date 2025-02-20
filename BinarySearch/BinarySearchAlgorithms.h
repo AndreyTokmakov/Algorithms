@@ -13,6 +13,7 @@ Description :
 namespace BinarySearchAlgorithms
 {
     void Find_Smallest_Letter_Greater_Than_Target();
+    void Binary_Search();
 }
 
 #endif //BINARY_SEARCH_ALGORITHMS_H

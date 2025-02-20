@@ -9,6 +9,7 @@ add_compile_options(-c -Wall -Wextra -O3 -std=c++26)
 add_executable(${PROJECT_NAME}
     	main.cpp
 		algorithms/Find_Smallest_Letter_Greater_Than_Target.cpp
+		algorithms/Binary_Search.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")

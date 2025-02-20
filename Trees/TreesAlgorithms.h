@@ -27,6 +27,7 @@ namespace TreesAlgorithms
     void Get_Tree_Depth();
     void Check_Is_Trees_Identical();
     void Check_Is_Tree_Symmetric();
+    void Check_Is_Tree_Balanced();
 }
 
 #endif //TREES_ALGORITHMS_H
