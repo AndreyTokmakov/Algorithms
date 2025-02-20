@@ -25,6 +25,8 @@ namespace TreesAlgorithms
     void Find_Lowest_Common_Ancestor();
     void Count_Elements();
     void Get_Tree_Depth();
+    void Check_Is_Trees_Identical();
+    void Check_Is_Tree_Symmetric();
 }
 
 #endif //TREES_ALGORITHMS_H

@@ -23,7 +23,9 @@ int main([[maybe_unused]] int argc,
 	// TreesAlgorithms::Sorted_Array_To_Binary_Tree_NonRecursive();
 	// TreesAlgorithms::Find_Lowest_Common_Ancestor();
 	// TreesAlgorithms::Count_Elements();
-	TreesAlgorithms::Get_Tree_Depth();
+	// TreesAlgorithms::Get_Tree_Depth();
+	// TreesAlgorithms::Check_Is_Trees_Identical();
+	TreesAlgorithms::Check_Is_Tree_Symmetric();
 
 
 	return EXIT_SUCCESS;

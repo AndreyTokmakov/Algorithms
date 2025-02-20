@@ -518,33 +518,6 @@ namespace BinTreeTests {
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    // Recursive function to check if two given binary trees are identical or not
-    bool isIdentical(const BinTree::Node* x, const BinTree::Node* y) {
-        // if both trees are empty, return true
-        if (x == nullptr && y == nullptr)
-            return true;
-
-        // if both trees are non-empty and value of their root node matches, recur for their left and right sub-tree
-        return (x && y) && (x->data == y->data) && isIdentical(x->left, y->left) && isIdentical(x->right, y->right);
-    }
-
-
-    void Check_Is_Trees_Identical() {
-        {
-            BinTree::BinaryTree tree1{ 33, 22, 85, 10 ,30, 54, 125 };
-            BinTree::BinaryTree tree2{ 33, 22, 85, 10 ,30, 54, 125 };
-            std::cout << isIdentical(tree1.getRoot(), tree2.getRoot()) << std::endl;
-        }
-
-        {
-            BinTree::BinaryTree tree1{ 33, 22, 85, 10 ,30, 54, 125 };
-            BinTree::BinaryTree tree2{ 33, 22, 85, 10 ,31, 54, 125 };
-            std::cout << isIdentical(tree1.getRoot(), tree2.getRoot()) << std::endl;
-        }
-    }
-
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
     void __Inorder_Walkthrough(BinTree::Node* node) {
         if (nullptr == node)
             return;

@@ -19,6 +19,8 @@ add_executable(${PROJECT_NAME}
 		algorithms/Find_Lowest_Common_Ancestor.cpp
 		algorithms/Count_Elements.cpp
 		algorithms/Get_Tree_Depth.cpp
+		algorithms/Check_Is_Trees_Identical.cpp
+		algorithms/Check_Is_Tree_Symmetric.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")
