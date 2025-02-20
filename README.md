@@ -104,6 +104,10 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [Longest_Consecutive_Sequence](https://github.com/AndreyTokmakov/Algorithms/blob/608f9070c43f85c5ccb249ecb81985225af1a995/Arrays/algorithms/Longest_Consecutive_Sequence.cpp#L18)<br/>
 -  [Add_One_to_Integer_Array](https://github.com/AndreyTokmakov/Algorithms/blob/608f9070c43f85c5ccb249ecb81985225af1a995/Arrays/algorithms/Add_One_to_Integer_Array.cpp#L27)<br/>
 -  [Sqrt](https://github.com/AndreyTokmakov/Algorithms/blob/608f9070c43f85c5ccb249ecb81985225af1a995/Arrays/algorithms/Sqrt.cpp#L17)<br/>
+-  [Min_Length_SubArray_WithSameDegree](https://github.com/AndreyTokmakov/Algorithms/blob/b4cf4e0e248ca54a4efe08ae613986c7265a6318/Arrays/algorithms/Min_Length_SubArray_WithSameDegree.cpp#L42)<br/>
+-  [Maximum_Area_Between_Boundaries](https://github.com/AndreyTokmakov/Algorithms/blob/b4cf4e0e248ca54a4efe08ae613986c7265a6318/Arrays/algorithms/Maximum_Area_Between_Boundaries.cpp#L30)<br/>
+-  [Calculate_Max_Hotel_Visitors](https://github.com/AndreyTokmakov/Algorithms/blob/b4cf4e0e248ca54a4efe08ae613986c7265a6318/Arrays/algorithms/Calculate_Max_Hotel_Visitors.cpp#L23)<br/>
+
 
 <a id="linked_list"></a>
 ## Linked List
@@ -137,6 +141,9 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [Find_Lowest_Common_Ancestor](https://github.com/AndreyTokmakov/Algorithms/blob/8f8f2ff22cf57719ab5af2c65ccdcb2ab090979e/Trees/algorithms/Find_Lowest_Common_Ancestor.cpp#L17)<br/>
 -  [Count_Elements](https://github.com/AndreyTokmakov/Algorithms/blob/8f8f2ff22cf57719ab5af2c65ccdcb2ab090979e/Trees/algorithms/Count_Elements.cpp#L22)<br/>
 -  [Get_Tree_Depth](https://github.com/AndreyTokmakov/Algorithms/blob/8f8f2ff22cf57719ab5af2c65ccdcb2ab090979e/Trees/algorithms/Get_Tree_Depth.cpp#L23)<br/>
+-  [Check_Is_Tree_Symmetric](https://github.com/AndreyTokmakov/Algorithms/blob/b4cf4e0e248ca54a4efe08ae613986c7265a6318/Trees/algorithms/Check_Is_Tree_Symmetric.cpp#L57)<br/>
+-  [Check_Is_Trees_Identical](https://github.com/AndreyTokmakov/Algorithms/blob/b4cf4e0e248ca54a4efe08ae613986c7265a6318/Trees/algorithms/Check_Is_Trees_Identical.cpp#L23)<br/>
+-  [Check_Is_Tree_Balanced](https://github.com/AndreyTokmakov/Algorithms/blob/b4cf4e0e248ca54a4efe08ae613986c7265a6318/Trees/algorithms/Check_Is_Tree_Balanced.cpp#L49)<br/>
 
 <a id="graphs"></a>
 ## Graphs
@@ -161,3 +168,4 @@ Nothing special, just an attempt to structure and study C++ algorithms
 ## BinarySearch:
 -  [Sqrt](https://github.com/AndreyTokmakov/Algorithms/blob/608f9070c43f85c5ccb249ecb81985225af1a995/Arrays/algorithms/Sqrt.cpp#L17)<br/>
 -  [Find_Smallest_Letter_Greater_Than_Target](https://github.com/AndreyTokmakov/Algorithms/blob/608f9070c43f85c5ccb249ecb81985225af1a995/BinarySearch/algorithms/Find_Smallest_Letter_Greater_Than_Target.cpp#L31C16-L31C17)<br/>
+-  [Binary_Search](https://github.com/AndreyTokmakov/Algorithms/blob/b4cf4e0e248ca54a4efe08ae613986c7265a6318/BinarySearch/algorithms/Binary_Search.cpp#L35)<br/>
