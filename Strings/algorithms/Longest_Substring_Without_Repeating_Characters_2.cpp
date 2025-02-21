@@ -70,6 +70,24 @@ namespace
         return result;
     }
 
+    size_t longest_substring_without_repeating_characters_3(const std::string &text)
+    {
+        int hashSet[256] {};
+        std::fill_n(hashSet, 256, -1);
+        int result = 0;
+        for (int left = 0, right = 0, size = text.size(); right < size;)
+        {
+            if (-1 == hashSet[text[right]]) {
+                hashSet[text[right]] = right;
+                result = std::max(result, right - left + 1);
+                right++;
+            } else {
+                hashSet[text[left]] = -1;
+                left++;
+            }
+        }
+        return result;
+    }
 }
 
 void StringAlgorithms::Longest_Substring_Without_Repeating_Characters_2()

@@ -34,7 +34,7 @@ int main([[maybe_unused]] int argc,
     // StringAlgorithms::Are_Anagrams();
     // StringAlgorithms::Calc_Parentheses_3_Bracket();
     // StringAlgorithms::Longest_Substring_Without_Repeating_Characters();
-    StringAlgorithms::Longest_Substring_Without_Repeating_Characters_2();
+    // StringAlgorithms::Longest_Substring_Without_Repeating_Characters_2();
     // StringAlgorithms::To_Lower_Case();
     // StringAlgorithms::Robot_Return_To_Origin();
     // StringAlgorithms::String_To_Integer();
@@ -43,6 +43,15 @@ int main([[maybe_unused]] int argc,
     // StringAlgorithms::Destination_City();
     // StringAlgorithms::Maximum_Consecutive_Characters_SubString();
     // StringAlgorithms::Is_Words_Can_Be_Formed_by_Characters();
+    // StringAlgorithms::Int_To_Roman();
+    // StringAlgorithms::Roman_To_Int();
+    // StringAlgorithms::Count_Anagrams();
+    // StringAlgorithms::Intersperse_String();
+    // StringAlgorithms::Find_Longest_Word();
+    // StringAlgorithms::Reverse_Words_in_String();
+    // StringAlgorithms::Find_Common_Prefix_And_Postfix();
+    // StringAlgorithms::Find_Duplicate_Symbols();
+    StringAlgorithms::Get_String_Length();
 
 	return EXIT_SUCCESS;
 }

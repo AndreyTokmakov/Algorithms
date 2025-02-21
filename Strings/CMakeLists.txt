@@ -37,6 +37,15 @@ add_executable(${PROJECT_NAME}
 		algorithms/Destination_City.cpp
 		algorithms/Maximum_Consecutive_Characters_SubString.cpp
 		algorithms/Is_Words_Can_Be_Formed_by_Characters.cpp
+		algorithms/Int_To_Roman.cpp
+		algorithms/Roman_To_Int.cpp
+		algorithms/Count_Anagrams.cpp
+		algorithms/Intersperse_String.cpp
+		algorithms/Find_Longest_Word.cpp
+		algorithms/Reverse_Words_in_String.cpp
+		algorithms/Find_Common_Prefix_And_Postfix.cpp
+		algorithms/Find_Duplicate_Symbols.cpp
+		algorithms/Get_String_Length.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")

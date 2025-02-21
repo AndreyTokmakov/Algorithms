@@ -43,6 +43,15 @@ namespace StringAlgorithms
     void Destination_City();
     void Maximum_Consecutive_Characters_SubString();
     void Is_Words_Can_Be_Formed_by_Characters();
+    void Int_To_Roman();
+    void Roman_To_Int();
+    void Count_Anagrams();
+    void Intersperse_String();
+    void Find_Longest_Word();
+    void Reverse_Words_in_String();
+    void Find_Common_Prefix_And_Postfix();
+    void Find_Duplicate_Symbols();
+    void Get_String_Length();
 }
 
 #endif //STRING_ALGORITHMS_H
