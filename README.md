@@ -67,6 +67,15 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [Destination_City](https://github.com/AndreyTokmakov/Algorithms/blob/2feec239c1f3f8ca954d0ee2704188ecd201b571/Strings/algorithms/Destination_City.cpp#L52)<br/>
 -  [Maximum_Consecutive_Characters_SubString](https://github.com/AndreyTokmakov/Algorithms/blob/608f9070c43f85c5ccb249ecb81985225af1a995/Strings/algorithms/Maximum_Consecutive_Characters_SubString.cpp#L28)<br/>
 -  [Is_Words_Can_Be_Formed_by_Characters](https://github.com/AndreyTokmakov/Algorithms/blob/608f9070c43f85c5ccb249ecb81985225af1a995/Strings/algorithms/Is_Words_Can_Be_Formed_by_Characters.cpp#L26)<br/>
+-  [Int_To_Roman](https://github.com/AndreyTokmakov/Algorithms/blob/408a1b3356bfa2c194db5eeb96befeba3d81690d/Strings/algorithms/Int_To_Roman.cpp#L34)<br/>
+-  [Roman_To_Int](https://github.com/AndreyTokmakov/Algorithms/blob/408a1b3356bfa2c194db5eeb96befeba3d81690d/Strings/algorithms/Roman_To_Int.cpp#L20)<br/>
+-  [Count_Anagrams](https://github.com/AndreyTokmakov/Algorithms/blob/408a1b3356bfa2c194db5eeb96befeba3d81690d/Strings/algorithms/Count_Anagrams.cpp#L29)<br/>
+-  [Intersperse_String](https://github.com/AndreyTokmakov/Algorithms/blob/408a1b3356bfa2c194db5eeb96befeba3d81690d/Strings/algorithms/Intersperse_String.cpp#L18)<br/>
+-  [Find_Longest_Word](https://github.com/AndreyTokmakov/Algorithms/blob/408a1b3356bfa2c194db5eeb96befeba3d81690d/Strings/algorithms/Find_Longest_Word.cpp#L18)<br/>
+-  [Reverse_Words_in_String](https://github.com/AndreyTokmakov/Algorithms/blob/408a1b3356bfa2c194db5eeb96befeba3d81690d/Strings/algorithms/Reverse_Words_in_String.cpp#L30)<br/>
+-  [Find_Common_Prefix_And_Postfix](https://github.com/AndreyTokmakov/Algorithms/blob/408a1b3356bfa2c194db5eeb96befeba3d81690d/Strings/algorithms/Find_Common_Prefix_And_Postfix.cpp#L26)<br/>
+-  [Find_Duplicate_Symbols](https://github.com/AndreyTokmakov/Algorithms/blob/408a1b3356bfa2c194db5eeb96befeba3d81690d/Strings/algorithms/Find_Duplicate_Symbols.cpp#L18)<br/>
+-  [Get_String_Length](https://github.com/AndreyTokmakov/Algorithms/blob/408a1b3356bfa2c194db5eeb96befeba3d81690d/Strings/algorithms/Get_String_Length.cpp#L18)<br/>
 
 <a id="math_arrays_algorithms"></a>
 ## Math and Arrays Algorithms
