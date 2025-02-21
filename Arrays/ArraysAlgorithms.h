@@ -54,6 +54,7 @@ namespace ArraysAlgorithms
     void Min_Length_SubArray_WithSameDegree();
     void Maximum_Area_Between_Boundaries();
     void Calculate_Max_Hotel_Visitors();
+    void Find_SubArrays_Sum_Equal_K();
 }
 
 #endif //ARRAYS_ALGORITHMS_H
