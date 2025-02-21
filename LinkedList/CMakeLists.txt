@@ -27,6 +27,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Delete_K_Element_From_the_End.cpp
 		algorithms/Delete_Duplicates_SortedList.cpp
 		algorithms/Add_Two_Numbers.cpp
+		algorithms/Merge_K_Sorter_Lists.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")

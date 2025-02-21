@@ -27,8 +27,9 @@ int main([[maybe_unused]] int argc,
     // LinkedListAlgorithms::Delete_Duplicates();
     // LinkedListAlgorithms::Move_All_Occurrences_To_The_End();
     // LinkedListAlgorithms::Delete_K_Element_From_the_End();
-    LinkedListAlgorithms::Delete_Duplicates_SortedList();
+    // LinkedListAlgorithms::Delete_Duplicates_SortedList();
     // LinkedListAlgorithms::Add_Two_Numbers();
+    LinkedListAlgorithms::Merge_K_Sorter_Lists();
 
 
 	return EXIT_SUCCESS;
