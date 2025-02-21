@@ -2257,40 +2257,6 @@ namespace Numeric
 
     //---------------------------------------------------------------------------//
 
-    std::pair<bool, std::pair<size_t, size_t>> _Subarray_With_Given_Sum(const std::vector<int> &data, const int K) {
-        std::unordered_map<size_t, size_t> map;
-        int curr_sum = 0;
-
-        for (size_t index = 0; index < data.size(); index++) {
-            curr_sum += data[index];
-
-            if (curr_sum == K)
-                return {true, {0, index}};
-            else if (auto iter = map.find(curr_sum - K); iter != map.end()) {
-                return {true, {iter->second + 1, index}};
-            }
-
-            map[curr_sum] = index;
-        }
-        return {false, {-1, -1}};
-    }
-
-    std::pair<bool, std::pair<size_t, size_t>> _Subarray_With_Given_Sum2(const std::vector<int> &data, const int K) {
-        std::unordered_multimap<int, size_t> map;
-        int curr_sum = 0;
-
-        for (size_t index = 0; index < data.size(); index++) {
-            curr_sum += data[index];
-            if (curr_sum == K)
-                return {true, {0, index}};
-            else if (auto iter = map.find(curr_sum - K); iter != map.end())
-                return {true, {iter->second + 1, index}};
-
-            map.insert({curr_sum, index});
-        }
-        return {false, {-1, -1}};
-    }
-
 
     void _Subarray_With_Given_Sum_All(const std::vector<int> &data, const int K) {
         std::unordered_multimap<int, size_t> map;
@@ -2313,17 +2279,8 @@ namespace Numeric
 
     //---------------------------------------------------------------------------//
 
-    void Find_SubArrays_WithGivenSum() {
-        {
-            // std::pair<std::vector<int>, int> data { std::vector<int>{2,3,4,5,6,7}, 11};
-            const std::pair<std::vector<int>, int> data{std::vector<int>{1, 4, 20, 3, 10, 5, 11}, 33};
-
-            auto [success, borders] = _Subarray_With_Given_Sum(data.first, data.second);
-            if (success) {
-                print_vector(data.first, borders.first, borders.second);
-            }
-        }
-
+    void Find_SubArrays_WithGivenSum()
+    {
         /*
         {
             std::vector<int> Numeric = { 9, -5, 13, 2, -7, 10, -3 };

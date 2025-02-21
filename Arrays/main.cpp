@@ -54,7 +54,8 @@ int main([[maybe_unused]] int argc,
     // ArraysAlgorithms::Min_Length_SubArray_WithSameDegree();
     // ArraysAlgorithms::Maximum_Area_Between_Boundaries();
     // ArraysAlgorithms::Calculate_Max_Hotel_Visitors();
-    ArraysAlgorithms::Find_SubArrays_Sum_Equal_K();
+    // ArraysAlgorithms::Find_SubArrays_Sum_Equal_K();
+    ArraysAlgorithms::Find_SubArray_Sum_Equal_K_Single();
 
 	return EXIT_SUCCESS;
 }

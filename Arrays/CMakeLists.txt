@@ -49,6 +49,8 @@ add_executable(${PROJECT_NAME}
 		algorithms/Min_Length_SubArray_WithSameDegree.cpp
 		algorithms/Maximum_Area_Between_Boundaries.cpp
 		algorithms/Calculate_Max_Hotel_Visitors.cpp
+		algorithms/Find_SubArrays_Sum_Equal_K.cpp
+		algorithms/Find_SubArray_Sum_Equal_K_Single.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")
