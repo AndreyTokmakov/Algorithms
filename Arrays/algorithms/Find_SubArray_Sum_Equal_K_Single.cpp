@@ -58,12 +58,23 @@ void ArraysAlgorithms::Find_SubArray_Sum_Equal_K_Single()
         { {{9, -5, 13, 2, -7, 10, -3}, 10}, {-5, 13, 2 }}
     })
     {
-        auto [success, borders] = subarray_with_given_sum(data.first, data.second);
-        const std::vector<int> actual (data.first.begin() + borders.first,
-            data.first.begin() + borders.second + 1);
-        if (expected != actual) {
-            std::cerr << std::boolalpha << expected << " != " << actual << std::endl;
+        {
+            auto [success, borders] = subarray_with_given_sum(data.first, data.second);
+            const std::vector<int> actual (data.first.begin() + borders.first,
+                data.first.begin() + borders.second + 1);
+            if (expected != actual) {
+                std::cerr << std::boolalpha << expected << " != " << actual << std::endl;
+            }
         }
+        {
+            auto [success, borders] = subarray_with_given_sum_2(data.first, data.second);
+            const std::vector<int> actual (data.first.begin() + borders.first,
+                data.first.begin() + borders.second + 1);
+            if (expected != actual) {
+                std::cerr << std::boolalpha << expected << " != " << actual << std::endl;
+            }
+        }
+
     }
     std::cout << "OK: All tests passed\n";
 
