@@ -37,13 +37,32 @@ namespace
         }
         return result;
     }
+
+    int count_sub_arrays_with_given_sum(const std::vector<int>& nums,
+                                        const int K)
+    {
+        std::unordered_map<int, int> seen = {{0, 1}};
+        int count = 0;
+        for (int sum = 0; const int val: nums) {
+            sum += val;
+            if (const auto it = seen.find(sum - K); it != seen.end()) {
+                count += it->second;
+            }
+            seen[sum]++;
+        }
+        return count;
+    }
 }
 
 void ArraysAlgorithms::Find_SubArrays_Sum_Equal_K()
 {
     {
+        const int K = 7;
         const std::vector<int> values = {3, 4, -7, 3, 1, 3, 1, -4, -2, -2};
-        std::vector<std::span<const int>> result = find_all_sub_arrays_with_given_sum(values, 7);
+        std::vector<std::span<const int>> result = find_all_sub_arrays_with_given_sum(values, K);
+        const int count = count_sub_arrays_with_given_sum(values, K);
+
+        std::cout << "count = " << count << std::endl;
         for (const auto &span: result)
             std::cout << span << std::endl;
 
@@ -51,8 +70,12 @@ void ArraysAlgorithms::Find_SubArrays_Sum_Equal_K()
     }
 
     {
+        const int K = 5;
         const std::vector<int> values = {3, 4, -7, 3, 1, 3, 1, -4, -2, -2};
-        std::vector<std::span<const int>> result = find_all_sub_arrays_with_given_sum(values, 5);
+        std::vector<std::span<const int>> result = find_all_sub_arrays_with_given_sum(values, K);
+        const int count = count_sub_arrays_with_given_sum(values, K);
+
+        std::cout << "count = " << count << std::endl;
         for (const auto &span: result)
             std::cout << span << std::endl;
 
