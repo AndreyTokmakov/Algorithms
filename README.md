@@ -79,45 +79,45 @@ Nothing special, just an attempt to structure and study C++ algorithms
 
 <a id="math_arrays_algorithms"></a>
 ## Math and Arrays Algorithms
--  [Add_Digits](https://github.com/AndreyTokmakov/Algorithms/blob/5f523bcea1a49736dc1e04b086ad564a1fb82109/Arrays/algorithms/Add_Digits.cpp#L23) <br/>
--  [Best_Time_Buy_and_Sell_Stock](https://github.com/AndreyTokmakov/Algorithms/blob/5f523bcea1a49736dc1e04b086ad564a1fb82109/Arrays/algorithms/Best_Time_Buy_and_Sell_Stock.cpp#L30) <br/>
--  [Find_Element_Encountered_Only_Once](https://github.com/AndreyTokmakov/Algorithms/blob/5f523bcea1a49736dc1e04b086ad564a1fb82109/Arrays/algorithms/Find_Element_Encountered_Only_Once.cpp#L26) <br/>
+-  [Add_Digits](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Add_Digits.cpp#L23) <br/>
+-  [Best_Time_Buy_and_Sell_Stock](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Best_Time_Buy_and_Sell_Stock.cpp#L30) <br/>
+-  [Find_Element_Encountered_Only_Once](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_Element_Encountered_Only_Once.cpp#L26) <br/>
 -  [Find_SubArrays_Sum_Zero](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_SubArrays_Sum_Zero.cpp#L30)<br/>
 -  [Find_SubArrays_Sum_Equal_K](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_SubArrays_Sum_Equal_K.cpp#L19)<br/>
 -  [Find_SubArray_Sum_Equal_K_Single](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_SubArray_Sum_Equal_K_Single.cpp#L22)<br/>
--  [Find_Top_K_Frequent_Numbers](https://github.com/AndreyTokmakov/Algorithms/blob/5f523bcea1a49736dc1e04b086ad564a1fb82109/Arrays/algorithms/Find_Top_K_Frequent_Numbers.cpp#L16) <br/>
--  [Is_Reversed_Equals](https://github.com/AndreyTokmakov/Algorithms/blob/5f523bcea1a49736dc1e04b086ad564a1fb82109/Arrays/algorithms/Is_Reversed_Equals.cpp#L15) <br/>
--  [Median_of_Two_Sorted_Arrays](https://github.com/AndreyTokmakov/Algorithms/blob/5f523bcea1a49736dc1e04b086ad564a1fb82109/Arrays/algorithms/Median_of_Two_Sorted_Arrays.cpp#L26) <br/>
--  [MidPoint](https://github.com/AndreyTokmakov/Algorithms/blob/5f523bcea1a49736dc1e04b086ad564a1fb82109/Arrays/algorithms/MidPoint.cpp#L16) <br/>
--  [Reverse_Bits](https://github.com/AndreyTokmakov/Algorithms/blob/5f523bcea1a49736dc1e04b086ad564a1fb82109/Arrays/algorithms/Reverse_Bits.cpp#L26) <br/>
--  [Reverse_Number](https://github.com/AndreyTokmakov/Algorithms/blob/5f523bcea1a49736dc1e04b086ad564a1fb82109/Arrays/algorithms/Reverse_Number.cpp#L25) <br/>
--  [Reverse_To_Make_Equal](https://github.com/AndreyTokmakov/Algorithms/blob/5f523bcea1a49736dc1e04b086ad564a1fb82109/Arrays/algorithms/Reverse_To_Make_Equal.cpp#L16) <br/>
--  [Single_Number](https://github.com/AndreyTokmakov/Algorithms/blob/5f523bcea1a49736dc1e04b086ad564a1fb82109/Arrays/algorithms/Single_Number.cpp#L29) <br/>
--  [Two_Sum_Less_Than_K](https://github.com/AndreyTokmakov/Algorithms/blob/5f523bcea1a49736dc1e04b086ad564a1fb82109/Arrays/algorithms/Two_Sum_Less_Than_K.cpp#L23) <br/>
--  [Remove_Duplicates_From_Sorted_Array](https://github.com/AndreyTokmakov/Algorithms/blob/6df0032f61d3cca0c0c9ed8eb4aa1a6ca2747eb8/Arrays/algorithms/Remove_Duplicates_From_Sorted_Array.cpp#L28)<br/>
--  [Remove_Duplicates](https://github.com/AndreyTokmakov/Algorithms/blob/6df0032f61d3cca0c0c9ed8eb4aa1a6ca2747eb8/Arrays/algorithms/Remove_Duplicates.cpp#L18)<br/>
--  [Remove_Element](https://github.com/AndreyTokmakov/Algorithms/blob/6df0032f61d3cca0c0c9ed8eb4aa1a6ca2747eb8/Arrays/algorithms/Remove_Element.cpp#L19)<br/>
--  [Contains_Duplicate](https://github.com/AndreyTokmakov/Algorithms/blob/6df0032f61d3cca0c0c9ed8eb4aa1a6ca2747eb8/Arrays/algorithms/Contains_Duplicate.cpp#L18)<br/>
--  [Find_Smallest_Missing_Positive_Number](https://github.com/AndreyTokmakov/Algorithms/blob/6df0032f61d3cca0c0c9ed8eb4aa1a6ca2747eb8/Arrays/algorithms/Find_Smallest_Missing_Positive_Number.cpp#L17)<br/>
--  [Longest_Harmonious_Subsequence](https://github.com/AndreyTokmakov/Algorithms/blob/8f8f2ff22cf57719ab5af2c65ccdcb2ab090979e/Arrays/algorithms/Longest_Harmonious_Subsequence.cpp#L25)<br/>
--  [Is_Prime](https://github.com/AndreyTokmakov/Algorithms/blob/8f8f2ff22cf57719ab5af2c65ccdcb2ab090979e/Arrays/algorithms/Is_Prime.cpp#L18)<br/>
--  [Coins_Change_Problem](https://github.com/AndreyTokmakov/Algorithms/blob/8f8f2ff22cf57719ab5af2c65ccdcb2ab090979e/Arrays/algorithms/Coins_Change_Problem.cpp#L19)<br/>
--  [Get_Number_Of_Digit](https://github.com/AndreyTokmakov/Algorithms/blob/8f8f2ff22cf57719ab5af2c65ccdcb2ab090979e/Arrays/algorithms/Get_Number_Of_Digit.cpp#L18)<br/>
--  [Greatest_Common_Divisor](https://github.com/AndreyTokmakov/Algorithms/blob/8f8f2ff22cf57719ab5af2c65ccdcb2ab090979e/Arrays/algorithms/Greatest_Common_Divisor.cpp#L27)<br/>
--  [Least_Common_Multiple](https://github.com/AndreyTokmakov/Algorithms/blob/8f8f2ff22cf57719ab5af2c65ccdcb2ab090979e/Arrays/algorithms/Least_Common_Multiple.cpp#L18)<br/>
--  [Is_Power_Of2](https://github.com/AndreyTokmakov/Algorithms/blob/8f8f2ff22cf57719ab5af2c65ccdcb2ab090979e/Arrays/algorithms/Is_Power_Of2.cpp#L18)<br/>
--  [Find_The_Majority_Element](https://github.com/AndreyTokmakov/Algorithms/blob/69603dd9203873533bd66491f1936d57da357bd3/Arrays/algorithms/Find_The_Majority_Element.cpp#L27)<br/>
--  [Can_Jump](https://github.com/AndreyTokmakov/Algorithms/blob/69603dd9203873533bd66491f1936d57da357bd3/Arrays/algorithms/Can_Jump.cpp#L25)<br/>
--  [Maximum_Sum_SubArray_Algorithms_Kadane](https://github.com/AndreyTokmakov/Algorithms/blob/69603dd9203873533bd66491f1936d57da357bd3/Arrays/algorithms/Maximum_Sum_SubArray_Algorithms_Kadane.cpp#L18)<br/>
--  [Sort_Array_By_Parity](https://github.com/AndreyTokmakov/Algorithms/blob/69603dd9203873533bd66491f1936d57da357bd3/Arrays/algorithms/Sort_Array_By_Parity.cpp#L24)<br/>
--  [Contains_Nearby_Duplicates](https://github.com/AndreyTokmakov/Algorithms/blob/9e71d8a6e1a3d994c913d668ba4462c45358e71b/Arrays/algorithms/Contains_Nearby_Duplicates.cpp#L27)<br/>
--  [Divide_Without_Division_Operator](https://github.com/AndreyTokmakov/Algorithms/blob/d8c4cc25914e549bf86bbe43241d2831b00e8286/Arrays/algorithms/Divide_Without_Division_Operator.cpp#L18)<br/>
--  [Longest_Consecutive_Sequence](https://github.com/AndreyTokmakov/Algorithms/blob/608f9070c43f85c5ccb249ecb81985225af1a995/Arrays/algorithms/Longest_Consecutive_Sequence.cpp#L18)<br/>
--  [Add_One_to_Integer_Array](https://github.com/AndreyTokmakov/Algorithms/blob/608f9070c43f85c5ccb249ecb81985225af1a995/Arrays/algorithms/Add_One_to_Integer_Array.cpp#L27)<br/>
--  [Sqrt](https://github.com/AndreyTokmakov/Algorithms/blob/608f9070c43f85c5ccb249ecb81985225af1a995/Arrays/algorithms/Sqrt.cpp#L17)<br/>
--  [Min_Length_SubArray_WithSameDegree](https://github.com/AndreyTokmakov/Algorithms/blob/b4cf4e0e248ca54a4efe08ae613986c7265a6318/Arrays/algorithms/Min_Length_SubArray_WithSameDegree.cpp#L42)<br/>
--  [Maximum_Area_Between_Boundaries](https://github.com/AndreyTokmakov/Algorithms/blob/b4cf4e0e248ca54a4efe08ae613986c7265a6318/Arrays/algorithms/Maximum_Area_Between_Boundaries.cpp#L30)<br/>
--  [Calculate_Max_Hotel_Visitors](https://github.com/AndreyTokmakov/Algorithms/blob/b4cf4e0e248ca54a4efe08ae613986c7265a6318/Arrays/algorithms/Calculate_Max_Hotel_Visitors.cpp#L23)<br/>
+-  [Find_Top_K_Frequent_Numbers](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_Top_K_Frequent_Numbers.cpp#L16) <br/>
+-  [Is_Reversed_Equals](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Is_Reversed_Equals.cpp#L15)<br/>
+-  [Median_of_Two_Sorted_Arrays](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Median_of_Two_Sorted_Arrays.cpp#L26)<br/>
+-  [MidPoint](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/MidPoint.cpp#L16) <br/>
+-  [Reverse_Bits](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Reverse_Bits.cpp#L26) <br/>
+-  [Reverse_Number](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Reverse_Number.cpp#L25) <br/>
+-  [Reverse_To_Make_Equal](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Reverse_To_Make_Equal.cpp#L16) <br/>
+-  [Single_Number](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Single_Number.cpp#L29) <br/>
+-  [Two_Sum_Less_Than_K](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Two_Sum_Less_Than_K.cpp#L23) <br/>
+-  [Remove_Duplicates_From_Sorted_Array](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Remove_Duplicates_From_Sorted_Array.cpp#L28)<br/>
+-  [Remove_Duplicates](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Remove_Duplicates.cpp#L18)<br/>
+-  [Remove_Element](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Remove_Element.cpp#L19)<br/>
+-  [Contains_Duplicate](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Contains_Duplicate.cpp#L18)<br/>
+-  [Find_Smallest_Missing_Positive_Number](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_Smallest_Missing_Positive_Number.cpp#L17)<br/>
+-  [Longest_Harmonious_Subsequence](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Longest_Harmonious_Subsequence.cpp#L25)<br/>
+-  [Is_Prime](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Is_Prime.cpp#L18)<br/>
+-  [Coins_Change_Problem](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Coins_Change_Problem.cpp#L19)<br/>
+-  [Get_Number_Of_Digit](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Get_Number_Of_Digit.cpp#L18)<br/>
+-  [Greatest_Common_Divisor](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Greatest_Common_Divisor.cpp#L27)<br/>
+-  [Least_Common_Multiple](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Least_Common_Multiple.cpp#L18)<br/>
+-  [Is_Power_Of2](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Is_Power_Of2.cpp#L18)<br/>
+-  [Find_The_Majority_Element](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_The_Majority_Element.cpp#L27)<br/>
+-  [Can_Jump](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Can_Jump.cpp#L25)<br/>
+-  [Maximum_Sum_SubArray_Algorithms_Kadane](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Maximum_Sum_SubArray_Algorithms_Kadane.cpp#L18)<br/>
+-  [Sort_Array_By_Parity](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Sort_Array_By_Parity.cpp#L24)<br/>
+-  [Contains_Nearby_Duplicates](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Contains_Nearby_Duplicates.cpp#L27)<br/>
+-  [Divide_Without_Division_Operator](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Divide_Without_Division_Operator.cpp#L18)<br/>
+-  [Longest_Consecutive_Sequence](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Longest_Consecutive_Sequence.cpp#L18)<br/>
+-  [Add_One_to_Integer_Array](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Add_One_to_Integer_Array.cpp#L27)<br/>
+-  [Sqrt](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Sqrt.cpp#L17)<br/>
+-  [Min_Length_SubArray_WithSameDegree](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Min_Length_SubArray_WithSameDegree.cpp#L42)<br/>
+-  [Maximum_Area_Between_Boundaries](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Maximum_Area_Between_Boundaries.cpp#L30)<br/>
+-  [Calculate_Max_Hotel_Visitors](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Calculate_Max_Hotel_Visitors.cpp#L23)<br/>
 
 <a id="linked_list"></a>
 ## Linked List
