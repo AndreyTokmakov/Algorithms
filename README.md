@@ -82,7 +82,9 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [Add_Digits](https://github.com/AndreyTokmakov/Algorithms/blob/5f523bcea1a49736dc1e04b086ad564a1fb82109/Arrays/algorithms/Add_Digits.cpp#L23) <br/>
 -  [Best_Time_Buy_and_Sell_Stock](https://github.com/AndreyTokmakov/Algorithms/blob/5f523bcea1a49736dc1e04b086ad564a1fb82109/Arrays/algorithms/Best_Time_Buy_and_Sell_Stock.cpp#L30) <br/>
 -  [Find_Element_Encountered_Only_Once](https://github.com/AndreyTokmakov/Algorithms/blob/5f523bcea1a49736dc1e04b086ad564a1fb82109/Arrays/algorithms/Find_Element_Encountered_Only_Once.cpp#L26) <br/>
--  [Find_SubArrays_Sum_Zero](https://github.com/AndreyTokmakov/Algorithms/blob/5f523bcea1a49736dc1e04b086ad564a1fb82109/Arrays/algorithms/Find_SubArrays_Sum_Zero.cpp#L15) <br/>
+-  [Find_SubArrays_Sum_Zero](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_SubArrays_Sum_Zero.cpp#L30)<br/>
+-  [Find_SubArrays_Sum_Equal_K](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_SubArrays_Sum_Equal_K.cpp#L19)<br/>
+-  [Find_SubArray_Sum_Equal_K_Single](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_SubArray_Sum_Equal_K_Single.cpp#L22)<br/>
 -  [Find_Top_K_Frequent_Numbers](https://github.com/AndreyTokmakov/Algorithms/blob/5f523bcea1a49736dc1e04b086ad564a1fb82109/Arrays/algorithms/Find_Top_K_Frequent_Numbers.cpp#L16) <br/>
 -  [Is_Reversed_Equals](https://github.com/AndreyTokmakov/Algorithms/blob/5f523bcea1a49736dc1e04b086ad564a1fb82109/Arrays/algorithms/Is_Reversed_Equals.cpp#L15) <br/>
 -  [Median_of_Two_Sorted_Arrays](https://github.com/AndreyTokmakov/Algorithms/blob/5f523bcea1a49736dc1e04b086ad564a1fb82109/Arrays/algorithms/Median_of_Two_Sorted_Arrays.cpp#L26) <br/>
@@ -116,7 +118,6 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [Min_Length_SubArray_WithSameDegree](https://github.com/AndreyTokmakov/Algorithms/blob/b4cf4e0e248ca54a4efe08ae613986c7265a6318/Arrays/algorithms/Min_Length_SubArray_WithSameDegree.cpp#L42)<br/>
 -  [Maximum_Area_Between_Boundaries](https://github.com/AndreyTokmakov/Algorithms/blob/b4cf4e0e248ca54a4efe08ae613986c7265a6318/Arrays/algorithms/Maximum_Area_Between_Boundaries.cpp#L30)<br/>
 -  [Calculate_Max_Hotel_Visitors](https://github.com/AndreyTokmakov/Algorithms/blob/b4cf4e0e248ca54a4efe08ae613986c7265a6318/Arrays/algorithms/Calculate_Max_Hotel_Visitors.cpp#L23)<br/>
-
 
 <a id="linked_list"></a>
 ## Linked List
