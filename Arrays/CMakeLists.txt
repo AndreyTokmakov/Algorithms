@@ -51,6 +51,8 @@ add_executable(${PROJECT_NAME}
 		algorithms/Calculate_Max_Hotel_Visitors.cpp
 		algorithms/Find_SubArrays_Sum_Equal_K.cpp
 		algorithms/Find_SubArray_Sum_Equal_K_Single.cpp
+		algorithms/Smallest_Subarray_With_Sum_Greater_Than_K.cpp
+		algorithms/Find_Longest_SubArray_K_Unique_Elements.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")

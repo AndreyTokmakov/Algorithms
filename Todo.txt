@@ -3,8 +3,8 @@
 =======================================================================================================================================
 
 /**============================================================================
-Name        : Merge_K_Sorter_Lists.cpp
-Created on  : 20.01.2025
+Name        : Find_Longest_SubArray_K_Unique_Elements.cpp
+Created on  : 22.01.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
 Copyright   : Your copyright notice
@@ -12,17 +12,17 @@ Description :
 ============================================================================**/
 
 #include "../common.h"
-#include "../LinkedListAlgorithms.h"
+#include "../ArraysAlgorithms.h"
 
 
 namespace
 {
-    using namespace LinkedListAlgorithms;
+    using namespace ArraysAlgorithms;
 
 
 }
 
-void LinkedListAlgorithms::Merge_K_Sorter_Lists()
+void ArraysAlgorithms::Find_Longest_SubArray_K_Unique_Elements()
 {
 
 }
@@ -48,15 +48,9 @@ void LinkedListAlgorithms::Merge_K_Sorter_Lists()
 							Algoritms: Today | 3 НОВЫХ алгоритма ежедневно
 =======================================================================================================================================
 
-SmallestSubarrayWithSumGreaterX
+Sliding window:
+	- ???
 
-Find_SubArray_Sum_Equal_K_Single
-
-
-Find_SubArrays_Sum_Equal_K           <-------------------
-
-1. two pointers 
-    https://leetcode.com/problems/subarray-sum-equals-k/ 
 
 
 5. tree 
@@ -65,17 +59,20 @@ Find_SubArrays_Sum_Equal_K           <-------------------
 Heap:
 	- Arrays: Find_N_Min_Elements_2    
 
-
-
 =======================================================================================================================================
 							Algoritms: Add to README
 =======================================================================================================================================
 
-Linked Lists:
-	Merge_K_Sorter_Lists
+Update Links in the README ==> main
+
+
+Array:
+	-	Smallest_Subarray_With_Sum_Greater_Than_K
+	-	Find_Longest_SubArray_K_Unique_Elements
+
 
 String:
--  [NAME](LINK)<br/>
+-  [](LINK)<br/>
 
 =======================================================================================================================================
 							Algoritms: Top Google Questions – Part 1

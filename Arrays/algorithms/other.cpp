@@ -839,57 +839,7 @@ namespace Numeric
     }
 }
 
-namespace Numeric
-{
-    using VectorSizePair = std::pair<std::vector<int>, size_t>;
 
-    size_t maxSubarrayLength(const std::vector<int>& nums,
-                             const size_t k)
-    {
-        // Dictionary to keep track of the count of each number in the current window
-        std::unordered_map<int, size_t> countMap;
-
-        // Variable to store the maximum length found
-        size_t maxLength = 0;
-
-        // Two pointers defining the current window's boundaries
-        for (size_t left = 0, right = 0, size = nums.size(); right < size; ++right)
-        {
-            // Increment the count of the rightmost element in the current window
-            ++countMap[nums[right]];
-
-            // If the count of the current element exceeds k, shrink the window from the left
-            while (countMap[nums[right]] > k)
-            {
-                --countMap[nums[left]];
-                ++left;  // Move the left pointer to the right
-            }
-            // Update the maximum length if the current window is larger
-            maxLength = std::max(maxLength, right - left + 1);
-        }
-        // Return the maximum length of the sub-array
-        return maxLength;
-    }
-
-    //  Необходимо найти максимальную длину под-массива такого что бы в нем было не более чем 'K' уникальных элементов
-    void FindLongestSubArray_K_UniqueElements()
-    {
-        for (const std::pair<VectorSizePair, size_t> &data: std::vector<std::pair<VectorSizePair, size_t> >{
-                {{{1, 2, 2, 3, 1, 2, 3},       2}, 5},
-                {{{1, 2, 2, 3, 1, 3, 3},       2}, 6},
-                {{{1, 1, 2, 2, 1, 2, 1},       2}, 4},
-                {{{0},       2}, 1},
-                {{{},       0}, 0},
-        }) {
-            const auto &[values, K] = data.first;
-            if (const auto actual = maxSubarrayLength(values, K); actual != data.second)
-            {
-                std::cout << "Expected value is " << data.second << ", Actual: " << actual << std::endl;
-            }
-        }
-        std::cout << "OK: All tests passed\n";
-    }
-}
 namespace Numeric
 {
     size_t findLongestSubArrayFromPos(const std::vector<int> &vect1,
@@ -1920,91 +1870,6 @@ namespace Numeric
         const int result = countOccurrences(numbers, 2);
 
         std::cout << result << std::endl;
-    }
-
-    //--------------------------------------------------------------------------------------//
-
-    size_t __smallest_subarray_with_sum_greater_X(const std::vector<int> &Numeric, const size_t X) {
-        size_t min_len = Numeric.size(), sum;
-        for (size_t i = 0; i < Numeric.size(); i++) {
-            sum = 0;
-            for (size_t n = i; n < Numeric.size() && (n - i + 1) < min_len; n++) {
-                sum += Numeric[n];
-                if (sum > X) {
-                    min_len = std::min(min_len, n - i + 1);
-                    if (1 == min_len)
-                        return 1;
-                    break;
-                }
-            }
-        }
-        return min_len;
-    }
-
-    size_t __smallest_subarray_with_sum_greater_X_2(const std::vector<int> &Numeric, const size_t X) {
-        size_t min_len = Numeric.size(), sum = 0;
-
-        // Get first 'mimnimum length' and 'sum' > X
-        for (size_t i = 0; i < Numeric.size() && sum <= X; i++) {
-            sum += Numeric[i];
-            min_len = i + 1;
-        }
-
-        // Next we will use 'sliding window' approach to check each window
-        // of length == 'mimnimum length' for its sum and if
-        // sum of elements if 'window - last element' still > X
-        // that we can decrement 'mimnimum length' value.
-
-        size_t end_pos = 0;
-        for (size_t i = 1; i <= (Numeric.size() - min_len) && min_len > 1; i++) {
-            end_pos = min_len + i - 1;
-            sum += Numeric[end_pos] - Numeric[i - 1];
-
-            while ((sum - Numeric[end_pos]) > X) {
-                sum -= Numeric[end_pos--];
-                min_len--;
-            }
-        }
-        return min_len;
-    }
-
-    size_t __smallest_subarray_with_sum_greater_X_3(const std::vector<int> &Numeric, const size_t X) {
-        size_t min_len = Numeric.size(), sum = 0;
-
-        // Get first 'mimnimum length' and 'sum' > X
-        for (size_t i = 0; i < Numeric.size() && sum <= X; i++) {
-            sum += Numeric[i];
-            min_len = i + 1;
-        }
-
-        // Next we will use 'sliding window' approach to check each window
-        // of length == 'mimnimum length' for its sum and if
-        // sum of elements if 'window - last element' still > X
-        // that we can decrement 'mimnimum length' value.
-
-        for (size_t i = min_len; i < Numeric.size() && min_len > 1; i++) {
-            sum += Numeric[i] - Numeric[i - min_len];
-
-            while ((sum - Numeric[i]) > X) {
-                sum -= Numeric[i--];
-                min_len--;
-            }
-        }
-        return min_len;
-    }
-
-    void SmallestSubarrayWithSumGreaterX() {
-        std::vector<int> Numeric = {3, 4, 4, 1, 9, 6, 1, 3, 9, 5, 1, 3, 9, 10, 10, 4, 8, 3, 6, 8, 4, 2, 5, 8, 9};
-        const int X = 10;
-
-        size_t len = __smallest_subarray_with_sum_greater_X(Numeric, X);
-        std::cout << len << std::endl;
-
-        len = __smallest_subarray_with_sum_greater_X_2(Numeric, X);
-        std::cout << len << std::endl;
-
-        len = __smallest_subarray_with_sum_greater_X_3(Numeric, X);
-        std::cout << len << std::endl;
     }
 
     //--------------------------------------------------------------------------------------//
