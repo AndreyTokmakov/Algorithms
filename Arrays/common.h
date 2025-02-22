@@ -81,6 +81,28 @@ namespace ArraysAlgorithms
             std::cout << vector[i] << " ";
         std::cout << std::endl;
     }
+
+    // Span:
+
+    template<typename T>
+    std::ostream& operator<<(std::ostream &stream, const std::span<T>& span)
+    {
+        for (const auto &i: span)
+            stream << " " << i;
+        return stream;
+    }
+
+    template<typename T>
+    bool operator==(const std::span<T>& s1, const std::span<T>& s2)
+    {
+        return std::equal(s1.cbegin(), s1.cend(), s2.cbegin(), s2.cend());
+    }
+
+    template<typename T>
+    bool operator==(const std::span<const T>& s1, const std::span<const T>& s2)
+    {
+        return std::equal(s1.cbegin(), s1.cend(), s2.cbegin(), s2.cend());
+    }
 }
 
 #endif //ARRAYS_ALGORITHMS_COMMON_H

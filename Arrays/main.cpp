@@ -25,7 +25,9 @@ int main([[maybe_unused]] int argc,
     // ArraysAlgorithms::Reverse_To_Make_Equal();
     // ArraysAlgorithms::Is_Reversed_Equals();
     // ArraysAlgorithms::Find_Top_K_Frequent_Numbers();
-    // ArraysAlgorithms::Find_SubArrays_SumZero();
+    // ArraysAlgorithms::Find_SubArrays_Sum_Zero();
+    ArraysAlgorithms::Find_SubArrays_Sum_Equal_K();
+    // ArraysAlgorithms::Find_SubArray_Sum_Equal_K_Single();
     // ArraysAlgorithms::Reverse_Number();
     // ArraysAlgorithms::Find_Element_Encountered_Only_Once();;
     // ArraysAlgorithms::Is_Palindrome();
@@ -54,8 +56,7 @@ int main([[maybe_unused]] int argc,
     // ArraysAlgorithms::Min_Length_SubArray_WithSameDegree();
     // ArraysAlgorithms::Maximum_Area_Between_Boundaries();
     // ArraysAlgorithms::Calculate_Max_Hotel_Visitors();
-    // ArraysAlgorithms::Find_SubArrays_Sum_Equal_K();
-    ArraysAlgorithms::Find_SubArray_Sum_Equal_K_Single();
+
 
 	return EXIT_SUCCESS;
 }

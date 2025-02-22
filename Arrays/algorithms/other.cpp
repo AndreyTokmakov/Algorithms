@@ -2255,50 +2255,6 @@ namespace Numeric
         }
     }
 
-    //---------------------------------------------------------------------------//
-
-
-    void _Subarray_With_Given_Sum_All(const std::vector<int> &data, const int K) {
-        std::unordered_multimap<int, size_t> map;
-        int curr_sum = 0;
-
-        for (size_t index = 0; index < data.size(); index++) {
-            curr_sum += data[index];
-            if (curr_sum == K)
-                print_vector(data, 0, index);
-            else if (auto iter = map.find(curr_sum - K); iter != map.end()) {
-                while (iter != map.end() && iter->first == (curr_sum - K)) {
-                    std::cout << "Subarray:    ";
-                    print_vector(data, iter->second + 1, index);
-                    iter++;
-                }
-            }
-            map.insert({curr_sum, index});
-        }
-    }
-
-    //---------------------------------------------------------------------------//
-
-    void Find_SubArrays_WithGivenSum()
-    {
-        /*
-        {
-            std::vector<int> Numeric = { 9, -5, 13, 2, -7, 10, -3 };
-            int X = 10;
-
-            auto [success, borders] = _Subarray_With_Given_Sum2(Numeric, X);
-            if (success) {
-                print_vector(Numeric, borders.first, borders.second);
-            }
-        }
-        {
-            int X = 10;
-            std::vector<int> Numeric = { 9, -5, 13, 2, -7, 10, -3 };
-            _Subarray_With_Given_Sum_All(Numeric, X);
-        }
-        */
-    }
-
     //----------------------------------------------------------------------------------------------------------
 
     void findCommon(const std::vector<int> &ar1,
@@ -2717,7 +2673,6 @@ void ArraysAlgorithms::Other()
     // Numeric::FindLongestSubArray();
     // Numeric::FindLongestSubArray_K_UniqueElements();
     // Numeric::Find_SubArrays_SumZero();
-    // Numeric::Find_SubArrays_WithGivenSum();
     // Numeric::SmallestSubarrayWithSumGreaterX();
     // Numeric::LargestSubarrayWithSumGreaterX();   /**  UNIMPLEMENTED  **/
     // Numeric::Greatest_Subarray_AllElements_Greater_K();

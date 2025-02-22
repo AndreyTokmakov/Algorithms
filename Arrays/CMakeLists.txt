@@ -20,7 +20,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Reverse_To_Make_Equal.cpp
 		algorithms/Is_Reversed_Equals.cpp
 		algorithms/Find_Top_K_Frequent_Numbers.cpp
-		algorithms/Find_SubArrays_SumZero.cpp
+        algorithms/Find_SubArrays_Sum_Zero.cpp
 		algorithms/Find_SubArrays_Sum_Equal_K.cpp
 		algorithms/Reverse_Number.cpp
 		algorithms/Find_Element_Encountered_Only_Once.cpp

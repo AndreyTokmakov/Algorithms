@@ -15,32 +15,47 @@ namespace
 {
     using namespace ArraysAlgorithms;
 
-
-    void find_all_sub_arrays_with_given_sum(const std::vector<int> &data,
-                                            const int K)
+    std::vector<std::span<const int>>
+    find_all_sub_arrays_with_given_sum(std::span<const int> values,
+                                       const int K)
     {
-        std::unordered_multimap<int, size_t> map;
-        int curr_sum = 0;
-
-        for (size_t index = 0; index < data.size(); index++)
+        std::vector<std::span<const int>> result;
+        std::unordered_multimap<int, int> map = {{0, -1}};
+        for (int idx = 0, sum = 0, size = values.size(); idx < size; ++idx)
         {
-            curr_sum += data[index];
-            if (curr_sum == K)
-                print_vector(data, 0, index);
-            else if (auto iter = map.find(curr_sum - K); iter != map.end())
-            {
-                while (iter != map.end() && iter->first == (curr_sum - K))
-                {
-                    print_vector(data, iter->second + 1, index);
+            sum += values[idx];
+
+            /// As soon as we meet (sum - K) in the map, it means that there is at least one subarray with
+            /// the sum 0. And the beginning of this list (lists) has a second index in the map
+            if (auto iter = map.find(sum - K); map.end() != iter) {
+                while (iter != map.end() && iter->first == static_cast<int>(sum - K)) {
+                    result.push_back(values.subspan(iter->second + 1, idx - iter->second));
                     ++iter;
                 }
             }
-            map.insert({curr_sum, index});
+            map.insert({sum, idx});
         }
+        return result;
     }
 }
 
 void ArraysAlgorithms::Find_SubArrays_Sum_Equal_K()
 {
+    {
+        const std::vector<int> values = {3, 4, -7, 3, 1, 3, 1, -4, -2, -2};
+        std::vector<std::span<const int>> result = find_all_sub_arrays_with_given_sum(values, 7);
+        for (const auto &span: result)
+            std::cout << span << std::endl;
 
+        // {3 4}, { 3 1 3 }, { 3 4 -7 3 1 3 }
+    }
+
+    {
+        const std::vector<int> values = {3, 4, -7, 3, 1, 3, 1, -4, -2, -2};
+        std::vector<std::span<const int>> result = find_all_sub_arrays_with_given_sum(values, 5);
+        for (const auto &span: result)
+            std::cout << span << std::endl;
+
+        // { 1 3 1}, { 4 -7 3 1 3 1 }
+    }
 }

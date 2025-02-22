@@ -10,43 +10,46 @@ Description :
 #include "../common.h"
 #include "../ArraysAlgorithms.h"
 
+#include <optional>
+
 
 namespace
 {
     using namespace ArraysAlgorithms;
 
-    std::pair<bool, std::pair<size_t, size_t>>
-    subarray_with_given_sum(const std::vector<int> &data, const int K)
+
+    std::optional<std::span<const int>>
+    subarray_with_given_sum(std::span<const int> data, const int K)
     {
         std::unordered_map<size_t, size_t> map;
         for (int index = 0, sum = 0, size = data.size(); index < size; index++)
         {
             sum += data[index];
             if (sum == K)
-                return {true, {0, index}};
+                return data.subspan(0, index + 1);
             if (auto iter = map.find(sum - K); iter != map.end()) {
-                return {true, {iter->second + 1, index}};
+                return data.subspan(iter->second + 1, index - iter->second);
             }
             map[sum] = index;
         }
-        return {false, {-1, -1}};
+        return std::nullopt;
     }
 
-    std::pair<bool, std::pair<size_t, size_t>>
-    subarray_with_given_sum_2(const std::vector<int> &data, const int K)
+    std::optional<std::span<const int>>
+    subarray_with_given_sum_2(std::span<const int> data, const int K)
     {
         std::unordered_multimap<int, size_t> map;
         for (int index = 0, sum = 0, size = data.size(); index < size; index++)
         {
             sum += data[index];
             if (sum == K)
-                return {true, {0, index}};
-            if (auto iter = map.find(sum - K); iter != map.end())
-                return {true, {iter->second + 1, index}};
-
+                return data.subspan(0, index + 1);
+            if (auto iter = map.find(sum - K); iter != map.end()) {
+                return data.subspan(iter->second + 1, index - iter->second);
+            }
             map.insert({sum, index});
         }
-        return {false, {-1, -1}};
+        return std::nullopt;
     }
 }
 
@@ -59,23 +62,17 @@ void ArraysAlgorithms::Find_SubArray_Sum_Equal_K_Single()
     })
     {
         {
-            auto [success, borders] = subarray_with_given_sum(data.first, data.second);
-            const std::vector<int> actual (data.first.begin() + borders.first,
-                data.first.begin() + borders.second + 1);
-            if (expected != actual) {
-                std::cerr << std::boolalpha << expected << " != " << actual << std::endl;
+            const std::optional<std::span<const int>> actual = subarray_with_given_sum(data.first, data.second);
+            if (actual.value() != std::span<const int>(expected)) {
+                std::cerr << std::boolalpha << expected << " != " << actual.value() << std::endl;
             }
         }
         {
-            auto [success, borders] = subarray_with_given_sum_2(data.first, data.second);
-            const std::vector<int> actual (data.first.begin() + borders.first,
-                data.first.begin() + borders.second + 1);
-            if (expected != actual) {
-                std::cerr << std::boolalpha << expected << " != " << actual << std::endl;
+            const std::optional<std::span<const int>> actual = subarray_with_given_sum_2(data.first, data.second);
+            if (actual.value() != std::span<const int>(expected)) {
+                std::cerr << std::boolalpha << expected << " != " << actual.value() << std::endl;
             }
         }
-
     }
     std::cout << "OK: All tests passed\n";
-
 }

@@ -26,7 +26,7 @@ namespace ArraysAlgorithms
     void Reverse_To_Make_Equal();
     void Is_Reversed_Equals();
     void Find_Top_K_Frequent_Numbers();
-    void Find_SubArrays_SumZero();
+    void Find_SubArrays_Sum_Zero();
     void Reverse_Number();
     void Find_Element_Encountered_Only_Once();
     void Is_Palindrome();
