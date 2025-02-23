@@ -12,7 +12,8 @@ Demo Algorithms
 9. [Graphs](#graphs)
 10. [Queues](#queues)
 11. [Stack](#stack)
-12. [BinarySearch](#binary_search)
+12. [Binary Search](#binary_search)
+13. [Prefix Sums](#prefix_sums)
 
 <a name="Overview"></a>
 ## Overview
@@ -118,6 +119,11 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [Min_Length_SubArray_WithSameDegree](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Min_Length_SubArray_WithSameDegree.cpp#L42)<br/>
 -  [Maximum_Area_Between_Boundaries](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Maximum_Area_Between_Boundaries.cpp#L30)<br/>
 -  [Calculate_Max_Hotel_Visitors](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Calculate_Max_Hotel_Visitors.cpp#L23)<br/>
+-  [Smallest_Subarray_With_Sum_Greater_Than_K](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Smallest_Subarray_With_Sum_Greater_Than_K.cpp#L18)<br/>
+-  [Find_Longest_SubArray_K_Unique_Elements](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_Longest_SubArray_K_Unique_Elements.cpp#L20)<br/>
+-  [Find_Index_In_Array_to_make_Right_Equal_Left](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_Index_In_Array_to_make_Right_Equal_Left.cpp#L19)<br/>
+-  [Sum_of_Sub_Array_Between_Indexes_L_and_R](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Sum_of_Sub_Array_Between_Indexes_L_and_R.cpp#L19)<br/>
+-  [Find_Smallest_Without_Compare](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_Smallest_Without_Compare.cpp#L20)<br/>
 
 <a id="linked_list"></a>
 ## Linked List
@@ -180,3 +186,8 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [Sqrt](https://github.com/AndreyTokmakov/Algorithms/blob/608f9070c43f85c5ccb249ecb81985225af1a995/Arrays/algorithms/Sqrt.cpp#L17)<br/>
 -  [Find_Smallest_Letter_Greater_Than_Target](https://github.com/AndreyTokmakov/Algorithms/blob/608f9070c43f85c5ccb249ecb81985225af1a995/BinarySearch/algorithms/Find_Smallest_Letter_Greater_Than_Target.cpp#L31C16-L31C17)<br/>
 -  [Binary_Search](https://github.com/AndreyTokmakov/Algorithms/blob/b4cf4e0e248ca54a4efe08ae613986c7265a6318/BinarySearch/algorithms/Binary_Search.cpp#L35)<br/>
+
+<a id="prefix_sums"></a>
+## Prefix Sums:
+-  [Find_Longest_SubArray_K_Unique_Elements](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_Longest_SubArray_K_Unique_Elements.cpp#L20)<br/>
+-  [Find_Index_In_Array_to_make_Right_Equal_Left](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_Index_In_Array_to_make_Right_Equal_Left.cpp#L19)<br/>
