@@ -191,3 +191,4 @@ Nothing special, just an attempt to structure and study C++ algorithms
 ## Prefix Sums:
 -  [Find_Longest_SubArray_K_Unique_Elements](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_Longest_SubArray_K_Unique_Elements.cpp#L20)<br/>
 -  [Find_Index_In_Array_to_make_Right_Equal_Left](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_Index_In_Array_to_make_Right_Equal_Left.cpp#L19)<br/>
+-  [Sum_of_Sub_Array_Between_Indexes_L_and_R](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Sum_of_Sub_Array_Between_Indexes_L_and_R.cpp#L19)<br/>
