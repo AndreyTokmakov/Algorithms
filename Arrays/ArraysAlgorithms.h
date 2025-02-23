@@ -58,6 +58,9 @@ namespace ArraysAlgorithms
     void Find_SubArray_Sum_Equal_K_Single();
     void Smallest_Subarray_With_Sum_Greater_Than_K();
     void Find_Longest_SubArray_K_Unique_Elements();
+    void Sum_of_Sub_Array_Between_Indexes_L_and_R();
+    void Find_Index_In_Array_to_make_Right_Equal_Left();
+    void Find_Smallest_Without_Compare();
 }
 
 #endif //ARRAYS_ALGORITHMS_H

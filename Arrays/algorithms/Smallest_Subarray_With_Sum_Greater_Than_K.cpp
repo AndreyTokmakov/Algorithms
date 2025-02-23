@@ -21,7 +21,7 @@ namespace
         int min_len = values.size();
         for (int i = 0, size = values.size(); i < size; i++)
         {
-            for (int n = i, sum = 0; n < size && (n - i + 1) < min_len; n++)
+            for (int n = i, sum = 0; n < size; n++)
             {
                 if (values[n] == K)
                     return 1;
@@ -42,17 +42,14 @@ namespace
     {
         int min_len = 0, sum = 0;
 
-        // Get first 'mimnimum length' and 'sum' > X
+        // Get first 'minimum length' and 'sum' > X
         for (size_t i = 0; i < values.size() && sum <= K; i++) {
             sum += values[i];
             ++min_len;
         }
 
-        // Next we will use 'sliding window' approach to check each window
-        // of length == 'mimnimum length' for its sum and if
-        // sum of elements if 'window - last element' still > X
-        // that we can decrement 'mimnimum length' value.
-
+        // Next we will use 'sliding window' approach to check each window of length == 'minimum length' for its sum
+        // and if sum of elements if 'window - last element' still > X that we can decrement 'minimum length' value.
         size_t end_pos = 0;
         for (size_t i = 1; i <= (values.size() - min_len) && min_len > 1; i++) {
             end_pos = min_len + i - 1;
@@ -126,7 +123,7 @@ namespace
 
         // Compute the prefix sums
         std::vector<int> preSum(size, values.front());
-        for (int i = 1, sum = values.front(); i <= size; i++)
+        for (int i = 1, sum = values.front(); i < size; i++)
             preSum[i] = (sum += values[i]);
 
         int res = std::numeric_limits<int>::max();
@@ -183,8 +180,14 @@ namespace
 
 void ArraysAlgorithms::Smallest_Subarray_With_Sum_Greater_Than_K()
 {
-    const std::vector<int> values { 3, 4, 4, 1, 9, 6, 1, 3, 9, 5, 1, 3, 9, 10, 10, 4, 8, 3, 6, 8, 4, 2, 5, 8, 9 };
-    const int K = 24;
+    // const std::vector<int> values { 3, 4, 4, 1, 9, 6, 1, 3, 9, 5, 1, 3, 9, 10, 10, 4, 8, 3, 6, 8, 4, 2, 5, 8, 9 };
+    // const int K = 24;
+
+    const std::vector<int> values { 2,3,1,2,4,3 };// -> 2
+    const int K = 7;
+
+    // [1,4,4] 1 ---> 2
+    // [1,1,1,1,1,1,1,1] 11 ---> 0
 
     std::cout << smallest_subarray_with_sum_greater_brute_force(values, K) << std::endl;
     std::cout << smallest_subarray_with_sum_greater_X_2(values, K) << std::endl;

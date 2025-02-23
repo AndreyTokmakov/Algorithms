@@ -46,6 +46,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Find_Common_Prefix_And_Postfix.cpp
 		algorithms/Find_Duplicate_Symbols.cpp
 		algorithms/Get_String_Length.cpp
+		algorithms/Simplify_Path.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")

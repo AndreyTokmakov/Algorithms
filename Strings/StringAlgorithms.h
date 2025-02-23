@@ -52,6 +52,7 @@ namespace StringAlgorithms
     void Find_Common_Prefix_And_Postfix();
     void Find_Duplicate_Symbols();
     void Get_String_Length();
+    void Simplify_Path();
 }
 
 #endif //STRING_ALGORITHMS_H

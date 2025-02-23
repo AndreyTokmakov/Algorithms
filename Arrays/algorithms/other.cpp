@@ -603,34 +603,6 @@ namespace Numeric
         _test(10, 3);
     }
 
-    //---------------------------------------------------------------------------//
-
-    template<typename Type>
-    Type _find_smallest(Type x, Type y, Type z) {
-        Type smallest = 0;
-        while (x && y && z) {
-            x--;
-            y--;
-            z--;
-            smallest++;
-        }
-        return smallest;
-    }
-
-#if 0
-    int __smallest(int x, int y)
-    {
-        return y + ((x - y) & ((x - y) >> (sizeof(int) * CHAR_BIT - 1)));
-    }
-#endif
-
-    void FindSmallestWithoutRecursion() {
-        int smallest = _find_smallest(7, 9, 12);
-        std::cout << "Smallest = " << smallest << std::endl;
-        // std::cout << "Smallest = " << __smallest(7, 9) << std::endl;
-    }
-
-    //---------------------------------------------------------------------------//
 
     template<typename T, size_t Size>
     class HeapHack {
@@ -2489,10 +2461,7 @@ namespace Numeric::Backtracking
 void ArraysAlgorithms::Other()
 {
     // Numeric::isPowerOf2();
-
     // Numeric::Rotate_Array();
-
-    // Numeric::GreatestCommonDivisor();
     // Numeric::LeastCommonMultiple();
     // Numeric::LongestCommonSubsequence();
     // Numeric::FinabochiNumeric();
@@ -2500,9 +2469,6 @@ void ArraysAlgorithms::Other()
     // Numeric::CountAndSaySequence_Generate();
     // Numeric::CountAndSaySequence_Get_Kth_Token();
     // Numeric::CountOrderedPairs();
-    // Numeric::ReverseNumber();
-    // Numeric::IsPalindrome();
-    // Numeric::GetNumberOfDigit();
     // Numeric::RearangeArray();
     // Numeric::FindSmallestWithoutRecursion();
     // Numeric::Devide_WithDevisionOperator();
@@ -2519,8 +2485,6 @@ void ArraysAlgorithms::Other()
     // Numeric::DeviceNumeric_WithOut_Operator();
     // Numeric::LeadNumber_Window_IgnoreNulls();
     // Numeric::AnalogClockAngles();
-    // Numeric::Sqrt();
-
     // Numeric::FindMinMax();
     // Numeric::FindTwoSmallestElements();
     // Numeric::Find_N_Min_Elements();
@@ -2528,10 +2492,8 @@ void ArraysAlgorithms::Other()
     // Numeric::Find_N_Max_Elements();
     // Numeric::Find_N_Max_Elements2();
     // Numeric::MaxPairSumInArray();
-
     // Numeric::NextLargerElement();
     // Numeric::Find_All_Distinct_Combinations_LengthK();
-
     // Numeric::Find_Longest_Increasing_Subsequence();
     // Numeric::Find_Longest_Increasing_Subsequence_1();
     // Numeric::Longest_Consecutive_Sequence();
@@ -2543,8 +2505,6 @@ void ArraysAlgorithms::Other()
     // Numeric::Greatest_Subarray_AllElements_Greater_K();
     // Numeric::Smallest_Subarray_AllElements_Greater_K();
     // Numeric::Subarrays_WithCurrentMaxElement();
-
-
     // Numeric::SplitArrayToPieces_FindNumber_ByExample();
     // Numeric::Sum_Of_ConsecutiveNumeric();
     // Numeric::Is_Array_Elements_Consecutive();
@@ -2556,57 +2516,38 @@ void ArraysAlgorithms::Other()
     // Numeric::Find_3_Elements_SumX_Unsorted();
     // Numeric::Find_DifferentPairs_SumK();
     // Numeric::Find_3_Elements_SumX_Sorted();
-
-
     // Numeric::DeleteFromArray();
-
     // Numeric::Find_The_Majority_Element();
-
     // Backtracking::List_Of_Unique_Subsets();
     // Backtracking::Permutations();
-
-
     // Numeric::FindCommonElements_3_SortedArrays();
-
     // Numeric::FindTheMissingNumber_SortedArray();
     // Numeric::FindTheMissingNumber_Unsorted();
     // Numeric::FindTheMissingNumber_Unsorted_AnyRange();
     // Numeric::MissingNumber();
     // Numeric::Find_K_MissingNumber_Sorted();
     // Numeric::Find_K_MissingNumber();
-
     // Numeric::Find_Repeating_And_Missing();
     // Numeric::FindTheDuplicateValue();
-
     // Numeric::printSortedSquaredNumber_InSortedArray();
-
     // Numeric::Find_All_Symmetric_Pairs_InArray();
-
     // Numeric::Find_Elements_Occured_Once();
     // Numeric::Find_ONE_Element_Occured_Once();
     // Numeric::Find_First_Element_Occurred_Once();
     // Numeric::Find_First_Repeating_Element();
     // Numeric::Find_Minimum_Index_Of_RepeatingElement();
-
     // Numeric::Find_Top_K_Frequent_Numbers();
-
     // Numeric::Count_Number_tOccurrences_SortedArray();
-
     // Numeric::CountDistinctPairs_WithDifference_K();
     // Numeric::GroupElements_ByFirstOccurance();
-
     // Numeric::Add_One_To_Integer_ArrayTest();
     // Numeric::Product_Of_All_Numeric_Except_N();
-
     // Numeric::Missmatch_Sorted_Vectors();
     // Numeric::Missmatch_Tests();
     // Numeric::IsPermutation();
     // Numeric::MaxSum_of_NonConsecutive_Elements_In_Array();
-
     // Boundaries::Maximum_Area_Between_Boundaries();
-
     // Numeric::Rank();
-
     // Random::BiasedCoin();
 
     /** Degree_Of_Array degreeOfArray: With same occurrences of duplicated elements **/

@@ -51,7 +51,8 @@ int main([[maybe_unused]] int argc,
     // StringAlgorithms::Reverse_Words_in_String();
     // StringAlgorithms::Find_Common_Prefix_And_Postfix();
     // StringAlgorithms::Find_Duplicate_Symbols();
-    StringAlgorithms::Get_String_Length();
+    // StringAlgorithms::Get_String_Length();
+    StringAlgorithms::Simplify_Path();
 
 	return EXIT_SUCCESS;
 }

@@ -3,8 +3,8 @@
 =======================================================================================================================================
 
 /**============================================================================
-Name        : Find_Longest_SubArray_K_Unique_Elements.cpp
-Created on  : 22.01.2025
+Name        : Find_Smallest_Without_Compare.cpp
+Created on  : 23.02.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
 Copyright   : Your copyright notice
@@ -22,7 +22,7 @@ namespace
 
 }
 
-void ArraysAlgorithms::Find_Longest_SubArray_K_Unique_Elements()
+void ArraysAlgorithms::Find_Smallest_Without_Compare()
 {
 
 }
@@ -51,6 +51,13 @@ void ArraysAlgorithms::Find_Longest_SubArray_K_Unique_Elements()
 Sliding window:
 	- ???
 
+Strings: 
+
+	https://interviewing.io/questions/simplify-path
+
+Prefix sum:
+	-
+
 
 
 5. tree 
@@ -65,11 +72,16 @@ Heap:
 
 Update Links in the README ==> main
 
+Prefix Sums:
+	- 	Sum_of_Sub_Array_Between_Indexes_L_and_R
+	- 	Find_Index_In_Array_to_make_Right_Equal_Left
 
 Array:
 	-	Smallest_Subarray_With_Sum_Greater_Than_K
 	-	Find_Longest_SubArray_K_Unique_Elements
-
+	-	Find_Index_In_Array_to_make_Right_Equal_Left
+	-	Sum_of_Sub_Array_Between_Indexes_L_and_R
+	-   Find_Smallest_Without_Compare
 
 String:
 -  [](LINK)<br/>
