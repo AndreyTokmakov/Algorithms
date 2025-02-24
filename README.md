@@ -77,6 +77,9 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [Find_Common_Prefix_And_Postfix](https://github.com/AndreyTokmakov/Algorithms/blob/408a1b3356bfa2c194db5eeb96befeba3d81690d/Strings/algorithms/Find_Common_Prefix_And_Postfix.cpp#L26)<br/>
 -  [Find_Duplicate_Symbols](https://github.com/AndreyTokmakov/Algorithms/blob/408a1b3356bfa2c194db5eeb96befeba3d81690d/Strings/algorithms/Find_Duplicate_Symbols.cpp#L18)<br/>
 -  [Get_String_Length](https://github.com/AndreyTokmakov/Algorithms/blob/408a1b3356bfa2c194db5eeb96befeba3d81690d/Strings/algorithms/Get_String_Length.cpp#L18)<br/>
+-  [Is_String_Contains_Another_String](https://github.com/AndreyTokmakov/Algorithms/blob/main/Strings/algorithms/Is_String_Contains_Another_String.cpp#L18)<br/>
+-  [Find_K_Most_Frequent_Character](https://github.com/AndreyTokmakov/Algorithms/blob/main/Strings/algorithms/Find_K_Most_Frequent_Character.cpp#L24)<br/>
+-  [Longest_Substring_With_Maximum_K_Unique_Characters](https://github.com/AndreyTokmakov/Algorithms/blob/main/Strings/algorithms/Longest_Substring_With_Maximum_K_Unique_Characters.cpp#L21)<br/>
 
 <a id="math_arrays_algorithms"></a>
 ## Math and Arrays Algorithms
