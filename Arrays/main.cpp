@@ -24,7 +24,7 @@ int main([[maybe_unused]] int argc,
     // ArraysAlgorithms::Median_of_Two_Sorted_Arrays();
     // ArraysAlgorithms::Reverse_To_Make_Equal();
     // ArraysAlgorithms::Is_Reversed_Equals();
-    // ArraysAlgorithms::Find_Top_K_Frequent_Numbers();
+    ArraysAlgorithms::Find_Top_K_Frequent_Numbers();
     // ArraysAlgorithms::Find_SubArrays_Sum_Zero();
     // ArraysAlgorithms::Find_SubArrays_Sum_Equal_K();
     // ArraysAlgorithms::Find_SubArray_Sum_Equal_K_Single();
@@ -60,7 +60,7 @@ int main([[maybe_unused]] int argc,
     // ArraysAlgorithms::Find_Longest_SubArray_K_Unique_Elements();
     // ArraysAlgorithms::Sum_of_Sub_Array_Between_Indexes_L_and_R();
     // ArraysAlgorithms::Find_Index_In_Array_to_make_Right_Equal_Left();
-    ArraysAlgorithms::Find_Smallest_Without_Compare();
+    // ArraysAlgorithms::Find_Smallest_Without_Compare();
 
 
 	return EXIT_SUCCESS;

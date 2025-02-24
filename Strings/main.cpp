@@ -35,6 +35,7 @@ int main([[maybe_unused]] int argc,
     // StringAlgorithms::Calc_Parentheses_3_Bracket();
     // StringAlgorithms::Longest_Substring_Without_Repeating_Characters();
     // StringAlgorithms::Longest_Substring_Without_Repeating_Characters_2();
+    // StringAlgorithms::Longest_Substring_With_Maximum_K_Unique_Characters();
     // StringAlgorithms::To_Lower_Case();
     // StringAlgorithms::Robot_Return_To_Origin();
     // StringAlgorithms::String_To_Integer();
@@ -52,7 +53,10 @@ int main([[maybe_unused]] int argc,
     // StringAlgorithms::Find_Common_Prefix_And_Postfix();
     // StringAlgorithms::Find_Duplicate_Symbols();
     // StringAlgorithms::Get_String_Length();
-    StringAlgorithms::Simplify_Path();
+    StringAlgorithms::Find_K_Most_Frequent_Character();
+    // StringAlgorithms::Is_String_Contains_Another_String();
+
+	// StringAlgorithms::Simplify_Path();
 
 	return EXIT_SUCCESS;
 }

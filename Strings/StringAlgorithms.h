@@ -35,6 +35,7 @@ namespace StringAlgorithms
     void Calc_Parentheses_3_Bracket();
     void Longest_Substring_Without_Repeating_Characters();
     void Longest_Substring_Without_Repeating_Characters_2();
+    void Longest_Substring_With_Maximum_K_Unique_Characters();
     void To_Lower_Case();
     void Robot_Return_To_Origin();
     void String_To_Integer();
@@ -53,6 +54,8 @@ namespace StringAlgorithms
     void Find_Duplicate_Symbols();
     void Get_String_Length();
     void Simplify_Path();
+    void Is_String_Contains_Another_String();
+    void Find_K_Most_Frequent_Character();
 }
 
 #endif //STRING_ALGORITHMS_H

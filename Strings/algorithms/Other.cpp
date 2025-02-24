@@ -339,67 +339,6 @@ namespace Strings
         }
         std::cout << text << std::endl;
     }
-
-    //--------------------------------------------------------------------------------------//
-
-    using CharPair = std::pair<char, size_t>;
-
-    struct Comparator {
-        bool operator()(const CharPair &pair1, const CharPair &pair2) {
-            return pair1.second > pair2.second;
-        }
-    };
-
-    void Find_K_MostFrequentCharacter() {
-        std::string str = "GeeksforGeeksG";
-        size_t K = 3, chars[256] = {0};
-
-        for (char c: str)
-            chars[c]++;
-
-        std::priority_queue<CharPair, std::vector<CharPair>, Comparator> queue;
-        for (size_t i = 0; i < 256; i++) {
-            if (chars[i]) {
-                if (queue.size() != 3) {
-                    queue.push(CharPair((char) i, chars[i]));
-                } else if (chars[i] > queue.top().second) {
-                    queue.pop();
-                    queue.push(CharPair((char) i, chars[i]));
-                }
-            }
-        }
-
-        while (!queue.empty()) {
-            std::cout << ' ' << queue.top().first << "  " << queue.top().second << std::endl;
-            queue.pop();
-        }
-        std::cout << std::endl;
-    }
-
-    //--------------------------------------------------------------------------------------//
-
-    void Find_K_MostFrequentCharacter_2() {
-        const std::string str = "GeeksforGeeksGzG";
-
-        std::multimap<int, char, std::greater<>> dict;
-        {
-            size_t chars[256] = {0};
-            for (char c: str)
-                chars[c]++;
-
-            for (int i = 0; i < std::ssize(chars); i++) {
-                if (chars[i])
-                    dict.emplace(chars[i], i);
-            }
-        }
-
-        size_t K = 3;
-        for (const auto &[k, v]: dict) {
-            std::cout << k << " = " << v << std::endl;
-            if (0 == (--K))
-                break;
-        }
-    }
 }
 
 namespace Strings
@@ -447,47 +386,6 @@ namespace Strings
 
 namespace Strings
 {
-
-    // Необходимо найти максимальную длину подстроки такой что бы в ней было не более чем 'K' уникальных элементов
-    size_t findLenWithMax_K_UniqueChars(const std::string &text,
-                                        const size_t K)
-    {
-        size_t result{0}, indexes[256]{};
-        for (size_t right = 0, left = 0, uniqCount = 0; right < text.length(); ++right)
-        {
-            const char c = text[right];
-            if (0 == indexes[c]++)
-                ++uniqCount;
-
-            while (uniqCount > K) {
-                const char ch = text[left++];
-                if (0 == --indexes[ch])
-                    --uniqCount;
-            }
-            result = std::max(result, right - left + 1);
-        }
-        return result;
-    }
-
-    void MaxSubstringLength_Of_K_max_Unique_Elements()
-    {
-        for (const std::pair<StrSizeTPair, size_t> &data: std::vector<std::pair<StrSizeTPair, size_t> >{
-                {{"aba",       2}, 3},
-                {{"ababaaab",  2}, 8},
-                {{"ababaaacb", 2}, 7},
-                {{"ababaaacb", 3}, 9},
-                {{"aabbcc",    1}, 2},
-                {{"aabbcc",    2}, 4},
-                {{"aabbcc",    3}, 6}
-        }) {
-            const auto &[str, K] = data.first;
-            const size_t count = findLenWithMax_K_UniqueChars(str, K);
-            std::cout << "Actual: " << count << "  Expected: " << data.second << "  --> "
-                      << std::boolalpha << (count == data.second) << std::endl;
-        }
-    }
-
-    //---------------------------------------------------------------------------//
 
     double getAngleOnClock(std::string_view timeStr) {
         const size_t pos = timeStr.find(':');
@@ -948,49 +846,6 @@ namespace Strings
     }
 }
 
-namespace Strings
-{
-    bool __contains(const std::string& text,
-                    const std::string& str)
-    {
-        for (int idx = 0, m = 0, n= 0; idx <= std::ssize(text) - std::ssize(str); ++idx)
-        {
-            // std::cout << idx << std::endl;
-            for (m = 0, n = idx; m < str.size(); ++m, ++n) {
-                // std::cout << '\t' << n << " - " << m << std::endl;
-                if (str[m] != text[n])
-                    break;
-            }
-            if (m == str.size())
-                return true;
-        }
-        return false;
-    }
-
-    int find(const std::string& haystack, const std::string& needle)
-    {
-        const int textSize = std::ssize(haystack), searchBlockSize = std::ssize(needle);
-        for (int idx = 0, m = 0, n = 0; idx <= textSize - searchBlockSize; ++idx)
-        {
-            for (m = 0, n = idx; m < searchBlockSize; ++m, ++n) {
-                if (needle[m] != haystack[n])
-                    break;
-            }
-            if (m == searchBlockSize)
-                return idx;
-        }
-        return -1;
-    }
-
-    void Contains()
-    {
-        std::string text = "bcaa", to_find = "aa";
-
-        std::cout << "Contains: " << std::boolalpha << __contains(text, to_find)
-                  << ". Pos = "   << find(text, to_find) << std::endl;
-    }
-}
-
 void StringAlgorithms::Other()
 {
     // Strings::AnalogClockAngles();
@@ -1000,8 +855,6 @@ void StringAlgorithms::Other()
 
     // Strings::ReverseString();
     // Strings::RotateString();
-
-    // Strings::Contains();
 
     // Strings::CheckIfStrings_RotateRotateEquals();
 

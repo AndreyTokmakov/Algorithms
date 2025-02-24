@@ -3,8 +3,8 @@
 =======================================================================================================================================
 
 /**============================================================================
-Name        : Find_Smallest_Without_Compare.cpp
-Created on  : 23.02.2025
+Name        : Longest_Substring_With_Maximum_K_Unique_Characters.cpp
+Created on  : 24.02.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
 Copyright   : Your copyright notice
@@ -12,17 +12,17 @@ Description :
 ============================================================================**/
 
 #include "../common.h"
-#include "../ArraysAlgorithms.h"
+#include "../StringAlgorithms.h"
 
 
 namespace
 {
-    using namespace ArraysAlgorithms;
+    using namespace StringAlgorithms;
 
 
 }
 
-void ArraysAlgorithms::Find_Smallest_Without_Compare()
+void StringAlgorithms::Longest_Substring_With_Maximum_K_Unique_Characters()
 {
 
 }
@@ -52,13 +52,7 @@ Sliding window:
 	- ???
 
 Strings: 
-
 	https://interviewing.io/questions/simplify-path
-
-Prefix sum:
-	-
-
-
 
 5. tree 
     https://leetcode.com/problems/path-sum-ii/	
@@ -72,42 +66,13 @@ Heap:
 
 Update Links in the README ==> main
 
-Prefix Sums:
-	- 	Sum_of_Sub_Array_Between_Indexes_L_and_R
-	- 	Find_Index_In_Array_to_make_Right_Equal_Left
-
-Array:
-	-	Smallest_Subarray_With_Sum_Greater_Than_K
-	-	Find_Longest_SubArray_K_Unique_Elements
-	-	Find_Index_In_Array_to_make_Right_Equal_Left
-	-	Sum_of_Sub_Array_Between_Indexes_L_and_R
-	-   Find_Smallest_Without_Compare
-
-
-
-
-
-
-    // ArraysAlgorithms::Sqrt();
-    // ArraysAlgorithms::Min_Length_SubArray_WithSameDegree();
-    // ArraysAlgorithms::Maximum_Area_Between_Boundaries();
-    // ArraysAlgorithms::Calculate_Max_Hotel_Visitors();
-    // ArraysAlgorithms::Smallest_Subarray_With_Sum_Greater_Than_K();
-    // ArraysAlgorithms::Find_Longest_SubArray_K_Unique_Elements();
-    // ArraysAlgorithms::Sum_of_Sub_Array_Between_Indexes_L_and_R();
-    // ArraysAlgorithms::Find_Index_In_Array_to_make_Right_Equal_Left();
-    ArraysAlgorithms::Find_Smallest_Without_Compare();
-
-
-
-
-
-
+Strins:
+	-   Is_String_Contains_Another_String
+	-   Find_K_Most_Frequent_Character
+	-	Longest_Substring_With_Maximum_K_Unique_Characters
 
 Array:
 -  [NAME](LINK)<br/>
-
-
 
 
 =======================================================================================================================================

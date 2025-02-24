@@ -47,6 +47,9 @@ add_executable(${PROJECT_NAME}
 		algorithms/Find_Duplicate_Symbols.cpp
 		algorithms/Get_String_Length.cpp
 		algorithms/Simplify_Path.cpp
+		algorithms/Is_String_Contains_Another_String.cpp
+		algorithms/Find_K_Most_Frequent_Character.cpp
+		algorithms/Longest_Substring_With_Maximum_K_Unique_Characters.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")
