@@ -53,10 +53,10 @@ int main([[maybe_unused]] int argc,
     // StringAlgorithms::Find_Common_Prefix_And_Postfix();
     // StringAlgorithms::Find_Duplicate_Symbols();
     // StringAlgorithms::Get_String_Length();
-    StringAlgorithms::Find_K_Most_Frequent_Character();
+    // StringAlgorithms::Find_K_Most_Frequent_Character();
     // StringAlgorithms::Is_String_Contains_Another_String();
 
-	// StringAlgorithms::Simplify_Path();
+	StringAlgorithms::Simplify_Path();
 
 	return EXIT_SUCCESS;
 }

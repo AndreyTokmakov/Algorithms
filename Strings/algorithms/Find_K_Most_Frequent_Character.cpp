@@ -67,7 +67,7 @@ namespace
 
 void StringAlgorithms::Find_K_Most_Frequent_Character()
 {
-    const std::string str {" abcdefge"};
+    const std::string str {"abcdefgeaddccc"};
     constexpr uint32_t K {2};
 
     std::cout << find_K_most_frequent_symbols_heap(str, K) << std::endl<< std::endl;

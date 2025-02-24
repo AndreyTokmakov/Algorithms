@@ -70,6 +70,6 @@ void ArraysAlgorithms::Find_Top_K_Frequent_Numbers()
     })
     {
         std::cout << _top_K_Frequent(data.first, data.second) << std::endl;
-        std::cout << top_K_frequent_good(data.first, data.second) << std::endl;
+        std::cout << top_K_frequent_good(data.first, data.second) << std::endl << std::endl;
     }
 }

@@ -66,10 +66,6 @@ Heap:
 
 Update Links in the README ==> main
 
-Strins:
-	-   Is_String_Contains_Another_String
-	-   Find_K_Most_Frequent_Character
-	-	Longest_Substring_With_Maximum_K_Unique_Characters
 
 Array:
 -  [NAME](LINK)<br/>
