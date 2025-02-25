@@ -60,6 +60,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Longest_Subarray_With_Sum_Less_Than_K.cpp
 		algorithms/Container_With_Most_Water.cpp
 		algorithms/Find_Longest_Increasing_Subsequence.cpp
+		algorithms/Find_N_Min_Elements.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")

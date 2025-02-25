@@ -639,31 +639,6 @@ namespace Numeric
 
     //---------------------------------------------------------------------------//
 
-    void Find_N_Min_Elements_2() {
-
-        constexpr int K = 3;
-        const std::vector<int> numbers{4, 5, 6, 7, 8, 9, 10, 11, 0, -1};
-
-        std::array<int, K> mins{};
-        std::copy_n(numbers.cbegin(), K, mins.begin());
-
-
-        std::partial_sort(mins.begin(), mins.begin() + 1, mins.end(), std::greater<int>());
-
-        for (size_t i = K; i < std::size(numbers); i++) {
-            if (mins.front() > numbers[i]) {
-                mins[0] = numbers[i];
-                std::partial_sort(mins.begin(), mins.begin() + 1, mins.end(), std::greater<int>());
-            }
-        }
-
-        for (const auto v: mins)
-            std::cout << v << " ";
-        std::cout << std::endl;
-    }
-
-    //---------------------------------------------------------------------------//
-
     std::pair<int, int> find_min_max(const std::vector<int> &Numeric) {
         std::pair<int, int> minmax{std::numeric_limits<int>::max(), std::numeric_limits<int>::min()};
         for (const auto v: Numeric) {

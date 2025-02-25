@@ -10,7 +10,7 @@ https://js-notes.vercel.app/software_engineering/ds_and_algos
 =======================================================================================================================================
 
 /**============================================================================
-Name        : Find_Longest_Increasing_Subsequence.cpp
+Name        : Find_N_Min_Elements.cpp
 Created on  : 25.02.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
@@ -29,7 +29,7 @@ namespace
 
 }
 
-void ArraysAlgorithms::Find_Longest_Increasing_Subsequence()
+void ArraysAlgorithms::Find_N_Min_Elements()
 {
 
 }
@@ -81,6 +81,7 @@ Heap:
 Arrays:
 
 	Find_Longest_Increasing_Subsequence
+	Find_N_Min_Elements
 
 
 =======================================================================================================================================
