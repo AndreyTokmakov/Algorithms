@@ -50,9 +50,10 @@ namespace
     }
 }
 
+
 void ArraysAlgorithms::Longest_Subarray_With_Sum_Less_Than_K()
 {
-    using TestData = std::vector< std::pair<std::pair<std::vector<int>, int>, int> >;
+    using TestData = std::vector< std::pair<std::pair<std::vector<int>, int>, size_t> >;
     for (const auto& [value, expected]:  TestData{
         { {{2,3,1,2,4,1,1,1,1,1,3}, 7} , 5 },
         { {{2,3,1,2,4,1,1,1,1,1,3}, 5} , 4 },
