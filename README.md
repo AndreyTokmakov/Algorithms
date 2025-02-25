@@ -14,6 +14,7 @@ Demo Algorithms
 11. [Stack](#stack)
 12. [Binary Search](#binary_search)
 13. [Prefix Sums](#prefix_sums)
+14. [Two Pointers](#two_pointers)
 
 <a name="Overview"></a>
 ## Overview
@@ -80,6 +81,8 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [Is_String_Contains_Another_String](https://github.com/AndreyTokmakov/Algorithms/blob/main/Strings/algorithms/Is_String_Contains_Another_String.cpp#L18)<br/>
 -  [Find_K_Most_Frequent_Character](https://github.com/AndreyTokmakov/Algorithms/blob/main/Strings/algorithms/Find_K_Most_Frequent_Character.cpp#L24)<br/>
 -  [Longest_Substring_With_Maximum_K_Unique_Characters](https://github.com/AndreyTokmakov/Algorithms/blob/main/Strings/algorithms/Longest_Substring_With_Maximum_K_Unique_Characters.cpp#L21)<br/>
+-  [Jewels_and_Stones](https://github.com/AndreyTokmakov/Algorithms/blob/main/Strings/algorithms/Jewels_and_Stones.cpp#L30)<br/>
+-  [Simplify_Path](https://github.com/AndreyTokmakov/Algorithms/blob/main/Strings/algorithms/Simplify_Path.cpp#L26)<br/>
 
 <a id="math_arrays_algorithms"></a>
 ## Math and Arrays Algorithms
@@ -127,6 +130,10 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [Find_Index_In_Array_to_make_Right_Equal_Left](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_Index_In_Array_to_make_Right_Equal_Left.cpp#L19)<br/>
 -  [Sum_of_Sub_Array_Between_Indexes_L_and_R](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Sum_of_Sub_Array_Between_Indexes_L_and_R.cpp#L19)<br/>
 -  [Find_Smallest_Without_Compare](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_Smallest_Without_Compare.cpp#L20)<br/>
+-  [Fixed_Point_SmallestIndex_ValueEqualIndex](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/FixedPointSmallestIndexValueEqualIndex.cpp#L25)<br/>
+-  [Longest_Subarray_With_Sum_Less_Than_K](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Longest_Subarray_With_Sum_Less_Than_K.cpp#L18)<br/>
+-  [Squares_of_a_Sorted_Array](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Squares_of_a_Sorted_Array.cpp#L33)<br/>
+-  [Container_With_Most_Water](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Container_With_Most_Water.cpp#L25)<br/>
 
 <a id="linked_list"></a>
 ## Linked List
@@ -150,48 +157,54 @@ Nothing special, just an attempt to structure and study C++ algorithms
 
 <a id="trees"></a>
 ## Trees
--  [Find_Lowest_Common_Ancestor](https://github.com/AndreyTokmakov/Algorithms/blob/6df0032f61d3cca0c0c9ed8eb4aa1a6ca2747eb8/Trees/algorithms/Find_Lowest_Common_Ancestor.cpp#L17)<br/>
--  [Find_Min_and_Max_Element_NonRecursive](https://github.com/AndreyTokmakov/Algorithms/blob/6df0032f61d3cca0c0c9ed8eb4aa1a6ca2747eb8/Trees/algorithms/Find_Min_and_Max_Element_NonRecursive.cpp#L18)<br/>
--  [Find_Min_and_Max_Element_Recursive](https://github.com/AndreyTokmakov/Algorithms/blob/6df0032f61d3cca0c0c9ed8eb4aa1a6ca2747eb8/Trees/algorithms/Find_Min_and_Max_Element_Recursive.cpp#L18)<br/>
--  [Find_N_th_MinElement](https://github.com/AndreyTokmakov/Algorithms/blob/6df0032f61d3cca0c0c9ed8eb4aa1a6ca2747eb8/Trees/algorithms/Find_N_th_MinElement.cpp#L17)<br/>
--  [Find_N_th_Smallest_Element](https://github.com/AndreyTokmakov/Algorithms/blob/6df0032f61d3cca0c0c9ed8eb4aa1a6ca2747eb8/Trees/algorithms/Find_N_th_Smallest_Element.cpp#L18)<br/>
--  [Largest_Element_In_Each_Level](https://github.com/AndreyTokmakov/Algorithms/blob/6df0032f61d3cca0c0c9ed8eb4aa1a6ca2747eb8/Trees/algorithms/Largest_Element_In_Each_Level.cpp#L18)<br/>
--  [Sorted_Array_To_Binary_Tree](https://github.com/AndreyTokmakov/Algorithms/blob/6df0032f61d3cca0c0c9ed8eb4aa1a6ca2747eb8/Trees/algorithms/Sorted_Array_To_Binary_Tree.cpp#L18)<br/>
--  [Sorted_Array_To_Binary_Tree_NonRecursive](https://github.com/AndreyTokmakov/Algorithms/blob/6df0032f61d3cca0c0c9ed8eb4aa1a6ca2747eb8/Trees/algorithms/Sorted_Array_To_Binary_Tree_NonRecursive.cpp#L17)<br/>
--  [Find_Lowest_Common_Ancestor](https://github.com/AndreyTokmakov/Algorithms/blob/8f8f2ff22cf57719ab5af2c65ccdcb2ab090979e/Trees/algorithms/Find_Lowest_Common_Ancestor.cpp#L17)<br/>
--  [Count_Elements](https://github.com/AndreyTokmakov/Algorithms/blob/8f8f2ff22cf57719ab5af2c65ccdcb2ab090979e/Trees/algorithms/Count_Elements.cpp#L22)<br/>
--  [Get_Tree_Depth](https://github.com/AndreyTokmakov/Algorithms/blob/8f8f2ff22cf57719ab5af2c65ccdcb2ab090979e/Trees/algorithms/Get_Tree_Depth.cpp#L23)<br/>
--  [Check_Is_Tree_Symmetric](https://github.com/AndreyTokmakov/Algorithms/blob/b4cf4e0e248ca54a4efe08ae613986c7265a6318/Trees/algorithms/Check_Is_Tree_Symmetric.cpp#L57)<br/>
--  [Check_Is_Trees_Identical](https://github.com/AndreyTokmakov/Algorithms/blob/b4cf4e0e248ca54a4efe08ae613986c7265a6318/Trees/algorithms/Check_Is_Trees_Identical.cpp#L23)<br/>
--  [Check_Is_Tree_Balanced](https://github.com/AndreyTokmakov/Algorithms/blob/b4cf4e0e248ca54a4efe08ae613986c7265a6318/Trees/algorithms/Check_Is_Tree_Balanced.cpp#L49)<br/>
+-  [Find_Lowest_Common_Ancestor](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Find_Lowest_Common_Ancestor.cpp#L17)<br/>
+-  [Find_Min_and_Max_Element_NonRecursive](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Find_Min_and_Max_Element_NonRecursive.cpp#L18)<br/>
+-  [Find_Min_and_Max_Element_Recursive](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Find_Min_and_Max_Element_Recursive.cpp#L18)<br/>
+-  [Find_N_th_MinElement](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Find_N_th_MinElement.cpp#L17)<br/>
+-  [Find_N_th_Smallest_Element](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Find_N_th_Smallest_Element.cpp#L18)<br/>
+-  [Largest_Element_In_Each_Level](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Largest_Element_In_Each_Level.cpp#L18)<br/>
+-  [Sorted_Array_To_Binary_Tree](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Sorted_Array_To_Binary_Tree.cpp#L18)<br/>
+-  [Sorted_Array_To_Binary_Tree_NonRecursive](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Sorted_Array_To_Binary_Tree_NonRecursive.cpp#L17)<br/>
+-  [Find_Lowest_Common_Ancestor](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Find_Lowest_Common_Ancestor.cpp#L17)<br/>
+-  [Count_Elements](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Count_Elements.cpp#L22)<br/>
+-  [Get_Tree_Depth](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Get_Tree_Depth.cpp#L23)<br/>
+-  [Check_Is_Tree_Symmetric](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Check_Is_Tree_Symmetric.cpp#L57)<br/>
+-  [Check_Is_Trees_Identical](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Check_Is_Trees_Identical.cpp#L23)<br/>
+-  [Check_Is_Tree_Balanced](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Check_Is_Tree_Balanced.cpp#L49)<br/>
 
 <a id="graphs"></a>
 ## Graphs
--  [Breadth First Search](https://github.com/AndreyTokmakov/Algorithms/blob/f8facd684676b94336d8a66e406479b0436a6ac4/Graphs/algorithms/BFS.cpp#L55)<br/>
--  [Depth First Search](https://github.com/AndreyTokmakov/Algorithms/blob/f8facd684676b94336d8a66e406479b0436a6ac4/Graphs/algorithms/DFS.cpp#L105)<br/>
--  [DFS_NonRecur](https://github.com/AndreyTokmakov/Algorithms/blob/f8facd684676b94336d8a66e406479b0436a6ac4/Graphs/algorithms/DFS_NonRecur.cpp#L83)<br/>
--  [Find_Shortest_Path](https://github.com/AndreyTokmakov/Algorithms/blob/f8facd684676b94336d8a66e406479b0436a6ac4/Graphs/algorithms/Find_Shortest_Path.cpp#L63)<br/>
--  [Detect_Cycle](https://github.com/AndreyTokmakov/Algorithms/blob/f8facd684676b94336d8a66e406479b0436a6ac4/Graphs/algorithms/Detect_Cycle.cpp#L52)<br/>
+-  [Breadth First Search](https://github.com/AndreyTokmakov/Algorithms/blob/main/Graphs/algorithms/BFS.cpp#L55)<br/>
+-  [Depth First Search](https://github.com/AndreyTokmakov/Algorithms/blob/main/Graphs/algorithms/DFS.cpp#L105)<br/>
+-  [DFS_NonRecur](https://github.com/AndreyTokmakov/Algorithms/blob/main/Graphs/algorithms/DFS_NonRecur.cpp#L83)<br/>
+-  [Find_Shortest_Path](https://github.com/AndreyTokmakov/Algorithms/blob/main/Graphs/algorithms/Find_Shortest_Path.cpp#L63)<br/>
+-  [Detect_Cycle](https://github.com/AndreyTokmakov/Algorithms/blob/main/Graphs/algorithms/Detect_Cycle.cpp#L52)<br/>
 
 <a id="queues"></a>
 ## Queues
--  [Queue_Using_Stacks](https://github.com/AndreyTokmakov/Algorithms/blob/8129a6762c48c3cb28b8b032b977c66ef1e5e141/Queues/algorithms/Queue_Using_Stacks.cpp#L19)<br/>
--  [Queue_Using_Stacks_Recursive](https://github.com/AndreyTokmakov/Algorithms/blob/8129a6762c48c3cb28b8b032b977c66ef1e5e141/Queues/algorithms/Queue_Using_Stacks_Recursive.cpp#L18)<br/>
+-  [Queue_Using_Stacks](https://github.com/AndreyTokmakov/Algorithms/blob/main/Queues/algorithms/Queue_Using_Stacks.cpp#L19)<br/>
+-  [Queue_Using_Stacks_Recursive](https://github.com/AndreyTokmakov/Algorithms/blob/main/Queues/algorithms/Queue_Using_Stacks_Recursive.cpp#L18)<br/>
 
 <a id="stack"></a>
 ## Stack:
--  [MinStack](https://github.com/AndreyTokmakov/Algorithms/blob/1828fbee3016300002c24cafc209220f11dc0766/Stack/algorithms/MinStack.cpp#L20)<br/>
--  [Stack_Using_One_Queue](https://github.com/AndreyTokmakov/Algorithms/blob/1828fbee3016300002c24cafc209220f11dc0766/Stack/algorithms/Stack_Using_One_Queue.cpp#L20)<br/>
--  [Stack_Using_Two_Queues](https://github.com/AndreyTokmakov/Algorithms/blob/1828fbee3016300002c24cafc209220f11dc0766/Stack/algorithms/Stack_Using_Two_Queues.cpp#L19)<br/>
+-  [MinStack](https://github.com/AndreyTokmakov/Algorithms/blob/main/Stack/algorithms/MinStack.cpp#L20)<br/>
+-  [Stack_Using_One_Queue](https://github.com/AndreyTokmakov/Algorithms/blob/main/Stack/algorithms/Stack_Using_One_Queue.cpp#L20)<br/>
+-  [Stack_Using_Two_Queues](https://github.com/AndreyTokmakov/Algorithms/blob/main/Stack/algorithms/Stack_Using_Two_Queues.cpp#L19)<br/>
 
 <a id="binary_search"></a>
 ## BinarySearch:
--  [Sqrt](https://github.com/AndreyTokmakov/Algorithms/blob/608f9070c43f85c5ccb249ecb81985225af1a995/Arrays/algorithms/Sqrt.cpp#L17)<br/>
--  [Find_Smallest_Letter_Greater_Than_Target](https://github.com/AndreyTokmakov/Algorithms/blob/608f9070c43f85c5ccb249ecb81985225af1a995/BinarySearch/algorithms/Find_Smallest_Letter_Greater_Than_Target.cpp#L31C16-L31C17)<br/>
--  [Binary_Search](https://github.com/AndreyTokmakov/Algorithms/blob/b4cf4e0e248ca54a4efe08ae613986c7265a6318/BinarySearch/algorithms/Binary_Search.cpp#L35)<br/>
+-  [Sqrt](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Sqrt.cpp#L17)<br/>
+-  [Find_Smallest_Letter_Greater_Than_Target](https://github.com/AndreyTokmakov/Algorithms/blob/main/BinarySearch/algorithms/Find_Smallest_Letter_Greater_Than_Target.cpp#L31)<br/>
+-  [Binary_Search](https://github.com/AndreyTokmakov/Algorithms/blob/main/BinarySearch/algorithms/Binary_Search.cpp#L35)<br/>
 
 <a id="prefix_sums"></a>
 ## Prefix Sums:
 -  [Find_Longest_SubArray_K_Unique_Elements](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_Longest_SubArray_K_Unique_Elements.cpp#L20)<br/>
 -  [Find_Index_In_Array_to_make_Right_Equal_Left](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_Index_In_Array_to_make_Right_Equal_Left.cpp#L19)<br/>
 -  [Sum_of_Sub_Array_Between_Indexes_L_and_R](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Sum_of_Sub_Array_Between_Indexes_L_and_R.cpp#L19)<br/>
+-  [Longest_Subarray_With_Sum_Less_Than_K](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Longest_Subarray_With_Sum_Less_Than_K.cpp#L18)<br/>
+
+<a id="two_pointers"></a>
+## Two Pointers:
+-  [Squares_of_a_Sorted_Array](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Squares_of_a_Sorted_Array.cpp#L33)<br/>
+-  [Container_With_Most_Water](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Container_With_Most_Water.cpp#L25)<br/>
