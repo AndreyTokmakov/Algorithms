@@ -1,4 +1,11 @@
 =======================================================================================================================================
+							Links
+=======================================================================================================================================
+
+https://samir.pages.dev/posts/problems/
+
+
+=======================================================================================================================================
 							Templates
 =======================================================================================================================================
 
@@ -51,6 +58,8 @@ void ArraysAlgorithms::Squares_of_a_Sorted_Array()
 Sliding window:
 	- ???
 
+5. tree 
+    https://leetcode.com/problems/path-sum-ii/	
 
 
 1. two pointers 
@@ -58,12 +67,16 @@ Sliding window:
     https://leetcode.com/problems/partition-labels/
     https://leetcode.com/problems/squares-of-a-sorted-array/ 
 
+===================================================================
+
+
+Arrays:
+	Squares_of_a_Sorted_Array
+
 
 Strings: 
 	https://interviewing.io/questions/simplify-path
 
-5. tree 
-    https://leetcode.com/problems/path-sum-ii/	
 
 Heap:
 	- Arrays: Find_N_Min_Elements_2    
