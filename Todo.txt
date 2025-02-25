@@ -3,14 +3,14 @@
 =======================================================================================================================================
 
 https://samir.pages.dev/posts/problems/
-
+https://js-notes.vercel.app/software_engineering/ds_and_algos
 
 =======================================================================================================================================
 							Templates
 =======================================================================================================================================
 
 /**============================================================================
-Name        : Squares_of_a_Sorted_Array.cpp
+Name        : Longest_Subarray_With_Less_Than_K.cpp
 Created on  : 25.02.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
@@ -29,7 +29,7 @@ namespace
 
 }
 
-void ArraysAlgorithms::Squares_of_a_Sorted_Array()
+void ArraysAlgorithms::Longest_Subarray_With_Less_Than_K()
 {
 
 }
@@ -61,22 +61,25 @@ Sliding window:
 5. tree 
     https://leetcode.com/problems/path-sum-ii/	
 
-
 1. two pointers 
     https://leetcode.com/problems/container-with-most-water/ 
     https://leetcode.com/problems/partition-labels/
-    https://leetcode.com/problems/squares-of-a-sorted-array/ 
 
-===================================================================
 
+ Find_Longest_Increasing_Subsequence >>>>
+
+-----------------
+
+
+Two Pointers:
+	Squares_of_a_Sorted_Array
 
 Arrays:
 	Squares_of_a_Sorted_Array
-
+	Longest_Subarray_With_Sum_Less_Than_K
 
 Strings: 
 	https://interviewing.io/questions/simplify-path
-
 
 Heap:
 	- Arrays: Find_N_Min_Elements_2    

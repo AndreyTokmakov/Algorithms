@@ -53,15 +53,18 @@ namespace ArraysAlgorithms
     void Sqrt();
     void Min_Length_SubArray_WithSameDegree();
     void Maximum_Area_Between_Boundaries();
+    void Container_With_Most_Water();
     void Calculate_Max_Hotel_Visitors();
     void Find_SubArrays_Sum_Equal_K();
     void Find_SubArray_Sum_Equal_K_Single();
     void Smallest_Subarray_With_Sum_Greater_Than_K();
+    void Longest_Subarray_With_Less_Than_K();
     void Find_Longest_SubArray_K_Unique_Elements();
     void Sum_of_Sub_Array_Between_Indexes_L_and_R();
     void Find_Index_In_Array_to_make_Right_Equal_Left();
     void Find_Smallest_Without_Compare();
     void Squares_of_a_Sorted_Array();
+    void Longest_Subarray_With_Sum_Less_Than_K();
 }
 
 #endif //ARRAYS_ALGORITHMS_H

@@ -57,6 +57,8 @@ add_executable(${PROJECT_NAME}
 		algorithms/Find_Index_In_Array_to_make_Right_Equal_Left.cpp
 		algorithms/Find_Smallest_Without_Compare.cpp
 		algorithms/Squares_of_a_Sorted_Array.cpp
+		algorithms/Longest_Subarray_With_Less_Than_K.cpp
+		algorithms/Container_With_Most_Water.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")
