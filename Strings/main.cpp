@@ -55,8 +55,8 @@ int main([[maybe_unused]] int argc,
     // StringAlgorithms::Get_String_Length();
     // StringAlgorithms::Find_K_Most_Frequent_Character();
     // StringAlgorithms::Is_String_Contains_Another_String();
-
-	StringAlgorithms::Simplify_Path();
+	// StringAlgorithms::Simplify_Path();
+	StringAlgorithms::Jewels_and_Stones();
 
 	return EXIT_SUCCESS;
 }

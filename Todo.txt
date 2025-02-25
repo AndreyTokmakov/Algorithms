@@ -3,8 +3,8 @@
 =======================================================================================================================================
 
 /**============================================================================
-Name        : Longest_Substring_With_Maximum_K_Unique_Characters.cpp
-Created on  : 24.02.2025
+Name        : Squares_of_a_Sorted_Array.cpp
+Created on  : 25.02.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
 Copyright   : Your copyright notice
@@ -12,17 +12,17 @@ Description :
 ============================================================================**/
 
 #include "../common.h"
-#include "../StringAlgorithms.h"
+#include "../ArraysAlgorithms.h"
 
 
 namespace
 {
-    using namespace StringAlgorithms;
+    using namespace ArraysAlgorithms;
 
 
 }
 
-void StringAlgorithms::Longest_Substring_With_Maximum_K_Unique_Characters()
+void ArraysAlgorithms::Squares_of_a_Sorted_Array()
 {
 
 }
@@ -51,6 +51,14 @@ void StringAlgorithms::Longest_Substring_With_Maximum_K_Unique_Characters()
 Sliding window:
 	- ???
 
+
+
+1. two pointers 
+    https://leetcode.com/problems/container-with-most-water/ 
+    https://leetcode.com/problems/partition-labels/
+    https://leetcode.com/problems/squares-of-a-sorted-array/ 
+
+
 Strings: 
 	https://interviewing.io/questions/simplify-path
 
@@ -65,6 +73,9 @@ Heap:
 =======================================================================================================================================
 
 Update Links in the README ==> main
+
+Strings:
+	Jewels_and_Stones	
 
 
 Array:
@@ -314,9 +325,9 @@ String
 
 [+]	20. Valid Parentheses
 	58. Length of Last Word
-	71. Simplify Path
+[+]	71. Simplify Path
 [+]	344. Reverse String
-	383. Ransom Note
+[+]	383. Ransom Note
 [+]	500. Keyboard Row
 	557. Reverse Words in a String III
 	599. Minimum Index Sum of Two Lists
@@ -336,7 +347,7 @@ String
 	1108. Defanging an IP Address
 	1119. Remove Vowels from a String
 	1160. Find Words That Can Be Formed by Characters
-+	1165. Single-Row Keyboard
+[+]	1165. Single-Row Keyboard
 	1180. Count Substrings with Only One Distinct Letter
 	1221. Split a String in Balanced Strings
 	1236. Web Crawler
@@ -346,8 +357,8 @@ String
 	1427. Perform String Shifts
 	1432. Max Difference You Can Get From Changing an Integer
 	1433. Check If a String Can Break Another String
-+	1436. Destination City
-+	1446. Consecutive Characters
+[+]	1436. Destination City
+[+]	1446. Consecutive Characters
 	1451. Rearrange Words in a Sentence
 	1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence
 	1456. Maximum Number of Vowels in a Substring of Given Length
@@ -388,11 +399,6 @@ Design Data Structure
 						Must Have для подготовки Leetcode:
 ==============================================================================================================
 
-1. two pointers 
-    https://leetcode.com/problems/container-with-most-water/ 
-    https://leetcode.com/problems/partition-labels/
-    https://leetcode.com/problems/squares-of-a-sorted-array/ 
-
 2. hash table 
 	https://leetcode.com/problems/find-all-anagrams-in-a-string/
 	https://leetcode.com/problems/permutation-in-string/
@@ -418,9 +424,6 @@ Design Data Structure
 	https://leetcode.com/problems/best-time-to-buy-and-sell-stock/ 
 	https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/ 
 	https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/
-
- 1. linked lists 
-    https://leetcode.com/problems/merge-k-sorted-lists/
 
 2. dfs/bfs 
     https://leetcode.com/problems/number-of-islands/

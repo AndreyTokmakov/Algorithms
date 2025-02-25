@@ -61,6 +61,7 @@ namespace ArraysAlgorithms
     void Sum_of_Sub_Array_Between_Indexes_L_and_R();
     void Find_Index_In_Array_to_make_Right_Equal_Left();
     void Find_Smallest_Without_Compare();
+    void Squares_of_a_Sorted_Array();
 }
 
 #endif //ARRAYS_ALGORITHMS_H

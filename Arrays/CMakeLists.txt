@@ -56,6 +56,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Sum_of_Sub_Array_Between_Indexes_L_and_R.cpp
 		algorithms/Find_Index_In_Array_to_make_Right_Equal_Left.cpp
 		algorithms/Find_Smallest_Without_Compare.cpp
+		algorithms/Squares_of_a_Sorted_Array.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")

@@ -10,6 +10,9 @@ Description :
 #include "../common.h"
 #include "../StringAlgorithms.h"
 
+#include <sstream>
+#include <stack>
+
 /**
  * Input: path = "/home/../etc" Output: "/etc"
  * Input: path = "/home/./me" Output: "/home/me"
@@ -20,22 +23,20 @@ namespace
 {
     using namespace StringAlgorithms;
 
-
-    void simplify_path(const std::string& path)
+    std::string simplify_path_fast_inplace(std::string& path)
     {
-        std::string result(path);
         std::vector<uint32_t> delimiters;
         std::vector<char> tmp;
-
         if (path.front() == '/')
             delimiters.push_back(0);
 
         uint32_t pos = 1;
-        for (int32_t idx = 1, size = path.size(); idx < size; ++idx)
+        for (int32_t idx = 1, size = path.size(), n = 0; idx < size; ++idx)
         {
             if ('/' == path[idx])
             {
                 if ('/' == path[idx - 1]) {
+                    ++n;
                     continue;
                 }
                 if (tmp.size() == 1 && tmp.front() == '.') {
@@ -45,9 +46,10 @@ namespace
                 {
                     delimiters.pop_back();
                     pos = delimiters.back();
+                    // TODO: modify n ?
                 }
                 else {
-                    delimiters.push_back(idx);
+                    delimiters.push_back(idx - n);
                 }
 
                 tmp.clear();
@@ -55,24 +57,62 @@ namespace
                 tmp.push_back(path[idx]);
             }
 
-            result[pos++] = path[idx];
+            path[pos++] = path[idx];
         }
+        path.resize(pos);
+        return path;
+    }
 
-        result.resize(pos);
-        std::cout << delimiters << std::endl;
-        std::cout << result << std::endl;
+    std::string simplify_path_1(const std::string& path)
+    {
+        std::stack<std::string> st;
+        std::istringstream iss(path);
+        std::string s;
+        while (getline(iss, s, '/')) {
+            if (s == "..") {
+                if (!st.empty())
+                    st.pop();
+            } else if (s.size() > 0 && s != ".") {st.push(s);
+            }
+        }
+        std::string ret;
+        while (!st.empty()) {
+            ret = "/" + st.top() + ret;
+            st.pop();
+        }
+        return ret.empty() ? "/" : ret;
     }
 }
 
 void StringAlgorithms::Simplify_Path()
 {
-    simplify_path(R"(/c/d//./)");
-    // simplify_path(R"(/one//////./etc)");
-    //simplify_path(R"(/one/./three//etc)");
-    // simplify_path(R"(/one/../three//etc)");
-    // simplify_path(R"(/one/two/three/etc)");
-    // simplify_path(R"(/home//../etc)");
-    //simplify_path(R"(/home//../etc//two///three)");
 
-    // simplify_path(R"(/a//b////c/d//./)");
+    using TestData = std::vector< std::pair<std::string, std::string> >;
+    for (const auto& [value, expected]:  TestData{
+        { R"(/c/d//.//./)" , "" },
+        { R"(/one//////./etc)" , "" },
+        { R"(/one/./three//etc)" , "" },
+        { R"(/one/two/three/etc)" , "" },
+        { R"(/home//../etc)" , "" },
+        { R"(/home//../etc//two///three)" , "" },
+        { R"(/a/./b/../../c/)" , "" },
+        { R"(/a//b////c/d//./)" , "" },
+        { R"(/a/b/../c/../d/../e/../)" , "" },
+    })
+    {
+        std::cout << "Input: " << value << std::endl;
+        {
+            std::string result(value);
+            simplify_path_fast_inplace(result);
+            std::cout << '\t' << result << std::endl;
+        }
+        {
+            std::string result = simplify_path_1(value);
+            std::cout << '\t' << result << std::endl;
+        }
+        /*if (expected != actual) {
+            std::cerr << std::boolalpha << expected << " != " << actual << std::endl;
+        }*/
+    }
+    std::cout << "OK: All tests passed\n";
 }

@@ -56,6 +56,7 @@ namespace StringAlgorithms
     void Simplify_Path();
     void Is_String_Contains_Another_String();
     void Find_K_Most_Frequent_Character();
+    void Jewels_and_Stones();
 }
 
 #endif //STRING_ALGORITHMS_H
