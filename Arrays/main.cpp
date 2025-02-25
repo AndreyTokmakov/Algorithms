@@ -55,11 +55,12 @@ int main([[maybe_unused]] int argc,
     // ArraysAlgorithms::Sqrt();
     // ArraysAlgorithms::Min_Length_SubArray_WithSameDegree();
     // ArraysAlgorithms::Maximum_Area_Between_Boundaries();
-    ArraysAlgorithms::Container_With_Most_Water();
+    // ArraysAlgorithms::Container_With_Most_Water();
     // ArraysAlgorithms::Calculate_Max_Hotel_Visitors();
     // ArraysAlgorithms::Smallest_Subarray_With_Sum_Greater_Than_K();
     // ArraysAlgorithms::Longest_Subarray_With_Sum_Less_Than_K();
     // ArraysAlgorithms::Find_Longest_SubArray_K_Unique_Elements();
+    ArraysAlgorithms::Find_Longest_Increasing_Subsequence();
     // ArraysAlgorithms::Sum_of_Sub_Array_Between_Indexes_L_and_R();
     // ArraysAlgorithms::Find_Index_In_Array_to_make_Right_Equal_Left();
     // ArraysAlgorithms::Find_Smallest_Without_Compare();

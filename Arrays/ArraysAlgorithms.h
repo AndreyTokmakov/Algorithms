@@ -60,6 +60,7 @@ namespace ArraysAlgorithms
     void Smallest_Subarray_With_Sum_Greater_Than_K();
     void Longest_Subarray_With_Less_Than_K();
     void Find_Longest_SubArray_K_Unique_Elements();
+    void Find_Longest_Increasing_Subsequence();
     void Sum_of_Sub_Array_Between_Indexes_L_and_R();
     void Find_Index_In_Array_to_make_Right_Equal_Left();
     void Find_Smallest_Without_Compare();

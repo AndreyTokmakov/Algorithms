@@ -10,7 +10,7 @@ https://js-notes.vercel.app/software_engineering/ds_and_algos
 =======================================================================================================================================
 
 /**============================================================================
-Name        : Container_With_Most_Water.cpp
+Name        : Find_Longest_Increasing_Subsequence.cpp
 Created on  : 25.02.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
@@ -29,7 +29,7 @@ namespace
 
 }
 
-void ArraysAlgorithms::Container_With_Most_Water()
+void ArraysAlgorithms::Find_Longest_Increasing_Subsequence()
 {
 
 }
@@ -64,38 +64,24 @@ Sliding window:
 1. two pointers 
     https://leetcode.com/problems/partition-labels/
 
- Find_Longest_Increasing_Subsequence  <---------------
+ Find_Longest_Increasing_Subsequence  <---------------   || попробовать с Heap_Ом
 
 
 Heap:
 	- Arrays: Find_N_Min_Elements_2    
+	=		  __Find_N_Max_Element2
+			Find_N_Max_Elements
+			Find_N_Min_Elements_2
 
 =======================================================================================================================================
-							Algoritms: Add to README
+							Algoritms: Add to README  |  -  [__NAME__](__LINK__)<br/>
 =======================================================================================================================================
 
-Update Links in the README ==> main
-
--  [___NAME___](___LINK___)<br/>
-
-
-
-Strings: 
--  [Jewels_and_Stones](___LINK___)<br/>
--  [Simplify_Path](___LINK___)<br/>
-
-Prefix sum:
--  [Longest_Subarray_With_Sum_Less_Than_K](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Longest_Subarray_With_Sum_Less_Than_K.cpp#L18)<br/>
 
 Arrays:
--  [Longest_Subarray_With_Sum_Less_Than_K](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Longest_Subarray_With_Sum_Less_Than_K.cpp#L18)<br/>
--  [Squares_of_a_Sorted_Array](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Squares_of_a_Sorted_Array.cpp#L33)<br/>
--  [Container_With_Most_Water](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Container_With_Most_Water.cpp#L25)<br/>
 
+	Find_Longest_Increasing_Subsequence
 
-Two Pointers:
--  [Squares_of_a_Sorted_Array](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Squares_of_a_Sorted_Array.cpp#L33)<br/>
--  [Container_With_Most_Water](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Container_With_Most_Water.cpp#L25)<br/>
 
 =======================================================================================================================================
 							Algoritms: Top Google Questions – Part 1

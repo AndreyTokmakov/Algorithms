@@ -849,88 +849,6 @@ namespace Numeric
 
 namespace Numeric
 {
-    size_t _longest_increasing_subsequence_1(const std::vector<int> &Numeric) {
-        // create an empty ordered set S. ith element in S is defined as the
-        // smallest integer that ends an increasing sequence of length i
-        std::set<int> tmp;
-
-        for (int val: Numeric) {
-            auto [iter, ok] = tmp.insert(val);
-            // 1. If element IS NOT inserted at the END, then delete next greater element from set
-            // 2. Ignore the current element if already present in the set
-            if (ok && tmp.end() != std::next(iter))
-                tmp.erase(std::next(iter));
-        }
-        return tmp.size();
-    }
-
-    /** Solution:
-    The O(nlogn) solution is less obvious.
-
-    If we consider building a subsequence iteratively, we have two situations.
-    Either the next element is strictly higher, in which case we can simply append it.
-
-    If it is not, we still want to remember it and we can do that by replacing the next higher value in the subsequence.
-
-    This works because we only ever decrease values this way:
-    - we won't break previous subsequences this way
-    - we won't accidentally skip over potential subsequences
-    **/
-
-    size_t _longest_increasing_subsequence_2(const std::vector<int> &numbers) {
-        std::vector<int> path;
-        for (int64_t i = 0; i < std::ssize(numbers); ++i) {
-            // Current element is higher than the tail of the path.
-            if (path.empty() || path.back() < numbers[i]) {
-                path.push_back(numbers[i]);
-                continue;
-            }
-
-            // Find the element to overwrite
-            auto it = std::upper_bound(path.begin(), path.end(), numbers[i], [](int l, int r) {
-                return l <= r;
-            });
-
-            // it != path.end() because path.back() >= nums[i];
-            *it = numbers[i];
-        }
-        return path.size();
-    }
-
-    void Find_Longest_Increasing_Subsequence() {
-        std::vector<std::pair<std::vector<int>, size_t>> testData{
-                {{1,  2,  3},                         3},
-                {{3,  2,  1},                         1},
-                {{2,  8,  4, 1,  9,  3,  5},          3},
-                {{2,  1,  4, 3,  6,  5,  8,  7,  9},  5},
-                {{1,  1,  1, 1},                      1},
-                {{10, 22, 9, 33, 21, 50, 41, 60, 80}, 6},
-                {{1,  2,  2, 3,  4,  4},              4}
-        };
-        for (const auto &[data, expectedResult]: testData) {
-            std::cout << _longest_increasing_subsequence_1(data) << " | "
-                      << _longest_increasing_subsequence_2(data) << " | "
-                      << expectedResult << std::endl;
-        }
-    }
-
-    //--------------------------------------------------------------------------------------//
-
-    void find_longest_increasing_subsequence_1(const std::vector<int> &Numeric) {
-        assert(false == Numeric.empty());
-        for (size_t i = 1; i < Numeric.size(); i++) {
-            if (Numeric[i - 1] > Numeric[i])
-                std::cout << Numeric[i - 1] << std::endl;
-        }
-    }
-
-    void Find_Longest_Increasing_Subsequence_1() {
-        const std::vector<int> Numeric = {1, 2, 33, 3, 4, 5, 6, 66, 7, 8, 9};
-        find_longest_increasing_subsequence_1(Numeric);
-    }
-
-    //--------------------------------------------------------------------------------------//
-
     // Second-largest element
     // Just using classing min_heap approach
     void _next_larger_element(const std::vector<int> &numbers) {
@@ -2494,8 +2412,6 @@ void ArraysAlgorithms::Other()
     // Numeric::MaxPairSumInArray();
     // Numeric::NextLargerElement();
     // Numeric::Find_All_Distinct_Combinations_LengthK();
-    // Numeric::Find_Longest_Increasing_Subsequence();
-    // Numeric::Find_Longest_Increasing_Subsequence_1();
     // Numeric::Longest_Consecutive_Sequence();
     // Numeric::FindLongestSubArray();
     // Numeric::FindLongestSubArray_K_UniqueElements();
