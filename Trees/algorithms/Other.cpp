@@ -795,53 +795,14 @@ namespace BinTreeTests {
 
     ///////////////////////////////////////////////////////////////////////////////////////////////////
 
-    void __find_maximum_level_sum(const BinTree::Node* node, size_t level, std::vector<int>& levels) {
-        if (nullptr == node)
-            return;
-
-        int& lvlSum = level > levels.size() ? levels.emplace_back() : levels[level - 1];
-        lvlSum += node->data;
-
-        __find_maximum_level_sum(node->left, level + 1, levels);
-        __find_maximum_level_sum(node->right, level + 1, levels);
-    }
 
 
-    void __find_maximum_level_sum_2(const BinTree::Node* node, size_t level, std::map<int, int>& levels) {
-        if (nullptr == node)
-            return;
-
-        levels[level] += node->data;
-        __find_maximum_level_sum_2(node->left, level + 1, levels);
-        __find_maximum_level_sum_2(node->right, level + 1, levels);
-    }
-
-    void Find_Maximum_Level_Sum() {
-        const BinTree::BinaryTree tree{ 33,22,85,10,30,54,125,5,13,25,35 };
-
-        {
-            std::vector<int> levels;
-            __find_maximum_level_sum(tree.getRoot(), 1, levels);
-            std::cout << *std::max_element(levels.begin(), levels.end()) << std::endl;
-        }
-
-        {
-            std::map<int, int> levels;
-            __find_maximum_level_sum_2(tree.getRoot(), 1, levels);
-            int result{ std::numeric_limits<int>::min() };
-            for (const auto& entry : levels)
-                result = std::max(result, entry.second);
-            std::cout << result << std::endl;
-        }
-    }
-
-    ////////////////////////
-
-    void Find_Level_With_Maximum_Sum() {
+    void Find_Level_With_Maximum_Sum()
+    {
         std::vector<int> levels;
         BinTree::BinaryTree tree{ 33,22,85,10,30,54,125,5,13,25,35 };
 
-        __find_maximum_level_sum(tree.getRoot(), 1, levels);
+        // __find_maximum_level_sum(tree.getRoot(), 1, levels);
 
         auto max_sum_iter = std::max_element(levels.begin(), levels.end());
         std::cout << "Max sum is " << *max_sum_iter << ". At level: " << std::distance(levels.begin(), max_sum_iter) << std::endl;
