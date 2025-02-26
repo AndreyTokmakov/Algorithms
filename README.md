@@ -93,7 +93,20 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [Find_SubArrays_Sum_Equal_K](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_SubArrays_Sum_Equal_K.cpp#L19)<br/>
 -  [Find_SubArray_Sum_Equal_K_Single](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_SubArray_Sum_Equal_K_Single.cpp#L22)<br/>
 -  [Find_Top_K_Frequent_Numbers](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_Top_K_Frequent_Numbers.cpp#L16) <br/>
--  [Is_Reversed_Equals](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Is_Reversed_Equals.cpp#L15)<br/>
+-  [Find_N_Min_Elements](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_N_Min_Elements.cpp#L17) <br/>
+-  [Find_N_Max_Elements](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_N_Max_Elements.cpp#L17) <br/>
+-  [Find_Rank](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_Rank.cpp#L38) <br/>
+-  [Find_First_Repeating_Element](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_First_Repeating_Element.cpp#L32) <br/>
+-  [Find_Multiplier_Pair](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_Multiplier_Pair.cpp#L19) <br/>
+-  [Find_Peak_Element](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_Peak_Element.cpp#L40) <br/>
+-  [Find_Missing_Number](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_Missing_Number.cpp) <br/>
+-  [Find_Missing_Number_2](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_Missing_Number_2.cpp) <br/>
+-  [Find_Missing_Number_Any_Range](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_Missing_Number_Any_Range.cpp) <br/>
+-  [Find_Longest_SubArray_K_Unique_Elements](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_Longest_SubArray_K_Unique_Elements.cpp#L20)<br/>
+-  [Find_Smallest_Without_Compare](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_Smallest_Without_Compare.cpp#L20)<br/>
+-  [Find_Index_In_Array_to_make_Right_Equal_Left](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_Index_In_Array_to_make_Right_Equal_Left.cpp#L19)<br/>
+-  [Find_Smallest_Missing_Positive_Number](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_Smallest_Missing_Positive_Number.cpp#L17)<br/>
+-  [Find_The_Majority_Element](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_The_Majority_Element.cpp#L27)<br/>
 -  [Median_of_Two_Sorted_Arrays](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Median_of_Two_Sorted_Arrays.cpp#L26)<br/>
 -  [MidPoint](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/MidPoint.cpp#L16) <br/>
 -  [Reverse_Bits](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Reverse_Bits.cpp#L26) <br/>
@@ -105,15 +118,15 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [Remove_Duplicates](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Remove_Duplicates.cpp#L18)<br/>
 -  [Remove_Element](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Remove_Element.cpp#L19)<br/>
 -  [Contains_Duplicate](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Contains_Duplicate.cpp#L18)<br/>
--  [Find_Smallest_Missing_Positive_Number](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_Smallest_Missing_Positive_Number.cpp#L17)<br/>
 -  [Longest_Harmonious_Subsequence](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Longest_Harmonious_Subsequence.cpp#L25)<br/>
+-  [Is_Reversed_Equals](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Is_Reversed_Equals.cpp#L15)<br/>
 -  [Is_Prime](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Is_Prime.cpp#L18)<br/>
+-  [Is_Power_Of2](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Is_Power_Of2.cpp#L18)<br/>
+-  [Is_Permutation](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Is_Permutation.cpp#L18) <br/>
 -  [Coins_Change_Problem](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Coins_Change_Problem.cpp#L19)<br/>
 -  [Get_Number_Of_Digit](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Get_Number_Of_Digit.cpp#L18)<br/>
 -  [Greatest_Common_Divisor](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Greatest_Common_Divisor.cpp#L27)<br/>
 -  [Least_Common_Multiple](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Least_Common_Multiple.cpp#L18)<br/>
--  [Is_Power_Of2](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Is_Power_Of2.cpp#L18)<br/>
--  [Find_The_Majority_Element](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_The_Majority_Element.cpp#L27)<br/>
 -  [Can_Jump](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Can_Jump.cpp#L25)<br/>
 -  [Maximum_Sum_SubArray_Algorithms_Kadane](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Maximum_Sum_SubArray_Algorithms_Kadane.cpp#L18)<br/>
 -  [Sort_Array_By_Parity](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Sort_Array_By_Parity.cpp#L24)<br/>
@@ -126,10 +139,7 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [Maximum_Area_Between_Boundaries](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Maximum_Area_Between_Boundaries.cpp#L30)<br/>
 -  [Calculate_Max_Hotel_Visitors](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Calculate_Max_Hotel_Visitors.cpp#L23)<br/>
 -  [Smallest_Subarray_With_Sum_Greater_Than_K](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Smallest_Subarray_With_Sum_Greater_Than_K.cpp#L18)<br/>
--  [Find_Longest_SubArray_K_Unique_Elements](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_Longest_SubArray_K_Unique_Elements.cpp#L20)<br/>
--  [Find_Index_In_Array_to_make_Right_Equal_Left](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_Index_In_Array_to_make_Right_Equal_Left.cpp#L19)<br/>
 -  [Sum_of_Sub_Array_Between_Indexes_L_and_R](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Sum_of_Sub_Array_Between_Indexes_L_and_R.cpp#L19)<br/>
--  [Find_Smallest_Without_Compare](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_Smallest_Without_Compare.cpp#L20)<br/>
 -  [Fixed_Point_SmallestIndex_ValueEqualIndex](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/FixedPointSmallestIndexValueEqualIndex.cpp#L25)<br/>
 -  [Longest_Subarray_With_Sum_Less_Than_K](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Longest_Subarray_With_Sum_Less_Than_K.cpp#L18)<br/>
 -  [Squares_of_a_Sorted_Array](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Squares_of_a_Sorted_Array.cpp#L33)<br/>
