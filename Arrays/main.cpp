@@ -24,19 +24,25 @@ int main([[maybe_unused]] int argc,
     // ArraysAlgorithms::Median_of_Two_Sorted_Arrays();
     // ArraysAlgorithms::Reverse_To_Make_Equal();
     // ArraysAlgorithms::Is_Reversed_Equals();
+	// ArraysAlgorithms::Find_The_Majority_Element();
     // ArraysAlgorithms::Find_Top_K_Frequent_Numbers();
-    ArraysAlgorithms::Find_N_Min_Elements();
+    // ArraysAlgorithms::Find_N_Min_Elements();
+    ArraysAlgorithms::Find_N_Max_Elements();
     // ArraysAlgorithms::Find_SubArrays_Sum_Zero();
     // ArraysAlgorithms::Find_SubArrays_Sum_Equal_K();
     // ArraysAlgorithms::Find_SubArray_Sum_Equal_K_Single();
+	// ArraysAlgorithms::Find_Smallest_Missing_Positive_Number();
+	// ArraysAlgorithms::Find_Element_Encountered_Only_Once();
+	// ArraysAlgorithms::Find_Longest_SubArray_K_Unique_Elements();
+	// ArraysAlgorithms::Find_Longest_Increasing_Subsequence();
+	// ArraysAlgorithms::Find_Index_In_Array_to_make_Right_Equal_Left();
+	// ArraysAlgorithms::Find_Smallest_Without_Compare();
     // ArraysAlgorithms::Reverse_Number();
-    // ArraysAlgorithms::Find_Element_Encountered_Only_Once();;
     // ArraysAlgorithms::Is_Palindrome();
     // ArraysAlgorithms::Remove_Duplicates_From_Sorted_Array();
     // ArraysAlgorithms::Remove_Duplicates();
     // ArraysAlgorithms::Remove_Element();
     // ArraysAlgorithms::Contains_Duplicate();
-    // ArraysAlgorithms::Find_Smallest_Missing_Positive_Number();
     // ArraysAlgorithms::Longest_Harmonious_Subsequence();
     // ArraysAlgorithms::Is_Prime();
     // ArraysAlgorithms::Coins_Change_Problem();
@@ -45,7 +51,6 @@ int main([[maybe_unused]] int argc,
     // ArraysAlgorithms::Greatest_Common_Divisor();
     // ArraysAlgorithms::Least_Common_Multiple();
     // ArraysAlgorithms::Is_Power_Of2();
-    // ArraysAlgorithms::Find_The_Majority_Element();
     // ArraysAlgorithms::Can_Jump();
     // ArraysAlgorithms::Divide_Without_Division_Operator();
     // ArraysAlgorithms::Maximum_Sum_SubArray_Algorithms_Kadane();
@@ -60,11 +65,7 @@ int main([[maybe_unused]] int argc,
     // ArraysAlgorithms::Calculate_Max_Hotel_Visitors();
     // ArraysAlgorithms::Smallest_Subarray_With_Sum_Greater_Than_K();
     // ArraysAlgorithms::Longest_Subarray_With_Sum_Less_Than_K();
-    // ArraysAlgorithms::Find_Longest_SubArray_K_Unique_Elements();
-    // ArraysAlgorithms::Find_Longest_Increasing_Subsequence();
-    // ArraysAlgorithms::Sum_of_Sub_Array_Between_Indexes_L_and_R();
-    // ArraysAlgorithms::Find_Index_In_Array_to_make_Right_Equal_Left();
-    // ArraysAlgorithms::Find_Smallest_Without_Compare();
+	// ArraysAlgorithms::Sum_of_Sub_Array_Between_Indexes_L_and_R();
     // ArraysAlgorithms::Squares_of_a_Sorted_Array();
 
 

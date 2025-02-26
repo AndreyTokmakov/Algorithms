@@ -42,6 +42,12 @@ namespace ArraysAlgorithms
         return stream;
     }
 
+    inline bool unordered_equal(const std::vector<int>& a, const std::vector<int>& b)
+    {
+        const std::unordered_set<int> aSet (a.begin(), a.end()), bSet (b.begin(), b.end());
+        return aSet == bSet;
+    }
+
     template<typename T>
     std::ostream &operator<<(std::ostream &stream, const std::list<T> &list)
     {

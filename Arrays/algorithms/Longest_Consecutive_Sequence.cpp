@@ -15,7 +15,7 @@ namespace
 {
     using namespace ArraysAlgorithms;
 
-    size_t longest_consecutive_sequence(const std::vector<int> &values)
+    int32_t longest_consecutive_sequence(const std::vector<int> &values)
     {
         const std::unordered_set<int> tmp(values.begin(), values.end());
         size_t count = 0;
@@ -25,7 +25,7 @@ namespace
                 len++;
             count = std::max(count, len);
         }
-        return count;
+        return static_cast<int32_t>(count);
     }
 }
 

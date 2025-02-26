@@ -64,14 +64,8 @@ Sliding window:
 1. two pointers 
     https://leetcode.com/problems/partition-labels/
 
- Find_Longest_Increasing_Subsequence  <---------------   || попробовать с Heap_Ом
-
-
 Heap:
-	- Arrays: Find_N_Min_Elements_2    
-	=		  __Find_N_Max_Element2
-			Find_N_Max_Elements
-			Find_N_Min_Elements_2
+
 
 =======================================================================================================================================
 							Algoritms: Add to README  |  -  [__NAME__](__LINK__)<br/>
@@ -82,6 +76,7 @@ Arrays:
 
 	Find_Longest_Increasing_Subsequence
 	Find_N_Min_Elements
+	Find_N_Max_Elements
 
 
 =======================================================================================================================================
