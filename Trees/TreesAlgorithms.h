@@ -28,6 +28,7 @@ namespace TreesAlgorithms
     void Check_Is_Trees_Identical();
     void Check_Is_Tree_Symmetric();
     void Check_Is_Tree_Balanced();
+    void Level_Order_Traversal();
 }
 
 #endif //TREES_ALGORITHMS_H

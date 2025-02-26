@@ -22,6 +22,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Check_Is_Trees_Identical.cpp
 		algorithms/Check_Is_Tree_Symmetric.cpp
 		algorithms/Check_Is_Tree_Balanced.cpp
+		algorithms/Level_Order_Traversal.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")

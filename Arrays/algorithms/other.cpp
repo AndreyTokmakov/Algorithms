@@ -903,122 +903,6 @@ namespace Numeric
     }
 }
 
-namespace Numeric
-{
-    int find_duplicate_1(const std::vector<int> &values)
-    {
-        std::unordered_set<int> uniques;
-        uniques.reserve(values.size());
-        for (int v: values)
-            if (!uniques.emplace(v).second)
-                return v;
-        return 0;
-    }
-
-    // TODO: Works only in case is only ONE duplicate
-    //       We know that ARRAY contains 'SIZE - 1' sequential elements starting from number 1 --> sum of that elements
-    //       can be found using (N + 1) * N / 2 (where N == SIZE - 1)
-    int find_duplicate_2(const std::vector<int> &values)
-    {
-        const int sum = std::accumulate(values.cbegin(), values.cend(), 0);
-        return sum - static_cast<int>((values.size() * (values.size() - 1)) / 2);
-    }
-
-    int find_duplicate_3(const std::vector<int> &values)
-    {
-        int tortoise = values[0], hare = values[0];
-
-        // Advance until the tortoise meets the hare.
-        do {
-            tortoise = values[tortoise];
-            hare = values[values[hare]];
-        } while (tortoise != hare);
-
-        // Reset the tortoise and move both one step at a time, until they meet.
-        tortoise = values[0];
-        while (tortoise != hare) {
-            tortoise = values[tortoise];
-            hare = values[hare];
-        }
-
-        return hare;
-    }
-
-    int find_duplicate_4(std::vector<int> &values)
-    {
-        while(values[0]!=values[values[0]])
-            std::swap(values[0],values[values[0]]);
-        return values.front();
-    }
-
-    /// Given an array of length N + 1 that contains the integers 1..n with one duplicate, return the duplicate.
-    /// All values a unique with exception of the one duplicate
-    /// Solution should have O(n) time complexity and O(1) space complexity.
-    void FindTheDuplicateValue()
-    {
-        for (auto &[values, expected]: std::vector<std::pair<std::vector<int>, int>>{
-                {{1, 1, 2},                      1},
-                {{3, 1, 1, 2},                   1},
-                {{7, 1, 6, 9, 3, 4, 9, 5, 2, 8}, 9},
-                {{5, 1, 2, 3, 4, 5},             5},
-                {{1,3,4,2,2},                    2},
-                {{3,1,3,4,2},                    3},
-        }) {
-            std::cout << find_duplicate_1(values) << " | "
-                      << find_duplicate_2(values) << " | "
-                      << find_duplicate_3(values) << " | "
-                      << find_duplicate_4(values) << " | " << expected << std::endl;
-        }
-    }
-}
-
-namespace Numeric
-{
-    int search(const std::vector<int> &data) {
-        int left = 0, right = data.size() - 1;
-        int mid;
-        while ((right - left) > 1) {
-            mid = (left + right) / 2;
-            if ((data[left] - left) != (data[mid] - mid))
-                right = mid;
-            else if ((data[right] - right) != (data[mid] - mid))
-                left = mid;
-        }
-        return (left + data[0] + 1);
-    }
-
-    void FindTheMissingNumber_SortedArray() {
-        {
-            std::vector<int> data = {1, 2, 3, 4, 5, 6, 8};
-            std::cout << "Missing number:" << search(data) << std::endl;
-        }
-        {
-            std::vector<int> data = {3, 4, 5, 6, 7, 8, 9, 10, 12, 13};
-            std::cout << "Missing number:" << search(data) << std::endl;
-        }
-    }
-}
-
-
-namespace Numeric
-{
-
-/*
-    void FindTheMissingNumber_Unsorted_AnyRange() {
-        {
-            std::vector<int> Numeric = {1, 2, 3, 5};
-            std::cout << _find_missing_element(Numeric) << std::endl;
-            std::cout << _find_missing_element_2(Numeric) << std::endl;
-            std::cout << _find_missing_element_3(Numeric) << std::endl;
-        }
-        {
-            std::vector<int> Numeric = {4, 5, 6, 7, 8, 9, 11, 12};
-            std::cout << _find_missing_element(Numeric) << std::endl;
-            std::cout << _find_missing_element_2(Numeric) << std::endl;
-            std::cout << _find_missing_element_3(Numeric) << std::endl;
-        }
-    }*/
-}
 
 namespace Numeric
 {
@@ -2042,9 +1926,7 @@ namespace Numeric::Backtracking
 
 void ArraysAlgorithms::Other()
 {
-    // Numeric::isPowerOf2();
     // Numeric::Rotate_Array();
-    // Numeric::LeastCommonMultiple();
     // Numeric::LongestCommonSubsequence();
     // Numeric::FinabochiNumeric();
     // Numeric::LongestSubset_FinabochiNumeric();
@@ -2059,10 +1941,8 @@ void ArraysAlgorithms::Other()
     // Numeric::BillionUsers();
     // Numeric::BalancedSplit();
     // Numeric::Kadane();
-    // Numeric::MaximumSumSubarray_Kadane();
     // Numeric::GetAllSubsequentSubArrays();
     // Numeric::GetAllSubArrays_NonSequenced();
-    // Numeric::CheckIsPrime();
     // Numeric::CoinsChangeProblem();
     // Numeric::DeviceNumeric_WithOut_Operator();
     // Numeric::LeadNumber_Window_IgnoreNulls();
@@ -2096,13 +1976,9 @@ void ArraysAlgorithms::Other()
     // Backtracking::Permutations();
     // Numeric::FindCommonElements_3_SortedArrays();
 
-    // Numeric::FindTheMissingNumber_SortedArray();
-    // Numeric::FindTheMissingNumber_Unsorted_AnyRange();
     // Numeric::Find_K_MissingNumber_Sorted();
     // Numeric::Find_K_MissingNumber();
     // Numeric::Find_Repeating_And_Missing();
-
-    // Numeric::FindTheDuplicateValue();
 
     // Numeric::printSortedSquaredNumber_InSortedArray();
     // Numeric::Find_All_Symmetric_Pairs_InArray();

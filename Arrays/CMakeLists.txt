@@ -24,6 +24,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Find_SubArrays_Sum_Equal_K.cpp
 		algorithms/Find_N_Min_Elements.cpp
 		algorithms/Find_N_Max_Elements.cpp
+		algorithms/Find_The_Duplicate_Value.cpp
 		algorithms/Reverse_Number.cpp
 		algorithms/Find_Element_Encountered_Only_Once.cpp
 		algorithms/Is_Palindrome.cpp
@@ -71,6 +72,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Find_Missing_Number.cpp
 		algorithms/Find_Missing_Number_2.cpp
 		algorithms/Find_Missing_Number_Any_Range.cpp
+		algorithms/Find_Missing_Number_Sorted_Array.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")

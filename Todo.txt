@@ -10,7 +10,7 @@ https://js-notes.vercel.app/software_engineering/ds_and_algos
 =======================================================================================================================================
 
 /**============================================================================
-Name        : Find_Missing_Number.cpp
+Name        : Level_Order_Traversal.cpp
 Created on  : 26.02.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
@@ -19,17 +19,17 @@ Description :
 ============================================================================**/
 
 #include "../common.h"
-#include "../ArraysAlgorithms.h"
+#include "../TreesAlgorithms.h"
 
 
 namespace
 {
-    using namespace ArraysAlgorithms;
+    using namespace TreesAlgorithms;
 
 
 }
 
-void ArraysAlgorithms::Find_Missing_Number()
+void TreesAlgorithms::Level_Order_Traversal()
 {
 
 }
@@ -39,9 +39,9 @@ void ArraysAlgorithms::Find_Missing_Number()
 							Tests
 =======================================================================================================================================
 
-    using TestData = std::vector< std::pair<std::vector<int>, bool> >;
+    using TestData = std::vector< std::pair<std::vector<int>, int>>;
     for (const auto& [value, expected]:  TestData{
-        { {} , true },
+        { {} , 1 },
     })
     {
         const auto actual = is_power_of_two(value);
@@ -61,35 +61,30 @@ Sliding window:
 5. tree 
     https://leetcode.com/problems/path-sum-ii/	
 
+    -- Level_Order_Traversal
+
+
 1. two pointers 
     https://leetcode.com/problems/partition-labels/
 
+Arrays:
 
-    // Numeric::FindTheMissingNumber_SortedArray();
-    // Numeric::Find_K_MissingNumber_Sorted();
-    // Numeric::Find_K_MissingNumber();
-    // Numeric::Find_Repeating_And_Missing();
-    // Numeric::FindTheDuplicateValue();
-
+    -- Numeric::Find_K_MissingNumber_Sorted();
+    -- Numeric::Find_K_MissingNumber();
+    -- Numeric::Find_Repeating_And_Missing();
 
 =======================================================================================================================================
 							Algoritms: Add to README  |  -  [__NAME__](__LINK__)<br/>
 =======================================================================================================================================
 
-
 Arrays:
 
-	Find_Longest_Increasing_Subsequence
-	Find_N_Min_Elements
-	Find_N_Max_Elements
-	Find_Rank
-	Find_First_Repeating_Element
-	Find_Multiplier_Pair
-	Find_Peak_Element
-	Find_Missing_Number
-	Find_Missing_Number_2
-	Find_Missing_Number_Any_Range
-	Is_Permutation
+	Find_The_Duplicate_Value
+	Find_Missing_Number_Sorted_Array
+
+Trees:
+
+	Level_Order_Traversal
 
 =======================================================================================================================================
 							Algoritms: Top Google Questions – Part 1

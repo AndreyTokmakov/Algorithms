@@ -44,7 +44,9 @@ namespace ArraysAlgorithms
     void Find_Rank();
     void Find_Missing_Number();
     void Find_Missing_Number_2();
+    void Find_Missing_Number_Sorted_Array();
     void Find_Missing_Number_Any_Range();
+    void Find_The_Duplicate_Value();
     void Reverse_Number();
     void Is_Palindrome();
     void Remove_Duplicates();

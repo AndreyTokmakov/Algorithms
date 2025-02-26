@@ -43,7 +43,9 @@ int main([[maybe_unused]] int argc,
 	// ArraysAlgorithms::Find_Multiplier_Pair();
 	// ArraysAlgorithms::Find_Missing_Number();
 	// ArraysAlgorithms::Find_Missing_Number_2();
-	ArraysAlgorithms::Find_Missing_Number_Any_Range();
+	ArraysAlgorithms::Find_Missing_Number_Sorted_Array();
+	// ArraysAlgorithms::Find_Missing_Number_Any_Range();
+	// ArraysAlgorithms::Find_The_Duplicate_Value();
     // ArraysAlgorithms::Reverse_Number();
     // ArraysAlgorithms::Remove_Duplicates_From_Sorted_Array();
     // ArraysAlgorithms::Remove_Duplicates();
