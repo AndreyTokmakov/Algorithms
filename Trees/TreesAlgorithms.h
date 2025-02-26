@@ -29,6 +29,9 @@ namespace TreesAlgorithms
     void Check_Is_Tree_Symmetric();
     void Check_Is_Tree_Balanced();
     void Level_Order_Traversal();
+    void Inorder_Tree_Traversal();
+    void Backwards_Tree_Traversal();
+    void Find_Maximum_Level_Sum();
 }
 
 #endif //TREES_ALGORITHMS_H

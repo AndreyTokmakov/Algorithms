@@ -10,7 +10,7 @@ https://js-notes.vercel.app/software_engineering/ds_and_algos
 =======================================================================================================================================
 
 /**============================================================================
-Name        : Level_Order_Traversal.cpp
+Name        : Find_Maximum_Level_Sum.cpp
 Created on  : 26.02.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
@@ -29,7 +29,7 @@ namespace
 
 }
 
-void TreesAlgorithms::Level_Order_Traversal()
+void TreesAlgorithms::Find_Maximum_Level_Sum()
 {
 
 }
@@ -85,6 +85,9 @@ Arrays:
 Trees:
 
 	Level_Order_Traversal
+	Inorder_Tree_Traversal
+	Backwards_Tree_Traversal
+	Find_Maximum_Level_Sum
 
 =======================================================================================================================================
 							Algoritms: Top Google Questions – Part 1

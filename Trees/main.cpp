@@ -27,7 +27,10 @@ int main([[maybe_unused]] int argc,
 	// TreesAlgorithms::Check_Is_Trees_Identical();
 	// TreesAlgorithms::Check_Is_Tree_Symmetric();
 	// TreesAlgorithms::Check_Is_Tree_Balanced();
-	TreesAlgorithms::Level_Order_Traversal();
+	// TreesAlgorithms::Level_Order_Traversal();
+	// TreesAlgorithms::Inorder_Tree_Traversal();
+	// TreesAlgorithms::Backwards_Tree_Traversal();
+	TreesAlgorithms::Find_Maximum_Level_Sum();
 
 
 	return EXIT_SUCCESS;
