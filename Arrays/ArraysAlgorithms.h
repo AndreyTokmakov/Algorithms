@@ -30,6 +30,7 @@ namespace ArraysAlgorithms
     void Find_N_Max_Elements();
     void Find_SubArrays_Sum_Zero();
     void Find_Element_Encountered_Only_Once();
+    void Find_First_Repeating_Element();
     void Find_The_Majority_Element();
     void Find_Smallest_Missing_Positive_Number();
     void Find_SubArrays_Sum_Equal_K();
@@ -38,6 +39,12 @@ namespace ArraysAlgorithms
     void Find_Longest_Increasing_Subsequence();
     void Find_Index_In_Array_to_make_Right_Equal_Left();
     void Find_Smallest_Without_Compare();
+    void Find_Multiplier_Pair();
+    void Find_Peak_Element();
+    void Find_Rank();
+    void Find_Missing_Number();
+    void Find_Missing_Number_2();
+    void Find_Missing_Number_Any_Range();
     void Reverse_Number();
     void Is_Palindrome();
     void Remove_Duplicates();
@@ -46,6 +53,7 @@ namespace ArraysAlgorithms
     void Contains_Duplicate();
     void Longest_Harmonious_Subsequence();
     void Is_Prime();
+    void Is_Permutation();
     void Coins_Change_Problem();
     void Get_Number_Of_Digit();
     void Greatest_Common_Divisor();

@@ -29,12 +29,12 @@ namespace
 {
     int best_time_buy_and_sell_stock(const std::vector<int>& prices)
     {
-        int maxProfit = 0;
-        for (int minPrice = prices[0]; const int currentStockPrice : prices) {
-            maxProfit = std::max(maxProfit, currentStockPrice - minPrice);
-            minPrice = std::min(minPrice, currentStockPrice);
+        int profit = 0;
+        for (int bidPrice = prices[0]; const int currPrice : prices) {
+            profit = std::max(profit, currPrice - bidPrice);
+            bidPrice = std::min(bidPrice, currPrice);
         }
-        return maxProfit;
+        return profit;
     }
 }
 
@@ -50,4 +50,5 @@ void ArraysAlgorithms::Best_Time_Buy_and_Sell_Stock()
             std::cout << "Expected value is " << data.second << ", Actual: " << actual << std::endl;
         }
     }
+    std::cout << "OK: All tests passed\n";
 }

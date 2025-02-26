@@ -33,6 +33,12 @@ namespace ArraysAlgorithms
 
     using IntPair = std::pair<int, int>;
 
+    template<typename T1, typename T2>
+    std::ostream &operator<<(std::ostream &stream, const std::pair<T1, T2> &pair)
+    {
+        stream << "{" << pair.first << ", " << pair.second << "}";
+        return stream;
+    }
 
     template<typename T>
     std::ostream &operator<<(std::ostream &stream, const std::vector<T> &list)

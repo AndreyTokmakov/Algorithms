@@ -603,40 +603,6 @@ namespace Numeric
         _test(10, 3);
     }
 
-
-    template<typename T, size_t Size>
-    class HeapHack {
-    private:
-        std::array<T, Size> data{};
-
-    public:
-        HeapHack() {
-            for (size_t i = 0; i < Size; ++i)
-                data[i] = std::numeric_limits<int>::max();
-        }
-
-        void add(const T &value) {
-            if (data.front() > value) {
-                data[0] = value;
-                std::partial_sort(data.begin(), data.begin() + 1, data.end(), std::greater<int>());
-            }
-        }
-
-        void print() {
-            for (const T &v: data)
-                std::cout << v << " ";
-            std::cout << std::endl;
-        }
-    };
-
-    void Find_N_Min_Elements() {
-        const std::vector<int> numbers{4, 5, 6, 7, 8, 9, 10, 11, 0, -1};
-        HeapHack<int, 3> mins;
-        for (const auto v: numbers)
-            mins.add(v);
-        mins.print();
-    }
-
     //---------------------------------------------------------------------------//
 
     std::pair<int, int> find_min_max(const std::vector<int> &Numeric) {
@@ -672,53 +638,6 @@ namespace Numeric
         }
 
         std::cout << min1 << "   " << min2 << std::endl;
-    }
-
-    //---------------------------------------------------------------------------//
-
-    void __Find_N_Max_Elements(const int *data, size_t length, size_t N) {
-        std::vector<int> max_elements(data, data + N);
-        std::make_heap(max_elements.begin(), max_elements.end(), std::greater<>{});
-
-        for (size_t i = N; i < length; i++) {
-            if (data[i] > max_elements[0]) {
-                max_elements[0] = data[i];
-                std::make_heap(max_elements.begin(), max_elements.end(), std::greater<>{});
-            }
-        }
-
-        for (const auto e: max_elements)
-            std::cout << e << " ";
-        std::cout << std::endl;
-    }
-
-    void Find_N_Max_Elements() {
-        const int Numeric[] = {2, 6, 5, 8, 12, 4, 87, 24, 1, 13, 4, 45, 1};
-        __Find_N_Max_Elements(Numeric, std::size(Numeric), 5);
-    }
-
-
-    //--------------------------------------------------------------------------------------//
-
-    void __Find_N_Max_Element2(const int *data, size_t length, size_t N) {
-        std::priority_queue<int, std::vector<int>, std::greater<int>> result(data, data + N);
-        for (size_t i = N; i < length; i++) {
-            if (data[i] > result.top()) {
-                result.pop();
-                result.push(data[i]);
-            }
-        }
-
-        while (false == result.empty()) {
-            std::cout << ' ' << result.top();
-            result.pop();
-        }
-        std::cout << std::endl;
-    }
-
-    void Find_N_Max_Elements2() {
-        const int Numeric[] = {2, 6, 5, 8, 12, 4, 87, 24, 1, 13, 4, 45, 1};
-        __Find_N_Max_Element2(Numeric, std::size(Numeric), 5);
     }
 
     //--------------------------------------------------------------------------------------//
@@ -1080,74 +999,11 @@ namespace Numeric
     }
 }
 
-namespace Numeric
-{
-    int __search1(const std::vector<int>& values)
-    {
-        int sum_expected = static_cast<int>((values.size() + 1) * (values.size() + 2)) / 2;
-        const int sum = std::accumulate(values.begin(), values.end(), 0);
-        return sum_expected - sum;
-    }
-
-    int __search2(const std::vector<int>& values)
-    {
-        int result = 1;
-        for (size_t index = 2; index <= (values.size() + 1); index++) {
-            result += (index - values[index - 2]);
-        }
-        return result;
-    }
-
-    void FindTheMissingNumber_Unsorted()
-    {
-        for (const std::vector<int> &values: std::vector<std::vector<int>>{
-                {1,2,3,5}, // 4
-                {5,4,3,1},   // 2
-        }) {
-            std::cout << __search1(values) << "  " << __search2(values) << std::endl;
-        }
-    }
-}
-
 
 namespace Numeric
 {
-    int _find_missing_element(const std::vector<int>& values)
-    {
-        int sum = 1, min = std::numeric_limits<int>::max();
 
-        // Loop to determine min value in the given array and
-        // sum will keep value of the missing element in suggestion that
-        // array has elements from (1 ... till ... length)
-        for (size_t index = 2; index < (values.size() + 2); index++) {
-            sum += (index - values[index - 2]);
-            min = std::min(min, values[index - 2]);
-        }
-        return (sum + (min - 1) * (values.size() + 1));
-    }
-
-    int _find_missing_element_2(const std::vector<int>& values)
-    {
-        int sum = 0, min = std::numeric_limits<int>::max();
-        for (int v: values) {
-            sum += v;
-            min = std::min(min, v);
-        }
-
-        const int diff = ((values.size() + 1) * (values.size() + 2)) / 2 - sum;
-        return (diff + (min - 1) * (values.size() + 1));
-    }
-
-
-    int _find_missing_element_3(const std::vector<int>& values)
-    {
-        auto min = *std::min_element(values.begin(), values.end());
-        auto sum = std::accumulate(values.begin(), values.end(), 0);
-
-        int diff = ((values.size() + 1) * (values.size() + 2)) / 2 - sum;
-        return (diff + (min - 1) * (values.size() + 1));
-    }
-
+/*
     void FindTheMissingNumber_Unsorted_AnyRange() {
         {
             std::vector<int> Numeric = {1, 2, 3, 5};
@@ -1161,35 +1017,7 @@ namespace Numeric
             std::cout << _find_missing_element_2(Numeric) << std::endl;
             std::cout << _find_missing_element_3(Numeric) << std::endl;
         }
-    }
-}
-
-namespace Numeric
-{
-    int missing_number(const std::vector<int>& values)
-    {
-        const int sum = std::accumulate(values.cbegin(), values.cend(), 0);
-        return static_cast<int>((values.size()  * (values.size() + 1)) / 2) - sum;
-    }
-
-    /**
-     * Given an array nums containing n distinct numbers in the range [0, n],
-     * return the only number in the range that is missing from the array.
-     * Example 1:
-     *   nums = [3,0,1] -> 2
-     *   nums = [0,1]   -> 2
-     *   nums = [9,6,4,2,3,5,7,0,1]   -> 8
-    */
-    void MissingNumber()
-    {
-        for (const std::vector<int> &values: std::vector<std::vector<int>>{
-                {3,0,1}, // 2
-                {0,1},   // 2
-                {9,6,4,2,3,5,7,0,1},   // 8
-        }) {
-            std::cout << missing_number(values) << std::endl;
-        }
-    }
+    }*/
 }
 
 namespace Numeric
@@ -1264,42 +1092,6 @@ namespace Numeric
 
 
         std::cout << "Missing element = " << __Find_K_MissingNumber(data, std::size(data), 5) << std::endl;
-    }
-
-    //--------------------------------------------------------------------------------------//
-
-    void Find_Multiplier_Pair() {
-        constexpr int X = 20;
-        const std::vector<int> Numeric = {1, 23, 43, 52, 67, 8, 2, 99, 34, 41, 76, 3, 56, 34, 57, 23, 4656, 2342, 11, 456, 4, 2,
-                                          76, 9, 5};
-        std::unordered_set<int> tmp;
-        auto iter = tmp.begin();
-        for (const auto value: Numeric) {
-            if (0 == X % value) {
-                iter = tmp.find(X / value);
-                if (tmp.end() != iter) {
-                    std::cout << "{" << value << ", " << *iter << "}" << std::endl;
-                    return;
-                }
-                tmp.insert(value);
-            }
-        }
-    }
-
-    void Find_Multiplier_Pair2() {
-        constexpr int X = 2000;
-        const std::vector<int> Numeric = {1, 23, 43, 5, 67, 8, 2, 200, 99, 34, 41, 76, 3, 56, 34, 57, 23, 4656, 2342, 11, 456,
-                                          423, 2, 76, 9, 4, 10};
-        int tmp[X] = {0};
-        for (const auto value: Numeric) {
-            if (0 == X % value) {
-                if (1 == tmp[X / value]) {
-                    std::cout << "{" << X / value << ", " << value << "}" << std::endl;
-                    return;
-                } else
-                    tmp[value] = 1;
-            }
-        }
     }
 
     //--------------------------------------------------------------------------------------//
@@ -1622,28 +1414,6 @@ namespace Numeric
         }
     }
 
-    //--------------------------------------------------------------------------------------//
-
-    template<typename T>
-    std::optional<T> _find_first_repeating_element(const std::vector<T> &data) {
-        int minIdx = -1;
-        std::unordered_set<T> set;
-        for (int idx = data.size() - 1; idx >= 0; --idx) {
-            if (!set.insert(data[idx]).second)
-                minIdx = idx;
-        }
-        return -1 == minIdx ? std::nullopt : std::make_optional<int>(data[minIdx]);
-    }
-
-    void Find_First_Repeating_Element() {
-        std::vector<int> data{10, 5, 3, 4, 3, 5, 6};
-        // std::vector<int> data {1,2,3};
-        std::optional<int> res = _find_first_repeating_element(data);
-
-        std::cout << res.value_or(-1) << std::endl;
-    }
-
-
     //---------------------------------------------------------------------------------------//
 
     int find_minimum_index_of_repeating_element_GOOD(const std::vector<int> &numbers) {
@@ -1872,41 +1642,6 @@ namespace Numeric
         }
         std::cout << result << std::endl;
     }
-
-    //--------------------------------------------------------------------------------------//
-
-    bool _is_permutation(std::vector<int> &v1, std::vector<int> &v2) {
-        if (v1.size() != v2.size())
-            return false;
-        std::unordered_set<int> set(v1.begin(), v2.end());
-        for (int val: v2)
-            if (1 != set.erase(val))
-                return false;
-        return true;
-    }
-
-    bool _is_permutation_good(std::vector<int> &v1, std::vector<int> &v2) {
-        if (v1.size() != v2.size())
-            return false;
-        std::unordered_map<int, unsigned int> temp;
-        std::for_each(v1.cbegin(), v1.cend(), [&temp](auto v) { temp[v]++; });
-        return std::all_of(v2.cbegin(), v2.cend(), [&temp](auto v) { return (temp[v]--) > 0; });
-    }
-
-    void IsPermutation()
-    {
-        // std::cout << __FUNCTION__ << std::endl;
-
-        std::vector<int> v1 = {1, 2, 3, 4, 5}, v2 = {3, 4, 1, 2, 5}, v3 = {5, 5, 5, 5, 5};
-
-        std::cout << std::boolalpha << _is_permutation(v1, v2) << "   " << _is_permutation_good(v1, v2) << std::endl;
-        std::cout << std::boolalpha << _is_permutation(v1, v3) << "   " << _is_permutation_good(v1, v3) << std::endl;
-    }
-
-    //----------------------------------------------------------------------------------------//
-
-
-
 
 
     void Missmatch_Sorted_Vectors() {
@@ -2178,52 +1913,6 @@ namespace Numeric
     }
 }
 
-namespace Numeric
-{
-    uint32_t find_rank(const std::vector<uint32_t>& papers)
-    {
-        std::map<uint32_t, uint32_t> tmp;
-        for (uint64_t v: papers)
-            ++tmp[v];
-
-        uint32_t result = 0, count = 0;
-        for (auto & [rank, ref_count] : std::ranges::reverse_view(tmp))
-        {
-            count += ref_count;
-            if (count >= rank)
-                result  = std::max(result, rank);
-        }
-
-        return result;
-    }
-
-    // Scientists are publishing papers, and these papers are getting cited in other papers.
-    // Find the rank of the scientist.
-    // Rank: largest R, such that at least R papers have >= R citations
-
-    // std::vector<uint32_t> papers {3, 4, 5, 11}; ->  3
-    // std::vector<uint32_t> papers {2, 4, 11};   ->  2
-
-    /**
-    Идея в том что бы структуры в виде вектора статей с количеством цитат (при ходит на вход)
-    создать структуру данных (map)
-    {
-        [количество цитат] <--> [количество таких статей в векторе]
-    }
-    А далее итерируясь в обратном порядке
-    подсчитывать значения в map-e --> считая колчество статей с данным и большым количеством цитат
-    (что соответствует значению в map-e)
-     */
-
-    void Rank()
-    {
-        std::vector<uint32_t> papers {3, 4, 5, 11};
-
-        uint32_t result = find_rank(papers);
-
-        std::cout << result << std::endl;
-    }
-}
 
 namespace Numeric
 {
@@ -2380,10 +2069,6 @@ void ArraysAlgorithms::Other()
     // Numeric::AnalogClockAngles();
     // Numeric::FindMinMax();
     // Numeric::FindTwoSmallestElements();
-    // Numeric::Find_N_Min_Elements();
-    // Numeric::Find_N_Min_Elements_2();
-    // Numeric::Find_N_Max_Elements();
-    // Numeric::Find_N_Max_Elements2();
     // Numeric::MaxPairSumInArray();
     // Numeric::NextLargerElement();
     // Numeric::Find_All_Distinct_Combinations_LengthK();
@@ -2401,8 +2086,6 @@ void ArraysAlgorithms::Other()
     // Numeric::Is_Array_Elements_Consecutive();
     // Numeric::MiniMaxSum_Of4();
     // Numeric::Find_Sum_All_Numeric();
-    // Numeric::Find_Multiplier_Pair();
-    // Numeric::Find_Multiplier_Pair2();
     // Numeric::Find_Pair_SumX_Sorted();
     // Numeric::Find_3_Elements_SumX_Unsorted();
     // Numeric::Find_DifferentPairs_SumK();
@@ -2412,22 +2095,21 @@ void ArraysAlgorithms::Other()
     // Backtracking::List_Of_Unique_Subsets();
     // Backtracking::Permutations();
     // Numeric::FindCommonElements_3_SortedArrays();
+
     // Numeric::FindTheMissingNumber_SortedArray();
-    // Numeric::FindTheMissingNumber_Unsorted();
     // Numeric::FindTheMissingNumber_Unsorted_AnyRange();
-    // Numeric::MissingNumber();
     // Numeric::Find_K_MissingNumber_Sorted();
     // Numeric::Find_K_MissingNumber();
     // Numeric::Find_Repeating_And_Missing();
+
     // Numeric::FindTheDuplicateValue();
+
     // Numeric::printSortedSquaredNumber_InSortedArray();
     // Numeric::Find_All_Symmetric_Pairs_InArray();
     // Numeric::Find_Elements_Occured_Once();
     // Numeric::Find_ONE_Element_Occured_Once();
     // Numeric::Find_First_Element_Occurred_Once();
-    // Numeric::Find_First_Repeating_Element();
     // Numeric::Find_Minimum_Index_Of_RepeatingElement();
-    // Numeric::Find_Top_K_Frequent_Numbers();
     // Numeric::Count_Number_tOccurrences_SortedArray();
     // Numeric::CountDistinctPairs_WithDifference_K();
     // Numeric::GroupElements_ByFirstOccurance();
@@ -2438,15 +2120,9 @@ void ArraysAlgorithms::Other()
     // Numeric::IsPermutation();
     // Numeric::MaxSum_of_NonConsecutive_Elements_In_Array();
     // Boundaries::Maximum_Area_Between_Boundaries();
-    // Numeric::Rank();
     // Random::BiasedCoin();
-
     /** Degree_Of_Array degreeOfArray: With same occurrences of duplicated elements **/
     // Numeric::Min_Length_SubArray_WithSameDegree();
-
-    // Numeric::CanJump();  // With same occurrences of duplicated elements
-
     // Intervals::Find_Union_Interval();
-
     // Intervals::CalcMaxHotelVisitors();
 }

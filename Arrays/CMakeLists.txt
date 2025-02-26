@@ -27,6 +27,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Reverse_Number.cpp
 		algorithms/Find_Element_Encountered_Only_Once.cpp
 		algorithms/Is_Palindrome.cpp
+		algorithms/Is_Permutation.cpp
 		algorithms/Remove_Duplicates_From_Sorted_Array.cpp
 		algorithms/Remove_Duplicates.cpp
 		algorithms/Remove_Element.cpp
@@ -62,6 +63,14 @@ add_executable(${PROJECT_NAME}
 		algorithms/Longest_Subarray_With_Sum_Less_Than_K.cpp
 		algorithms/Container_With_Most_Water.cpp
 		algorithms/Find_Longest_Increasing_Subsequence.cpp
+		algorithms/Find_Rank.cpp
+		algorithms/Find_First_Repeating_Element.cpp
+		algorithms/Find_Multiplier_Pair.cpp
+		algorithms/Find_Peak_Element.cpp
+		algorithms/Is_Permutation.cpp
+		algorithms/Find_Missing_Number.cpp
+		algorithms/Find_Missing_Number_2.cpp
+		algorithms/Find_Missing_Number_Any_Range.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")

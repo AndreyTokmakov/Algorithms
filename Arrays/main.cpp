@@ -27,30 +27,38 @@ int main([[maybe_unused]] int argc,
 	// ArraysAlgorithms::Find_The_Majority_Element();
     // ArraysAlgorithms::Find_Top_K_Frequent_Numbers();
     // ArraysAlgorithms::Find_N_Min_Elements();
-    ArraysAlgorithms::Find_N_Max_Elements();
+    // ArraysAlgorithms::Find_N_Max_Elements();
     // ArraysAlgorithms::Find_SubArrays_Sum_Zero();
     // ArraysAlgorithms::Find_SubArrays_Sum_Equal_K();
     // ArraysAlgorithms::Find_SubArray_Sum_Equal_K_Single();
 	// ArraysAlgorithms::Find_Smallest_Missing_Positive_Number();
 	// ArraysAlgorithms::Find_Element_Encountered_Only_Once();
+	// ArraysAlgorithms::Find_First_Repeating_Element();
 	// ArraysAlgorithms::Find_Longest_SubArray_K_Unique_Elements();
 	// ArraysAlgorithms::Find_Longest_Increasing_Subsequence();
 	// ArraysAlgorithms::Find_Index_In_Array_to_make_Right_Equal_Left();
 	// ArraysAlgorithms::Find_Smallest_Without_Compare();
+	// ArraysAlgorithms::Find_Rank();
+	// ArraysAlgorithms::Find_Peak_Element();
+	// ArraysAlgorithms::Find_Multiplier_Pair();
+	// ArraysAlgorithms::Find_Missing_Number();
+	// ArraysAlgorithms::Find_Missing_Number_2();
+	ArraysAlgorithms::Find_Missing_Number_Any_Range();
     // ArraysAlgorithms::Reverse_Number();
-    // ArraysAlgorithms::Is_Palindrome();
     // ArraysAlgorithms::Remove_Duplicates_From_Sorted_Array();
     // ArraysAlgorithms::Remove_Duplicates();
     // ArraysAlgorithms::Remove_Element();
     // ArraysAlgorithms::Contains_Duplicate();
     // ArraysAlgorithms::Longest_Harmonious_Subsequence();
-    // ArraysAlgorithms::Is_Prime();
     // ArraysAlgorithms::Coins_Change_Problem();
     // ArraysAlgorithms::Get_Number_Of_Digit();
     // ArraysAlgorithms::Get_Number_Of_Digit();
     // ArraysAlgorithms::Greatest_Common_Divisor();
     // ArraysAlgorithms::Least_Common_Multiple();
+	// ArraysAlgorithms::Is_Palindrome();
     // ArraysAlgorithms::Is_Power_Of2();
+	// ArraysAlgorithms::Is_Prime();
+    // ArraysAlgorithms::Is_Permutation();
     // ArraysAlgorithms::Can_Jump();
     // ArraysAlgorithms::Divide_Without_Division_Operator();
     // ArraysAlgorithms::Maximum_Sum_SubArray_Algorithms_Kadane();
@@ -67,6 +75,7 @@ int main([[maybe_unused]] int argc,
     // ArraysAlgorithms::Longest_Subarray_With_Sum_Less_Than_K();
 	// ArraysAlgorithms::Sum_of_Sub_Array_Between_Indexes_L_and_R();
     // ArraysAlgorithms::Squares_of_a_Sorted_Array();
+
 
 
 	return EXIT_SUCCESS;
