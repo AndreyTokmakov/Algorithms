@@ -54,9 +54,10 @@ int main([[maybe_unused]] int argc,
     // StringAlgorithms::Find_Duplicate_Symbols();
     // StringAlgorithms::Get_String_Length();
     // StringAlgorithms::Find_K_Most_Frequent_Character();
+    StringAlgorithms::Find_Common_Characters();
     // StringAlgorithms::Is_String_Contains_Another_String();
 	// StringAlgorithms::Simplify_Path();
-	StringAlgorithms::Jewels_and_Stones();
+	// StringAlgorithms::Jewels_and_Stones();
 
 	return EXIT_SUCCESS;
 }

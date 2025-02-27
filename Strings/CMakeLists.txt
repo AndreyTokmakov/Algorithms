@@ -49,6 +49,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Simplify_Path.cpp
 		algorithms/Is_String_Contains_Another_String.cpp
 		algorithms/Find_K_Most_Frequent_Character.cpp
+		algorithms/Find_Common_Characters.cpp
 		algorithms/Longest_Substring_With_Maximum_K_Unique_Characters.cpp
 		algorithms/Jewels_and_Stones.cpp
 )
