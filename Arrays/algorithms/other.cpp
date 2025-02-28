@@ -1876,54 +1876,6 @@ namespace Numeric::Backtracking
 }
 
 
-namespace Numeric::Backtracking
-{
-    std::vector<std::vector<int>> permuteUnique(std::vector<int>& input)
-    {
-        int n = input.size();
-        if (n <= 1)
-            return { input };
-        std::set<std::vector<int>> permuted, sret;
-        for (int i = 0; i < n; ++i)
-        {
-            int cur = input[i];
-            std::swap(input[i], input[n - 1]);
-            input.pop_back();
-            if (permuted.count(input) > 0) {
-                input.push_back(cur);
-                std::swap(input[i], input[n - 1]);
-                continue;
-            }
-            permuted.insert(input);
-            std::vector<std::vector<int>> sub = permuteUnique(input);
-            for (auto& s : sub) {
-                s.push_back(cur);
-                sret.insert(s);
-            }
-            input.push_back(cur);
-            std::swap(input[i], input[n - 1]);
-        }
-        std::vector<std::vector<int>> ret(sret.begin(), sret.end());
-        return ret;
-    }
-
-
-    /** Given a collection of numbers that might contain duplicates, return all possible unique permutations.
-        Input: [1,1,2]  Output: [1,1,2], [1,2,1], [2,1,1]
-    **/
-    void Permutations()
-    {
-        std::vector<int> input {1, 1 ,2};
-        const std::vector<std::vector<int>> result = permuteUnique(input);
-
-
-        for (const auto& sub_set: result) {
-            std::cout << "[" << sub_set << " ]\n";
-        }
-    }
-}
-
-
 void ArraysAlgorithms::Other()
 {
     // Numeric::Rotate_Array();

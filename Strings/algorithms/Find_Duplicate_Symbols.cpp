@@ -17,8 +17,7 @@ namespace
 
     void find_duplicate_symbols(const std::string& text)
     {
-        int chars[256] = {};
-        for (const auto c : text) {
+        for (uint8_t chars[256] = {}; const auto c : text) {
             if (1 == chars[c]++) {
                 std::cout << c << ' ';
             }
@@ -29,5 +28,5 @@ namespace
 
 void StringAlgorithms::Find_Duplicate_Symbols()
 {
-    find_duplicate_symbols("1234567829dabcdfGGG");
+    find_duplicate_symbols("1234567829dabcdfGGGd");
 }

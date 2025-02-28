@@ -58,6 +58,7 @@ namespace StringAlgorithms
     void Find_K_Most_Frequent_Character();
     void Find_Common_Characters();
     void Jewels_and_Stones();
+    void Split_String_All_SubString_Don_Have_Same_Chars();
 }
 
 #endif //STRING_ALGORITHMS_H

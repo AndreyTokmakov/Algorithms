@@ -10,7 +10,7 @@ https://js-notes.vercel.app/software_engineering/ds_and_algos
 =======================================================================================================================================
 
 /**============================================================================
-Name        : Find_Maximum_Level_Sum.cpp
+Name        : Find_Common_Characters.cpp
 Created on  : 26.02.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
@@ -29,7 +29,7 @@ namespace
 
 }
 
-void TreesAlgorithms::Find_Maximum_Level_Sum()
+void TreesAlgorithms::Find_Common_Characters()
 {
 
 }
@@ -68,10 +68,20 @@ Sliding window:
     https://leetcode.com/problems/partition-labels/
 
 Arrays:
+	
+	permuteUnique
+
+	permutations
+
+	88. Merge Sorted Array
 
     -- Numeric::Find_K_MissingNumber_Sorted();
     -- Numeric::Find_K_MissingNumber();
     -- Numeric::Find_Repeating_And_Missing();
+
+String:
+
+    1047. Remove All Adjacent Duplicates In String
 
 =======================================================================================================================================
 							Algoritms: Add to README  |  -  [__NAME__](__LINK__)<br/>
@@ -88,6 +98,10 @@ Trees:
 	Inorder_Tree_Traversal
 	Backwards_Tree_Traversal
 	Find_Maximum_Level_Sum
+
+Strings:
+
+	Find_Common_Characters
 
 =======================================================================================================================================
 							Algoritms: Top Google Questions – Part 1
@@ -115,12 +129,14 @@ Trees:
 [+] 66.  Plus One
 [+] 11. Container With Most Water
 [+] 121. Best Time to Buy and Sell Stock   [+ ]  
+[+]  94. Binary Tree Inorder Traversal
+[+] 5.   Longest Palindromic Substring
+[+] 79.  Word Search
+[+] 146. LRU Cache
+[+] 110. Balanced Binary Tree
+
 
 34.  Find First and Last Position of Element in Sorted Array
-5.   Longest Palindromic Substring
-79.  Word Search
-146. LRU Cache
-
 
 
 6. ZigZag Conversion
@@ -148,18 +164,15 @@ Trees:
 81. Search in Rotated Sorted Array II
 84. Largest Rectangle in Histogram
 88. Merge Sorted Array
-94. Binary Tree Inorder Traversal
 96. Unique Binary Search Trees
 101. Symmetric Tree
 102. Binary Tree Level Order Traversal
 103. Binary Tree Zigzag Level Order Traversal
 105. Construct Binary Tree from Preorder and Inorder Traversal
 109. Convert Sorted List to Binary Search Tree
-110. Balanced Binary Tree
 114. Flatten Binary Tree to Linked List
 118. Pascal's Triangle
 119. Pascal's Triangle II
-
 129. Sum Root to Leaf Numbers
 130. Surrounded Regions
 144. Binary Tree Preorder Traversal
@@ -185,8 +198,6 @@ Trees:
 [+] 	594. Longest Harmonious Subsequence
 [+] 	709. To Lower Case
 [+] 	657. Robot Return to Origin
-
-
 
 
 Backtracking
@@ -382,7 +393,7 @@ Linked List
 
 +	21.   Merge Two Sorted Lists
 	61.   Rotate List
-	876.  Middle of the Linked List
++	876.  Middle of the Linked List
 	1290. Convert Binary Number in a Linked List to Integer
 	1474. Delete N Nodes After M Nodes of a Linked List
 
