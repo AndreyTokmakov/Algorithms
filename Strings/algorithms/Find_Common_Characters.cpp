@@ -41,24 +41,36 @@ namespace
         return result;
     }
 
-    void find_common_characters(const std::vector<std::string>& strings)
+    std::vector<char> find_common_characters(const std::vector<std::string>& strings)
     {
         const size_t size = strings.size();
         std::array<int32_t, 'z' - 'a'> chars {};
         std::vector<std::array<int32_t, 'z' - 'a'>> counters(size);
 
         for (int n = 0; const std::string& str: strings) {
-            for (char c: str) {
+            for (const char c: str) {
                 const char ch = c - 'a';
+                ++counters[n][ch];
                 if (n == chars[ch]) {
                     ++chars[ch];
                 }
-                ++counters[n][ch];
             }
             ++n;
         }
 
-        // for ()
+        std::vector<char> result;
+        for (int idx = 0, size = chars.size(), len = strings.size(); idx < size; ++idx)
+        {
+            if (len != chars[idx])
+                continue;
+            int minVal = std::numeric_limits<int>::max();
+            for (const auto& c: counters) {
+                minVal = std::min(minVal, c[idx]);
+            }
+            while (minVal--)
+                result.push_back(static_cast<char>(idx + 'a'));
+        }
+        return result;
     }
 
     std::vector<std::string> commonChars(const std::vector<std::string>& strings)
@@ -86,16 +98,14 @@ namespace
 
 void StringAlgorithms::Find_Common_Characters()
 {
-
     using TestData = std::vector<std::pair<std::vector<std::string>, std::vector<char>>>;
     for (const auto& [values, expected]:  TestData {
             {{"bella","label","roller"},{'e','l','l'}},
     })
     {
         //std::cout << find_common_characters_without_duplicates(values) << std::endl;
-        find_common_characters(values);
+        std::cout << find_common_characters(values) << std::endl;
     }
     std::cout << "OK: All tests passed\n";
-
 }
 
