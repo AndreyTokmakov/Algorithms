@@ -30,7 +30,7 @@ namespace
 
         int waitCount = 0;
         uint16_t wait[256] {};
-        for (char c: str)
+        for (const char c: str)
         {
             if (!wait[c]) {
                 wait[c] = table[c];
@@ -38,13 +38,11 @@ namespace
             }
 
             --table[c];
-            if (table[c] == wait[c] - 1) {
-                --waitCount;
-                --wait[c];
-            }
+            --wait[c];
+            --waitCount;
 
             result.back().push_back(c);
-            if (!waitCount)
+            if (waitCount)
                 result.emplace_back();
         }
 
@@ -61,6 +59,7 @@ void StringAlgorithms::Split_String_All_SubString_Don_Have_Same_Chars()
     // std::vector<std::string> string = split("aba");
     // std::vector<std::string> string = split("abad");
     std::vector<std::string> string = split("abcabcddeezez");
+    // std::vector<std::string> string = split("aabbabcde");
 
     for (const std::string& s: string)
         std::cout << s << std::endl;
