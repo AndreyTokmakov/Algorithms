@@ -45,6 +45,7 @@ int main([[maybe_unused]] int argc,
 	// ArraysAlgorithms::Find_Missing_Number_2();
 	// ArraysAlgorithms::Find_Missing_Number_Sorted_Array();
 	// ArraysAlgorithms::Find_Missing_Number_Any_Range();
+	ArraysAlgorithms::Find_Missing_K_Number_Sorted_Array();
 	// ArraysAlgorithms::Find_The_Duplicate_Value();
     // ArraysAlgorithms::Reverse_Number();
     // ArraysAlgorithms::Remove_Duplicates_From_Sorted_Array();
@@ -77,7 +78,7 @@ int main([[maybe_unused]] int argc,
     // ArraysAlgorithms::Longest_Subarray_With_Sum_Less_Than_K();
 	// ArraysAlgorithms::Sum_of_Sub_Array_Between_Indexes_L_and_R();
     // ArraysAlgorithms::Squares_of_a_Sorted_Array();
-    ArraysAlgorithms::Unique_Permutations();
+    // ArraysAlgorithms::Unique_Permutations();
 
 
 

@@ -10,8 +10,8 @@ https://js-notes.vercel.app/software_engineering/ds_and_algos
 =======================================================================================================================================
 
 /**============================================================================
-Name        : Find_Common_Characters.cpp
-Created on  : 26.02.2025
+Name        : Find_Missing_K_Number_Sorted_Array.cpp
+Created on  : 28.02.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
 Copyright   : Your copyright notice
@@ -19,17 +19,17 @@ Description :
 ============================================================================**/
 
 #include "../common.h"
-#include "../TreesAlgorithms.h"
+#include "../ArraysAlgorithms.h"
 
 
 namespace
 {
-    using namespace TreesAlgorithms;
+    using namespace ArraysAlgorithms;
 
 
 }
 
-void TreesAlgorithms::Find_Common_Characters()
+void ArraysAlgorithms::Find_Missing_K_Number_Sorted_Array()
 {
 
 }
@@ -39,17 +39,7 @@ void TreesAlgorithms::Find_Common_Characters()
 							Tests
 =======================================================================================================================================
 
-    using TestData = std::vector< std::pair<std::vector<int>, int>>;
-    for (const auto& [value, expected]:  TestData{
-        { {} , 1 },
-    })
-    {
-        const auto actual = is_power_of_two(value);
-        if (expected != actual) {
-            std::cerr << std::boolalpha << expected << " != " << actual << std::endl;
-        }
-    }
-    std::cout << "OK: All tests passed\n";
+
 
 =======================================================================================================================================
 							Algoritms: Today | 3 НОВЫХ алгоритма ежедневно
@@ -63,25 +53,22 @@ Sliding window:
 
     -- Level_Order_Traversal
 
-
 1. two pointers 
+
     https://leetcode.com/problems/partition-labels/
 
 Arrays:
-	
-	permuteUnique
 
 	permutations
 
 	88. Merge Sorted Array
 
-    -- Numeric::Find_K_MissingNumber_Sorted();
     -- Numeric::Find_K_MissingNumber();
     -- Numeric::Find_Repeating_And_Missing();
 
 String:
 
-    1047. Remove All Adjacent Duplicates In String
+
 
 =======================================================================================================================================
 							Algoritms: Add to README  |  -  [__NAME__](__LINK__)<br/>
@@ -91,6 +78,7 @@ Arrays:
 
 	Find_The_Duplicate_Value
 	Find_Missing_Number_Sorted_Array
+	Find_K_MissingNumber_Sorted
 
 Trees:
 
@@ -100,8 +88,10 @@ Trees:
 	Find_Maximum_Level_Sum
 
 Strings:
-
+	Find_Missing_K_Number_Sorted_Array
 	Find_Common_Characters
+	Split_String_All_SubString_Don_Have_Same_Chars
+
 
 =======================================================================================================================================
 							Algoritms: Top Google Questions – Part 1
@@ -134,7 +124,7 @@ Strings:
 [+] 79.  Word Search
 [+] 146. LRU Cache
 [+] 110. Balanced Binary Tree
-
+[+] 1047. Remove All Adjacent Duplicates In String
 
 34.  Find First and Last Position of Element in Sorted Array
 

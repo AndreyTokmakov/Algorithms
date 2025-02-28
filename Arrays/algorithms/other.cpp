@@ -942,44 +942,6 @@ namespace Numeric
 
     //--------------------------------------------------------------------------------------//
 
-    int __Find_K_MissingNumber_Sorted(const int *data, size_t length, size_t K) {
-        int expected = data[0], count = 0;
-        for (size_t index = 0; index < length; index++) {
-            if (expected++ != data[index]) {
-                if (static_cast<int>(K) == ++count)
-                    return expected - 1;
-                index--;
-            }
-        }
-        return 0;
-    }
-
-    int __Find_K_MissingNumber_Sorted2(const int *data, size_t length, size_t K) {
-        int expected = data[0];
-        size_t index = 0;
-        while (index < length) {
-            if (data[index] != expected) {
-                if (0 == --K)
-                    return expected;
-            } else {
-                index++;
-            }
-            expected++;
-        }
-        return 0;
-    }
-
-    void Find_K_MissingNumber_Sorted() {
-        const int data[] = {1, 2, 4, 5, 6, 8, 10, 13, 20};
-        std::cout << "Missing element = " << __Find_K_MissingNumber_Sorted(data, std::size(data), 5) << std::endl;
-        std::cout << "Missing element = " << __Find_K_MissingNumber_Sorted2(data, std::size(data), 5) << std::endl;
-
-
-        std::cout << "Missing element = " << __Find_K_MissingNumber(data, std::size(data), 5) << std::endl;
-    }
-
-    //--------------------------------------------------------------------------------------//
-
     int Find_DifferentPairs_SumK(const std::vector<int> &data, int K) {
         std::unordered_map<int, int> tmp;// = { 0,0 };
         for (int i: data)
