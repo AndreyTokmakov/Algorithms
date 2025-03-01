@@ -50,6 +50,7 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [Find_If_String_IsSubstring_OfAnother](https://github.com/AndreyTokmakov/Algorithms/blob/d6d4dfc40ded255cb55ef8c019008e5f1063785c/Strings/algorithms/Find_If_String_IsSubstring_OfAnother.cpp#L22)<br/>
 -  [Find_Last_Not_Of](https://github.com/AndreyTokmakov/Algorithms/blob/d6d4dfc40ded255cb55ef8c019008e5f1063785c/Strings/algorithms/Find_Last_Not_Of.cpp#L17)<br/>
 -  [Find_Longest_Substring_With_K_Distinct_Characters](https://github.com/AndreyTokmakov/Algorithms/blob/d6d4dfc40ded255cb55ef8c019008e5f1063785c/Strings/algorithms/Find_Longest_Substring_With_K_Distinct_Characters.cpp#L22)<br/>
+-  [Find_Common_Characters](https://github.com/AndreyTokmakov/Algorithms/blob/main/Strings/algorithms/Find_Common_Characters.cpp#L25)<br/>
 -  [Move_Chars_To_End](https://github.com/AndreyTokmakov/Algorithms/blob/d6d4dfc40ded255cb55ef8c019008e5f1063785c/Strings/algorithms/Move_Chars_To_End.cpp#L21)<br/>
 -  [Move_Zeros_To_End](https://github.com/AndreyTokmakov/Algorithms/blob/d6d4dfc40ded255cb55ef8c019008e5f1063785c/Strings/algorithms/Move_Zeros_To_End.cpp#L21)<br/>
 -  [Print_1_0_Instead_Wildcards](https://github.com/AndreyTokmakov/Algorithms/blob/d6d4dfc40ded255cb55ef8c019008e5f1063785c/Strings/algorithms/Print_1_0_Instead_Wildcards.cpp#L23)<br/>
@@ -83,12 +84,14 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [Longest_Substring_With_Maximum_K_Unique_Characters](https://github.com/AndreyTokmakov/Algorithms/blob/main/Strings/algorithms/Longest_Substring_With_Maximum_K_Unique_Characters.cpp#L21)<br/>
 -  [Jewels_and_Stones](https://github.com/AndreyTokmakov/Algorithms/blob/main/Strings/algorithms/Jewels_and_Stones.cpp#L30)<br/>
 -  [Simplify_Path](https://github.com/AndreyTokmakov/Algorithms/blob/main/Strings/algorithms/Simplify_Path.cpp#L26)<br/>
+-  [Split_String_All_SubString_Don_Have_Same_Chars](https://github.com/AndreyTokmakov/Algorithms/blob/main/Strings/algorithms/Split_String_All_SubString_Don_Have_Same_Chars.cpp#L28)<br/>
 
 <a id="math_arrays_algorithms"></a>
 ## Math and Arrays Algorithms
 -  [Add_Digits](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Add_Digits.cpp#L23) <br/>
 -  [Best_Time_Buy_and_Sell_Stock](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Best_Time_Buy_and_Sell_Stock.cpp#L30) <br/>
 -  [Find_Element_Encountered_Only_Once](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_Element_Encountered_Only_Once.cpp#L26) <br/>
+-  [Find_The_Duplicate_Value](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_The_Duplicate_Value.cpp#L41)<br/>
 -  [Find_SubArrays_Sum_Zero](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_SubArrays_Sum_Zero.cpp#L30)<br/>
 -  [Find_SubArrays_Sum_Equal_K](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_SubArrays_Sum_Equal_K.cpp#L19)<br/>
 -  [Find_SubArray_Sum_Equal_K_Single](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_SubArray_Sum_Equal_K_Single.cpp#L22)<br/>
@@ -102,7 +105,12 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [Find_Missing_Number](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_Missing_Number.cpp) <br/>
 -  [Find_Missing_Number_2](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_Missing_Number_2.cpp) <br/>
 -  [Find_Missing_Number_Any_Range](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_Missing_Number_Any_Range.cpp) <br/>
+-  [Find_Missing_Number_Sorted_Array](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_Missing_Number_Sorted_Array.cpp#L18)<br/>
+-  [Find_Missing_K_Number_Sorted_Array](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_Missing_K_Number_Sorted_Array.cpp#L18)<br/>
+-  [Find_Missing_K_Positive_Number_Sorted_Array](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_Missing_K_Positive_Number_Sorted_Array.cpp#L27)<br/>
+-  [Find_Missing_K_Number_Unsorted](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_Missing_K_Number_Unsorted.cpp#L18)<br/>
 -  [Find_Longest_SubArray_K_Unique_Elements](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_Longest_SubArray_K_Unique_Elements.cpp#L20)<br/>
+-  [Find_Longest_Increasing_Subsequence](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_Longest_Increasing_Subsequence.cpp#L18)<br/>
 -  [Find_Smallest_Without_Compare](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_Smallest_Without_Compare.cpp#L20)<br/>
 -  [Find_Index_In_Array_to_make_Right_Equal_Left](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_Index_In_Array_to_make_Right_Equal_Left.cpp#L19)<br/>
 -  [Find_Smallest_Missing_Positive_Number](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_Smallest_Missing_Positive_Number.cpp#L17)<br/>
@@ -119,6 +127,7 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [Remove_Element](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Remove_Element.cpp#L19)<br/>
 -  [Contains_Duplicate](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Contains_Duplicate.cpp#L18)<br/>
 -  [Longest_Harmonious_Subsequence](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Longest_Harmonious_Subsequence.cpp#L25)<br/>
+-  [Is_Palindrome](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Is_Palindrome.cpp#L17)<br/>
 -  [Is_Reversed_Equals](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Is_Reversed_Equals.cpp#L15)<br/>
 -  [Is_Prime](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Is_Prime.cpp#L18)<br/>
 -  [Is_Power_Of2](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Is_Power_Of2.cpp#L18)<br/>
@@ -144,6 +153,7 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [Longest_Subarray_With_Sum_Less_Than_K](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Longest_Subarray_With_Sum_Less_Than_K.cpp#L18)<br/>
 -  [Squares_of_a_Sorted_Array](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Squares_of_a_Sorted_Array.cpp#L33)<br/>
 -  [Container_With_Most_Water](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Container_With_Most_Water.cpp#L25)<br/>
+-  [Unique_Permutations](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Unique_Permutations.cpp#L22)<br/>
 
 <a id="linked_list"></a>
 ## Linked List
@@ -181,6 +191,10 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [Check_Is_Tree_Symmetric](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Check_Is_Tree_Symmetric.cpp#L57)<br/>
 -  [Check_Is_Trees_Identical](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Check_Is_Trees_Identical.cpp#L23)<br/>
 -  [Check_Is_Tree_Balanced](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Check_Is_Tree_Balanced.cpp#L49)<br/>
+-  [Level_Order_Traversal](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Level_Order_Traversal.cpp#L30)<br/>
+-  [Inorder_Tree_Traversal](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Inorder_Tree_Traversal.cpp#L31)<br/>
+-  [Backwards_Tree_Traversal](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Backwards_Tree_Traversal.cpp#L28)<br/>
+-  [Find_Maximum_Level_Sum](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Find_Maximum_Level_Sum.cpp#L21)<br/>
 
 <a id="graphs"></a>
 ## Graphs

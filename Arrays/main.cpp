@@ -46,7 +46,7 @@ int main([[maybe_unused]] int argc,
 	// ArraysAlgorithms::Find_Missing_Number_Sorted_Array();
 	// ArraysAlgorithms::Find_Missing_Number_Any_Range();
 	// ArraysAlgorithms::Find_Missing_K_Number_Sorted_Array();
-	ArraysAlgorithms::Find_Missing_K_Number_Unsorted();
+	// ArraysAlgorithms::Find_Missing_K_Number_Unsorted();
 	// ArraysAlgorithms::Find_Missing_K_Positive_Number_Sorted_Array();
 	// ArraysAlgorithms::Find_The_Duplicate_Value();
     // ArraysAlgorithms::Reverse_Number();
@@ -57,10 +57,9 @@ int main([[maybe_unused]] int argc,
     // ArraysAlgorithms::Longest_Harmonious_Subsequence();
     // ArraysAlgorithms::Coins_Change_Problem();
     // ArraysAlgorithms::Get_Number_Of_Digit();
-    // ArraysAlgorithms::Get_Number_Of_Digit();
     // ArraysAlgorithms::Greatest_Common_Divisor();
     // ArraysAlgorithms::Least_Common_Multiple();
-	// ArraysAlgorithms::Is_Palindrome();
+	ArraysAlgorithms::Is_Palindrome();
     // ArraysAlgorithms::Is_Power_Of2();
 	// ArraysAlgorithms::Is_Prime();
     // ArraysAlgorithms::Is_Permutation();

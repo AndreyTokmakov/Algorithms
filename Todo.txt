@@ -58,9 +58,8 @@ Sliding window:
 	- ???
 
 5. tree 
-    https://leetcode.com/problems/path-sum-ii/	
 
-    -- Level_Order_Traversal
+    https://leetcode.com/problems/path-sum-ii/	
 
 1. two pointers 
 
@@ -69,39 +68,14 @@ Sliding window:
 Arrays:
 
 	permutations
-
 	88. Merge Sorted Array
-
-    -- Numeric::Find_K_MissingNumber();
-    -- Numeric::Find_Repeating_And_Missing();
+    Numeric::Find_Repeating_And_Missing();
 
 String:
-
-
 
 =======================================================================================================================================
 							Algoritms: Add to README  |  -  [__NAME__](__LINK__)<br/>
 =======================================================================================================================================
-
-Arrays:
-
-	Find_The_Duplicate_Value
-	Find_Missing_Number_Sorted_Array
-	Find_Missing_K_Number_Sorted_Array
-	Find_Missing_K_Positive_Number_Sorted_Array
-	Find_Missing_K_Number_Unsorted
-
-Trees:
-
-	Level_Order_Traversal
-	Inorder_Tree_Traversal
-	Backwards_Tree_Traversal
-	Find_Maximum_Level_Sum
-
-Strings:
-	
-	Find_Common_Characters
-	Split_String_All_SubString_Don_Have_Same_Chars 
 
 
 =======================================================================================================================================
