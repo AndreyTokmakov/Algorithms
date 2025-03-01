@@ -75,6 +75,8 @@ add_executable(${PROJECT_NAME}
 		algorithms/Find_Missing_Number_Sorted_Array.cpp
 		algorithms/Unique_Permutations.cpp
 		algorithms/Find_Missing_K_Number_Sorted_Array.cpp
+		algorithms/Find_Missing_K_Positive_Number_Sorted_Array.cpp
+		algorithms/Find_Missing_K_Number_Unsorted.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")

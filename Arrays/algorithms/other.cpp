@@ -903,44 +903,8 @@ namespace Numeric
     }
 }
 
-
 namespace Numeric
 {
-    int __Find_K_MissingNumber(const int *data, size_t length, size_t K)
-    {
-        auto minmax = std::minmax_element(data, data + length);
-        int diff = *minmax.second - *minmax.first, min = *minmax.first;
-        std::vector<int> tmp(diff + 1);
-        for (size_t i = 0; i < length; i++)
-            tmp[data[i] - min] = 1;
-        for (int i = 0; i <= diff; i++) {
-            if (0 == tmp[i] && 0 == --K) {
-                std::cout << i + min << std::endl;
-                return i + min;
-            }
-        }
-        return 0;
-    }
-
-    void __Find_K_MissingNumber_2(const int *data, size_t length, size_t K) {
-        auto [min, max] = std::minmax_element(data, data + length);
-        std::unordered_set<int> set(data, data + length);
-        for (auto i = *min; i < *max; ++i) {
-            if (auto result = set.find(i); result == set.end() && 0 == --K) {
-                std::cout << i << std::endl;
-                return;
-            }
-        }
-        std::cout << "Not found" << std::endl;
-    }
-
-    void Find_K_MissingNumber() {
-        const int data[] = {2, 4, 10, 7};
-        __Find_K_MissingNumber(data, std::size(data), 5);
-        __Find_K_MissingNumber_2(data, std::size(data), 5);
-    }
-
-    //--------------------------------------------------------------------------------------//
 
     int Find_DifferentPairs_SumK(const std::vector<int> &data, int K) {
         std::unordered_map<int, int> tmp;// = { 0,0 };

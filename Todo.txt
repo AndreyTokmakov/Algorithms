@@ -10,8 +10,8 @@ https://js-notes.vercel.app/software_engineering/ds_and_algos
 =======================================================================================================================================
 
 /**============================================================================
-Name        : Find_Missing_K_Number_Sorted_Array.cpp
-Created on  : 28.02.2025
+Name        : Find_Missing_K_Number_Unsorted.cpp
+Created on  : 01.03.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
 Copyright   : Your copyright notice
@@ -29,17 +29,26 @@ namespace
 
 }
 
-void ArraysAlgorithms::Find_Missing_K_Number_Sorted_Array()
+void ArraysAlgorithms::Find_Missing_K_Number_Unsorted()
 {
 
 }
-
 
 =======================================================================================================================================
 							Tests
 =======================================================================================================================================
 
-
+using TestData = std::vector< std::pair<std::vector<int>, int>>;
+for (const auto& [values, expected]:  TestData{
+	{ {} , 1 },
+})
+{
+	const auto actual = TEST_FUNCTION(values);
+	if (expected != actual) {
+		std::cerr << std::boolalpha << expected << " != " << actual << std::endl;
+	}
+}
+std::cout << "OK: All tests passed\n";
 
 =======================================================================================================================================
 							Algoritms: Today | 3 НОВЫХ алгоритма ежедневно
@@ -78,7 +87,9 @@ Arrays:
 
 	Find_The_Duplicate_Value
 	Find_Missing_Number_Sorted_Array
-	Find_K_MissingNumber_Sorted
+	Find_Missing_K_Number_Sorted_Array
+	Find_Missing_K_Positive_Number_Sorted_Array
+	Find_Missing_K_Number_Unsorted
 
 Trees:
 
@@ -88,9 +99,9 @@ Trees:
 	Find_Maximum_Level_Sum
 
 Strings:
-	Find_Missing_K_Number_Sorted_Array
+	
 	Find_Common_Characters
-	Split_String_All_SubString_Don_Have_Same_Chars
+	Split_String_All_SubString_Don_Have_Same_Chars 
 
 
 =======================================================================================================================================

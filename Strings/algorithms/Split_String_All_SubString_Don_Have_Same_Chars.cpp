@@ -19,30 +19,32 @@ namespace
 {
     using namespace StringAlgorithms;
 
+    /**
+     * Нужно отделять стороку исходя из того что в текущей подстроке более нет элементов которые встретятся далее в
+     * основной строке для этого создаётся таблица 'tblWait' с количеством символов для данной подстроки а счётчик
+     * waitCount служит для учёта количества элементов в этой подстроки которое еще есть в оставшейся части основной подстроки
+     */
 
     std::vector<std::string> split(const std::string& str)
     {
-        std::vector<std::string> result(1);
-
         uint16_t table[256] {};
-        for (const char c: str)
-            ++table[c];
+        std::for_each(str.cbegin(), str.cend(), [&table](char c) { ++table[c]; });
 
-        int waitCount = 0;
-        uint16_t wait[256] {};
-        for (const char c: str)
+        std::vector<std::string> result(1);
+        uint16_t waitCount = 0, tblWait[256] {};
+        for (char c: str)
         {
-            if (!wait[c]) {
-                wait[c] = table[c];
-                waitCount += wait[c];
+            if (!tblWait[c]) {
+                tblWait[c] = table[c];
+                waitCount += tblWait[c];
             }
 
             --table[c];
-            --wait[c];
+            --tblWait[c];
             --waitCount;
 
             result.back().push_back(c);
-            if (waitCount)
+            if (!waitCount)
                 result.emplace_back();
         }
 
@@ -54,13 +56,20 @@ namespace
 
 void StringAlgorithms::Split_String_All_SubString_Don_Have_Same_Chars()
 {
-    // std::vector<std::string> string = split("abcbd");
-    // std::vector<std::string> string = split("abc");
-    // std::vector<std::string> string = split("aba");
-    // std::vector<std::string> string = split("abad");
-    std::vector<std::string> string = split("abcabcddeezez");
-    // std::vector<std::string> string = split("aabbabcde");
-
-    for (const std::string& s: string)
-        std::cout << s << std::endl;
+    using TestData = std::vector< std::pair<std::string, std::vector<std::string>>>;
+    for (const auto& [value, expected]:  TestData{
+            { "abcbd" , {"a", "bcb", "d"} },
+            { "abc" , {"a", "b", "c"} },
+            { "aba" , {"aba"} },
+            { "abad" , {"aba", "d"} },
+            { "abcabcddeezez" , {"abcabc", "dd", "eezez"} },
+            { "aabbabcde" , {"aabbab", "c", "d", "e"} },
+    })
+    {
+        const auto actual = split(value);
+        if (expected != actual) {
+            std::cerr << std::boolalpha << expected << " != " << actual << std::endl;
+        }
+    }
+    std::cout << "OK: All tests passed\n";
 }
