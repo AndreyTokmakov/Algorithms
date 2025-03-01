@@ -851,68 +851,33 @@ void StringAlgorithms::Other()
     // Strings::AnalogClockAngles();
     // Strings::Atoi();
     // Strings::Atoi_Extended();
-    // Strings::StrLen();
-
-    // Strings::ReverseString();
     // Strings::RotateString();
-
     // Strings::CheckIfStrings_RotateRotateEquals();
-
-    // Strings::MoveCharsToEnd();
-    // Strings::MoveZerosToEnd();
     Strings::Remove_Add_Chars();
-    // Strings::RemoveDuplicates();
-    // Strings::RemoveCharsOfOneString_FromAnother();
-
     // Strings::Print_Distinct_SubStrings_Len2();
     // Strings::Print_Distinct_SubStrings();
-    // Strings::Print_1_0_Instead_Wildcards();
-    // Strings::Print_1_0_Instead_Wildcards_2();
-
     // Strings::RearrangeString();
     // Strings::RearrangeString_WithNumbers();
     // Strings::RearrangeString_NoAdjacent();
-
     // Strings::Find_K_MostFrequentCharacter();
     // Strings::Find_K_MostFrequentCharacter_2();
     // Strings::topKFrequent(); /** Find_K_Most_Frequent_Words **/
-
-    // Strings::Find_Last_Not_Of();
-
-    // Strings::Find_First_Char_Occured_Once();
-    // Strings::Find_First_K_Chars_Occured_Once();
-
-    // Strings::LongestSubstringWithoutRepeatingCharacters();
-    // Strings::LongestSubstringWithoutRepeatingCharacters2();
-    // Strings::Find_LongestSubstring_With_K_DistinctCharacters();
     // Strings::MaxSubstringLength_Of_K_max_Unique_Elements();
-    // Strings::LongestConsecutiveCharacters();
-
-
-    // Strings::Palindrome_Test();
     // Strings::Longest_Palindrome_1();
     // Strings::Longest_Palindrome_2();
     // Strings::Find_If_KPalindrome();
     // Strings::ShortestPalindrome();
     // Strings::Find_All_Palindrome_In_String();
-
-
-
-    // Strings::FindDuplicateSymbols();
     // Strings::Find_If_String_IsSubstring_OfAnother();
     // Strings::CalcParentheses();
     // Strings::CalcParentheses_3_BRacket();
     // Strings::CalcParentheses_K_Deletions();
     // Strings::Minimum_Length_Substrings();
     // Strings::RotationalCipher();
-
     // Strings::Permutations();
     // Strings::Permutations2();
-
-    // Strings::CheckIfTwoStringsArePermutation();
     // Strings::AreAnagrams();
     // Strings::MakeAnagrams_CountDeletions();
-
     // Strings::Minimum_Substring();
 }
 
