@@ -21,6 +21,7 @@ int main([[maybe_unused]] int argc,
     // ArraysAlgorithms::Add_Digits();
     // ArraysAlgorithms::Best_Time_Buy_and_Sell_Stock();
     // ArraysAlgorithms::Single_Number();
+    // ArraysAlgorithms::Single_Number_2();
     // ArraysAlgorithms::Median_of_Two_Sorted_Arrays();
     // ArraysAlgorithms::Reverse_To_Make_Equal();
     // ArraysAlgorithms::Is_Reversed_Equals();
@@ -34,6 +35,7 @@ int main([[maybe_unused]] int argc,
 	// ArraysAlgorithms::Find_Smallest_Missing_Positive_Number();
 	// ArraysAlgorithms::Find_Element_Encountered_Only_Once();
 	// ArraysAlgorithms::Find_First_Repeating_Element();
+	ArraysAlgorithms::Find_First_and_Last_Position_of_Element_Sorter_Arrays();
 	// ArraysAlgorithms::Find_Longest_SubArray_K_Unique_Elements();
 	// ArraysAlgorithms::Find_Longest_Increasing_Subsequence();
 	// ArraysAlgorithms::Find_Index_In_Array_to_make_Right_Equal_Left();
@@ -59,7 +61,7 @@ int main([[maybe_unused]] int argc,
     // ArraysAlgorithms::Get_Number_Of_Digit();
     // ArraysAlgorithms::Greatest_Common_Divisor();
     // ArraysAlgorithms::Least_Common_Multiple();
-	ArraysAlgorithms::Is_Palindrome();
+	// ArraysAlgorithms::Is_Palindrome();
     // ArraysAlgorithms::Is_Power_Of2();
 	// ArraysAlgorithms::Is_Prime();
     // ArraysAlgorithms::Is_Permutation();
@@ -80,6 +82,7 @@ int main([[maybe_unused]] int argc,
 	// ArraysAlgorithms::Sum_of_Sub_Array_Between_Indexes_L_and_R();
     // ArraysAlgorithms::Squares_of_a_Sorted_Array();
     // ArraysAlgorithms::Unique_Permutations();
+    // ArraysAlgorithms::House_Robber();
 
 
 

@@ -10,8 +10,8 @@ https://js-notes.vercel.app/software_engineering/ds_and_algos
 =======================================================================================================================================
 
 /**============================================================================
-Name        : Find_Missing_K_Number_Unsorted.cpp
-Created on  : 01.03.2025
+Name        : Find_First_and_Last_Position_of_Element_Sorter_Arrays.cpp
+Created on  : 02.03.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
 Copyright   : Your copyright notice
@@ -29,7 +29,7 @@ namespace
 
 }
 
-void ArraysAlgorithms::Find_Missing_K_Number_Unsorted()
+void ArraysAlgorithms::Find_First_and_Last_Position_of_Element_Sorter_Arrays()
 {
 
 }
@@ -54,16 +54,8 @@ std::cout << "OK: All tests passed\n";
 							Algoritms: Today | 3 НОВЫХ алгоритма ежедневно
 =======================================================================================================================================
 
-Sliding window:
-	- ???
-
-5. tree 
-
-    https://leetcode.com/problems/path-sum-ii/	
-
-1. two pointers 
-
-    https://leetcode.com/problems/partition-labels/
+5. tree         : https://leetcode.com/problems/path-sum-ii/	
+1. two pointers : https://leetcode.com/problems/partition-labels/
 
 Arrays:
 
@@ -71,12 +63,14 @@ Arrays:
 	88. Merge Sorted Array
     Numeric::Find_Repeating_And_Missing();
 
-String:
-
 =======================================================================================================================================
 							Algoritms: Add to README  |  -  [__NAME__](__LINK__)<br/>
 =======================================================================================================================================
 
+Arrays:
+	House_Robber
+	Single_Number_2
+	Find_First_and_Last_Position_of_Element_Sorter_Arrays
 
 =======================================================================================================================================
 							Algoritms: Top Google Questions – Part 1
@@ -110,12 +104,11 @@ String:
 [+] 146. LRU Cache
 [+] 110. Balanced Binary Tree
 [+] 1047. Remove All Adjacent Duplicates In String
+198. House Robber
 
-34.  Find First and Last Position of Element in Sorted Array
 
 
 6. ZigZag Conversion
-
 14. Longest Common Prefix
 24. Swap Nodes in Pairs
 33. Search in Rotated Sorted Array
@@ -156,7 +149,6 @@ String:
 163. Missing Ranges
 173. Binary Search Tree Iterator
 174. Dungeon Game
-198. House Robber
 200. Number of Islands
 205. Isomorphic Strings
 207. Course Schedule

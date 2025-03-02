@@ -16,6 +16,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Add_Digits.cpp
 		algorithms/Best_Time_Buy_and_Sell_Stock.cpp
 		algorithms/Single_Number.cpp
+		algorithms/Single_Number_2.cpp
 		algorithms/Median_of_Two_Sorted_Arrays.cpp
 		algorithms/Reverse_To_Make_Equal.cpp
 		algorithms/Is_Reversed_Equals.cpp
@@ -27,6 +28,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Find_The_Duplicate_Value.cpp
 		algorithms/Reverse_Number.cpp
 		algorithms/Find_Element_Encountered_Only_Once.cpp
+		algorithms/Find_First_and_Last_Position_of_Element_Sorter_Arrays.cpp
 		algorithms/Is_Palindrome.cpp
 		algorithms/Is_Permutation.cpp
 		algorithms/Remove_Duplicates_From_Sorted_Array.cpp
@@ -77,6 +79,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Find_Missing_K_Number_Sorted_Array.cpp
 		algorithms/Find_Missing_K_Positive_Number_Sorted_Array.cpp
 		algorithms/Find_Missing_K_Number_Unsorted.cpp
+		algorithms/House_Robber.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")

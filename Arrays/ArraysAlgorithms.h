@@ -22,6 +22,7 @@ namespace ArraysAlgorithms
     void Add_Digits();
     void Best_Time_Buy_and_Sell_Stock();
     void Single_Number();
+    void Single_Number_2();
     void Median_of_Two_Sorted_Arrays();
     void Reverse_To_Make_Equal();
     void Is_Reversed_Equals();
@@ -50,6 +51,7 @@ namespace ArraysAlgorithms
     void Find_Missing_K_Positive_Number_Sorted_Array();
     void Find_Missing_K_Number_Unsorted();
     void Find_The_Duplicate_Value();
+    void Find_First_and_Last_Position_of_Element_Sorter_Arrays();
     void Reverse_Number();
     void Is_Palindrome();
     void Remove_Duplicates();
@@ -82,6 +84,7 @@ namespace ArraysAlgorithms
     void Squares_of_a_Sorted_Array();
     void Longest_Subarray_With_Sum_Less_Than_K();
     void Unique_Permutations();
+    void House_Robber();
 }
 
 #endif //ARRAYS_ALGORITHMS_H

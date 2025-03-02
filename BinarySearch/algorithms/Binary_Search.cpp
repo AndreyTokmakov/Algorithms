@@ -21,7 +21,8 @@ namespace
                                 const int x) {
         if (right < left)
             return -1;
-        const int mid = left + (right - left) / 2;
+        // const int mid = left + (right - left) / 2;
+        const int mid = left + ((right - left) >> 1);
 
         if (numbers[mid] == x)
             return mid;
@@ -38,7 +39,8 @@ namespace
         size_t left = 0, right = values.size() - 1, idxMid = 0;
         while (right > (left + 1))
         {
-            idxMid = (left + right) / 2;
+            // idxMid = (left + right) / 2;
+            idxMid = (left + right) >> 1;
             if (target == values[idxMid])
                 return values[idxMid];
             if (values[idxMid] > target)
