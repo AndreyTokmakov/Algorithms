@@ -759,43 +759,8 @@ namespace BinTreeTests {
         }
     }
 
-    ///------------------------------------------------------------------------------------------------
-
-    void __find_maximum_node_atLevel(const BinTree::Node* node, size_t level, int& result) {
-        if (nullptr == node)
-            return;
-        else if (0 == level) {
-            result = std::max(node->data, result);
-            return;
-        }
-
-        __find_maximum_node_atLevel(node->left, level - 1, result);
-        __find_maximum_node_atLevel(node->right, level - 1, result);
-    }
-
-    int maxAtLevel(const BinTree::Node* node, int level) {
-        if (node == NULL)
-            return 0;
-        else if (level == 0)
-            return node->data;
-
-        int x = maxAtLevel(node->left, level - 1);
-        int y = maxAtLevel(node->right, level - 1);
-        return std::max(x, y);
-    }
-
-    void Find_Maximum_Node_AtLevel() {
-        BinTree::BinaryTree tree{ 33,22,85,10,30,54,125,5,12,25,32,45,60,120,130,4,3,2,12,13,14,15,16 };
-
-        int res{ std::numeric_limits<int>::min() };
-        __find_maximum_node_atLevel(tree.getRoot(), 3, res);
-        std::cout << res << std::endl;
-        std::cout << maxAtLevel(tree.getRoot(), 3) << std::endl;
-    }
 
     ///////////////////////////////////////////////////////////////////////////////////////////////////
-
-
 
     void Find_Level_With_Maximum_Sum()
     {
@@ -983,83 +948,6 @@ namespace BinTreeTests {
         std::cout << _find_maximum_path_sum_between_nodes2(tree.getRoot()).second << std::endl;
     }
 
-    //////////////////////////////////////////////////////////////////////////////////////////////////
-
-    std::pair<size_t, BinTree::Node*> _get_lowest_common_ancestor(BinTree::Node* node, int x1, int x2) {
-        size_t dist = 0;
-        while (nullptr != node) {
-            if (x1 > node->data && x2 > node->data) {
-                dist++;
-                node = node->right;
-            }
-            else if (x1 < node->data && x2 < node->data) {
-                dist++;
-                node = node->left;
-            }
-            else return { dist, node };
-        }
-        return { dist, node };
-    }
-
-    size_t _find_dist(BinTree::Node* node, int x1) {
-        size_t dist = 0;
-        while (nullptr != node) {
-            if (x1 > node->data) {
-                dist++;
-                node = node->right;
-            }
-            else if (x1 < node->data) {
-                dist++;
-                node = node->left;
-            }
-            else return dist;
-        }
-        return dist;
-    }
-
-    size_t _find_pathSum_between_nodes(BinTree::Node* node, int x1, int x2) {
-        assert(nullptr != node);
-        auto result = _get_lowest_common_ancestor(node, x1, x2);
-        return _find_dist(result.second, x1) + _find_dist(result.second, x2);
-    }
-
-    ////////////////////////////////////////
-
-    BinTree::Node* _get_lowest_common_ancestor_1(BinTree::Node* node, int x1, int x2) {
-        if (nullptr == node)
-            return nullptr;
-        else if (x1 > node->data && x2 > node->data)
-            return _get_lowest_common_ancestor_1(node->right, x1, x2);
-        else if (x1 < node->data && x2 < node->data)
-            return _get_lowest_common_ancestor_1(node->left, x1, x2);
-        else
-            return node;
-    }
-
-    int _calc_path(BinTree::Node* node, int x) {
-        if (nullptr == node || x == node->data)
-            return 0;
-        else if (x > node->data)
-            return 1 + _calc_path(node->right, x);
-        else if (x < node->data)
-            return 1 + _calc_path(node->left, x);
-        return 0;
-    }
-
-    void Find_PathSum_BetweenNodes() {
-        BinTree::BinaryTree tree{ 33,22,85,10,25,54,125,5,15,30 };
-        int x1 = 10, x2 = 125;
-
-        {
-            auto result = _find_pathSum_between_nodes(tree.getRoot(), x1, x2);
-            std::cout << "Dist = " << result << std::endl;
-        }
-        {
-            BinTree::Node* lca = _get_lowest_common_ancestor_1(tree.getRoot(), x1, x2);
-            int path = _calc_path(lca, x1) + _calc_path(lca, x2);
-            std::cout << path << std::endl;
-        }
-    }
 
     //////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -1077,17 +965,6 @@ namespace BinTreeTests {
         BinTree::BinaryTree tree{ 5,3,8,2,4,6,8 };
         int result = _sumElementsInRange(tree.getRoot(), 4, 9);
         std::cout << result << std::endl;
-    }
-
-    //////////////////////////////////////////////////////////////////////////////////////////////////
-
-    size_t __size(const BinTree::Node* node) {
-        return nullptr == node ? 0 : 1 + __size(node->left) + __size(node->right);
-    }
-
-    void Calculate_Size() {
-        BinTree::BinaryTree tree{ 33, 22, 85, 10, 30, 54, 125 };
-        std::cout << "Size: " << __size(tree.getRoot()) << std::endl;
     }
 
     //////////////////////////////////////////////////////////////////////////////////////////////////

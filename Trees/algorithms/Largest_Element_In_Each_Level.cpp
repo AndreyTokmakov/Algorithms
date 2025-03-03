@@ -15,7 +15,7 @@ namespace
 {
     using namespace TreesAlgorithms;
 
-    std::vector<int> _largest_values(const Node* root)
+    std::vector<int> largest_values(const Node* root)
     {
         std::vector<int> res;
         if (!root)
@@ -41,9 +41,9 @@ namespace
         return res;
     }
 
-    void largest_value_in_each_level(const Node* node,
-                                     std::vector<int>& levels,
-                                     size_t level)
+    void largest_values_recursive(const Node* node,
+                                  std::vector<int>& levels,
+                                  size_t level)
     {
         if (nullptr == node)
             return;
@@ -51,14 +51,14 @@ namespace
         int& maxElement = (level + 1) > levels.size() ? levels.emplace_back(std::numeric_limits<int>::min()) : levels[level];
         maxElement = std::max(maxElement, node->data);
 
-        largest_value_in_each_level(node->left, levels, level + 1);
-        largest_value_in_each_level(node->right, levels, level + 1);
+        largest_values_recursive(node->left, levels, level + 1);
+        largest_values_recursive(node->right, levels, level + 1);
     }
 
     void largest_value_in_each_level(const Node* node)
     {
         std::vector<int> levels;
-        largest_value_in_each_level(node, levels, 0);
+        largest_values_recursive(node, levels, 0);
 
         for (const int val : levels) {
             std::cout << val << " ";
@@ -78,6 +78,6 @@ void TreesAlgorithms::Largest_Element_In_Each_Level()
     Node* tree = BinTree::makeTree( { 10, 5, 15, 3, 7, 12 });
     largest_value_in_each_level(tree);  // 10 15 12
 
-    const std::vector<int> maximums = _largest_values(tree);  // 10 15 12
+    const std::vector<int> maximums = largest_values(tree);  // 10 15 12
     std::cout << maximums << std::endl;
 }

@@ -24,6 +24,7 @@ namespace TreesAlgorithms
     void Sorted_Array_To_Binary_Tree_NonRecursive();
     void Find_Lowest_Common_Ancestor();
     void Count_Elements();
+    void Find_Maximum_Node_At_Given_Level();
     void Get_Tree_Depth();
     void Check_Is_Trees_Identical();
     void Check_Is_Tree_Symmetric();
@@ -32,6 +33,7 @@ namespace TreesAlgorithms
     void Inorder_Tree_Traversal();
     void Backwards_Tree_Traversal();
     void Find_Maximum_Level_Sum();
+    void Find_Path_Sum_Between_Two_Nodes();
 }
 
 #endif //TREES_ALGORITHMS_H

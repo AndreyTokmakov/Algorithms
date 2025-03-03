@@ -10,8 +10,8 @@ https://js-notes.vercel.app/software_engineering/ds_and_algos
 =======================================================================================================================================
 
 /**============================================================================
-Name        : Find_First_and_Last_Position_of_Element_Sorter_Arrays.cpp
-Created on  : 02.03.2025
+Name        : Count_Tree_Size.cpp
+Created on  : 03.03.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
 Copyright   : Your copyright notice
@@ -19,17 +19,17 @@ Description :
 ============================================================================**/
 
 #include "../common.h"
-#include "../ArraysAlgorithms.h"
+#include "../TreesAlgorithms.h"
 
 
 namespace
 {
-    using namespace ArraysAlgorithms;
+    using namespace TreesAlgorithms;
 
 
 }
 
-void ArraysAlgorithms::Find_First_and_Last_Position_of_Element_Sorter_Arrays()
+void TreesAlgorithms::Count_Tree_Size()
 {
 
 }
@@ -63,6 +63,11 @@ Arrays:
 	88. Merge Sorted Array
     Numeric::Find_Repeating_And_Missing();
 
+Trees:
+
+	Search in a Binary Search Tree
+	Find_Level_With_Maximum_Sum
+
 =======================================================================================================================================
 							Algoritms: Add to README  |  -  [__NAME__](__LINK__)<br/>
 =======================================================================================================================================
@@ -71,6 +76,10 @@ Arrays:
 	House_Robber
 	Single_Number_2
 	Find_First_and_Last_Position_of_Element_Sorter_Arrays
+
+Trees:
+	Find_Path_Sum_Between_Two_Nodes
+	Find_Maximum_Node_At_Given_Level
 
 =======================================================================================================================================
 							Algoritms: Top Google Questions – Part 1

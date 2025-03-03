@@ -18,6 +18,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Sorted_Array_To_Binary_Tree_NonRecursive.cpp
 		algorithms/Find_Lowest_Common_Ancestor.cpp
 		algorithms/Count_Elements.cpp
+		algorithms/Find_Maximum_Node_At_Given_Level.cpp
 		algorithms/Get_Tree_Depth.cpp
 		algorithms/Check_Is_Trees_Identical.cpp
 		algorithms/Check_Is_Tree_Symmetric.cpp
@@ -26,6 +27,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Inorder_Tree_Traversal.cpp
 		algorithms/Backwards_Tree_Traversal.cpp
 		algorithms/Find_Maximum_Level_Sum.cpp
+		algorithms/Find_Path_Sum_Between_Two_Nodes.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")
