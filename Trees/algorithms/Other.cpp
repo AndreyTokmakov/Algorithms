@@ -762,19 +762,6 @@ namespace BinTreeTests {
 
     ///////////////////////////////////////////////////////////////////////////////////////////////////
 
-    void Find_Level_With_Maximum_Sum()
-    {
-        std::vector<int> levels;
-        BinTree::BinaryTree tree{ 33,22,85,10,30,54,125,5,13,25,35 };
-
-        // __find_maximum_level_sum(tree.getRoot(), 1, levels);
-
-        auto max_sum_iter = std::max_element(levels.begin(), levels.end());
-        std::cout << "Max sum is " << *max_sum_iter << ". At level: " << std::distance(levels.begin(), max_sum_iter) << std::endl;
-    }
-
-    ///////////////////////////////////////////////////////////////////////////////////////////////////
-
     void __find_if_last_level_completed(const BinTree::Node* node, size_t level, std::vector<int>& levels) {
         if (nullptr == node)
             return;

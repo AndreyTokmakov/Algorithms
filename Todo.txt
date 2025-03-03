@@ -10,7 +10,7 @@ https://js-notes.vercel.app/software_engineering/ds_and_algos
 =======================================================================================================================================
 
 /**============================================================================
-Name        : Count_Tree_Size.cpp
+Name        : Find_Level_With_Maximum_Sum.cpp
 Created on  : 03.03.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
@@ -29,7 +29,7 @@ namespace
 
 }
 
-void TreesAlgorithms::Count_Tree_Size()
+void TreesAlgorithms::Find_Level_With_Maximum_Sum()
 {
 
 }
@@ -66,7 +66,8 @@ Arrays:
 Trees:
 
 	Search in a Binary Search Tree
-	Find_Level_With_Maximum_Sum
+	Print Tree
+	
 
 =======================================================================================================================================
 							Algoritms: Add to README  |  -  [__NAME__](__LINK__)<br/>
@@ -80,6 +81,7 @@ Arrays:
 Trees:
 	Find_Path_Sum_Between_Two_Nodes
 	Find_Maximum_Node_At_Given_Level
+	Find_Level_With_Maximum_Sum
 
 =======================================================================================================================================
 							Algoritms: Top Google Questions – Part 1

@@ -14,8 +14,8 @@ namespace
 {
     using namespace TreesAlgorithms;
 
-    std::optional<int>  maximum_node_at_level(const Node* root,
-                                              int level)
+    std::optional<int> maximum_node_at_level(const Node* root,
+                                             int level)
     {
         if (!root)
             return 0;

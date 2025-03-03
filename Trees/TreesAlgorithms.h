@@ -25,6 +25,7 @@ namespace TreesAlgorithms
     void Find_Lowest_Common_Ancestor();
     void Count_Elements();
     void Find_Maximum_Node_At_Given_Level();
+    void Find_Level_With_Maximum_Sum();
     void Get_Tree_Depth();
     void Check_Is_Trees_Identical();
     void Check_Is_Tree_Symmetric();
