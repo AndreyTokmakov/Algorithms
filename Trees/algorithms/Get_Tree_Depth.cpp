@@ -15,7 +15,7 @@ namespace
 {
     using namespace TreesAlgorithms;
 
-    int get_depth_recursive(Node* node)
+    int get_depth_recursive(const Node* node)
     {
         return nullptr == node ? 0 : 1 + std::max(get_depth_recursive(node->left), get_depth_recursive(node->right));
     }
@@ -47,14 +47,15 @@ namespace
 
 void TreesAlgorithms::Get_Tree_Depth()
 {
+    using TestData = std::vector< std::pair<const Node*, int>>;
+    for (const auto& [values, expected]:  TestData{
+        { BinTree::makeTree({10, 5, 15, 3, 7, 12}) , 3 },
+        { BinTree::makeTree({33,22,85,10,30,54,125,5,8,25,32,45,60,120,130}) , 5 },
+    })
     {
-        Node *tree = BinTree::makeTree({10, 5, 15, 3, 7, 12});
-        std::cout << get_depth_recursive(tree) << std::endl;
-        std::cout << get_depth(tree) << std::endl;
+        if (const auto actual = get_depth(values); expected != actual) {
+            std::cerr << std::boolalpha << expected << " != " << actual << std::endl;
+        }
     }
-    {
-        Node* tree = BinTree::makeTree( {  33,22,85,10,30,54,125,5,8,25,32,45,60,120,130  });
-        std::cout << get_depth_recursive(tree) << std::endl;
-        std::cout << get_depth(tree) << std::endl;
-    }
+    std::cout << "OK: All tests passed\n";
 }
