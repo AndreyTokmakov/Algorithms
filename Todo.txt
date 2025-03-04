@@ -10,7 +10,7 @@ https://js-notes.vercel.app/software_engineering/ds_and_algos
 =======================================================================================================================================
 
 /**============================================================================
-Name        : Find_Level_With_Maximum_Sum.cpp
+Name        : Find_Deepest_Node.cpp
 Created on  : 03.03.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
@@ -29,7 +29,7 @@ namespace
 
 }
 
-void TreesAlgorithms::Find_Level_With_Maximum_Sum()
+void TreesAlgorithms::Find_Deepest_Node()
 {
 
 }
@@ -65,8 +65,14 @@ Arrays:
 
 Trees:
 
-	Search in a Binary Search Tree
 	Print Tree
+
+	Find_Deepest_Node
+	Find_Element_Parent
+	Find_Min_Depth
+	__find_if_last_level_completed
+	Find_Node_WithSumX_2
+	Find_Maximum_PathSum_BetweenNodes
 	
 
 =======================================================================================================================================
@@ -82,6 +88,8 @@ Trees:
 	Find_Path_Sum_Between_Two_Nodes
 	Find_Maximum_Node_At_Given_Level
 	Find_Level_With_Maximum_Sum
+	Find_Search_Element_in_BST
+	Find_Deepest_Node
 
 =======================================================================================================================================
 							Algoritms: Top Google Questions – Part 1

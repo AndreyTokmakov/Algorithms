@@ -29,6 +29,10 @@ add_executable(${PROJECT_NAME}
 		algorithms/Backwards_Tree_Traversal.cpp
 		algorithms/Find_Maximum_Level_Sum.cpp
 		algorithms/Find_Path_Sum_Between_Two_Nodes.cpp
+		algorithms/Print_Tree_Pretty.cpp
+		algorithms/Find_Search_Element_in_BST.cpp
+		algorithms/Find_Deepest_Node.cpp
+		algorithms/Find_Element_Parent.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")

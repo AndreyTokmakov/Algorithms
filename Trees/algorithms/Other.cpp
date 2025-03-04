@@ -517,77 +517,6 @@ namespace BinTreeTests {
 
     //////////////////////////////////////////////////////////////////////////////////////////////////
 
-    std::optional<BinTree::Node*> FindElement(const BinTree::Node* root, const int value) {
-        BinTree::Node* node = const_cast<BinTree::Node*>(root);
-        while (nullptr != node) {
-            if (value == node->getData())
-                return std::make_optional<BinTree::Node*>(node);
-            else if (value > node->getData())
-                node = node->right;
-            else
-                node = node->left;
-        }
-        return std::nullopt;
-    }
-
-    void Find_Element() {
-        BinTree::BinaryTree tree{ 33,22,85,10,30,54,125,5,8,25,32,45,60,120,130 };
-
-        // Base style:
-        BinTree::Node* result = tree.find(tree.getRoot(), 30);
-        std::cout << (nullptr == result ? -1 : result->getData()) << std::endl;
-
-        result = tree.find(tree.getRoot(), 310);
-        std::cout << (nullptr == result ? -1 : result->getData()) << std::endl;
-
-        // Test
-        std::optional<BinTree::Node*> element = FindElement(tree.getRoot(), 30);
-        std::cout << (element.has_value() == true ? element.value()->getData() : -1) << std::endl;
-
-        element = FindElement(tree.getRoot(), 310);
-        std::cout << (element.has_value() == true ? element.value()->getData() : -1) << std::endl;
-    }
-
-    //////////////////////////////////////////////////////////////////////////////////////////////////
-
-    std::optional<BinTree::Node*> FindElementsParent(const BinTree::Node* root, const int value) {
-        BinTree::Node* node = const_cast<BinTree::Node*>(root), * parent = nullptr;
-        while (nullptr != node) {
-            if (value == node->getData())
-                return std::make_optional<BinTree::Node*>(parent);
-
-            parent = node;
-            if (value > node->getData())
-                node = node->right;
-            else
-                node = node->left;
-        }
-        return std::nullopt;
-    }
-
-    std::optional<BinTree::Node*> FindElementsParent_R(BinTree::Node* node, const int value, BinTree::Node* parent = nullptr) {
-        if (nullptr == node)
-            return std::nullopt;
-        else if (value == node->getData())
-            return std::make_optional<BinTree::Node*>(parent);
-        return value > node->getData() ? FindElementsParent_R(node->right, value, node) :
-               FindElementsParent_R(node->left, value, node);
-    }
-
-    void Find_Element_Parent() {
-        BinTree::BinaryTree tree{ 33,22,85,10,30,54,125,5,8,25,32,45,60,120,130 };
-
-        std::optional<BinTree::Node*> result = FindElementsParent(tree.getRoot(), 5);
-        if (result.has_value())
-            std::cout << result.value()->data << std::endl;
-
-        std::optional<BinTree::Node*> result2 = FindElementsParent_R(tree.getRoot(), 5);
-        if (result2.has_value())
-            std::cout << result2.value()->data << std::endl;
-    }
-
-    //////////////////////////////////////////////////////////////////////////////////////////////////
-
     size_t GetDepth(const BinTree::Node* node) {
         return nullptr == node ? 0 : 1 + std::max(GetDepth(node->left), GetDepth(node->right));
     }
@@ -612,53 +541,6 @@ namespace BinTreeTests {
 
         std::cout << "Depth1 = " << GetDepth(tree.getRoot()) << std::endl;
         std::cout << "Depth2 = " << tree.getDepth() << std::endl;
-    }
-
-    //===============================================================================================
-
-    void __find_deepest_node(const BinTree::Node* node,
-                             size_t depth,
-                             size_t& max_depth,
-                             int& result) {
-        if (nullptr != node) {
-            if (depth > max_depth) {
-                result = node->data;
-                max_depth = depth;
-            }
-            __find_deepest_node(node->left, depth + 1, max_depth, result);
-            __find_deepest_node(node->right, depth + 1, max_depth, result);
-        }
-    }
-
-    void __find_deepest_node_3(const BinTree::Node* node, size_t depth, int& result) {
-        if (nullptr == node)
-            return;
-
-        static size_t max_depth;
-        if (depth > max_depth) {
-            result = node->data;
-            max_depth = depth;
-        }
-
-        __find_deepest_node_3(node->left, depth + 1, result);
-        __find_deepest_node_3(node->right, depth + 1, result);
-    }
-
-    void Find_Deepest_Node()
-    {
-        BinTree::BinaryTree tree{ 33,22,85,10,30,54,125,5,12,25,32,45,60,120,130,4,3,2,12,13,14,15,16 };
-
-        {
-            int res;
-            size_t max_depth = 1;
-            __find_deepest_node(tree.getRoot(), 0, max_depth, res);
-            std::cout << res << std::endl;
-        }
-        {
-            int res;
-            __find_deepest_node_3(tree.getRoot(), 1, res);
-            std::cout << res << std::endl;
-        }
     }
 
     ////////////////////////////////////////////////////////////////////////////////////////////

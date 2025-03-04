@@ -15,6 +15,7 @@ namespace
 {
     using namespace TreesAlgorithms;
 
+    [[maybe_unused]]
     int get_depth(const Node* root)
     {
         if (!root)
