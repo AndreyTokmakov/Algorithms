@@ -154,6 +154,9 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [Squares_of_a_Sorted_Array](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Squares_of_a_Sorted_Array.cpp#L33)<br/>
 -  [Container_With_Most_Water](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Container_With_Most_Water.cpp#L25)<br/>
 -  [Unique_Permutations](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Unique_Permutations.cpp#L22)<br/>
+-  [House_Robber](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/House_Robber.cpp#L38)<br/>
+-  [Single_Number_2](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Single_Number_2.cpp#L28)<br/>
+-  [Find_First_and_Last_Position_of_Element_Sorter_Arrays](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_First_and_Last_Position_of_Element_Sorter_Arrays.cpp#L34)<br/>
 
 <a id="linked_list"></a>
 ## Linked List
@@ -195,6 +198,13 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [Inorder_Tree_Traversal](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Inorder_Tree_Traversal.cpp#L31)<br/>
 -  [Backwards_Tree_Traversal](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Backwards_Tree_Traversal.cpp#L28)<br/>
 -  [Find_Maximum_Level_Sum](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Find_Maximum_Level_Sum.cpp#L21)<br/>
+-  [Find_Path_Sum_Between_Two_Nodes](Find_Path_Sum_Between_Two_Nodes)<br/>
+-  [Find_Maximum_Node_At_Given_Level](Find_Maximum_Node_At_Given_Level)<br/>
+-  [Find_Level_With_Maximum_Sum](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Find_Level_With_Maximum_Sum.cpp#L18)<br/>
+-  [Find_Search_Element_in_BST](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Find_Search_Element_in_BST.cpp#L18)<br/>
+-  [Find_Deepest_Node](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Find_Deepest_Node.cpp#L18)<br/>
+-  [Find_Element_Parent](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Find_Element_Parent.cpp#L18)<br/>
+-  [Find_If_Last_Level_Completed](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Find_If_Last_Level_Completed.cpp#L17)<br/>
 
 <a id="graphs"></a>
 ## Graphs

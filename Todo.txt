@@ -70,24 +70,10 @@ Trees:
 	Find_Node_WithSumX_2
 	Find_Maximum_PathSum_BetweenNodes
 	
-
 =======================================================================================================================================
 							Algoritms: Add to README  |  -  [__NAME__](__LINK__)<br/>
 =======================================================================================================================================
 
-Arrays:
-	House_Robber
-	Single_Number_2
-	Find_First_and_Last_Position_of_Element_Sorter_Arrays
-
-Trees:
-	Find_Path_Sum_Between_Two_Nodes
-	Find_Maximum_Node_At_Given_Level
-	Find_Level_With_Maximum_Sum
-	Find_Search_Element_in_BST
-	Find_Deepest_Node
-	Find_Element_Parent
-	Find_If_Last_Level_Completed
 
 =======================================================================================================================================
 							Algoritms: Top Google Questions – Part 1
