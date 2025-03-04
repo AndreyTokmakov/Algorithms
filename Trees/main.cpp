@@ -25,6 +25,7 @@ int main([[maybe_unused]] int argc,
 	// TreesAlgorithms::Find_Lowest_Common_Ancestor();
 	// TreesAlgorithms::Count_Elements();
 	// TreesAlgorithms::Get_Tree_Depth();
+	TreesAlgorithms::Check_Is_Binary_Search_Tree_BST();
 	// TreesAlgorithms::Check_Is_Trees_Identical();
 	// TreesAlgorithms::Check_Is_Tree_Symmetric();
 	// TreesAlgorithms::Check_Is_Tree_Balanced();
@@ -38,7 +39,7 @@ int main([[maybe_unused]] int argc,
 	// TreesAlgorithms::Find_Search_Element_in_BST();
 	// TreesAlgorithms::Find_Deepest_Node();
 	// TreesAlgorithms::Find_Element_Parent();
-	TreesAlgorithms::Find_If_Last_Level_Completed();
+	// TreesAlgorithms::Find_If_Last_Level_Completed();
 
 
 	return EXIT_SUCCESS;

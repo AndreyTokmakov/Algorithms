@@ -64,6 +64,17 @@ namespace BinTree
             root = insert(value, root);
         return root;
     }
+
+    [[nodiscard]]
+    inline Node* makeTreeNonBST(int rootVal, const std::initializer_list<int> list)
+    {
+        Node* root { new Node(rootVal) }, *result = root;
+        for (const int value : list) {
+            root->left = new Node(value);
+            root = root->left;
+        }
+        return result;
+    }
 }
 
 namespace TreesAlgorithms

@@ -10,8 +10,8 @@ https://js-notes.vercel.app/software_engineering/ds_and_algos
 =======================================================================================================================================
 
 /**============================================================================
-Name        : Find_If_Last_Level_Completed.cpp
-Created on  : 03.03.2025
+Name        : Check_Is_Binary_Search_Tree_BST.cpp
+Created on  : 04.03.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
 Copyright   : Your copyright notice
@@ -29,7 +29,7 @@ namespace
 
 }
 
-void TreesAlgorithms::Find_If_Last_Level_Completed()
+void TreesAlgorithms::Check_Is_Binary_Search_Tree_BST()
 {
 
 }
@@ -73,6 +73,9 @@ Trees:
 =======================================================================================================================================
 							Algoritms: Add to README  |  -  [__NAME__](__LINK__)<br/>
 =======================================================================================================================================
+
+Trees:
+	Check_Is_Binary_Search_Tree_BST
 
 
 =======================================================================================================================================
