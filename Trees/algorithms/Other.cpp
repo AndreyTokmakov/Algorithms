@@ -641,32 +641,6 @@ namespace BinTreeTests {
         }
     }
 
-
-    ///////////////////////////////////////////////////////////////////////////////////////////////////
-
-    void __find_if_last_level_completed(const BinTree::Node* node, size_t level, std::vector<int>& levels) {
-        if (nullptr == node)
-            return;
-
-        int& lvlElements = (level > levels.size()) ? levels.emplace_back() : levels[level - 1];
-        ++lvlElements;
-
-        __find_if_last_level_completed(node->left, level + 1, levels);
-        __find_if_last_level_completed(node->right, level + 1, levels);
-    }
-
-    void Find_If_Last_Level_Completed() {
-        std::vector<int> levels;
-        BinTree::BinaryTree tree{ 40,22,85 ,10,30,54,125 ,5,12 ,25,32 ,45,60, 120,
-                                  130,4,7,11,15,24,28,31,35,42,50,55,65,100,122,127 };
-
-        __find_if_last_level_completed(tree.getRoot(), 1, levels);
-
-        for (size_t lvl = 0; lvl < levels.size(); lvl++) {
-            std::cout << lvl << " level: " << levels[lvl] << ". Should be: " << std::pow(2, lvl) << std::endl;
-        }
-    }
-
     ///////////////////////////////////////////////////////////////////////////////////////////////////
 
     void _find_node_with_sumX(const BinTree::Node* node, std::unordered_set<int>& values, int X) {

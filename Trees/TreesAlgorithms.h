@@ -39,6 +39,7 @@ namespace TreesAlgorithms
     void Find_Search_Element_in_BST();
     void Find_Deepest_Node();
     void Find_Element_Parent();
+    void Find_If_Last_Level_Completed();
 }
 
 #endif //TREES_ALGORITHMS_H

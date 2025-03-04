@@ -10,7 +10,7 @@ https://js-notes.vercel.app/software_engineering/ds_and_algos
 =======================================================================================================================================
 
 /**============================================================================
-Name        : Find_Deepest_Node.cpp
+Name        : Find_If_Last_Level_Completed.cpp
 Created on  : 03.03.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
@@ -29,7 +29,7 @@ namespace
 
 }
 
-void TreesAlgorithms::Find_Deepest_Node()
+void TreesAlgorithms::Find_If_Last_Level_Completed()
 {
 
 }
@@ -61,16 +61,12 @@ Arrays:
 
 	permutations
 	88. Merge Sorted Array
-    Numeric::Find_Repeating_And_Missing();
+    Numeric::Find_Repeating_And_Missing()
 
 Trees:
 
 	Print Tree
-
-	Find_Deepest_Node
-	Find_Element_Parent
 	Find_Min_Depth
-	__find_if_last_level_completed
 	Find_Node_WithSumX_2
 	Find_Maximum_PathSum_BetweenNodes
 	
@@ -90,6 +86,8 @@ Trees:
 	Find_Level_With_Maximum_Sum
 	Find_Search_Element_in_BST
 	Find_Deepest_Node
+	Find_Element_Parent
+	Find_If_Last_Level_Completed
 
 =======================================================================================================================================
 							Algoritms: Top Google Questions – Part 1

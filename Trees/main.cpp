@@ -37,7 +37,8 @@ int main([[maybe_unused]] int argc,
 	// TreesAlgorithms::Print_Tree_Pretty();
 	// TreesAlgorithms::Find_Search_Element_in_BST();
 	// TreesAlgorithms::Find_Deepest_Node();
-	TreesAlgorithms::Find_Element_Parent();
+	// TreesAlgorithms::Find_Element_Parent();
+	TreesAlgorithms::Find_If_Last_Level_Completed();
 
 
 	return EXIT_SUCCESS;

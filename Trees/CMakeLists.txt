@@ -33,6 +33,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Find_Search_Element_in_BST.cpp
 		algorithms/Find_Deepest_Node.cpp
 		algorithms/Find_Element_Parent.cpp
+		algorithms/Find_If_Last_Level_Completed.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")
