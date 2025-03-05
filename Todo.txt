@@ -10,7 +10,7 @@ https://js-notes.vercel.app/software_engineering/ds_and_algos
 =======================================================================================================================================
 
 /**============================================================================
-Name        : Check_Is_Tree_Complete.cpp
+Name        : Sort_String__Rearrange_String.cpp
 Created on  : 05.03.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
@@ -19,17 +19,17 @@ Description :
 ============================================================================**/
 
 #include "../common.h"
-#include "../TreesAlgorithms.h"
+#include "../StringAlgorithms.h"
 
 
 namespace
 {
-    using namespace TreesAlgorithms;
+    using namespace StringAlgorithms;
 
 
 }
 
-void TreesAlgorithms::Check_Is_Tree_Complete()
+void StringAlgorithms::Sort_String__Rearrange_String()
 {
 
 }
@@ -78,6 +78,11 @@ Trees:
 	Check_Is_Binary_Search_Tree_BST
 	Check_Is_Tree_Complete
 
+Strings:
+	Longest_Palindrome
+	Sort_String__Rearrange_String
+	Sort_String__Rearrange_String_2
+
 
 =======================================================================================================================================
 							Algoritms: Top Google Questions – Part 1
@@ -111,8 +116,8 @@ Trees:
 [+] 146. LRU Cache
 [+] 110. Balanced Binary Tree
 [+] 1047. Remove All Adjacent Duplicates In String
-198. House Robber
-
+[+] 198. House Robber
+[+]  69. Sqrt(x)
 
 
 6. ZigZag Conversion
@@ -129,7 +134,6 @@ Trees:
 59. Spiral Matrix II
 60. Permutation Sequence
 67. Add Binary
-69. Sqrt(x)
 70. Climbing Stairs
 72. Edit Distance
 74. Search a 2D Matrix

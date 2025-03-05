@@ -38,52 +38,6 @@ namespace Strings
     using namespace StringAlgorithms;
 
 
-    size_t __palindrom_length(const std::string &str, size_t start, size_t end) {
-        size_t length = 0;
-        while (start >= 0 && end < str.size()) {
-            if (str[start] == str[end]) {
-                length = end - start + 1;
-                start--;
-                end++;
-            } else
-                break;
-        }
-        return length;
-    }
-
-    std::string longestPalindrome(const std::string &str) {
-        size_t start = 0, end = 0;
-        if (true == str.empty())
-            return "";
-
-        size_t len1 = 0, len2 = 0;
-        for (size_t center = 0; center < str.size(); center++) {
-            len1 = __palindrom_length(str, center, center);
-            len2 = __palindrom_length(str, center, center + 1);
-            if (len1 > end - start) {
-                start = center - len1 / 2;
-                end = center + len1 / 2;
-            }
-            if (len2 > end - start) {
-                start = center + 1 - len2 / 2;
-                end = center + len2 / 2;
-            }
-        }
-        return str.substr(start, end - start + 1);
-    }
-
-    void Longest_Palindrome_1() {
-        for (const StringPair &data: std::vector<StringPair>{
-                {"babad",           "aba"},
-                {"cbbd",            "bb"},
-                {"ddddd3456654321", "34566543"}
-        }) {
-            std::cout << longestPalindrome(data.first) << " | " << data.second << std::endl;
-        }
-    }
-
-    //--------------------------------------------------------------------------------------//
-
     size_t __palindrom_length_2(const std::string &str, size_t start, size_t end) {
         size_t length = 0;
         while (start >= 0 && end < str.size() &&
@@ -220,29 +174,6 @@ namespace Strings
 
     //--------------------------------------------------------------------------------------//
 
-    void _rearrange_string(std::string &text) {
-        uint32_t chars[256]{0};
-        for (char c: text)
-            chars[(int8_t) (c)]++;
-
-        for (size_t i = 0, pos = 0; i < 256; ++i) {
-            while (chars[i]--) {
-                text[pos++] = (char) i;
-            }
-        }
-    }
-
-    void _rearrange_string1(std::string &text) {
-        int chars[256]{0};
-        for (char c: text)
-            chars[(int8_t) (c)]++;
-
-        for (int i = 0, pos = 0; i < 256; ++i) {
-            std::fill_n(text.begin() + pos, chars[i], (char) i);
-            pos += chars[i];
-        }
-    }
-
 
     void _rearrange_string2(std::string &text) {
         int chars[256]{0};
@@ -262,20 +193,10 @@ namespace Strings
         }
     }
 
-    void RearrangeString() {
+    void RearrangeString()
+    {
         for (const std::string &str: {"FNYaJGNMHSWUzAGQLADQUaYMYSGQRxPCAXU"}) {
-            {
-                std::string s{str};
-                std::cout << s << " --> ";
-                _rearrange_string(s);
-                std::cout << s << '\n';
-            }
-            {
-                std::string s{str};
-                std::cout << s << " --> ";
-                _rearrange_string1(s);
-                std::cout << s << '\n';
-            }
+
             {
                 std::string s{str};
                 std::cout << s << " --> ";

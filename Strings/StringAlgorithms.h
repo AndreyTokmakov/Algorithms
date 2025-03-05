@@ -20,6 +20,7 @@ namespace StringAlgorithms
     void Find_Longest_Substring_With_K_Distinct_Characters();
     void Find_First_K_Chars_Encountered_Once();
     void Is_Palindrome();
+    void Longest_Palindrome();
     void Remove_Chars_Of_One_String_FromAnother();
     void Top_K_Frequent_Words();
     void Remove_Duplicates_Chars();
@@ -59,6 +60,8 @@ namespace StringAlgorithms
     void Find_Common_Characters();
     void Jewels_and_Stones();
     void Split_String_All_SubString_Don_Have_Same_Chars();
+    void Sort_String__Rearrange_String();
+    void Sort_String__Rearrange_String_2();
 }
 
 #endif //STRING_ALGORITHMS_H

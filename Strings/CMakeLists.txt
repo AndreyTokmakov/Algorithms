@@ -14,6 +14,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Find_Longest_Substring_With_K_Distinct_Characters.cpp
 		algorithms/Find_First_K_Chars_Encountered_Once.cpp
 		algorithms/Is_Palindrome.cpp
+		algorithms/Longest_Palindrome.cpp
 		algorithms/Remove_Chars_Of_One_String_FromAnother.cpp
 		algorithms/Top_K_Frequent_Words.cpp
 		algorithms/Remove_Duplicates_Chars.cpp
@@ -53,6 +54,8 @@ add_executable(${PROJECT_NAME}
 		algorithms/Longest_Substring_With_Maximum_K_Unique_Characters.cpp
 		algorithms/Jewels_and_Stones.cpp
 		algorithms/Split_String_All_SubString_Don_Have_Same_Chars.cpp
+		algorithms/Sort_String__Rearrange_String.cpp
+		algorithms/Sort_String__Rearrange_String_2.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")
