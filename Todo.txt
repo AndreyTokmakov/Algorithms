@@ -10,8 +10,8 @@ https://js-notes.vercel.app/software_engineering/ds_and_algos
 =======================================================================================================================================
 
 /**============================================================================
-Name        : Check_Is_Binary_Search_Tree_BST.cpp
-Created on  : 04.03.2025
+Name        : Check_Is_Tree_Complete.cpp
+Created on  : 05.03.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
 Copyright   : Your copyright notice
@@ -29,7 +29,7 @@ namespace
 
 }
 
-void TreesAlgorithms::Check_Is_Binary_Search_Tree_BST()
+void TreesAlgorithms::Check_Is_Tree_Complete()
 {
 
 }
@@ -76,6 +76,7 @@ Trees:
 
 Trees:
 	Check_Is_Binary_Search_Tree_BST
+	Check_Is_Tree_Complete
 
 
 =======================================================================================================================================
@@ -421,3 +422,50 @@ Design Data Structure
     https://leetcode.com/problems/number-of-islands/
     https://leetcode.com/problems/remove-invalid-parentheses/
 
+
+
+======================================================================================================================================
+								Patterns
+======================================================================================================================================
+
+Islands (Matrix Traversal) 
+
+- Used for traversing 2D grids or matrices efficiently. 
+- Commonly applies DFS or BFS for searching connected components. 
+- Helps solve problems related to islands, clusters, or paths. 
+
+Two Pointers 
+
+- Uses two pointers to traverse data, often from opposite directions. 
+- Helps optimize problems involving pairs, sorting, or merging. 
+- Reduces time complexity compared to brute force. 
+
+Fast & Slow Pointers:
+
+- Also known as the Hare & Tortoise Algorithm. 
+- Uses two pointers moving at different speeds to detect cycles. 
+- Commonly used for linked lists and circular arrays.
+
+Merge Intervals:
+
+- Deals with overlapping intervals. 
+- Used for scheduling, reservations, and range merging. 
+- Sorting intervals first usually helps in solving these problems.
+
+Breadth-First Search (BFS):
+
+- Traverses trees or graphs level by level. 
+- Used for finding shortest paths or exploring neighbors first. 
+- Implemented using a queue. 
+
+Depth-First Search (DFS):
+
+- Traverses deep into trees or graphs before backtracking. 
+- Used for recursion-based traversal and path-related problems. 
+- Implemented using stack or recursion.
+
+Subsets:
+
+- Used for problems requiring combinations or permutations. 
+- Applies backtracking or BFS to generate all possible subsets. 
+- Useful for problems involving decision trees. 

@@ -46,7 +46,6 @@ namespace
 
 void TreesAlgorithms::Find_If_Last_Level_Completed()
 {
-
     using TestData = std::vector<std::pair<const Node*, bool>>;
     for (const auto& [tree, expected]:  TestData{
             { BinTree::makeTree({33}) , true },

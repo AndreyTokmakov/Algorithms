@@ -31,6 +31,7 @@ namespace TreesAlgorithms
     void Check_Is_Trees_Identical();
     void Check_Is_Tree_Symmetric();
     void Check_Is_Tree_Balanced();
+    void Check_Is_Tree_Complete();
     void Level_Order_Traversal();
     void Inorder_Tree_Traversal();
     void Backwards_Tree_Traversal();
