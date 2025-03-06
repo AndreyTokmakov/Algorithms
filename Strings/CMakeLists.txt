@@ -27,7 +27,8 @@ add_executable(${PROJECT_NAME}
 		algorithms/Find_First_Char_Encountered_Once.cpp
 		algorithms/Check_If_Two_Strings_Are_Permutation.cpp
 		algorithms/Are_Anagrams.cpp
-		algorithms/Calc_Parentheses_3_Bracket.cpp
+		algorithms/Check_Valid_Parentheses_1_Bracket.cpp
+		algorithms/Check_Valid_Parentheses_3_Bracket.cpp
 		algorithms/Longest_Substring_Without_Repeating_Characters.cpp
 		algorithms/Longest_Substring_Without_Repeating_Characters_2.cpp
 		algorithms/To_Lower_Case.cpp
@@ -56,6 +57,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Split_String_All_SubString_Don_Have_Same_Chars.cpp
 		algorithms/Sort_String__Rearrange_String.cpp
 		algorithms/Sort_String__Rearrange_String_2.cpp
+		algorithms/Calc_Parentheses_K_Deletions_Make_Valid.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")

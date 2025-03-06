@@ -375,82 +375,6 @@ namespace Strings
 
     //--------------------------------------------------------------------------------------//
 
-    bool __check_parentheses(const std::string& str) {
-        std::stack<char> stack;
-        for (const char c : str) {
-            if ('(' == c)
-                stack.push(c);
-            else if (')' == c) {
-                if (stack.empty())
-                    return false;
-                if ('(' == stack.top())
-                    stack.pop();
-            }
-        }
-        return stack.empty();
-    }
-
-    bool __check_parentheses_vector(const std::string& str) {
-        std::vector<char> brackets;
-        brackets.reserve(str.length());
-        for (const char c : str) {
-            if ('(' == c) {
-                brackets.push_back(c);
-            }
-            else if (')' == c) {
-                if (!brackets.empty() && '(' == brackets.back())
-                    brackets.pop_back();
-                else return false;
-            }
-        }
-        return brackets.empty();
-    }
-
-    void CalcParentheses() {
-
-        std::vector<std::string> params = { "()", ")(()))", "(" ,"(())((()())())", "))" };
-        for (const auto& str : params) {
-            std::cout << std::boolalpha << __check_parentheses(str) << "   "
-                      << std::boolalpha << __check_parentheses_vector(str) << std::endl;
-        }
-        std::cout << std::endl;
-    }
-
-
-    //--------------------------------------------------------------------------------------//
-
-    int _calcParentheses_K_deletions(const std::string& str) {
-        std::vector<char> brackets;
-        brackets.reserve(str.length());
-        for (const char c : str) {
-            if ('(' == c) {
-                brackets.push_back(c);
-            }
-            else if (')' == c) {
-                if (brackets.empty() || ')' == brackets.back())
-                    brackets.push_back(c);
-                else
-                    brackets.pop_back();
-            }
-        }
-        return brackets.size();
-    }
-
-    // Given a string of parentheses, write a function to compute the minimum number of parentheses to be removed to make the string valid
-    // (i.e. each open parenthesis is eventually closed). For example, given the string "()())()", you should return 1.
-    // Given the string ")(", you should return 2, since we must remove all of them.
-
-    void CalcParentheses_K_Deletions()
-    {
-        const std::vector<std::string> testData {"()())()", ")(", ")()(", "((()))()"};
-        for (const std::string& str: testData)
-        {
-            std::cout << str << " = " << _calcParentheses_K_deletions(str) << std::endl;
-        }
-    }
-
-    //--------------------------------------------------------------------------------------//
-
     void Remove_Add_Chars()
     {
         std::string text = "a1b2a3b4a5b6232323";
@@ -770,11 +694,9 @@ namespace Strings
 void StringAlgorithms::Other()
 {
     // Strings::AnalogClockAngles();
-    // Strings::Atoi();
-    // Strings::Atoi_Extended();
     // Strings::RotateString();
     // Strings::CheckIfStrings_RotateRotateEquals();
-    Strings::Remove_Add_Chars();
+    // Strings::Remove_Add_Chars();
     // Strings::Print_Distinct_SubStrings_Len2();
     // Strings::Print_Distinct_SubStrings();
     // Strings::RearrangeString();
@@ -782,14 +704,12 @@ void StringAlgorithms::Other()
     // Strings::RearrangeString_NoAdjacent();
     // Strings::Find_K_MostFrequentCharacter();
     // Strings::Find_K_MostFrequentCharacter_2();
-    // Strings::topKFrequent(); /** Find_K_Most_Frequent_Words **/
     // Strings::MaxSubstringLength_Of_K_max_Unique_Elements();
     // Strings::Longest_Palindrome_1();
     // Strings::Longest_Palindrome_2();
     // Strings::Find_If_KPalindrome();
     // Strings::ShortestPalindrome();
     // Strings::Find_All_Palindrome_In_String();
-    // Strings::Find_If_String_IsSubstring_OfAnother();
     // Strings::CalcParentheses();
     // Strings::CalcParentheses_3_BRacket();
     // Strings::CalcParentheses_K_Deletions();

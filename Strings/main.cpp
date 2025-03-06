@@ -33,7 +33,8 @@ int main([[maybe_unused]] int argc,
     // StringAlgorithms::Find_First_Char_Encountered_Once();
     // StringAlgorithms::Check_If_Two_Strings_Are_Permutation();
     // StringAlgorithms::Are_Anagrams();
-    // StringAlgorithms::Calc_Parentheses_3_Bracket();
+    // StringAlgorithms::Check_Valid_Parentheses_1_Bracket();
+    // StringAlgorithms::Check_Valid_Parentheses_3_Bracket();
     // StringAlgorithms::Longest_Substring_Without_Repeating_Characters();
     // StringAlgorithms::Longest_Substring_Without_Repeating_Characters_2();
     // StringAlgorithms::Longest_Substring_With_Maximum_K_Unique_Characters();
@@ -61,7 +62,8 @@ int main([[maybe_unused]] int argc,
 	// StringAlgorithms::Jewels_and_Stones();
 	// StringAlgorithms::Split_String_All_SubString_Don_Have_Same_Chars();
 	// StringAlgorithms::Sort_String__Rearrange_String();
-	StringAlgorithms::Sort_String__Rearrange_String_2();
+	// StringAlgorithms::Sort_String__Rearrange_String_2();
+	StringAlgorithms::Calc_Parentheses_K_Deletions_Make_Valid();
 
 	return EXIT_SUCCESS;
 }

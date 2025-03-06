@@ -1,5 +1,5 @@
 /**============================================================================
-Name        : Calc_Parentheses_3_Bracket.cpp
+Name        : Check_Valid_Parentheses_3_Bracket.cpp
 Created on  : 15.01.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
@@ -73,11 +73,22 @@ namespace
     }
 }
 
-void StringAlgorithms::Calc_Parentheses_3_Bracket()
+void StringAlgorithms::Check_Valid_Parentheses_3_Bracket()
 {
-    for (const auto& str: {"{[(]}", "()", "()()", "({}[{}])"})
+    using TestData = std::vector< std::pair<std::string, bool>>;
+    for (const auto& [values, expected]:  TestData{
+        { "[(]}" , false },
+        { "()" , true },
+        { "()()" , true },
+        { "({}[{}])" , true },
+    })
     {
-        std::cout << str << " = " << std::boolalpha << check_parentheses_3_bracket_1(str) << std::endl;
-        std::cout << str << " = " << std::boolalpha << check_parentheses_3_bracket_2(str) << std::endl;
+        if (const auto actual = check_parentheses_3_bracket_1(values); expected != actual) {
+            std::cerr << std::boolalpha << expected << " != " << actual << std::endl;
+        }
+        if (const auto actual = check_parentheses_3_bracket_2(values); expected != actual) {
+            std::cerr << std::boolalpha << expected << " != " << actual << std::endl;
+        }
     }
+    std::cout << "OK: All tests passed\n";
 }

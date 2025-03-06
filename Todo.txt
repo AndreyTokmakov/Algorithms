@@ -10,8 +10,8 @@ https://js-notes.vercel.app/software_engineering/ds_and_algos
 =======================================================================================================================================
 
 /**============================================================================
-Name        : Sort_String__Rearrange_String.cpp
-Created on  : 05.03.2025
+Name        : Calc_Parentheses_K_Deletions_Make_Valid.cpp
+Created on  : 06.03.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
 Copyright   : Your copyright notice
@@ -29,7 +29,7 @@ namespace
 
 }
 
-void StringAlgorithms::Sort_String__Rearrange_String()
+void StringAlgorithms::Calc_Parentheses_K_Deletions_Make_Valid()
 {
 
 }
@@ -82,6 +82,8 @@ Strings:
 	Longest_Palindrome
 	Sort_String__Rearrange_String
 	Sort_String__Rearrange_String_2
+	Check_Valid_Parentheses_1_Bracket
+	Calc_Parentheses_K_Deletions_Make_Valid
 
 
 =======================================================================================================================================

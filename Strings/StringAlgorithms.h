@@ -33,7 +33,8 @@ namespace StringAlgorithms
     void Find_First_Char_Encountered_Once();
     void Check_If_Two_Strings_Are_Permutation();
     void Are_Anagrams();
-    void Calc_Parentheses_3_Bracket();
+    void Check_Valid_Parentheses_1_Bracket();
+    void Check_Valid_Parentheses_3_Bracket();
     void Longest_Substring_Without_Repeating_Characters();
     void Longest_Substring_Without_Repeating_Characters_2();
     void Longest_Substring_With_Maximum_K_Unique_Characters();
@@ -62,6 +63,7 @@ namespace StringAlgorithms
     void Split_String_All_SubString_Don_Have_Same_Chars();
     void Sort_String__Rearrange_String();
     void Sort_String__Rearrange_String_2();
+    void Calc_Parentheses_K_Deletions_Make_Valid();
 }
 
 #endif //STRING_ALGORITHMS_H
