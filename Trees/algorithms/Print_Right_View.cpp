@@ -35,30 +35,33 @@ namespace
         for (auto it : map)
             std::cout << it.second << " ";
     }
-
-    void print_right_view_test(BinTree::Node* node)
+    struct Item
     {
-        std::vector<BinTree::Node*> stack {};
-        BinTree::Node *curr = node;
+        const Node* node;
+        int depth;
+    };
 
-        int level = 1;
-        while (curr || !stack.empty())
+    void print_right_view_test(BinTree::Node* root)
+    {
+        if (!root )
+            return;
+
+        std::vector<Item> stack {};
+        Item item = stack.emplace_back(root, 1);
+        while (stack.empty())
         {
-            --level;
-            while (curr)
-            {
-                stack.push_back(curr);
-                curr = curr->right;
-                ++level;
+            while (item.node) {
+                item = stack.emplace_back(item.node->right, item.depth + 1);
             }
 
-            curr = stack.back();
+            item = stack.back();
             stack.pop_back();
 
-            std::cout << curr->data << " " << level << std::endl;
-            curr = curr->left;
+            std::cout << item.node->data << " " << item.depth << std::endl;
+            item = stack.emplace_back(item.node->right, item.depth + 1);
         }
     }
+
 }
 
 void TreesAlgorithms::Print_Right_View()
