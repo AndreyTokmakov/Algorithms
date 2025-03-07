@@ -85,6 +85,11 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [Jewels_and_Stones](https://github.com/AndreyTokmakov/Algorithms/blob/main/Strings/algorithms/Jewels_and_Stones.cpp#L30)<br/>
 -  [Simplify_Path](https://github.com/AndreyTokmakov/Algorithms/blob/main/Strings/algorithms/Simplify_Path.cpp#L26)<br/>
 -  [Split_String_All_SubString_Don_Have_Same_Chars](https://github.com/AndreyTokmakov/Algorithms/blob/main/Strings/algorithms/Split_String_All_SubString_Don_Have_Same_Chars.cpp#L28)<br/>
+-  [Longest_Palindrome](https://github.com/AndreyTokmakov/Algorithms/blob/main/Strings/algorithms/Longest_Palindrome.cpp#L18)<br/>
+-  [Sort_String__Rearrange_String](https://github.com/AndreyTokmakov/Algorithms/blob/main/Strings/algorithms/Sort_String__Rearrange_String.cpp#L18)<br/>
+-  [Sort_String__Rearrange_String_2](https://github.com/AndreyTokmakov/Algorithms/blob/main/Strings/algorithms/Sort_String__Rearrange_String_2.cpp#L17)<br/>
+-  [Check_Valid_Parentheses_1_Bracket](https://github.com/AndreyTokmakov/Algorithms/blob/main/Strings/algorithms/Check_Valid_Parentheses_1_Bracket.cpp)<br/>
+-  [Calc_Parentheses_K_Deletions_Make_Valid](https://github.com/AndreyTokmakov/Algorithms/blob/main/Strings/algorithms/Calc_Parentheses_K_Deletions_Make_Valid.cpp)<br/>
 
 <a id="math_arrays_algorithms"></a>
 ## Math and Arrays Algorithms
@@ -205,6 +210,10 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [Find_Deepest_Node](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Find_Deepest_Node.cpp#L18)<br/>
 -  [Find_Element_Parent](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Find_Element_Parent.cpp#L18)<br/>
 -  [Find_If_Last_Level_Completed](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Find_If_Last_Level_Completed.cpp#L17)<br/>
+-  [Check_Is_Binary_Search_Tree_BST](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Check_Is_Binary_Search_Tree_BST.cpp#L18)<br/>
+-  [Check_Is_Tree_Complete](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Check_Is_Tree_Complete.cpp#L19)<br/>
+-  [Print_Top_View](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Print_Top_View.cpp#L18)<br/>
+-  [Print_Right_View](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Print_Right_View.cpp#L18)<br/>
 
 <a id="graphs"></a>
 ## Graphs
