@@ -29,7 +29,7 @@ int main([[maybe_unused]] int argc,
 	// TreesAlgorithms::Check_Is_Trees_Identical();
 	// TreesAlgorithms::Check_Is_Tree_Symmetric();
 	// TreesAlgorithms::Check_Is_Tree_Balanced();
-	TreesAlgorithms::Check_Is_Tree_Complete();
+	// TreesAlgorithms::Check_Is_Tree_Complete();
 	// TreesAlgorithms::Level_Order_Traversal();
 	// TreesAlgorithms::Inorder_Tree_Traversal();
 	// TreesAlgorithms::Backwards_Tree_Traversal();
@@ -37,6 +37,8 @@ int main([[maybe_unused]] int argc,
 	// TreesAlgorithms::Find_Maximum_Node_At_Given_Level();
 	// TreesAlgorithms::Find_Path_Sum_Between_Two_Nodes();
 	// TreesAlgorithms::Print_Tree_Pretty();
+	// TreesAlgorithms::Print_Top_View();
+	TreesAlgorithms::Print_Right_View();
 	// TreesAlgorithms::Find_Search_Element_in_BST();
 	// TreesAlgorithms::Find_Deepest_Node();
 	// TreesAlgorithms::Find_Element_Parent();

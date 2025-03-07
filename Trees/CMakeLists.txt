@@ -36,6 +36,8 @@ add_executable(${PROJECT_NAME}
 		algorithms/Find_Element_Parent.cpp
 		algorithms/Find_If_Last_Level_Completed.cpp
 		algorithms/Check_Is_Tree_Complete.cpp
+		algorithms/Print_Top_View.cpp
+		algorithms/Print_Right_View.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")

@@ -38,6 +38,8 @@ namespace TreesAlgorithms
     void Find_Maximum_Level_Sum();
     void Find_Path_Sum_Between_Two_Nodes();
     void Print_Tree_Pretty();
+    void Print_Top_View();
+    void Print_Right_View();
     void Find_Search_Element_in_BST();
     void Find_Deepest_Node();
     void Find_Element_Parent();

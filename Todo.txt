@@ -10,7 +10,7 @@ https://js-notes.vercel.app/software_engineering/ds_and_algos
 =======================================================================================================================================
 
 /**============================================================================
-Name        : Calc_Parentheses_K_Deletions_Make_Valid.cpp
+Name        : Print_Top_View.cpp
 Created on  : 06.03.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
@@ -19,17 +19,17 @@ Description :
 ============================================================================**/
 
 #include "../common.h"
-#include "../StringAlgorithms.h"
+#include "../TreesAlgorithms.h"
 
 
 namespace
 {
-    using namespace StringAlgorithms;
+    using namespace TreesAlgorithms;
 
 
 }
 
-void StringAlgorithms::Calc_Parentheses_K_Deletions_Make_Valid()
+void TreesAlgorithms::Print_Top_View()
 {
 
 }
@@ -66,6 +66,10 @@ Arrays:
 Trees:
 
 	Print Tree
+
+	Left_View_Tree
+	Pre_Order_Walk
+
 	Find_Min_Depth
 	Find_Node_WithSumX_2
 	Find_Maximum_PathSum_BetweenNodes
@@ -77,6 +81,8 @@ Trees:
 Trees:
 	Check_Is_Binary_Search_Tree_BST
 	Check_Is_Tree_Complete
+	Print_Top_View
+	Print_Right_View
 
 Strings:
 	Longest_Palindrome

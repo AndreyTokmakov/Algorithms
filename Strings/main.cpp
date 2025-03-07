@@ -59,11 +59,11 @@ int main([[maybe_unused]] int argc,
     // StringAlgorithms::Find_Common_Characters();
     // StringAlgorithms::Is_String_Contains_Another_String();
 	// StringAlgorithms::Simplify_Path();
-	// StringAlgorithms::Jewels_and_Stones();
+	StringAlgorithms::Jewels_and_Stones();
 	// StringAlgorithms::Split_String_All_SubString_Don_Have_Same_Chars();
 	// StringAlgorithms::Sort_String__Rearrange_String();
 	// StringAlgorithms::Sort_String__Rearrange_String_2();
-	StringAlgorithms::Calc_Parentheses_K_Deletions_Make_Valid();
+	// StringAlgorithms::Calc_Parentheses_K_Deletions_Make_Valid();
 
 	return EXIT_SUCCESS;
 }

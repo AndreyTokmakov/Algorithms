@@ -374,35 +374,6 @@ namespace BinTreeTests {
 
 
 
-    void _print_top_view(BinTree::Node* node,
-                         std::map<size_t, std::pair<size_t, size_t>>& map,
-                         size_t level, size_t distance) {
-        if (nullptr == node)
-            return;
-
-        // if current level is less than maximum level seen so far for the same horizontal
-        // distance or horizontal distance is seen for the first time, update the map
-        if (auto it = map.find(distance);  map.end() == it || level < it->second.second) {
-            //map.insert_or_assign({ distance, { node->data, level} });
-            map[distance] = { node->data, level };
-        }
-        _print_top_view(node->left, map, level + 1, distance - 1);
-        _print_top_view(node->right, map, level + 1, distance + 1);
-    }
-
-    void Print_Top_View() {
-        // BinTree::BinaryTree tree{ 33,22,85,10,30,54,125 };
-        BinTree::BinaryTree tree{ 33,22,85,30,54,125,28,27,26 };
-
-        std::map<size_t, std::pair<size_t, size_t>> map;
-
-        _print_top_view(tree.getRoot(), map, 0, 0);
-
-        // traverse the map and print top view
-        for (auto it : map)
-            std::cout << it.second.first << " ";
-    }
-
     //////////////////////////////////////////////////////////////////////////////////////////////////
 
     size_t GetDepth(const BinTree::Node* node) {
