@@ -10,8 +10,8 @@ https://js-notes.vercel.app/software_engineering/ds_and_algos
 =======================================================================================================================================
 
 /**============================================================================
-Name        : Print_Top_View.cpp
-Created on  : 06.03.2025
+Name        : Get_Tree_Min_Depth.cpp
+Created on  : 07.03.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
 Copyright   : Your copyright notice
@@ -29,7 +29,7 @@ namespace
 
 }
 
-void TreesAlgorithms::Print_Top_View()
+void TreesAlgorithms::Get_Tree_Min_Depth()
 {
 
 }
@@ -66,11 +66,8 @@ Arrays:
 Trees:
 
 	Print Tree
-
 	Left_View_Tree
 	Pre_Order_Walk
-
-	Find_Min_Depth
 	Find_Node_WithSumX_2
 	Find_Maximum_PathSum_BetweenNodes
 	
@@ -79,18 +76,9 @@ Trees:
 =======================================================================================================================================
 
 Trees:
-	Check_Is_Binary_Search_Tree_BST
-	Check_Is_Tree_Complete
-	Print_Top_View
-	Print_Right_View
+	Get_Tree_Min_Depth
 
 Strings:
-	Longest_Palindrome
-	Sort_String__Rearrange_String
-	Sort_String__Rearrange_String_2
-	Check_Valid_Parentheses_1_Bracket
-	Calc_Parentheses_K_Deletions_Make_Valid
-
 
 =======================================================================================================================================
 							Algoritms: Top Google Questions – Part 1

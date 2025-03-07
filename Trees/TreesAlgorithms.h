@@ -27,6 +27,7 @@ namespace TreesAlgorithms
     void Find_Maximum_Node_At_Given_Level();
     void Find_Level_With_Maximum_Sum();
     void Get_Tree_Depth();
+    void Get_Tree_Min_Depth();
     void Check_Is_Binary_Search_Tree_BST();
     void Check_Is_Trees_Identical();
     void Check_Is_Tree_Symmetric();

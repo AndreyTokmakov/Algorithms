@@ -380,18 +380,7 @@ namespace BinTreeTests {
         return nullptr == node ? 0 : 1 + std::max(GetDepth(node->left), GetDepth(node->right));
     }
 
-    size_t GetMinDepth(const BinTree::Node* node) {
-        if (nullptr == node)
-            return 0;
-        else if (node->left == nullptr && node->right == nullptr)
-            return 1;
-        else if (nullptr == node->right)
-            return GetMinDepth(node->left) + 1;
-        else if (nullptr == node->left)
-            return GetMinDepth(node->right) + 1;
-        else
-            return 1 + std::min(GetMinDepth(node->left), GetMinDepth(node->right));
-    }
+
 
     void Find_Max_Depth()
     {
@@ -407,7 +396,6 @@ namespace BinTreeTests {
     void Find_Min_Depth() {
         BinTree::BinaryTree tree{ 40,20,60,12,30,6,16,50,4,8,7,10 };
 
-        std::cout << "Min depth = " << GetMinDepth(tree.getRoot()) << std::endl;
         std::cout << "Max depth = " << GetDepth(tree.getRoot()) << std::endl;
     }
 

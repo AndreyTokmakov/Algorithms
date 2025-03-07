@@ -21,6 +21,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Count_Elements.cpp
 		algorithms/Find_Maximum_Node_At_Given_Level.cpp
 		algorithms/Get_Tree_Depth.cpp
+		algorithms/Get_Tree_Min_Depth.cpp
 		algorithms/Check_Is_Trees_Identical.cpp
 		algorithms/Check_Is_Tree_Symmetric.cpp
 		algorithms/Check_Is_Tree_Balanced.cpp
