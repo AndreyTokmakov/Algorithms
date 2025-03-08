@@ -1,6 +1,6 @@
 /**============================================================================
-Name        : Print_Right_View.cpp
-Created on  : 06.03.2025
+Name        : Print_Left_View.cpp
+Created on  : 08.03.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
 Copyright   : Your copyright notice
@@ -15,22 +15,22 @@ namespace
 {
     using namespace TreesAlgorithms;
 
-    void print_right_view_recursive(const BinTree::Node* node,
+    void print_left_view_recursive(const BinTree::Node* node,
                                     std::map<int, int>& map,
                                     const size_t level)
     {
         if (nullptr == node)
             return;
 
-        print_right_view_recursive(node->right, map, level + 1);
+        print_left_view_recursive(node->left, map, level + 1);
         map.emplace(level, node->data);
-        print_right_view_recursive(node->left, map, level + 1);
+        print_left_view_recursive(node->right, map, level + 1);
     }
 
-    void print_right_view_recursive(const BinTree::Node* node)
+    void print_left_view_recursive(const BinTree::Node* node)
     {
         std::map<int, int> map;
-        print_right_view_recursive(node, map, 0);
+        print_left_view_recursive(node, map, 0);
 
         for (auto it : map)
             std::cout << it.second << " ";
@@ -42,7 +42,7 @@ namespace
         int level { 0 };
     };
 
-    void print_right_view(const BinTree::Node* root)
+    void print_left_view(const BinTree::Node* root)
     {
         if (!root )
             return;
@@ -54,14 +54,14 @@ namespace
         {
             while (item.node) {
                 stack.push_back(item);
-                item = {item.node->right, item.level + 1};
+                item = {item.node->left, item.level + 1};
             }
 
             item = stack.back();
             stack.pop_back();
 
             map.emplace(item.level, item.node->data);
-            item = {item.node->left, item.level + 1};
+            item = {item.node->right, item.level + 1};
         }
 
         for (auto it : map)
@@ -69,17 +69,17 @@ namespace
     }
 }
 
-void TreesAlgorithms::Print_Right_View()
-{   //                 33                 |      33
-    //            22          85          |      85
-    //       10       30           125    |      125
-    //    6      23                       |      23
+void TreesAlgorithms::Print_Left_View()
+{   //     33   |                33
+    //     22   |            22          85
+    //     10   |       10       30           125
+    //     6    |    6      23
 
     const BinTree::Node* tree = BinTree::makeTree( { 33,  22,85,  10,30, 125, 6, 23 });
 
-    print_right_view_recursive(tree); // 33 85 125 23
+    print_left_view_recursive(tree);  /// --> 33 22 10 6
     std::cout << std::endl;
-    print_right_view(tree);            // 33 85 125 23
+    print_left_view(tree);             /// --> 33 22 10 6
 }
 
 

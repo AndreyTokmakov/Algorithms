@@ -66,7 +66,6 @@ Arrays:
 Trees:
 
 	Print Tree
-	Left_View_Tree
 	Pre_Order_Walk
 	Find_Node_WithSumX_2
 	Find_Maximum_PathSum_BetweenNodes
@@ -77,6 +76,8 @@ Trees:
 
 Trees:
 	Get_Tree_Min_Depth
+	Print_Left_View
+
 
 Strings:
 
@@ -469,3 +470,152 @@ Subsets:
 - Used for problems requiring combinations or permutations. 
 - Applies backtracking or BFS to generate all possible subsets. 
 - Useful for problems involving decision trees. 
+
+
+
+====================================================================================================================================================
+
+
+
+int solution(std::vector<int> &X, std::vector<int> &Y)
+{
+    std::unordered_map<double, int> fractionsCounter;
+    int maxFractionCount = 0;
+    for (int idx = 0, size = X.size(); idx < size; ++idx )
+    {
+        const double fraction = static_cast<double>(X[idx]) / static_cast<double> (Y[idx]);
+        ++fractionsCounter[fraction];
+        maxFractionCount = std::max(maxFractionCount, fractionsCounter[fraction]);
+    }
+
+    return maxFractionCount;
+}
+
+
+
+#if 0
+
+// https://www.geeksforgeeks.org/find-the-size-of-largest-subset-with-positive-bitwise-and/?ysclid=m80alz13i0783744028
+
+
+
+
+int solution(std::vector<int> values)
+{
+    std::array<int, 32> bitsCounter {0};
+    for (int& value: values)
+    {
+        for (int bit = 32 - 1; value > 0; --bit) {
+            bitsCounter[bit] += (value & 1);
+            value = value >> 1;
+        }
+    }
+    return *std::max_element(bitsCounter.cbegin(), bitsCounter.cend());
+}
+
+
+int solution(vector<int> &A)
+{
+    std::vector<int> values (A);
+    std::array<int, 32> bitsCounter {0};
+    for (int& value: values)
+    {
+        for (int bit = 32 - 1; value > 0; --bit) {
+            bitsCounter[bit] += (value & 1);
+            value = value >> 1;
+        }
+    }
+    return *std::max_element(bitsCounter.cbegin(), bitsCounter.cend());
+}
+
+#endif
+
+
+
+
+#if 0
+
+
+
+
+
+void split_to(const std::string &str,
+              std::vector<std::string> &parts)
+{
+    parts.clear();
+    size_t pos = 0, prev = 0;
+    while ((pos = str.find(" ", prev)) != std::string::npos) {
+        parts.emplace_back(str.data() + prev, pos - prev);
+        prev = pos + 1;
+    }
+    parts.emplace_back(str.data() + prev, str.length() - prev);
+}
+
+int solution(std::string& input)
+{
+    constexpr int valMax { 524288 };
+    std::vector<std::string> tokens;
+    split_to(input, tokens);
+
+    std::vector<int> stack;
+    stack.reserve(tokens.size());
+    for (const std::string& str: tokens)
+    {
+        if ("POP" == str)
+        {
+            if (stack.empty())
+                return -1;
+            stack.pop_back();
+        }
+        else if ("DUP" == str)
+        {
+            if (stack.empty())
+                return -1;
+            stack.push_back(stack.back());
+        }
+        else if ("+" == str)
+        {
+            if (stack.size() < 2)
+                return -1;
+            const int sum = stack[stack.size() - 1] + stack[stack.size() - 2];
+            stack[stack.size() - 2] = sum;
+            stack.pop_back();
+        }
+        else if ("-" == str)
+        {
+            if (stack.size() < 2)
+                return -1;
+            const int dif = stack[stack.size() - 1] - stack[stack.size() - 2];
+            stack[stack.size() - 2] = dif;
+            stack.pop_back();
+        }
+        else
+        {
+            const int v = atoi(str.data());
+            if (v > valMax || 0 > v) {
+                return -1;
+            }
+            stack.push_back(v);
+        }
+        std::cout << stack << std::endl;
+    }
+
+    if (stack.empty()) {
+        std::cerr << "Stack is empty" << std::endl;
+        return 0;
+    }
+    return stack.back();
+}*/
+
+{
+    // std::string input {"4 5 6 - 7 +" };
+    // std::string input {"13 DUP 4 POP 5 DUP + DUP + -" }; // 7
+    // std::string input {"3 DUP 5 - -" };
+    // std::string input {"5 6 + -" };
+    // std::string input {"1048575 DUP +" }; // -1
+    std::string input {"-1 -2" };
+    std::cout << solution(input) << std::endl;
+    //std::cout << atoi("-1") << std::endl;
+}
+
+#endif

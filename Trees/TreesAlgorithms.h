@@ -41,6 +41,7 @@ namespace TreesAlgorithms
     void Print_Tree_Pretty();
     void Print_Top_View();
     void Print_Right_View();
+    void Print_Left_View();
     void Find_Search_Element_in_BST();
     void Find_Deepest_Node();
     void Find_Element_Parent();

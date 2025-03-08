@@ -39,7 +39,8 @@ int main([[maybe_unused]] int argc,
 	// TreesAlgorithms::Find_Path_Sum_Between_Two_Nodes();
 	// TreesAlgorithms::Print_Tree_Pretty();
 	// TreesAlgorithms::Print_Top_View();
-	TreesAlgorithms::Print_Right_View();
+	// TreesAlgorithms::Print_Right_View();
+	TreesAlgorithms::Print_Left_View();
 	// TreesAlgorithms::Find_Search_Element_in_BST();
 	// TreesAlgorithms::Find_Deepest_Node();
 	// TreesAlgorithms::Find_Element_Parent();

@@ -39,6 +39,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Check_Is_Tree_Complete.cpp
 		algorithms/Print_Top_View.cpp
 		algorithms/Print_Right_View.cpp
+		algorithms/Print_Left_View.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")
