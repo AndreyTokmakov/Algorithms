@@ -80,6 +80,7 @@ namespace ArraysAlgorithms
     void Calculate_Max_Hotel_Visitors();
     void Smallest_Subarray_With_Sum_Greater_Than_K();
     void Longest_Subarray_With_Less_Than_K();
+    void Longest_Subset_With_Positive_Bitwise_AND();
     void Sum_of_Sub_Array_Between_Indexes_L_and_R();
     void Squares_of_a_Sorted_Array();
     void Longest_Subarray_With_Sum_Less_Than_K();

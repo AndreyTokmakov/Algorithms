@@ -10,8 +10,8 @@ https://js-notes.vercel.app/software_engineering/ds_and_algos
 =======================================================================================================================================
 
 /**============================================================================
-Name        : Get_Tree_Min_Depth.cpp
-Created on  : 07.03.2025
+Name        : Longest_Subset_With_Positive_Bitwise_AND.cpp
+Created on  : 08.03.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
 Copyright   : Your copyright notice
@@ -19,20 +19,21 @@ Description :
 ============================================================================**/
 
 #include "../common.h"
-#include "../TreesAlgorithms.h"
+#include "../ArraysAlgorithms.h"
 
 
 namespace
 {
-    using namespace TreesAlgorithms;
+    using namespace ArraysAlgorithms;
 
 
 }
 
-void TreesAlgorithms::Get_Tree_Min_Depth()
+void ArraysAlgorithms::Longest_Subset_With_Positive_Bitwise_AND()
 {
 
 }
+
 
 =======================================================================================================================================
 							Tests
@@ -80,6 +81,9 @@ Trees:
 
 
 Strings:
+
+Array:
+	Longest_Subset_With_Positive_Bitwise_AND
 
 =======================================================================================================================================
 							Algoritms: Top Google Questions – Part 1
@@ -493,47 +497,9 @@ int solution(std::vector<int> &X, std::vector<int> &Y)
 
 
 
-#if 0
-
-// https://www.geeksforgeeks.org/find-the-size-of-largest-subset-with-positive-bitwise-and/?ysclid=m80alz13i0783744028
 
 
 
-
-int solution(std::vector<int> values)
-{
-    std::array<int, 32> bitsCounter {0};
-    for (int& value: values)
-    {
-        for (int bit = 32 - 1; value > 0; --bit) {
-            bitsCounter[bit] += (value & 1);
-            value = value >> 1;
-        }
-    }
-    return *std::max_element(bitsCounter.cbegin(), bitsCounter.cend());
-}
-
-
-int solution(vector<int> &A)
-{
-    std::vector<int> values (A);
-    std::array<int, 32> bitsCounter {0};
-    for (int& value: values)
-    {
-        for (int bit = 32 - 1; value > 0; --bit) {
-            bitsCounter[bit] += (value & 1);
-            value = value >> 1;
-        }
-    }
-    return *std::max_element(bitsCounter.cbegin(), bitsCounter.cend());
-}
-
-#endif
-
-
-
-
-#if 0
 
 
 

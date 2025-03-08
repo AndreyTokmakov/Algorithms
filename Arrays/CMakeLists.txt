@@ -64,6 +64,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Find_Smallest_Without_Compare.cpp
 		algorithms/Squares_of_a_Sorted_Array.cpp
 		algorithms/Longest_Subarray_With_Sum_Less_Than_K.cpp
+		algorithms/Longest_Subset_With_Positive_Bitwise_AND.cpp
 		algorithms/Container_With_Most_Water.cpp
 		algorithms/Find_Longest_Increasing_Subsequence.cpp
 		algorithms/Find_Rank.cpp
