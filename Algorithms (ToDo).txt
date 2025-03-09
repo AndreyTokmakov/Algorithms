@@ -56,17 +56,17 @@ Description :
 ============================================================================**/
 
 #include "../common.h"
-#include "../ArraysAlgorithms.h"
+#include "../StringAlgorithms.h"
 
 
 namespace
 {
-    using namespace ArraysAlgorithms;
+    using namespace StringAlgorithms;
 
 
 }
 
-void ArraysAlgorithms::Kadane_Algorithm()
+void StringAlgorithms::Kadane_Algorithm()
 {
 
 }
@@ -131,10 +131,8 @@ Find_DifferentPairs_SumK
 	https://leetcode.com/problems/find-all-anagrams-in-a-string/
 	https://leetcode.com/problems/permutation-in-string/
 	https://leetcode.com/problems/single-number/ - решить за O(1) по памяти
-    https://leetcode.com/problems/two-sum/ 
     https://leetcode.com/problems/4sum/ 
     https://leetcode.com/problems/group-anagrams/ 
-    https://leetcode.com/problems/valid-anagram/ 
 
 • sort 
 
@@ -156,7 +154,6 @@ Find_DifferentPairs_SumK
 
 • greedy problems 
 
-	https://leetcode.com/problems/best-time-to-buy-and-sell-stock/ 
 	https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/ 
 	https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/
 
@@ -177,21 +174,22 @@ Find_DifferentPairs_SumK
     https://leetcode.com/problems/number-of-islands/
     https://leetcode.com/problems/remove-invalid-parentheses/
 
-# [✔️ ☑️ ✅ ][Coding interview study plan] https://www.techinterviewhandbook.org/coding-interview-study-plan/
+# [✔️ ☑️ ✅ ❌ ][Coding interview study plan] https://www.techinterviewhandbook.org/coding-interview-study-plan/
 
 
 ✅ Two Sum
-☑️ Valid Parentheses	                                    <------- CHECK
+✅ Valid Parentheses
+✅ Best Time to Buy and Sell Stock
+✅ Valid Palindrome
+✅ Valid Anagram
+✅ Balanced Binary Tree
+✅ Linked List Cycle
  - Merge Two Sorted List
- - Best Time to Buy and Sell Stock                          <------- CHECK
- - Valid Palindrome                              		    <------- CHECK
- - Invert Binary Tree
- - Valid Anagram                                            <------- CHECK
  - Binary Search
  - Flood Fill
  - Lowest Common Ancestor of a Binary Search Tree
- - Balanced Binary Tree                                     <------- CHECK
- - Linked List Cycle                                        <------- CHECK
+ - Invert Binary Tree
+
 
  - Implement Queue using Stacks                             <------- CHECK
  - First Bad Version
@@ -272,7 +270,10 @@ Trees:
   - Print_Left_View
 
 Strings:
-  - 
+  - Is_Palindrome_Ignore_Invalid_Chars
+
+Two Pointers
+  - Is_Palindrome_Ignore_Invalid_Chars
 
 Array:
   - Longest_Subset_With_Positive_Bitwise_AND

@@ -14,6 +14,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Find_Longest_Substring_With_K_Distinct_Characters.cpp
 		algorithms/Find_First_K_Chars_Encountered_Once.cpp
 		algorithms/Is_Palindrome.cpp
+		algorithms/Is_Palindrome_Ignore_Invalid_Chars.cpp
 		algorithms/Longest_Palindrome.cpp
 		algorithms/Remove_Chars_Of_One_String_FromAnother.cpp
 		algorithms/Top_K_Frequent_Words.cpp

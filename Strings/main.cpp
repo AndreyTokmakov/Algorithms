@@ -20,6 +20,7 @@ int main([[maybe_unused]] int argc,
     // StringAlgorithms::Find_Longest_Substring_With_K_Distinct_Characters();
     // StringAlgorithms::Find_First_K_Chars_Encountered_Once();
     // StringAlgorithms::Is_Palindrome();
+    StringAlgorithms::Is_Palindrome_Ignore_Invalid_Chars();
     // StringAlgorithms::Longest_Palindrome();
     // StringAlgorithms::Remove_Chars_Of_One_String_FromAnother();
     // StringAlgorithms::Top_K_Frequent_Words();
@@ -59,7 +60,7 @@ int main([[maybe_unused]] int argc,
     // StringAlgorithms::Find_Common_Characters();
     // StringAlgorithms::Is_String_Contains_Another_String();
 	// StringAlgorithms::Simplify_Path();
-	StringAlgorithms::Jewels_and_Stones();
+	// StringAlgorithms::Jewels_and_Stones();
 	// StringAlgorithms::Split_String_All_SubString_Don_Have_Same_Chars();
 	// StringAlgorithms::Sort_String__Rearrange_String();
 	// StringAlgorithms::Sort_String__Rearrange_String_2();
