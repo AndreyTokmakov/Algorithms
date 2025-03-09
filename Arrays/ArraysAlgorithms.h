@@ -41,6 +41,7 @@ namespace ArraysAlgorithms
     void Find_Index_In_Array_to_make_Right_Equal_Left();
     void Find_Smallest_Without_Compare();
     void Find_Multiplier_Pair();
+    void Find_Pair_Sum_Equal_K();
     void Find_Peak_Element();
     void Find_Rank();
     void Find_Missing_Number();
@@ -69,6 +70,7 @@ namespace ArraysAlgorithms
     void Can_Jump();
     void Divide_Without_Division_Operator();
     void Maximum_Sum_SubArray_Algorithms_Kadane();
+    void Kadane_Algorithm();
     void Sort_Array_By_Parity();
     void Contains_Nearby_Duplicates();
     void Longest_Consecutive_Sequence();

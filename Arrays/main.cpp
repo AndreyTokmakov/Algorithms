@@ -43,6 +43,7 @@ int main([[maybe_unused]] int argc,
 	// ArraysAlgorithms::Find_Rank();
 	// ArraysAlgorithms::Find_Peak_Element();
 	// ArraysAlgorithms::Find_Multiplier_Pair();
+	// ArraysAlgorithms::Find_Pair_Sum_Equal_K();
 	// ArraysAlgorithms::Find_Missing_Number();
 	// ArraysAlgorithms::Find_Missing_Number_2();
 	// ArraysAlgorithms::Find_Missing_Number_Sorted_Array();
@@ -68,6 +69,7 @@ int main([[maybe_unused]] int argc,
     // ArraysAlgorithms::Can_Jump();
     // ArraysAlgorithms::Divide_Without_Division_Operator();
     // ArraysAlgorithms::Maximum_Sum_SubArray_Algorithms_Kadane();
+    ArraysAlgorithms::Kadane_Algorithm();
     // ArraysAlgorithms::Sort_Array_By_Parity();
     // ArraysAlgorithms::Contains_Nearby_Duplicates();
     // ArraysAlgorithms::Longest_Consecutive_Sequence();
@@ -79,7 +81,7 @@ int main([[maybe_unused]] int argc,
     // ArraysAlgorithms::Calculate_Max_Hotel_Visitors();
     // ArraysAlgorithms::Smallest_Subarray_With_Sum_Greater_Than_K();
     // ArraysAlgorithms::Longest_Subarray_With_Sum_Less_Than_K();
-    ArraysAlgorithms::Longest_Subset_With_Positive_Bitwise_AND();
+    // ArraysAlgorithms::Longest_Subset_With_Positive_Bitwise_AND();
 	// ArraysAlgorithms::Sum_of_Sub_Array_Between_Indexes_L_and_R();
     // ArraysAlgorithms::Squares_of_a_Sorted_Array();
     // ArraysAlgorithms::Unique_Permutations();

@@ -512,30 +512,6 @@ namespace Numeric
         std::cout << "NO" << std::endl;
     }
 
-    //---------------------------------------------------------------------------//
-
-    void Kadane()
-    {
-        {
-            // Fill vector with maximum sums:
-            std::vector<int> values = {1, -3, 2, 1, -1};
-            std::vector<int> max_sums(values);
-            for (size_t index = 1; index < max_sums.size(); index++)
-                max_sums[index] = std::max(max_sums[index - 1] + values[index], values[index]);
-            std::cout << max_sums << std::endl;
-        }
-
-        {
-            const std::vector<int> numbers{1, -3, 2, 1, -1, 2};
-            int max_before = numbers.front(), max = max_before;
-            for (size_t index = 1; index < numbers.size(); index++) {
-                max_before = std::max(max_before + numbers[index], numbers[index]);
-                max = std::max(max, max_before);
-            }
-            std::cout << "max = " << max << std::endl;
-        }
-    }
-
 
     //---------------------------------------------------------------------------//
     void printArray(const std::vector<int> &vect, size_t start, size_t end) {
@@ -1818,7 +1794,6 @@ void ArraysAlgorithms::Other()
     // Numeric::Largest_Triple_Products();
     // Numeric::BillionUsers();
     // Numeric::BalancedSplit();
-    // Numeric::Kadane();
     // Numeric::GetAllSubsequentSubArrays();
     // Numeric::GetAllSubArrays_NonSequenced();
     // Numeric::CoinsChangeProblem();

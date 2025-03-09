@@ -47,6 +47,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Can_Jump.cpp
 		algorithms/Divide_Without_Division_Operator.cpp
 		algorithms/Maximum_Sum_SubArray_Algorithms_Kadane.cpp
+		algorithms/Kadane_Algorithm.cpp
 		algorithms/Sort_Array_By_Parity.cpp
 		algorithms/Contains_Nearby_Duplicates.cpp
 		algorithms/Longest_Consecutive_Sequence.cpp
@@ -70,6 +71,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Find_Rank.cpp
 		algorithms/Find_First_Repeating_Element.cpp
 		algorithms/Find_Multiplier_Pair.cpp
+		algorithms/Find_Pair_Sum_Equal_K.cpp
 		algorithms/Find_Peak_Element.cpp
 		algorithms/Is_Permutation.cpp
 		algorithms/Find_Missing_Number.cpp
