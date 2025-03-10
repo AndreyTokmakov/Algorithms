@@ -39,6 +39,7 @@ namespace StringAlgorithms
     void Longest_Substring_Without_Repeating_Characters();
     void Longest_Substring_Without_Repeating_Characters_2();
     void Longest_Substring_With_Maximum_K_Unique_Characters();
+    void Longest_Common_Prefix();
     void To_Lower_Case();
     void Robot_Return_To_Origin();
     void String_To_Integer();

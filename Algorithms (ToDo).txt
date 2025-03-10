@@ -47,8 +47,8 @@
 =======================================================================================================================================
 
 /**============================================================================
-Name        : Kadane_Algorithm.cpp
-Created on  : 09.03.2025
+Name        : Longest_Common_Prefix.cpp
+Created on  : 10.03.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
 Copyright   : Your copyright notice
@@ -66,7 +66,7 @@ namespace
 
 }
 
-void StringAlgorithms::Kadane_Algorithm()
+void StringAlgorithms::Longest_Common_Prefix()
 {
 
 }
@@ -91,7 +91,6 @@ std::cout << "OK: All tests passed\n";
 =======================================================================================================================================
 							PLAN
 =======================================================================================================================================
-
 
 CountDistinctPairs_WithDifference_K ()
 Numeric::MaxPairSumInArray();
@@ -184,34 +183,34 @@ Find_DifferentPairs_SumK
 ✅ Valid Anagram
 ✅ Balanced Binary Tree
 ✅ Linked List Cycle
- - Merge Two Sorted List
- - Binary Search
+✅ Merge Two Sorted List
+ - Binary Search                                            <------- CHECK
  - Flood Fill
- - Lowest Common Ancestor of a Binary Search Tree
- - Invert Binary Tree
+ - Lowest Common Ancestor of a Binary Search Tree           <------- CHECK
+ - Invert Binary Tree                                       <------- CHECK
 
 
- - Implement Queue using Stacks                             <------- CHECK
+✅ Implement Queue using Stacks
  - First Bad Version
  - Ransom Note
  - Climbing Stairs
- - Longest Palindrome                                       <------- CHECK
- - Reverse Linked List                                      <------- CHECK
- - Majority Element                                         <------- CHECK
+✅ Longest Palindrome
+✅ Reverse Linked List
+✅ Majority Element
  - Add Binary                                               <------- CHECK
  - Diameter of Binary Tree
  - Middle of the Linked List                                <------- CHECK
  - Maximum Depth of Binary Tree                             <------- CHECK
- - Contains Duplicate                             		    <------- CHECK
+ - Contains Duplicate                             		      <------- CHECK
 
- - Min Stack                             					<------- CHECK
+ - Min Stack                             					          <------- CHECK
 +  Maximum Subarray
  - Insert Interval
  - 01 Matrix
  - K Closest Points to Origin
  - Longest Substring Without Repeating Characters           <------- CHECK
- - 3Sum
- - Binary Tree Level Order Traversal
+ - 3Sum    																						      <------- CHECK
+ - Binary Tree Level Order Traversal                        <------- CHECK || Какой еще способ есть???
  - Clone Graph
  - Evaluate Reverse Polish Notation
 
@@ -271,6 +270,7 @@ Trees:
 
 Strings:
   - Is_Palindrome_Ignore_Invalid_Chars
+  -	Longest_Common_Prefix
 
 Two Pointers
   - Is_Palindrome_Ignore_Invalid_Chars
@@ -314,10 +314,9 @@ Array:
 [+] 1047. Remove All Adjacent Duplicates In String
 [+] 198. House Robber
 [+]  69. Sqrt(x)
-
+[+] 14. Longest Common Prefix
 
 6. ZigZag Conversion
-14. Longest Common Prefix
 24. Swap Nodes in Pairs
 33. Search in Rotated Sorted Array
 35. Search Insert Position

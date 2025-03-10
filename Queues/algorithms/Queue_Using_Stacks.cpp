@@ -18,37 +18,37 @@ namespace
     template<typename T>
     class Queue
     {
-        std::stack<T> stack1;
-        std::stack<T> stack2;
+        std::stack<T> mainStack;
+        std::stack<T> stackReversed;
 
     public:
         Queue() = default;
 
         void put(T v) {
-            stack1.push(v);
+            mainStack.push(v);
         }
 
         T get()
         {
-            if (stack2.empty() && stack1.empty())
+            if (stackReversed.empty() && mainStack.empty())
                 throw std::runtime_error("We are empty;");
 
-            if (stack2.empty()) {
-                while (false == stack1.empty()) {
-                    stack2.push(stack1.top());
-                    stack1.pop();
+            if (stackReversed.empty()) {
+                while (false == mainStack.empty()) {
+                    stackReversed.push(mainStack.top());
+                    mainStack.pop();
                 }
             }
 
-            T result = stack2.top();
-            stack2.pop();
+            T result = stackReversed.top();
+            stackReversed.pop();
             return result;
         }
 
         [[nodiscard]]
         bool empty() const noexcept
         {
-            return stack1.empty() && stack2.empty();
+            return mainStack.empty() && stackReversed.empty();
         }
     };
 
