@@ -39,7 +39,7 @@ int main([[maybe_unused]] int argc,
     // StringAlgorithms::Longest_Substring_Without_Repeating_Characters();
     // StringAlgorithms::Longest_Substring_Without_Repeating_Characters_2();
     // StringAlgorithms::Longest_Substring_With_Maximum_K_Unique_Characters();
-    StringAlgorithms::Longest_Common_Prefix();
+    // StringAlgorithms::Longest_Common_Prefix();
     // StringAlgorithms::To_Lower_Case();
     // StringAlgorithms::Robot_Return_To_Origin();
     // StringAlgorithms::String_To_Integer();
@@ -66,6 +66,7 @@ int main([[maybe_unused]] int argc,
 	// StringAlgorithms::Sort_String__Rearrange_String();
 	// StringAlgorithms::Sort_String__Rearrange_String_2();
 	// StringAlgorithms::Calc_Parentheses_K_Deletions_Make_Valid();
+	StringAlgorithms::Sum_Strings_As_Binary_Masks();
 
 	return EXIT_SUCCESS;
 }

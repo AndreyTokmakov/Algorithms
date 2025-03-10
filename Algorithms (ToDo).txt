@@ -47,7 +47,7 @@
 =======================================================================================================================================
 
 /**============================================================================
-Name        : Longest_Common_Prefix.cpp
+Name        : Sum_Strings_As_Binary_Masks.cpp
 Created on  : 10.03.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
@@ -66,7 +66,7 @@ namespace
 
 }
 
-void StringAlgorithms::Longest_Common_Prefix()
+void StringAlgorithms::Sum_Strings_As_Binary_Masks()
 {
 
 }
@@ -184,7 +184,7 @@ Find_DifferentPairs_SumK
 ✅ Balanced Binary Tree
 ✅ Linked List Cycle
 ✅ Merge Two Sorted List
- - Binary Search                                            <------- CHECK
+✅ Binary Search 
  - Flood Fill
  - Lowest Common Ancestor of a Binary Search Tree           <------- CHECK
  - Invert Binary Tree                                       <------- CHECK
@@ -197,10 +197,10 @@ Find_DifferentPairs_SumK
 ✅ Longest Palindrome
 ✅ Reverse Linked List
 ✅ Majority Element
- - Add Binary                                               <------- CHECK
+❌ Add Binary                                               <------- CHECK
  - Diameter of Binary Tree
  - Middle of the Linked List                                <------- CHECK
- - Maximum Depth of Binary Tree                             <------- CHECK
+✅ Maximum Depth of Binary Tree
  - Contains Duplicate                             		      <------- CHECK
 
  - Min Stack                             					          <------- CHECK

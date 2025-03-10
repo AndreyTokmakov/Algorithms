@@ -66,6 +66,7 @@ namespace StringAlgorithms
     void Sort_String__Rearrange_String();
     void Sort_String__Rearrange_String_2();
     void Calc_Parentheses_K_Deletions_Make_Valid();
+    void Sum_Strings_As_Binary_Masks();
 }
 
 #endif //STRING_ALGORITHMS_H

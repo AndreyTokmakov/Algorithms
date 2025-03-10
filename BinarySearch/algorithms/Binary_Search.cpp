@@ -36,17 +36,15 @@ namespace
     int binary_search(const std::vector<T>& values,
                       const T target)
     {
-        size_t left = 0, right = values.size() - 1, idxMid = 0;
-        while (right > (left + 1))
+        for (int left = 0, right = values.size() - 1, idxMid = 0; right >= left; )
         {
-            // idxMid = (left + right) / 2;
-            idxMid = (left + right) >> 1;
-            if (target == values[idxMid])
-                return values[idxMid];
+            idxMid = (left + right) >> 1 ;
             if (values[idxMid] > target)
-                right = idxMid;
+                right = idxMid - 1; /** we have checked 'idxMid' above (and its greater than 'target') **/
+            else if (values[idxMid] < target)
+                left = idxMid + 1;
             else
-                left = idxMid;
+                return idxMid;
         }
         return -1;
     }
@@ -56,20 +54,21 @@ void BinarySearchAlgorithms::Binary_Search()
 {
     using TestData = std::vector<std::pair<std::pair<std::vector<int>, int>, int>>;
     for (const auto& [input_data, expected]:  TestData{
-            {{{-1,0,3,5,9,12}, 9} , 9 },
+            {{{-1,0,3,5,9,12}, 9} , 4 },
             {{{-1,0,3,5,9,12}, 2} , -1 },
+            {{{2,5}, 2} , 0 },
+            {{{2}, 2} , 0 },
     })
     {
         {
-            const auto actual = binary_search(input_data.first, input_data.second);
-            if (expected != actual) {
+            if (const auto actual = binary_search(input_data.first, input_data.second); expected != actual) {
                 std::cerr << std::boolalpha << expected << " != " << actual << std::endl;
             }
         }
         /*
         {
             const auto actual = binary_search_recursive(input_data.first, 0, input_data.first.size() - 1,
-                                                        input_data.second);
+                z                                       input_data.second);
             if (expected != actual) {
                 std::cerr << std::boolalpha << expected << " != " << actual << std::endl;
             }

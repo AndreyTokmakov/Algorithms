@@ -60,6 +60,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Sort_String__Rearrange_String_2.cpp
 		algorithms/Calc_Parentheses_K_Deletions_Make_Valid.cpp
 		algorithms/Longest_Common_Prefix.cpp
+		algorithms/Sum_Strings_As_Binary_Masks.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")

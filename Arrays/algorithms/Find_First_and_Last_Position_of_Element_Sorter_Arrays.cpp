@@ -19,14 +19,15 @@ namespace
     int binary_search(const std::vector<T>& values,
                       const T target)
     {
-        for (size_t left = 0, right = values.size() - 1, idxMid = 0; right > (left + 1); idxMid = (left + right) >> 1 )
+        for (int left = 0, right = values.size() - 1, idxMid = 0; right >= left; )
         {
-            if (target == values[idxMid])
-                return idxMid;
+            idxMid = (left + right) >> 1 ;
             if (values[idxMid] > target)
-                right = idxMid;
+                right = idxMid - 1; /** we have checked 'idxMid' above (and its greater than 'target') **/
+            else if (values[idxMid] < target)
+                left = idxMid + 1;
             else
-                left = idxMid;
+                return idxMid;
         }
         return -1;
     }
