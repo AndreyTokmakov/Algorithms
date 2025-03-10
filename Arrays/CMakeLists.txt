@@ -83,6 +83,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Find_Missing_K_Positive_Number_Sorted_Array.cpp
 		algorithms/Find_Missing_K_Number_Unsorted.cpp
 		algorithms/House_Robber.cpp
+		algorithms/First_Bad_Version.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")

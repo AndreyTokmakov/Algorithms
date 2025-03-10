@@ -47,7 +47,7 @@
 =======================================================================================================================================
 
 /**============================================================================
-Name        : Sum_Strings_As_Binary_Masks.cpp
+Name        : First_Bad_Version.cpp
 Created on  : 10.03.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
@@ -56,17 +56,17 @@ Description :
 ============================================================================**/
 
 #include "../common.h"
-#include "../StringAlgorithms.h"
+#include "../ArraysAlgorithms.h"
 
 
 namespace
 {
-    using namespace StringAlgorithms;
+    using namespace ArraysAlgorithms;
 
 
 }
 
-void StringAlgorithms::Sum_Strings_As_Binary_Masks()
+void ArraysAlgorithms::First_Bad_Version()
 {
 
 }
@@ -191,7 +191,7 @@ Find_DifferentPairs_SumK
 
 
 ✅ Implement Queue using Stacks
- - First Bad Version
+✅ First Bad Version
  - Ransom Note
  - Climbing Stairs
 ✅ Longest Palindrome
@@ -279,6 +279,7 @@ Array:
   - Longest_Subset_With_Positive_Bitwise_AND
   - Find_Pair_Sum_Equal_K
   - Kadane_Algorithm
+  -	First_Bad_Version
 
 =======================================================================================================================================
 							Algoritms: Top Google Questions – Part 1

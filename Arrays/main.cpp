@@ -69,7 +69,7 @@ int main([[maybe_unused]] int argc,
     // ArraysAlgorithms::Can_Jump();
     // ArraysAlgorithms::Divide_Without_Division_Operator();
     // ArraysAlgorithms::Maximum_Sum_SubArray_Algorithms_Kadane();
-    ArraysAlgorithms::Kadane_Algorithm();
+    // ArraysAlgorithms::Kadane_Algorithm();
     // ArraysAlgorithms::Sort_Array_By_Parity();
     // ArraysAlgorithms::Contains_Nearby_Duplicates();
     // ArraysAlgorithms::Longest_Consecutive_Sequence();
@@ -86,6 +86,7 @@ int main([[maybe_unused]] int argc,
     // ArraysAlgorithms::Squares_of_a_Sorted_Array();
     // ArraysAlgorithms::Unique_Permutations();
     // ArraysAlgorithms::House_Robber();
+    ArraysAlgorithms::First_Bad_Version();
 
 
 

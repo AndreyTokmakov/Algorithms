@@ -88,6 +88,7 @@ namespace ArraysAlgorithms
     void Longest_Subarray_With_Sum_Less_Than_K();
     void Unique_Permutations();
     void House_Robber();
+    void First_Bad_Version();
 }
 
 #endif //ARRAYS_ALGORITHMS_H
