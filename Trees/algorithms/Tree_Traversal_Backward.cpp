@@ -1,5 +1,5 @@
 /**============================================================================
-Name        : Backwards_Tree_Traversal.cpp
+Name        : Tree_Traversal_Backward.cpp
 Created on  : 26.02.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
@@ -48,7 +48,7 @@ namespace
     }
 }
 
-void TreesAlgorithms::Backwards_Tree_Traversal()
+void TreesAlgorithms::Tree_Traversal_Backward()
 {
     Node *tree = BinTree::makeTree({ 33, 22, 85, 10 ,30, 54, 125 });
 

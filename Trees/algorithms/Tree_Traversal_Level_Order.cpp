@@ -1,5 +1,5 @@
 /**============================================================================
-Name        : Level_Order_Traversal.cpp
+Name        : Tree_Traversal_Level_Order.cpp
 Created on  : 26.02.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
@@ -139,7 +139,7 @@ namespace TreesAlgorithms::NonRecursive
     }
 }
 
-void TreesAlgorithms::Level_Order_Traversal()
+void TreesAlgorithms::Tree_Traversal_Level_Order()
 {
     Node *tree = BinTree::makeTree({40,22,85 ,10,30,54,125 ,5,12 ,25,32 ,45,60,
                                     120,130,4,7,11,15,24,28,31,35,42,50,55,65,100,122,127 });

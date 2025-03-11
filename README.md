@@ -199,9 +199,9 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [Check_Is_Tree_Symmetric](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Check_Is_Tree_Symmetric.cpp#L57)<br/>
 -  [Check_Is_Trees_Identical](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Check_Is_Trees_Identical.cpp#L23)<br/>
 -  [Check_Is_Tree_Balanced](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Check_Is_Tree_Balanced.cpp#L49)<br/>
--  [Level_Order_Traversal](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Level_Order_Traversal.cpp#L30)<br/>
--  [Inorder_Tree_Traversal](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Inorder_Tree_Traversal.cpp#L31)<br/>
--  [Backwards_Tree_Traversal](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Backwards_Tree_Traversal.cpp#L28)<br/>
+-  [Tree_Traversal_Level_Order](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Tree_Traversal_Level_Order.cpp#L30)<br/>
+-  [Tree_Traversal_Inorder](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Tree_Traversal_Inorder.cpp#L31)<br/>
+-  [Tree_Traversal_Backward](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Tree_Traversal_Backward.cpp#L28)<br/>
 -  [Find_Maximum_Level_Sum](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Find_Maximum_Level_Sum.cpp#L21)<br/>
 -  [Find_Path_Sum_Between_Two_Nodes](Find_Path_Sum_Between_Two_Nodes)<br/>
 -  [Find_Maximum_Node_At_Given_Level](Find_Maximum_Node_At_Given_Level)<br/>

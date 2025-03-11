@@ -26,9 +26,11 @@ add_executable(${PROJECT_NAME}
 		algorithms/Check_Is_Tree_Symmetric.cpp
 		algorithms/Check_Is_Tree_Balanced.cpp
 		algorithms/Check_Is_Binary_Search_Tree_BST.cpp
-		algorithms/Level_Order_Traversal.cpp
-		algorithms/Inorder_Tree_Traversal.cpp
-		algorithms/Backwards_Tree_Traversal.cpp
+		algorithms/Tree_Traversal_Level_Order.cpp
+		algorithms/Tree_Traversal_Inorder.cpp
+		algorithms/Tree_Traversal_Backward.cpp
+		algorithms/Tree_Traversal_PreOrder.cpp
+		algorithms/Tree_Traversal_PostOrder.cpp
 		algorithms/Find_Maximum_Level_Sum.cpp
 		algorithms/Find_Path_Sum_Between_Two_Nodes.cpp
 		algorithms/Print_Tree_Pretty.cpp

@@ -682,21 +682,6 @@ namespace BinTreeTests {
         return true == _is_bst(node) ? _size(node) : std::max(_max_Bst(node->left), _max_Bst(node->right));
     }
 
-    int _inorder_walk_test(const BinTree::Node* node) {
-        static int prev = std::numeric_limits<int>::min(), max = 0, curr = 0;
-        if (nullptr == node)
-            return 0;
-        _inorder_walk_test(node->left);
-
-        curr = prev < node->data ? curr + 1 : 1;
-        max = std::max(max, curr);
-        // std::cout << node->data << " " << prev << "  " << curr << std::endl;
-
-        prev = node->data;
-
-        _inorder_walk_test(node->right);
-        return max;
-    }
 
     void Find_Largest_BST_Sub() {
         /*
@@ -720,9 +705,6 @@ namespace BinTreeTests {
 
         std::cout << "Size = " << _size(root) << std::endl;
         std::cout << "Max BST = " << _max_Bst(root) << std::endl;
-
-        std::cout << std::endl;
-        std::cout << "Max BST ( inorder walk test) = " << _inorder_walk_test(root) << std::endl;
     }
 
     //////////////////////////////////////////////////////////////////////////////////////////////////

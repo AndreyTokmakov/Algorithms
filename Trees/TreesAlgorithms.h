@@ -33,9 +33,11 @@ namespace TreesAlgorithms
     void Check_Is_Tree_Symmetric();
     void Check_Is_Tree_Balanced();
     void Check_Is_Tree_Complete();
-    void Level_Order_Traversal();
-    void Inorder_Tree_Traversal();
-    void Backwards_Tree_Traversal();
+    void Tree_Traversal_Level_Order();
+    void Tree_Traversal_Inorder();
+    void Tree_Traversal_Backward();
+    void Tree_Traversal_PreOrder();
+    void Tree_Traversal_PostOrder();
     void Find_Maximum_Level_Sum();
     void Find_Path_Sum_Between_Two_Nodes();
     void Print_Tree_Pretty();

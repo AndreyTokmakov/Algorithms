@@ -105,6 +105,10 @@ Find_DifferentPairs_SumK
   - 'Daily Temperatures': https://leetcode.com/problems/daily-temperatures/description/
   - 'Sort Colors' : https://leetcode.com/problems/sort-colors/description/
 
+
+
+
+
 	permutations
 	88. Merge Sorted Array
     Numeric::Find_Repeating_And_Missing()
@@ -197,14 +201,14 @@ Find_DifferentPairs_SumK
 ✅ Longest Palindrome
 ✅ Reverse Linked List
 ✅ Majority Element
-❌ Add Binary                                               <------- CHECK
+❌ Add Binary
  - Diameter of Binary Tree
  - Middle of the Linked List                                <------- CHECK
 ✅ Maximum Depth of Binary Tree
  - Contains Duplicate                             		      <------- CHECK
 
  - Min Stack                             					          <------- CHECK
-+  Maximum Subarray
+✅ Maximum Subarray
  - Insert Interval
  - 01 Matrix
  - K Closest Points to Origin
@@ -264,9 +268,13 @@ Find_DifferentPairs_SumK
 							Update README  |  -  [__NAME__](__LINK__)<br/>
 =======================================================================================================================================
 
+  - Tree_Traversal_Backward  (Ranamed) + Inorder + Level
+
 Trees:
-  - Get_Tree_Min_Depth
-  - Print_Left_View
+-  [Get_Tree_Min_Depth](__LINK__)<br/>
+-  [Print_Left_View](__LINK__)<br/>
+-  [Tree_Traversal_PreOrder](__LINK__)<br/>
+-  [Tree_Traversal_PostOrder](__LINK__)<br/>
 
 Strings:
   - Is_Palindrome_Ignore_Invalid_Chars
@@ -350,8 +358,6 @@ Array:
 119. Pascal's Triangle II
 129. Sum Root to Leaf Numbers
 130. Surrounded Regions
-144. Binary Tree Preorder Traversal
-145. Binary Tree Postorder Traversal
 153. Find Minimum in Rotated Sorted Array
 163. Missing Ranges
 173. Binary Search Tree Iterator
@@ -459,14 +465,14 @@ Tree
 
 	104. Maximum Depth of Binary Tree
 	111. Minimum Depth of Binary Tree
-	144. Binary Tree Preorder Traversal
+✅ 144. Binary Tree Preorder Traversal
 	199. Binary Tree Right Side View
 	513. Find Bottom Left Tree Value
 +	515. Find Largest Value in Each Tree Row
 +	559. Maximum Depth of N-ary Tree
 	563. Binary Tree Tilt
-+	589. N-ary Tree Preorder Traversal
-+	590. N-ary Tree Postorder Traversal
+✅ 589. N-ary Tree Preorder Traversal
+✅ 590. N-ary Tree Postorder Traversal
 	617. Merge Two Binary Trees
 	655. Print Binary Tree
 	700. Search in a Binary Search Tree
