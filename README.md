@@ -42,6 +42,7 @@ Nothing special, just an attempt to structure and study C++ algorithms
 <a id="string_algorithms"></a>
 ## String Algorithms
 -  [Is_Palindrome](https://github.com/AndreyTokmakov/Algorithms/blob/bcb2d0be438634c1ccb0971cad4301397bded964/Strings/algorithms/Is_Palindrome.cpp#L20) <br/>
+-  [Is_Palindrome_Ignore_Invalid_Chars](https://github.com/AndreyTokmakov/Algorithms/blob/main/Strings/algorithms/Is_Palindrome_Ignore_Invalid_Chars.cpp#L37)<br/>
 -  [Are_Anagrams](https://github.com/AndreyTokmakov/Algorithms/blob/d6d4dfc40ded255cb55ef8c019008e5f1063785c/Strings/algorithms/Are_Anagrams.cpp#L22)<br/>
 -  [Check_If_Strings_Rotate_Rotate_Equals](https://github.com/AndreyTokmakov/Algorithms/blob/d6d4dfc40ded255cb55ef8c019008e5f1063785c/Strings/algorithms/Check_If_Strings_Rotate_Rotate_Equals.cpp#L21)<br/>
 -  [Check_If_Two_Strings_Are_Permutation](https://github.com/AndreyTokmakov/Algorithms/blob/d6d4dfc40ded255cb55ef8c019008e5f1063785c/Strings/algorithms/Check_If_Two_Strings_Are_Permutation.cpp#L23 	)<br/>
@@ -90,6 +91,7 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [Sort_String__Rearrange_String_2](https://github.com/AndreyTokmakov/Algorithms/blob/main/Strings/algorithms/Sort_String__Rearrange_String_2.cpp#L17)<br/>
 -  [Check_Valid_Parentheses_1_Bracket](https://github.com/AndreyTokmakov/Algorithms/blob/main/Strings/algorithms/Check_Valid_Parentheses_1_Bracket.cpp)<br/>
 -  [Calc_Parentheses_K_Deletions_Make_Valid](https://github.com/AndreyTokmakov/Algorithms/blob/main/Strings/algorithms/Calc_Parentheses_K_Deletions_Make_Valid.cpp)<br/>
+-  [Longest_Common_Prefix](https://github.com/AndreyTokmakov/Algorithms/blob/main/Strings/algorithms/Longest_Common_Prefix.cpp#L26)<br/>
 
 <a id="math_arrays_algorithms"></a>
 ## Math and Arrays Algorithms
@@ -162,6 +164,10 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [House_Robber](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/House_Robber.cpp#L38)<br/>
 -  [Single_Number_2](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Single_Number_2.cpp#L28)<br/>
 -  [Find_First_and_Last_Position_of_Element_Sorter_Arrays](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_First_and_Last_Position_of_Element_Sorter_Arrays.cpp#L34)<br/>
+-  [Longest_Subset_With_Positive_Bitwise_AND](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Longest_Subset_With_Positive_Bitwise_AND.cpp#L32)<br/>
+-  [Find_Pair_Sum_Equal_K](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_Pair_Sum_Equal_K.cpp#L31)<br/>
+-  [Kadane_Algorithm](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Kadane_Algorithm.cpp#L18)<br/>
+-  [First_Bad_Version](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/First_Bad_Version.cpp#L46)<br/>
 
 <a id="linked_list"></a>
 ## Linked List
@@ -199,9 +205,6 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [Check_Is_Tree_Symmetric](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Check_Is_Tree_Symmetric.cpp#L57)<br/>
 -  [Check_Is_Trees_Identical](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Check_Is_Trees_Identical.cpp#L23)<br/>
 -  [Check_Is_Tree_Balanced](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Check_Is_Tree_Balanced.cpp#L49)<br/>
--  [Tree_Traversal_Level_Order](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Tree_Traversal_Level_Order.cpp#L30)<br/>
--  [Tree_Traversal_Inorder](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Tree_Traversal_Inorder.cpp#L31)<br/>
--  [Tree_Traversal_Backward](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Tree_Traversal_Backward.cpp#L28)<br/>
 -  [Find_Maximum_Level_Sum](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Find_Maximum_Level_Sum.cpp#L21)<br/>
 -  [Find_Path_Sum_Between_Two_Nodes](Find_Path_Sum_Between_Two_Nodes)<br/>
 -  [Find_Maximum_Node_At_Given_Level](Find_Maximum_Node_At_Given_Level)<br/>
@@ -212,8 +215,15 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [Find_If_Last_Level_Completed](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Find_If_Last_Level_Completed.cpp#L17)<br/>
 -  [Check_Is_Binary_Search_Tree_BST](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Check_Is_Binary_Search_Tree_BST.cpp#L18)<br/>
 -  [Check_Is_Tree_Complete](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Check_Is_Tree_Complete.cpp#L19)<br/>
--  [Print_Top_View](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Print_Top_View.cpp#L18)<br/>
+-  [Get_Tree_Min_Depth](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Get_Tree_Min_Depth.cpp#L38)<br/>
+-  [Print_Left_View](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Print_Left_View.cpp#L18)<br/>
 -  [Print_Right_View](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Print_Right_View.cpp#L18)<br/>
+-  [Print_Top_View](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Print_Top_View.cpp#L18)<br/>
+-  [Tree_Traversal_Level_Order](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Tree_Traversal_Level_Order.cpp#L30)<br/>
+-  [Tree_Traversal_Inorder](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Tree_Traversal_Inorder.cpp#L31)<br/>
+-  [Tree_Traversal_Backward](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Tree_Traversal_Backward.cpp#L28)<br/>
+-  [Tree_Traversal_PreOrder](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Tree_Traversal_PreOrder.cpp#L43)<br/>
+-  [Tree_Traversal_PostOrder](https://github.com/AndreyTokmakov/Algorithms/blob/main/Trees/algorithms/Tree_Traversal_PostOrder.cpp#L42)<br/>
 
 <a id="graphs"></a>
 ## Graphs
@@ -251,3 +261,4 @@ Nothing special, just an attempt to structure and study C++ algorithms
 ## Two Pointers:
 -  [Squares_of_a_Sorted_Array](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Squares_of_a_Sorted_Array.cpp#L33)<br/>
 -  [Container_With_Most_Water](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Container_With_Most_Water.cpp#L25)<br/>
+-  [Is_Palindrome_Ignore_Invalid_Chars](https://github.com/AndreyTokmakov/Algorithms/blob/main/Strings/algorithms/Is_Palindrome_Ignore_Invalid_Chars.cpp#L37)<br/>

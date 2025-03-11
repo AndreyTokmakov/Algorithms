@@ -268,26 +268,7 @@ Find_DifferentPairs_SumK
 							Update README  |  -  [__NAME__](__LINK__)<br/>
 =======================================================================================================================================
 
-  - Tree_Traversal_Backward  (Ranamed) + Inorder + Level
-
 Trees:
--  [Get_Tree_Min_Depth](__LINK__)<br/>
--  [Print_Left_View](__LINK__)<br/>
--  [Tree_Traversal_PreOrder](__LINK__)<br/>
--  [Tree_Traversal_PostOrder](__LINK__)<br/>
-
-Strings:
-  - Is_Palindrome_Ignore_Invalid_Chars
-  -	Longest_Common_Prefix
-
-Two Pointers
-  - Is_Palindrome_Ignore_Invalid_Chars
-
-Array:
-  - Longest_Subset_With_Positive_Bitwise_AND
-  - Find_Pair_Sum_Equal_K
-  - Kadane_Algorithm
-  -	First_Bad_Version
 
 =======================================================================================================================================
 							Algoritms: Top Google Questions – Part 1
