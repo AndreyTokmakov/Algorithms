@@ -21,7 +21,7 @@ int main([[maybe_unused]] int argc,
     // StringAlgorithms::Find_First_K_Chars_Encountered_Once();
     // StringAlgorithms::Is_Palindrome();
     // StringAlgorithms::Is_Palindrome_Ignore_Invalid_Chars();
-    StringAlgorithms::Is_String_Has_Only_Unique_Characters();
+    // StringAlgorithms::Is_String_Has_Only_Unique_Characters();
     // StringAlgorithms::Longest_Palindrome();
     // StringAlgorithms::Remove_Chars_Of_One_String_FromAnother();
     // StringAlgorithms::Top_K_Frequent_Words();
@@ -68,6 +68,7 @@ int main([[maybe_unused]] int argc,
 	// StringAlgorithms::Sort_String__Rearrange_String_2();
 	// StringAlgorithms::Calc_Parentheses_K_Deletions_Make_Valid();
 	// StringAlgorithms::Sum_Strings_As_Binary_Masks();
+	StringAlgorithms::Compress_String();
 
 	return EXIT_SUCCESS;
 }

@@ -50,7 +50,7 @@ https://github.com/doocs/leetcode/blob/main/solution/0200-0299/0223.Rectangle%20
 =======================================================================================================================================
 
 /**============================================================================
-Name        : Is_String_Has_Only_Unique_Characters.cpp
+Name        : Compress_String.cpp
 Created on  : 12.03.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
@@ -66,7 +66,7 @@ namespace
     using namespace StringAlgorithms;
 }
 
-void StringAlgorithms::Is_String_Has_Only_Unique_Characters()
+void StringAlgorithms::Compress_String()
 {
 		using TestData = std::vector< std::pair<std::vector<int>, int>>;
 		for (const auto& [values, expected]:  TestData{
@@ -270,6 +270,7 @@ Trees:
 
 Strings:
 	- Is_String_Has_Only_Unique_Characters
+	-	Compress_String
 
 =======================================================================================================================================
 							Algoritms: Top Google Questions – Part 1
