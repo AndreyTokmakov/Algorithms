@@ -21,6 +21,7 @@ namespace StringAlgorithms
     void Find_First_K_Chars_Encountered_Once();
     void Is_Palindrome();
     void Is_Palindrome_Ignore_Invalid_Chars();
+    void Is_String_Has_Only_Unique_Characters();
     void Longest_Palindrome();
     void Remove_Chars_Of_One_String_FromAnother();
     void Top_K_Frequent_Words();

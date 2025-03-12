@@ -39,8 +39,8 @@ namespace
     }
 
     bool is_bst_recursive(const BinTree::Node* node,
-                          int min = std::numeric_limits<int>::min(),
-                          int max = std::numeric_limits<int>::max()) {
+                          const int min = std::numeric_limits<int>::min(),
+                          const int max = std::numeric_limits<int>::max()) {
         if (nullptr == node)
             return true;
         if (node->data < min || node->data > max)
@@ -53,16 +53,15 @@ namespace
     {
         if (nullptr == node)
             return true;
-        else if (nullptr != node->left && node->left->data > node->data)
+        if (nullptr != node->left && node->left->data > node->data)
             return false;
-        else if (!is_bst_recursive_2(node->left))
+        if (!is_bst_recursive_2(node->left))
             return false;
-        else if (nullptr != node->right && node->right->data < node->data)
+        if (nullptr != node->right && node->right->data < node->data)
             return false;
-        else if (!is_bst_recursive_2(node->right))
+        if (!is_bst_recursive_2(node->right))
             return false;
-        else
-            return true;
+        return true;
     }
 }
 

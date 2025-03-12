@@ -22,6 +22,7 @@ Example 2:   Given nums = [0,0,1,1,1,2,2,3,3,4],
 **/
 
 namespace
+
 {
     using namespace ArraysAlgorithms;
 

@@ -61,6 +61,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Calc_Parentheses_K_Deletions_Make_Valid.cpp
 		algorithms/Longest_Common_Prefix.cpp
 		algorithms/Sum_Strings_As_Binary_Masks.cpp
+		algorithms/Is_String_Has_Only_Unique_Characters.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")

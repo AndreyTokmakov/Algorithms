@@ -86,7 +86,8 @@ int main([[maybe_unused]] int argc,
     // ArraysAlgorithms::Squares_of_a_Sorted_Array();
     // ArraysAlgorithms::Unique_Permutations();
     // ArraysAlgorithms::House_Robber();
-    ArraysAlgorithms::First_Bad_Version();
+    // ArraysAlgorithms::First_Bad_Version();
+    ArraysAlgorithms::Maximal_Square();
 
 
 

@@ -89,6 +89,7 @@ namespace ArraysAlgorithms
     void Unique_Permutations();
     void House_Robber();
     void First_Bad_Version();
+    void Maximal_Square();
 }
 
 #endif //ARRAYS_ALGORITHMS_H

@@ -9,6 +9,9 @@
 
 'Coding interview study plan'  - https://www.techinterviewhandbook.org/coding-interview-study-plan/
 
+
+https://github.com/doocs/leetcode/blob/main/solution/0200-0299/0223.Rectangle%20Area/README.md
+
 =======================================================================================================================================
 							[Array] Algorithms
 =======================================================================================================================================
@@ -47,8 +50,8 @@
 =======================================================================================================================================
 
 /**============================================================================
-Name        : First_Bad_Version.cpp
-Created on  : 10.03.2025
+Name        : Is_String_Has_Only_Unique_Characters.cpp
+Created on  : 12.03.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
 Copyright   : Your copyright notice
@@ -56,37 +59,27 @@ Description :
 ============================================================================**/
 
 #include "../common.h"
-#include "../ArraysAlgorithms.h"
-
+#include "../StringAlgorithms.h"
 
 namespace
 {
-    using namespace ArraysAlgorithms;
-
-
+    using namespace StringAlgorithms;
 }
 
-void ArraysAlgorithms::First_Bad_Version()
+void StringAlgorithms::Is_String_Has_Only_Unique_Characters()
 {
-
+		using TestData = std::vector< std::pair<std::vector<int>, int>>;
+		for (const auto& [values, expected]:  TestData{
+			{ {} , 1 },
+		})
+		{
+			const auto actual = TEST_FUNCTION(values);
+			if (expected != actual) {
+				std::cerr << std::boolalpha << expected << " != " << actual << std::endl;
+			}
+		}
+		std::cout << "OK: All tests passed\n";
 }
-
-
-=======================================================================================================================================
-							Tests
-=======================================================================================================================================
-
-using TestData = std::vector< std::pair<std::vector<int>, int>>;
-for (const auto& [values, expected]:  TestData{
-	{ {} , 1 },
-})
-{
-	const auto actual = TEST_FUNCTION(values);
-	if (expected != actual) {
-		std::cerr << std::boolalpha << expected << " != " << actual << std::endl;
-	}
-}
-std::cout << "OK: All tests passed\n";
 
 =======================================================================================================================================
 							PLAN
@@ -96,6 +89,11 @@ CountDistinctPairs_WithDifference_K ()
 Numeric::MaxPairSumInArray();
 Find_Pair_SumX_Sorted
 Find_DifferentPairs_SumK
+
+
+222. Count Complete Tree Nodes
+
+Is_Rorate_Equals | https://github.com/doocs/leetcode/blob/main/lcci/01.09.String%20Rotation/README_EN.md
 
 
 • Arrays:
@@ -270,6 +268,9 @@ Find_DifferentPairs_SumK
 
 Trees:
 
+Strings:
+	- Is_String_Has_Only_Unique_Characters
+
 =======================================================================================================================================
 							Algoritms: Top Google Questions – Part 1
 =======================================================================================================================================
@@ -318,7 +319,7 @@ Trees:
 54. Spiral Matrix
 59. Spiral Matrix II
 60. Permutation Sequence
-67. Add Binary
+❌ 67. Add Binary
 70. Climbing Stairs
 72. Edit Distance
 74. Search a 2D Matrix
@@ -347,8 +348,7 @@ Trees:
 205. Isomorphic Strings
 207. Course Schedule
 208. Implement Trie (Prefix Tree)
-221. Maximal Square
-222. Count Complete Tree Nodes
+❌ 221. Maximal Square
 226. Invert Binary Tree
 246. Strobogrammatic Number
 
