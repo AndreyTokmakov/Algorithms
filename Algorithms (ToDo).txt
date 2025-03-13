@@ -50,8 +50,8 @@ https://github.com/doocs/leetcode/blob/main/solution/0200-0299/0223.Rectangle%20
 =======================================================================================================================================
 
 /**============================================================================
-Name        : Compress_String.cpp
-Created on  : 12.03.2025
+Name        : Sort_Colors.cpp
+Created on  : 13.03.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
 Copyright   : Your copyright notice
@@ -59,14 +59,14 @@ Description :
 ============================================================================**/
 
 #include "../common.h"
-#include "../StringAlgorithms.h"
+#include "../ArraysAlgorithms.h"
 
 namespace
 {
-    using namespace StringAlgorithms;
+    using namespace ArraysAlgorithms;
 }
 
-void StringAlgorithms::Compress_String()
+void ArraysAlgorithms::Sort_Colors()
 {
 		using TestData = std::vector< std::pair<std::vector<int>, int>>;
 		for (const auto& [values, expected]:  TestData{
@@ -86,43 +86,27 @@ void StringAlgorithms::Compress_String()
 =======================================================================================================================================
 
 CountDistinctPairs_WithDifference_K ()
+
 Numeric::MaxPairSumInArray();
+Numeric::Find_Repeating_And_Missing()
 Find_Pair_SumX_Sorted
 Find_DifferentPairs_SumK
 
+permutations
 
 222. Count Complete Tree Nodes
+88. Merge Sorted Array
 
 Is_Rorate_Equals | https://github.com/doocs/leetcode/blob/main/lcci/01.09.String%20Rotation/README_EN.md
 
 
 • Arrays:
-
-
   - 'Product of Array Except Self': https://leetcode.com/problems/product-of-array-except-self/description/
   - 'Daily Temperatures': https://leetcode.com/problems/daily-temperatures/description/
-  - 'Sort Colors' : https://leetcode.com/problems/sort-colors/description/
-
-
-
-
-
-	permutations
-	88. Merge Sorted Array
-    Numeric::Find_Repeating_And_Missing()
-
 
 • two pointers
   - 'Palindromic Substrings':  https://leetcode.com/problems/palindromic-substrings/description/  [strings, two pointers]
-  -	'Sort Colors' ; https://leetcode.com/problems/sort-colors/description/                        [arrays, two pointers]
   -	https://leetcode.com/problems/partition-labels/
-
-
-
-
-
-
-
 
 • tree
 
@@ -231,7 +215,7 @@ Is_Rorate_Equals | https://github.com/doocs/leetcode/blob/main/lcci/01.09.String
  - Lowest Common Ancestor of a Binary Tree                  <------- CHECK
  - Time Based Key-Value Store
  - Accounts Merge
- - Sort Colors
+✅ Sort Colors
  - Word Break
 
  - Partition Equal Subset Sum
@@ -272,6 +256,12 @@ Strings:
 	- Is_String_Has_Only_Unique_Characters
 	-	Compress_String
 
+Arrays:
+	- Sort_Colors
+
+Two pointers
+	- Sort_Colors	
+
 =======================================================================================================================================
 							Algoritms: Top Google Questions – Part 1
 =======================================================================================================================================
@@ -307,6 +297,9 @@ Strings:
 [+] 198. House Robber
 [+]  69. Sqrt(x)
 [+] 14. Longest Common Prefix
+[+] 53. Maximum Subarray
+[+] 75. Sort Colors
+
 
 6. ZigZag Conversion
 24. Swap Nodes in Pairs
@@ -316,7 +309,6 @@ Strings:
 46. Permutations
 50. Pow(x, n)
 51. N-Queens
-53. Maximum Subarray
 54. Spiral Matrix
 59. Spiral Matrix II
 60. Permutation Sequence
@@ -324,7 +316,6 @@ Strings:
 70. Climbing Stairs
 72. Edit Distance
 74. Search a 2D Matrix
-75. Sort Colors
 77. Combinations
 78. Subsets
 81. Search in Rotated Sorted Array II

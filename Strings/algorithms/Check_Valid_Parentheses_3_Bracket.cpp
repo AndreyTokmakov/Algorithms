@@ -51,7 +51,26 @@ namespace
         return brackets.empty();
     }
 
+    bool match(const char l, const char r) {
+        return (l == '(' && r == ')') || (l == '[' && r == ']') || (l == '{' && r == '}');
+    }
+
     bool check_parentheses_3_bracket_2(const std::string& str)
+    {
+        std::vector<char> brackets;
+        brackets.reserve(str.length());
+        for (const char c : str) {
+            if ('(' == c || '[' == c || '{' == c)
+                brackets.push_back(c);
+            else if (brackets.empty() || false == match(brackets.back(), c))
+                return false;
+            else
+                brackets.pop_back();
+        }
+        return brackets.empty();
+    }
+
+    bool check_parentheses_3_bracket_3(const std::string& str)
     {
         constexpr std::array<std::pair<char, char>, 3> symbols {{
             {'[', ']'}, {'{', '}'}, {'(', ')'}
@@ -84,6 +103,9 @@ void StringAlgorithms::Check_Valid_Parentheses_3_Bracket()
     })
     {
         if (const auto actual = check_parentheses_3_bracket_1(values); expected != actual) {
+            std::cerr << std::boolalpha << expected << " != " << actual << std::endl;
+        }
+        if (const auto actual = check_parentheses_3_bracket_2(values); expected != actual) {
             std::cerr << std::boolalpha << expected << " != " << actual << std::endl;
         }
         if (const auto actual = check_parentheses_3_bracket_2(values); expected != actual) {

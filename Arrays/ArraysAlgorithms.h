@@ -90,6 +90,7 @@ namespace ArraysAlgorithms
     void House_Robber();
     void First_Bad_Version();
     void Maximal_Square();
+    void Sort_Colors();
 }
 
 #endif //ARRAYS_ALGORITHMS_H
