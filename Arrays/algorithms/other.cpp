@@ -1311,44 +1311,6 @@ namespace Numeric
 
     //--------------------------------------------------------------------------------------//
 
-    void __count_distinct_pair_diff_K(const std::vector<int> &data, int K) {
-        std::unordered_map<int, bool> map;
-        auto iter = map.end();
-        for (int i: data) {
-            if (iter = map.find(i - K); map.end() != iter) {
-                if (false == iter->second) {
-                    std::cout << "[" << i - K << ", " << i << "]" << std::endl;
-                    iter->second = true;
-                }
-            } else {
-                map.emplace(i, false);
-            }
-        }
-    }
-
-    void __count_distinct_pair_diff_K_2(const std::vector<int> &data, int K) {
-        std::unordered_set<int> hash;
-        std::set<std::pair<int, int>> result;
-        for (int value: data) {
-            if (hash.end() != hash.find(value - K)) {
-                result.insert({value, value - K});
-            } else {
-                hash.insert(value);
-            }
-        }
-        for (const auto &entry: result)
-            std::cout << "[" << entry.first << ", " << entry.second << "]" << std::endl;
-    }
-
-    void CountDistinctPairs_WithDifference_K() {
-        std::vector<int> v = {8, 12, 16, 4, 0, 20, 8, 8, 8, 8, 4, 4, 8, 4};
-        __count_distinct_pair_diff_K(v, 4);
-        std::cout << "\nTest2\n" << std::endl;
-        __count_distinct_pair_diff_K_2(v, 4);
-    }
-
-    //--------------------------------------------------------------------------------------//
-
     void _GroupElements_ByFirstOccurance_BAD(const std::vector<int> &data) {
         std::unordered_map<int, std::pair<size_t, size_t>> tmp;
         for (size_t pos = 0; pos < data.size(); ++pos) {
@@ -1840,7 +1802,6 @@ void ArraysAlgorithms::Other()
     // Numeric::Find_First_Element_Occurred_Once();
     // Numeric::Find_Minimum_Index_Of_RepeatingElement();
     // Numeric::Count_Number_tOccurrences_SortedArray();
-    // Numeric::CountDistinctPairs_WithDifference_K();
     // Numeric::GroupElements_ByFirstOccurance();
     // Numeric::Add_One_To_Integer_ArrayTest();
     // Numeric::Product_Of_All_Numeric_Except_N();
@@ -1850,6 +1811,7 @@ void ArraysAlgorithms::Other()
     // Numeric::MaxSum_of_NonConsecutive_Elements_In_Array();
     // Boundaries::Maximum_Area_Between_Boundaries();
     // Random::BiasedCoin();
+
     /** Degree_Of_Array degreeOfArray: With same occurrences of duplicated elements **/
     // Numeric::Min_Length_SubArray_WithSameDegree();
     // Intervals::Find_Union_Interval();

@@ -86,6 +86,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/First_Bad_Version.cpp
 		algorithms/Maximal_Square.cpp
 		algorithms/Sort_Colors.cpp
+		algorithms/Count_Distinct_Pairs_With_Difference_K.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")

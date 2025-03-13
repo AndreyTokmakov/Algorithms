@@ -91,6 +91,7 @@ namespace ArraysAlgorithms
     void First_Bad_Version();
     void Maximal_Square();
     void Sort_Colors();
+    void Count_Distinct_Pairs_With_Difference_K();
 }
 
 #endif //ARRAYS_ALGORITHMS_H

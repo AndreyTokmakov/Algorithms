@@ -88,7 +88,8 @@ int main([[maybe_unused]] int argc,
     // ArraysAlgorithms::House_Robber();
     // ArraysAlgorithms::First_Bad_Version();
     // ArraysAlgorithms::Maximal_Square(); /** Not yet completed **/
-    ArraysAlgorithms::Sort_Colors();
+    // ArraysAlgorithms::Sort_Colors();
+    ArraysAlgorithms::Count_Distinct_Pairs_With_Difference_K();
 
 
 
