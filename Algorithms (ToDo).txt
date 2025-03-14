@@ -90,9 +90,6 @@ void ArraysAlgorithms::Sort_Colors()
 							PLAN
 =======================================================================================================================================
 
-Is_Rorate_Equals | https://github.com/doocs/leetcode/blob/main/lcci/01.09.String%20Rotation/README_EN.md
-                    https://github.com/doocs/leetcode/blob/main/lcci/01.09.String%20Rotation/Solution.cpp
-
 
 Numeric::MaxPairSumInArray();
 Numeric::Find_Repeating_And_Missing()
@@ -261,6 +258,7 @@ Trees:
 Strings:
 	- Is_String_Has_Only_Unique_Characters
 	-	Compress_String
+	- Check_If_Strings_Rotate_Rotate_Equals_2
 
 Arrays:
 	- Sort_Colors

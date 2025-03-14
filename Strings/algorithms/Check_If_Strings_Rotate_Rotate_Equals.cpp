@@ -18,14 +18,16 @@ namespace
 {
     using namespace StringAlgorithms;
 
-    bool _is_K_rotate_equals(const std::string &str1, const std::string &str2, size_t K) {
+    bool _is_K_rotate_equals(const std::string &str1, const std::string &str2, size_t K)
+    {
         for (size_t pos = 0; pos < str1.size(); pos++, K++)
             if (str2[K % str1.size()] != str1[pos])
                 return false;
         return true;
     }
 
-    int find_K_rotates_to_make_equal(const std::string &str1, const std::string &str2) {
+    int find_K_rotates_to_make_equal(const std::string &str1, const std::string &str2)
+    {
         if (str1.size() != str2.size())
             return -1;
         for (size_t pos = 0; pos < str1.size(); pos++)

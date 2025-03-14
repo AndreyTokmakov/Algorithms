@@ -21,6 +21,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Remove_Duplicates_Chars.cpp
 		algorithms/Reverse_String.cpp
 		algorithms/Check_If_Strings_Rotate_Rotate_Equals.cpp
+		algorithms/Check_If_Strings_Rotate_Rotate_Equals_2.cpp
 		algorithms/Move_Chars_To_End.cpp
 		algorithms/Move_Zeros_To_End.cpp
 		algorithms/Find_Last_Not_Of.cpp

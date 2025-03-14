@@ -89,7 +89,8 @@ int main([[maybe_unused]] int argc,
     // ArraysAlgorithms::First_Bad_Version();
     // ArraysAlgorithms::Maximal_Square(); /** Not yet completed **/
     // ArraysAlgorithms::Sort_Colors();
-    ArraysAlgorithms::Count_Distinct_Pairs_With_Difference_K();
+    // ArraysAlgorithms::Count_Distinct_Pairs_With_Difference_K();
+    ArraysAlgorithms::Delete_Each_Second_Value_in_Array();
 
 
 

@@ -28,6 +28,7 @@ namespace StringAlgorithms
     void Remove_Duplicates_Chars();
     void Reverse_String();
     void Check_If_Strings_Rotate_Rotate_Equals();
+    void Check_If_Strings_Rotate_Rotate_Equals_2();
     void Move_Chars_To_End();
     void Move_Zeros_To_End();
     void Find_Last_Not_Of();
