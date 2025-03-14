@@ -55,8 +55,8 @@ https://dev.to/phoenix_238501d86d417e/two-sum-lg4
 =======================================================================================================================================
 
 /**============================================================================
-Name        : Sort_Colors.cpp
-Created on  : 13.03.2025
+Name        : Delete_Each_Sends_Value_in_Array.cpp
+Created on  : 14.03.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
 Copyright   : Your copyright notice
@@ -71,7 +71,7 @@ namespace
     using namespace ArraysAlgorithms;
 }
 
-void ArraysAlgorithms::Sort_Colors()
+void ArraysAlgorithms::Delete_Each_Sends_Value_in_Array()
 {
 		using TestData = std::vector< std::pair<std::vector<int>, int>>;
 		for (const auto& [values, expected]:  TestData{
@@ -263,6 +263,7 @@ Strings:
 Arrays:
 	- Sort_Colors
 	- Count_Distinct_Pairs_With_Difference_K
+	- Delete_Each_Second_Value_in_Array
 
 Two pointers
 	- Sort_Colors	
