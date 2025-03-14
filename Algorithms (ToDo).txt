@@ -12,6 +12,11 @@
 
 https://github.com/doocs/leetcode/blob/main/solution/0200-0299/0223.Rectangle%20Area/README.md
 
+
+# One more resource:
+
+https://dev.to/phoenix_238501d86d417e/two-sum-lg4
+
 =======================================================================================================================================
 							[Array] Algorithms
 =======================================================================================================================================
@@ -85,7 +90,9 @@ void ArraysAlgorithms::Sort_Colors()
 							PLAN
 =======================================================================================================================================
 
-CountDistinctPairs_WithDifference_K ()
+Is_Rorate_Equals | https://github.com/doocs/leetcode/blob/main/lcci/01.09.String%20Rotation/README_EN.md
+                    https://github.com/doocs/leetcode/blob/main/lcci/01.09.String%20Rotation/Solution.cpp
+
 
 Numeric::MaxPairSumInArray();
 Numeric::Find_Repeating_And_Missing()
@@ -97,7 +104,6 @@ permutations
 222. Count Complete Tree Nodes
 88. Merge Sorted Array
 
-Is_Rorate_Equals | https://github.com/doocs/leetcode/blob/main/lcci/01.09.String%20Rotation/README_EN.md
 
 
 • Arrays:
@@ -258,6 +264,7 @@ Strings:
 
 Arrays:
 	- Sort_Colors
+	- Count_Distinct_Pairs_With_Difference_K
 
 Two pointers
 	- Sort_Colors	

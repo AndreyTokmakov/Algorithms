@@ -37,13 +37,15 @@ namespace
 
 void StringAlgorithms::Check_If_Strings_Rotate_Rotate_Equals()
 {
-    std::vector<std::pair<std::pair<std::string, std::string>, size_t>> testData{
-                        {{"123456789", "789123456"}, 3},
-                        {{"00001",     "01000"},     2},
-                };
-
-    for (const auto &[data, result_expected]: testData) {
-        const int rotationsCount = find_K_rotates_to_make_equal(data.first, data.second);
-        std::cout << "from '" << data.first << "' to '" << data.second << "' -> " << rotationsCount << std::endl;
+    using TestData = std::vector<std::pair<std::pair<std::string, std::string>, size_t>>;
+    for (const auto& [values, expected]:  TestData{
+        {{"123456789", "789123456"}, 3},
+           {{"00001",     "01000"},  2},
+    })
+    {
+        if (const auto actual = find_K_rotates_to_make_equal(values.first, values.second); expected != actual) {
+            std::cerr << std::boolalpha << expected << " != " << actual << std::endl;
+        }
     }
+    std::cout << "OK: All tests passed\n";
 }
