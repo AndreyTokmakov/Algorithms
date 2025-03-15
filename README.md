@@ -43,8 +43,11 @@ Nothing special, just an attempt to structure and study C++ algorithms
 ## String Algorithms
 -  [Is_Palindrome](https://github.com/AndreyTokmakov/Algorithms/blob/bcb2d0be438634c1ccb0971cad4301397bded964/Strings/algorithms/Is_Palindrome.cpp#L20) <br/>
 -  [Is_Palindrome_Ignore_Invalid_Chars](https://github.com/AndreyTokmakov/Algorithms/blob/main/Strings/algorithms/Is_Palindrome_Ignore_Invalid_Chars.cpp#L37)<br/>
+-  [Is_String_Has_Only_Unique_Characters](https://github.com/AndreyTokmakov/Algorithms/blob/main/Strings/algorithms/Is_String_Has_Only_Unique_Characters.cpp#L18)<br/>
+-  [Is_String_Contains_Another_String](https://github.com/AndreyTokmakov/Algorithms/blob/main/Strings/algorithms/Is_String_Contains_Another_String.cpp#L18)<br/>
 -  [Are_Anagrams](https://github.com/AndreyTokmakov/Algorithms/blob/d6d4dfc40ded255cb55ef8c019008e5f1063785c/Strings/algorithms/Are_Anagrams.cpp#L22)<br/>
 -  [Check_If_Strings_Rotate_Rotate_Equals](https://github.com/AndreyTokmakov/Algorithms/blob/d6d4dfc40ded255cb55ef8c019008e5f1063785c/Strings/algorithms/Check_If_Strings_Rotate_Rotate_Equals.cpp#L21)<br/>
+-  [Check_If_Strings_Rotate_Rotate_Equals_2](https://github.com/AndreyTokmakov/Algorithms/blob/main/Strings/algorithms/Check_If_Strings_Rotate_Rotate_Equals_2.cpp#L35)<br/>
 -  [Check_If_Two_Strings_Are_Permutation](https://github.com/AndreyTokmakov/Algorithms/blob/d6d4dfc40ded255cb55ef8c019008e5f1063785c/Strings/algorithms/Check_If_Two_Strings_Are_Permutation.cpp#L23 	)<br/>
 -  [Find_First_Char_Encountered_Once](https://github.com/AndreyTokmakov/Algorithms/blob/d6d4dfc40ded255cb55ef8c019008e5f1063785c/Strings/algorithms/Find_First_Char_Encountered_Once.cpp#L20)<br/>
 -  [Find_First_K_Chars_Encountered_Once](https://github.com/AndreyTokmakov/Algorithms/blob/d6d4dfc40ded255cb55ef8c019008e5f1063785c/Strings/algorithms/Find_First_K_Chars_Encountered_Once.cpp#L19)<br/>
@@ -80,7 +83,6 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [Find_Common_Prefix_And_Postfix](https://github.com/AndreyTokmakov/Algorithms/blob/408a1b3356bfa2c194db5eeb96befeba3d81690d/Strings/algorithms/Find_Common_Prefix_And_Postfix.cpp#L26)<br/>
 -  [Find_Duplicate_Symbols](https://github.com/AndreyTokmakov/Algorithms/blob/408a1b3356bfa2c194db5eeb96befeba3d81690d/Strings/algorithms/Find_Duplicate_Symbols.cpp#L18)<br/>
 -  [Get_String_Length](https://github.com/AndreyTokmakov/Algorithms/blob/408a1b3356bfa2c194db5eeb96befeba3d81690d/Strings/algorithms/Get_String_Length.cpp#L18)<br/>
--  [Is_String_Contains_Another_String](https://github.com/AndreyTokmakov/Algorithms/blob/main/Strings/algorithms/Is_String_Contains_Another_String.cpp#L18)<br/>
 -  [Find_K_Most_Frequent_Character](https://github.com/AndreyTokmakov/Algorithms/blob/main/Strings/algorithms/Find_K_Most_Frequent_Character.cpp#L24)<br/>
 -  [Longest_Substring_With_Maximum_K_Unique_Characters](https://github.com/AndreyTokmakov/Algorithms/blob/main/Strings/algorithms/Longest_Substring_With_Maximum_K_Unique_Characters.cpp#L21)<br/>
 -  [Jewels_and_Stones](https://github.com/AndreyTokmakov/Algorithms/blob/main/Strings/algorithms/Jewels_and_Stones.cpp#L30)<br/>
@@ -92,6 +94,7 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [Check_Valid_Parentheses_1_Bracket](https://github.com/AndreyTokmakov/Algorithms/blob/main/Strings/algorithms/Check_Valid_Parentheses_1_Bracket.cpp)<br/>
 -  [Calc_Parentheses_K_Deletions_Make_Valid](https://github.com/AndreyTokmakov/Algorithms/blob/main/Strings/algorithms/Calc_Parentheses_K_Deletions_Make_Valid.cpp)<br/>
 -  [Longest_Common_Prefix](https://github.com/AndreyTokmakov/Algorithms/blob/main/Strings/algorithms/Longest_Common_Prefix.cpp#L26)<br/>
+-  [Compress_String](https://github.com/AndreyTokmakov/Algorithms/blob/main/Strings/algorithms/Compress_String.cpp#L31)<br/>
 
 <a id="math_arrays_algorithms"></a>
 ## Math and Arrays Algorithms
@@ -168,6 +171,11 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [Find_Pair_Sum_Equal_K](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_Pair_Sum_Equal_K.cpp#L31)<br/>
 -  [Kadane_Algorithm](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Kadane_Algorithm.cpp#L18)<br/>
 -  [First_Bad_Version](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/First_Bad_Version.cpp#L46)<br/>
+-  [Sort_Colors](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Sort_Colors.cpp#L27)<br/>
+-  [Find_Pair_Sum_Equal_K_Sorted_Array](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_Pair_Sum_Equal_K_Sorted_Array.cpp#L32)<br/>
+-  [Count_Distinct_Pairs_With_Difference_K](Count_Distinct_Pairs_With_Difference_K)<br/>
+-  [Delete_Each_Second_Value_in_Array](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Delete_Each_Second_Value_in_Array.cpp#L17)<br/>
+-  [Product_of_Array_Except_Self](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Product_of_Array_Except_Self.cpp#L28)<br/>
 
 <a id="linked_list"></a>
 ## Linked List
@@ -262,3 +270,5 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [Squares_of_a_Sorted_Array](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Squares_of_a_Sorted_Array.cpp#L33)<br/>
 -  [Container_With_Most_Water](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Container_With_Most_Water.cpp#L25)<br/>
 -  [Is_Palindrome_Ignore_Invalid_Chars](https://github.com/AndreyTokmakov/Algorithms/blob/main/Strings/algorithms/Is_Palindrome_Ignore_Invalid_Chars.cpp#L37)<br/>
+-  [Sort_Colors](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Sort_Colors.cpp#L27)<br/>
+-  [Find_Pair_Sum_Equal_K_Sorted_Array](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_Pair_Sum_Equal_K_Sorted_Array.cpp#L32)<br/>
