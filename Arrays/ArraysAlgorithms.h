@@ -42,6 +42,7 @@ namespace ArraysAlgorithms
     void Find_Smallest_Without_Compare();
     void Find_Multiplier_Pair();
     void Find_Pair_Sum_Equal_K();
+    void Find_Pair_Sum_Equal_K_Sorted_Array();
     void Find_Peak_Element();
     void Find_Rank();
     void Find_Missing_Number();
@@ -93,6 +94,7 @@ namespace ArraysAlgorithms
     void Sort_Colors();
     void Count_Distinct_Pairs_With_Difference_K();
     void Delete_Each_Second_Value_in_Array();
+    void Product_of_Array_Except_Self();
 }
 
 #endif //ARRAYS_ALGORITHMS_H

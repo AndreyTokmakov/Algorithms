@@ -72,6 +72,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Find_First_Repeating_Element.cpp
 		algorithms/Find_Multiplier_Pair.cpp
 		algorithms/Find_Pair_Sum_Equal_K.cpp
+		algorithms/Find_Pair_Sum_Equal_K_Sorted_Array.cpp
 		algorithms/Find_Peak_Element.cpp
 		algorithms/Is_Permutation.cpp
 		algorithms/Find_Missing_Number.cpp
@@ -88,6 +89,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Sort_Colors.cpp
 		algorithms/Count_Distinct_Pairs_With_Difference_K.cpp
 		algorithms/Delete_Each_Second_Value_in_Array.cpp
+		algorithms/Product_of_Array_Except_Self.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")

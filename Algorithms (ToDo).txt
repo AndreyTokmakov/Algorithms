@@ -55,8 +55,8 @@ https://dev.to/phoenix_238501d86d417e/two-sum-lg4
 =======================================================================================================================================
 
 /**============================================================================
-Name        : Delete_Each_Sends_Value_in_Array.cpp
-Created on  : 14.03.2025
+Name        : Product_of_Array_Except_Self.cpp
+Created on  : 15.03.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
 Copyright   : Your copyright notice
@@ -71,17 +71,19 @@ namespace
     using namespace ArraysAlgorithms;
 }
 
-void ArraysAlgorithms::Delete_Each_Sends_Value_in_Array()
+void ArraysAlgorithms::Product_of_Array_Except_Self()
 {
-		using TestData = std::vector< std::pair<std::vector<int>, int>>;
-		for (const auto& [values, expected]:  TestData{
+		using TestData = std::vector<std::pair<std::vector<int>, int>>;
+		for (const auto& [values, expected]:  TestData {
 			{ {} , 1 },
 		})
 		{
-			const auto actual = TEST_FUNCTION(values);
-			if (expected != actual) {
-				std::cerr << std::boolalpha << expected << " != " << actual << std::endl;
-			}
+        /*
+        const auto actual = TEST_FUNCTION(values);
+        if (expected != actual) {
+            std::cerr << std::boolalpha << expected << " != " << actual << std::endl;
+        }
+        */
 		}
 		std::cout << "OK: All tests passed\n";
 }
@@ -93,23 +95,25 @@ void ArraysAlgorithms::Delete_Each_Sends_Value_in_Array()
 
 Numeric::MaxPairSumInArray();
 Numeric::Find_Repeating_And_Missing()
-Find_Pair_SumX_Sorted
-Find_DifferentPairs_SumK
 
 permutations
 
 222. Count Complete Tree Nodes
-88. Merge Sorted Array
-
+88.  Merge Sorted Array
 
 
 • Arrays:
-  - 'Product of Array Except Self': https://leetcode.com/problems/product-of-array-except-self/description/
+
   - 'Daily Temperatures': https://leetcode.com/problems/daily-temperatures/description/
+
+
 
 • two pointers
   - 'Palindromic Substrings':  https://leetcode.com/problems/palindromic-substrings/description/  [strings, two pointers]
   -	https://leetcode.com/problems/partition-labels/
+
+
+
 
 • tree
 
@@ -264,9 +268,12 @@ Arrays:
 	- Sort_Colors
 	- Count_Distinct_Pairs_With_Difference_K
 	- Delete_Each_Second_Value_in_Array
+	- Find_Pair_Sum_Equal_K_Sorted_Array
+	- Product_of_Array_Except_Self
 
 Two pointers
 	- Sort_Colors	
+	- Find_Pair_Sum_Equal_K_Sorted_Array
 
 =======================================================================================================================================
 							Algoritms: Top Google Questions – Part 1
@@ -407,7 +414,7 @@ Array
 	1064. Fixed Point
 	1085. Sum of Digits in the Minimum Number
 	1086. High Five
-	1099. Two Sum Less Than K
+✅ 1099. Two Sum Less Than K
 	1122. Relative Sort Array
 	1133. Largest Unique Number
 	1196. How Many Apples Can You Put into the Basket

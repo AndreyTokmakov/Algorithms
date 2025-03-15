@@ -45,7 +45,6 @@ namespace
 
         return {-1, -1};
     }
-
 }
 
 void ArraysAlgorithms::Find_Pair_Sum_Equal_K()

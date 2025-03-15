@@ -881,81 +881,6 @@ namespace Numeric
 
 namespace Numeric
 {
-
-    int Find_DifferentPairs_SumK(const std::vector<int> &data, int K) {
-        std::unordered_map<int, int> tmp;// = { 0,0 };
-        for (int i: data)
-            tmp[i]++;
-        int count = 0;
-        for (int key: data) {
-            if (auto iter = tmp.find(K - key); tmp.end() != iter) {
-                count += (key == (K - key)) ? iter->second - 1 : iter->second;
-                std::cout << key << "  " << count << std::endl;
-            }
-        }
-        return count / 2;
-    }
-
-    void Find_DifferentPairs_SumK_2(const std::vector<int> &data, int K) {
-        std::unordered_map<int, int> tmp;
-        for (int key: data) {
-            if (auto iter = tmp.find(K - key); tmp.end() != iter) {
-                iter->second = key;
-            } else {
-                [[maybe_unused]]
-                auto v = tmp.emplace(key, 0);
-            }
-        }
-
-        for (const auto &[k, v]: tmp)
-            std::cout << k << " = " << v << std::endl;
-    }
-
-    void Find_DifferentPairs_SumK() {
-        using TestData = std::pair<std::vector<int>, int>;
-        for (const TestData &data: std::vector<TestData>{
-                {{1, 2, 3, 4}, 5}
-        }) {
-            // Find_DifferentPairs_SumK(Numeric, K);
-            Find_DifferentPairs_SumK_2(data.first, data.second);
-        }
-    }
-}
-
-
-namespace Numeric
-{
-
-    std::pair<int32_t, int32_t> pair_sum(const std::vector<int32_t>& values, const int32_t K)
-    {
-        for (int32_t idxLeft = 0, idxRight = values.size() - 1; idxLeft < idxRight;) {
-            if (values[idxLeft] + values[idxRight] == K) {
-                return { values[idxLeft], values[idxRight] };
-            }
-            if (values[idxLeft] + values[idxRight] < K) {
-                ++idxLeft;
-            } else {
-                --idxRight;
-            }
-        }
-        return {-1 , -1};
-    }
-
-    void Find_Pair_SumX_Sorted()
-    {
-        for (const auto& [values, K]: VectorOfPairs<std::vector<int32_t>, int32_t>{
-            { {2,7,11,15}, 9 },
-            {{ 2, 4, 5, 6, 7, 8, 9, 11 }, 12}
-
-        }) {
-            const auto [first, second] = pair_sum(values, K);
-            std::cout << '[' << values << " ] = { " << first << ", " << second << " }\n";
-        }
-    }
-}
-
-namespace Numeric
-{
     void Find_3_Elements_SumX_Sorted()
     {
         const std::vector<int> Numeric = {1, 4, 45, 6, 10, 8};
@@ -1081,60 +1006,6 @@ namespace Numeric
         _find_repeating_and_missing(pairs);
     }
 
-    //--------------------------------------------------------------------------------------//
-
-    std::vector<int> product_of_array_except_self(const std::vector<int> &values) {
-        std::vector<int> result(values.size(), 0);
-        int allProd = 1, zeros = 0, zeroIdx = -1;
-        for (int idx = 0; idx < std::ssize(values); ++idx) {
-            if (0 != values[idx])
-                allProd *= values[idx];
-            else {
-                zeroIdx = idx;
-                ++zeros;
-            }
-        }
-
-        if (0 == zeros) {
-            for (int i = 0; i < std::ssize(values); ++i)
-                result[i] = allProd / values[i];
-        } else if (1 == zeros)
-            result[zeroIdx] = allProd;
-
-        return result;
-    }
-
-    std::vector<int> product_of_array_except_self_ex(const std::vector<int> &values) {
-        const int n = std::ssize(values);
-        std::vector<int> result(n, 1);
-
-        for (int idx = 1; idx != n; ++idx)
-            result[idx] = result[idx - 1] * values[idx - 1];
-
-        for (int r = 1, i = n - 1; i >= 0; --i) {
-            result[i] *= r;
-            r *= values[i];
-        }
-
-        return result;
-    }
-
-    void Product_Of_All_Numeric_Except_N() {
-        for (const std::vector<int> &values: std::vector<std::vector<int>>{
-                {1,  2, 3, 4},
-                {1,  2, 3, 4,  5},
-                {-1, 1, 0, -3, 3},
-                {-1, 1, 0, -3, 3, 0},
-                {0,  0, 0}
-        }) {
-            const std::vector<int> result1 = product_of_array_except_self(values);
-            const std::vector<int> result2 = product_of_array_except_self_ex(values);
-
-            std::cout << result1 << std::endl << result2 << std::endl << std::endl;
-        }
-    }
-
-    //--------------------------------------------------------------------------------------//
 
     template<typename T>
     std::optional<T> __find_first_element_occurred_odd_times(const std::vector<T> &data) {
@@ -1781,20 +1652,16 @@ void ArraysAlgorithms::Other()
     // Numeric::Is_Array_Elements_Consecutive();
     // Numeric::MiniMaxSum_Of4();
     // Numeric::Find_Sum_All_Numeric();
-    // Numeric::Find_Pair_SumX_Sorted();
     // Numeric::Find_3_Elements_SumX_Unsorted();
-    // Numeric::Find_DifferentPairs_SumK();
     // Numeric::Find_3_Elements_SumX_Sorted();
     // Numeric::DeleteFromArray();
     // Numeric::Find_The_Majority_Element();
     // Backtracking::List_Of_Unique_Subsets();
     // Backtracking::Permutations();
     // Numeric::FindCommonElements_3_SortedArrays();
-
     // Numeric::Find_K_MissingNumber_Sorted();
     // Numeric::Find_K_MissingNumber();
     // Numeric::Find_Repeating_And_Missing();
-
     // Numeric::printSortedSquaredNumber_InSortedArray();
     // Numeric::Find_All_Symmetric_Pairs_InArray();
     // Numeric::Find_Elements_Occured_Once();
@@ -1804,7 +1671,6 @@ void ArraysAlgorithms::Other()
     // Numeric::Count_Number_tOccurrences_SortedArray();
     // Numeric::GroupElements_ByFirstOccurance();
     // Numeric::Add_One_To_Integer_ArrayTest();
-    // Numeric::Product_Of_All_Numeric_Except_N();
     // Numeric::Missmatch_Sorted_Vectors();
     // Numeric::Missmatch_Tests();
     // Numeric::IsPermutation();
