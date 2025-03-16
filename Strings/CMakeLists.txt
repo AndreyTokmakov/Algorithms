@@ -13,6 +13,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Find_If_String_IsSubstring_OfAnother.cpp
 		algorithms/Find_Longest_Substring_With_K_Distinct_Characters.cpp
 		algorithms/Find_First_K_Chars_Encountered_Once.cpp
+		algorithms/Find_All_Anagrams_in_String.cpp
 		algorithms/Is_Palindrome.cpp
 		algorithms/Is_Palindrome_Ignore_Invalid_Chars.cpp
 		algorithms/Longest_Palindrome.cpp

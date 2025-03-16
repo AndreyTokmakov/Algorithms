@@ -19,6 +19,7 @@ int main([[maybe_unused]] int argc,
     // StringAlgorithms::Find_If_String_IsSubstring_OfAnother();
     // StringAlgorithms::Find_Longest_Substring_With_K_Distinct_Characters();
     // StringAlgorithms::Find_First_K_Chars_Encountered_Once();
+    StringAlgorithms::Find_All_Anagrams_in_String();
     // StringAlgorithms::Is_Palindrome();
     // StringAlgorithms::Is_Palindrome_Ignore_Invalid_Chars();
     // StringAlgorithms::Is_String_Has_Only_Unique_Characters();
@@ -38,7 +39,7 @@ int main([[maybe_unused]] int argc,
     // StringAlgorithms::Are_Anagrams();
     // StringAlgorithms::Check_Valid_Parentheses_1_Bracket();
     // StringAlgorithms::Check_Valid_Parentheses_3_Bracket();
-    StringAlgorithms::Longest_Substring_Without_Repeating_Characters();
+    // StringAlgorithms::Longest_Substring_Without_Repeating_Characters();
     // StringAlgorithms::Longest_Substring_Without_Repeating_Characters_2();
     // StringAlgorithms::Longest_Substring_With_Maximum_K_Unique_Characters();
     // StringAlgorithms::Longest_Common_Prefix();

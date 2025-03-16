@@ -717,7 +717,6 @@ void StringAlgorithms::Other()
     // Strings::RotationalCipher();
     // Strings::Permutations();
     // Strings::Permutations2();
-    // Strings::AreAnagrams();
     // Strings::MakeAnagrams_CountDeletions();
     // Strings::Minimum_Substring();
 }

@@ -18,6 +18,7 @@ namespace StringAlgorithms
     void Remove_Adjacent_Duplicates();
     void Find_If_String_IsSubstring_OfAnother();
     void Find_Longest_Substring_With_K_Distinct_Characters();
+    void Find_All_Anagrams_in_String();
     void Find_First_K_Chars_Encountered_Once();
     void Is_Palindrome();
     void Is_Palindrome_Ignore_Invalid_Chars();
