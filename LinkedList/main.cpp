@@ -14,9 +14,9 @@ int main([[maybe_unused]] int argc,
 		 [[maybe_unused]] char** argv)
 {
     // LinkedListAlgorithms::Other();
-    // LinkedListAlgorithms::Check_List_Is_Cycled();
-    // LinkedListAlgorithms::Reverse_List();
     // LinkedListAlgorithms::Check_If_Palindrome();
+    LinkedListAlgorithms::Check_List_Is_Cycled();
+    // LinkedListAlgorithms::Reverse_List();
     // LinkedListAlgorithms::Find_Nth_Element_FromTheEnd();
     // LinkedListAlgorithms::Remove_N_Node_From_End();
     // LinkedListAlgorithms::Insert_Into_Sorted_List();
@@ -29,7 +29,7 @@ int main([[maybe_unused]] int argc,
     // LinkedListAlgorithms::Delete_K_Element_From_the_End();
     // LinkedListAlgorithms::Delete_Duplicates_SortedList();
     // LinkedListAlgorithms::Add_Two_Numbers();
-    LinkedListAlgorithms::Merge_K_Sorter_Lists();
+    // LinkedListAlgorithms::Merge_K_Sorter_Lists();
 
 
 	return EXIT_SUCCESS;

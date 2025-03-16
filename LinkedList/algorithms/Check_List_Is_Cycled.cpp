@@ -17,38 +17,28 @@ namespace
     using namespace LinkedListAlgorithms;
 
     template<typename T>
-    void check_list_is_cycled(Node<T>* root)
+    bool check_list_is_cycled(Node<T>* root)
     {
-        Node<int>* slow = root, * fast = root;
-        // size_t count = 0;
-        while (nullptr != slow && nullptr != fast && nullptr != fast->next) {
-            slow = slow->next;
-            fast = fast->next->next;
-            // ++count;
+        for (Node<int>* slow = root, *fast = root; slow && fast && fast->next;
+             slow = slow->next, fast = fast->next->next)
+        {
             if (slow == fast) {
-                std::cout << " Loop detected" << std::endl;
-                // std::cout << "count = " << count << std::endl;
-                break;
+                return true;
             }
         }
+        return false;
     }
 
     template<typename T>
-    void check_list_is_cycled_2(Node<T>* root)
+    bool check_list_is_cycled_2(Node<T>* root)
     {
-        // size_t count = 0;
         std::unordered_set< Node<int>*> nodes;
-        Node<int>* node = root;
-        while (nullptr != node)  {
-            // ++count;
-            if (!nodes.insert(node).second)
-            {
-                std::cout << " Loop detected" << std::endl;
-                // std::cout << "count = " << count << std::endl;
-                return;
+        for (Node<int>* node = root; nullptr != node; node = node->next) {
+            if (!nodes.insert(node).second) {
+                return true;
             }
-            node = node->next;
         }
+        return false;
     }
 
 }
@@ -62,6 +52,6 @@ void LinkedListAlgorithms::Check_List_Is_Cycled()
     }
     node->next = root;
 
-    check_list_is_cycled(root);
-    check_list_is_cycled_2(root);
+    std::cout << std::boolalpha << check_list_is_cycled(root) << std::endl;
+    std::cout << std::boolalpha << check_list_is_cycled_2(root) << std::endl;
 }

@@ -16,26 +16,6 @@ namespace
 {
     using namespace StringAlgorithms;
 
-
-    int64_t longestUniqueSubstr_0(const std::string &s)
-    {
-        int64_t max_len = 0, left = -1;
-        // initial left border, before the start of the string
-        // storage for last instance of each character
-        std::vector<int64_t> arr(256, -1);
-        for (int64_t right = 0; right < std::ssize(s); ++right) {
-            // last seen is in between left and right
-            // this is a duplicate, move left to the duplicate
-            if (arr[unsigned(s[right])] > left)
-                left = arr[unsigned(s[right])];
-            // remember the new last seen
-            arr[unsigned(s[right])] = right;
-            // left to right, but not including the character at left
-            max_len = std::max(max_len, right - left);
-        }
-        return max_len;
-    }
-
     std::string longestUniqueSubstr_1(const std::string &text)
     {
         char duplicates[256] = {0};
@@ -123,23 +103,62 @@ namespace
         }
         return maxLen;
     }
+
+
+    size_t lengthOfLongestSubstring(const std::string& str)
+    {
+        std::array<int, 128> counter {0};
+        size_t maxLen = 0;
+        for (size_t repeatCharsCount = 0, begin = 0, idx = 0, size = str.size(); idx < size; )
+        {
+            if (counter[str[idx++]]++ > 0)
+                ++repeatCharsCount;
+            while (repeatCharsCount > 0) {
+                if (1 == --counter[str[begin++]])
+                    --repeatCharsCount;
+            }
+            maxLen = std::max(maxLen, idx - begin);
+        }
+        return maxLen;
+    }
 }
 
 void StringAlgorithms::Longest_Substring_Without_Repeating_Characters()
 {
-    for (const StrSizeTPair &data: std::vector<StrSizeTPair>{
+    using TestData = std::vector<std::pair<std::string, size_t>>;
+    for (const auto& [str, lenExpected]: TestData {
             {"abcde",     5},
             {"abcbef",    4},
             {"aaaaaa",    1},
             {"aaabbbccc", 2},
             {"abcabcbb",  3}
     }) {
-        std::cout << longestUniqueSubstr_0(data.first) << " "
-                  << longestUniqueSubstr_1(data.first) << " "
-                  << longestUniqueSubstr_2(data.first) << " "
-                  << longestUniqueSubstr_3_Map(data.first) << " "
-                  << longestUniqueSubstr_4_Tbl(data.first) << " "
-                  << longestUniqueSubstr_UnFinished(data.first)
-                  << " | " << data.second << std::endl;
+        /*
+        if (const auto actual = longestUniqueSubstr_0(str); lenExpected != actual) {
+            std::cerr << std::boolalpha << lenExpected << " != " << actual << std::endl;
+        }
+        if (const auto actual = longestUniqueSubstr_1(str); lenExpected != actual.size()) {
+            std::cerr << std::boolalpha << lenExpected << " != " << actual << std::endl;
+        }
+        if (const auto actual = longestUniqueSubstr_2(str); lenExpected != actual) {
+            std::cerr << std::boolalpha << lenExpected << " != " << actual << std::endl;
+        }
+        if (const auto actual = longestUniqueSubstr_3_Map(str); lenExpected != actual) {
+            std::cerr << std::boolalpha << lenExpected << " != " << actual << std::endl;
+        }
+        if (const auto actual = longestUniqueSubstr_4_Tbl(str); lenExpected != actual) {
+            std::cerr << std::boolalpha << lenExpected << " != " << actual << std::endl;
+        }
+        if (const auto actual = longestUniqueSubstr_UnFinished(str); lenExpected != actual) {
+            std::cerr << std::boolalpha << lenExpected << " != " << actual << std::endl;
+        }*/
+
+        std::cout << longestUniqueSubstr_1(str) << " "
+                  << longestUniqueSubstr_2(str) << " "
+                  << longestUniqueSubstr_3_Map(str) << " "
+                  << longestUniqueSubstr_4_Tbl(str) << " "
+                  << longestUniqueSubstr_UnFinished(str) << " "
+                  << lengthOfLongestSubstring(str) << " "
+                  << " | " << lenExpected<< std::endl;
     }
 }

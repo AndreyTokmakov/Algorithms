@@ -55,7 +55,7 @@ namespace
         }
 
         std::vector<int32_t> result(K);
-        for (uint32_t idx = 0; idx < K; ++idx)
+        for (uint32_t idx = 0; idx < static_cast<uint32_t>(K); ++idx)
             result[idx] = freqNumsMinHeap[idx].first;
         return result;
     }

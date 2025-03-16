@@ -43,6 +43,7 @@ namespace ArraysAlgorithms
     void Find_Multiplier_Pair();
     void Find_Pair_Sum_Equal_K();
     void Find_Pair_Sum_Equal_K_Sorted_Array();
+    void Find_Pair_with_Maximum_Sum();
     void Find_Peak_Element();
     void Find_Rank();
     void Find_Missing_Number();

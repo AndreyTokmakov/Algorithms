@@ -28,7 +28,7 @@ int main([[maybe_unused]] int argc,
     // StringAlgorithms::Remove_Duplicates_Chars();
     // StringAlgorithms::Reverse_String();
     // StringAlgorithms::Check_If_Strings_Rotate_Rotate_Equals();
-    StringAlgorithms::Check_If_Strings_Rotate_Rotate_Equals_2();
+    // StringAlgorithms::Check_If_Strings_Rotate_Rotate_Equals_2();
     // StringAlgorithms::Move_Chars_To_End();
     // StringAlgorithms::Move_Zeros_To_End();
     // StringAlgorithms::Find_Last_Not_Of();
@@ -38,7 +38,7 @@ int main([[maybe_unused]] int argc,
     // StringAlgorithms::Are_Anagrams();
     // StringAlgorithms::Check_Valid_Parentheses_1_Bracket();
     // StringAlgorithms::Check_Valid_Parentheses_3_Bracket();
-    // StringAlgorithms::Longest_Substring_Without_Repeating_Characters();
+    StringAlgorithms::Longest_Substring_Without_Repeating_Characters();
     // StringAlgorithms::Longest_Substring_Without_Repeating_Characters_2();
     // StringAlgorithms::Longest_Substring_With_Maximum_K_Unique_Characters();
     // StringAlgorithms::Longest_Common_Prefix();

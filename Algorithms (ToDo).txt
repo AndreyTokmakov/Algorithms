@@ -17,6 +17,11 @@ https://github.com/doocs/leetcode/blob/main/solution/0200-0299/0223.Rectangle%20
 
 https://dev.to/phoenix_238501d86d417e/two-sum-lg4
 
+
+#  Some (Leetcode) tasks: in C++
+
+https://changhaz.wordpress.com/2014/07/18/leetcode-integer-to-roman/
+
 =======================================================================================================================================
 							[Array] Algorithms
 =======================================================================================================================================
@@ -55,8 +60,8 @@ https://dev.to/phoenix_238501d86d417e/two-sum-lg4
 =======================================================================================================================================
 
 /**============================================================================
-Name        : Product_of_Array_Except_Self.cpp
-Created on  : 15.03.2025
+Name        : Find_Pair_with_Maximum_Sum.cpp
+Created on  : 16.03.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
 Copyright   : Your copyright notice
@@ -71,7 +76,7 @@ namespace
     using namespace ArraysAlgorithms;
 }
 
-void ArraysAlgorithms::Product_of_Array_Except_Self()
+void ArraysAlgorithms::Find_Pair_with_Maximum_Sum()
 {
 		using TestData = std::vector<std::pair<std::vector<int>, int>>;
 		for (const auto& [values, expected]:  TestData {
@@ -92,10 +97,7 @@ void ArraysAlgorithms::Product_of_Array_Except_Self()
 							PLAN
 =======================================================================================================================================
 
-
-Numeric::MaxPairSumInArray();
 Numeric::Find_Repeating_And_Missing()
-
 permutations
 
 222. Count Complete Tree Nodes
@@ -107,22 +109,17 @@ permutations
   - 'Daily Temperatures': https://leetcode.com/problems/daily-temperatures/description/
 
 
-
 • two pointers
   - 'Palindromic Substrings':  https://leetcode.com/problems/palindromic-substrings/description/  [strings, two pointers]
   -	https://leetcode.com/problems/partition-labels/
 
 
-
-
 • tree
-
 	https://leetcode.com/problems/path-sum-ii/	
 
 •  hash table 
-	https://leetcode.com/problems/find-all-anagrams-in-a-string/
-	https://leetcode.com/problems/permutation-in-string/
-	https://leetcode.com/problems/single-number/ - решить за O(1) по памяти
+		https://leetcode.com/problems/find-all-anagrams-in-a-string/
+		https://leetcode.com/problems/permutation-in-string/
     https://leetcode.com/problems/4sum/ 
     https://leetcode.com/problems/group-anagrams/ 
 
@@ -131,8 +128,7 @@ permutations
 	https://leetcode.com/problems/merge-intervals/ 
 
 • Sliding window
-
-  - 'Longest Substring Without Repeating Characters': https://leetcode.com/problems/longest-substring-without-repeating-characters/description/   <------- CHECK
+	
   - 'Minimum Size Subarray Sum': https://leetcode.com/problems/minimum-size-subarray-sum/description/                                             <------- CHECK
   - 'Minimum Window Substring': https://leetcode.com/problems/minimum-window-substring/description/
 
@@ -153,7 +149,6 @@ permutations
 • Trees:
 
 	Print Tree
-	Pre_Order_Walk
 	Find_Node_WithSumX_2
 	Find_Maximum_PathSum_BetweenNodes
 
@@ -260,20 +255,11 @@ permutations
 Trees:
 
 Strings:
-	- Is_String_Has_Only_Unique_Characters
-	-	Compress_String
-	- Check_If_Strings_Rotate_Rotate_Equals_2
 
 Arrays:
-	- Sort_Colors
-	- Count_Distinct_Pairs_With_Difference_K
-	- Delete_Each_Second_Value_in_Array
-	- Find_Pair_Sum_Equal_K_Sorted_Array
-	- Product_of_Array_Except_Self
+	Find_Pair_with_Maximum_Sum
 
 Two pointers
-	- Sort_Colors	
-	- Find_Pair_Sum_Equal_K_Sorted_Array
 
 =======================================================================================================================================
 							Algoritms: Top Google Questions – Part 1

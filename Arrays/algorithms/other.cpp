@@ -616,23 +616,6 @@ namespace Numeric
         std::cout << min1 << "   " << min2 << std::endl;
     }
 
-    //--------------------------------------------------------------------------------------//
-
-    void MaxPairSumInArray() {
-        const int Numeric[] = {4, 2, 6, 1};
-        size_t length = std::size(Numeric);
-
-        int max1 = std::numeric_limits<int>::min(), max2 = std::numeric_limits<int>::min();
-        for (size_t pos = 0; pos < length; pos++) {
-            if (Numeric[pos] > max1) {
-                max2 = max1;
-                max1 = Numeric[pos];
-            } else if (Numeric[pos] > max2)
-                max2 = Numeric[pos];
-        }
-
-        std::cout << max2 + max1 << std::endl;
-    }
 }
 
 
