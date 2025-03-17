@@ -7,6 +7,8 @@ Copyright   : Your copyright notice
 Description :
 ============================================================================**/
 
+#include <iomanip>
+
 #include "../common.h"
 #include "../StringAlgorithms.h"
 
@@ -24,19 +26,19 @@ Example 2: Input: s = "abab", p = "ab" Output: [0,1,2]
                           The substring with start index = 2 is "ab", which is an anagram of "ab".
 **/
 
-namespace
+namespace BruteForceOne
 {
     using namespace StringAlgorithms;
 
-    bool are_anagrams(int start,
-                      int end,
+    bool are_anagrams(const int start,
+                      const int end,
                       const std::string& str,
                       std::array<int, 256> map)
     {
-
-        for (int idx = start; idx < end; ++idx)
-            std::cout << str[idx] << " ";
-        std::cout << std::endl;
+        for (int idx = start; idx < end; ++idx) {
+            if (--map[str[idx]] < 0)
+                return false;
+        }
         return true;
     }
 
@@ -48,9 +50,39 @@ namespace
         for (const char ch: mask)
             ++map[ch];
 
-        for (int idx = 0, len = mask.size(), size = str.size() - len; idx <= size; ++idx )
+        for (int idx = 0, len = mask.size(), size = str.size() - len; idx <= size; ++idx) {
+            if (are_anagrams(idx, idx + len, str, map))
+            {
+                std::cout << std::quoted(std::string_view(str.data() + idx, str.data() + idx + len)) << " ";
+            }
+        }
+        std::cout << std::endl;
+    }
+}
+
+namespace BruteForceTwo
+{
+    using namespace StringAlgorithms;
+
+    void find_all_anagrams_in_string(const std::string& str,
+                                     const std::string& mask)
+    {
+        std::array<int, 256> map { 0 }, mapCurrent { 0 };
+        for (const char ch: mask)
+            ++map[ch];
+        for (int idx = 0; idx < mask.size(); ++idx)
+            ++mapCurrent[str[idx]];
+
+        if (map == mapCurrent) {
+            std::cout << std::string_view(str.data(), str.data() +mask.size())<< std::endl;
+        }
+        for (size_t len = mask.size(), idx = len, size = str.size(); idx < size; ++idx)
         {
-            are_anagrams(idx, idx + len, str, map);
+            --mapCurrent[str[idx - len]];
+            ++mapCurrent[str[idx]];
+            if (map == mapCurrent) {
+                std::cout << std::string_view(str.data() +  idx - len  + 1, str.data() + idx + 1)<< std::endl;
+            }
         }
     }
 }
@@ -60,9 +92,14 @@ void StringAlgorithms::Find_All_Anagrams_in_String()
     using TestData = std::vector<std::pair<std::pair<std::string, std::string>, int>>;
     for (const auto& [values, expected]:  TestData {
             { {"cbaebabacd", "abc"} , 1 },
+            //{ {"abcab", "abc"} , 1 },
     })
     {
-        find_all_anagrams_in_string(values.first, values.second);
+        BruteForceOne::find_all_anagrams_in_string(values.first, values.second);
+
+        std::cout << std::endl;
+
+        BruteForceTwo::find_all_anagrams_in_string(values.first, values.second);
 
         /*
         const auto actual = TEST_FUNCTION(values);
@@ -71,5 +108,5 @@ void StringAlgorithms::Find_All_Anagrams_in_String()
         }
         */
     }
-    std::cout << "OK: All tests passed\n";
+   // std::cout << "OK: All tests passed\n";
 }
