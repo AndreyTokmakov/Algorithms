@@ -45,7 +45,7 @@ int main([[maybe_unused]] int argc,
 	// ArraysAlgorithms::Find_Multiplier_Pair();
 	// ArraysAlgorithms::Find_Pair_Sum_Equal_K();
 	// ArraysAlgorithms::Find_Pair_Sum_Equal_K_Sorted_Array();
-	ArraysAlgorithms::Find_Pair_with_Maximum_Sum();
+	// ArraysAlgorithms::Find_Pair_with_Maximum_Sum();
 	// ArraysAlgorithms::Find_Missing_Number();
 	// ArraysAlgorithms::Find_Missing_Number_2();
 	// ArraysAlgorithms::Find_Missing_Number_Sorted_Array();
@@ -54,6 +54,7 @@ int main([[maybe_unused]] int argc,
 	// ArraysAlgorithms::Find_Missing_K_Number_Unsorted();
 	// ArraysAlgorithms::Find_Missing_K_Positive_Number_Sorted_Array();
 	// ArraysAlgorithms::Find_The_Duplicate_Value();
+	ArraysAlgorithms::Find_Repeated_and_Missing_Numbers();
     // ArraysAlgorithms::Reverse_Number();
     // ArraysAlgorithms::Remove_Duplicates_From_Sorted_Array();
     // ArraysAlgorithms::Remove_Duplicates();

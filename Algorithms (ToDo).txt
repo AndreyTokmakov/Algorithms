@@ -60,7 +60,7 @@ https://changhaz.wordpress.com/2014/07/18/leetcode-integer-to-roman/
 =======================================================================================================================================
 
 /**============================================================================
-Name        : Find_Pair_with_Maximum_Sum.cpp
+Name        : Find_Repeated_and_Missing_Numbers.cpp
 Created on  : 16.03.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
@@ -76,7 +76,7 @@ namespace
     using namespace ArraysAlgorithms;
 }
 
-void ArraysAlgorithms::Find_Pair_with_Maximum_Sum()
+void ArraysAlgorithms::Find_Repeated_and_Missing_Numbers()
 {
 		using TestData = std::vector<std::pair<std::vector<int>, int>>;
 		for (const auto& [values, expected]:  TestData {
@@ -97,6 +97,10 @@ void ArraysAlgorithms::Find_Pair_with_Maximum_Sum()
 							PLAN
 =======================================================================================================================================
 
+•  hash table 
+		https://leetcode.com/problems/find-all-anagrams-in-a-string/
+
+
 Numeric::Find_Repeating_And_Missing()
 permutations
 
@@ -104,9 +108,14 @@ permutations
 88.  Merge Sorted Array
 
 
+
+
+
+
 • Arrays:
 
   - 'Daily Temperatures': https://leetcode.com/problems/daily-temperatures/description/
+
 
 
 • two pointers
@@ -118,7 +127,6 @@ permutations
 	https://leetcode.com/problems/path-sum-ii/	
 
 •  hash table 
-		https://leetcode.com/problems/find-all-anagrams-in-a-string/
 		https://leetcode.com/problems/permutation-in-string/
     https://leetcode.com/problems/4sum/ 
     https://leetcode.com/problems/group-anagrams/ 
@@ -255,9 +263,10 @@ permutations
 Trees:
 
 Strings:
+  - Find_All_Anagrams_in_String
 
 Arrays:
-	Find_Pair_with_Maximum_Sum
+  - Find_Pair_with_Maximum_Sum
 
 Two pointers
 

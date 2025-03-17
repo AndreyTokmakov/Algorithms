@@ -80,6 +80,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Find_Missing_Number_2.cpp
 		algorithms/Find_Missing_Number_Any_Range.cpp
 		algorithms/Find_Missing_Number_Sorted_Array.cpp
+		algorithms/Find_Repeated_and_Missing_Numbers.cpp
 		algorithms/Unique_Permutations.cpp
 		algorithms/Find_Missing_K_Number_Sorted_Array.cpp
 		algorithms/Find_Missing_K_Positive_Number_Sorted_Array.cpp

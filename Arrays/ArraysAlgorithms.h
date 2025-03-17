@@ -53,6 +53,7 @@ namespace ArraysAlgorithms
     void Find_Missing_K_Number_Sorted_Array();
     void Find_Missing_K_Positive_Number_Sorted_Array();
     void Find_Missing_K_Number_Unsorted();
+    void Find_Repeated_and_Missing_Numbers();
     void Find_The_Duplicate_Value();
     void Find_First_and_Last_Position_of_Element_Sorter_Arrays();
     void Reverse_Number();

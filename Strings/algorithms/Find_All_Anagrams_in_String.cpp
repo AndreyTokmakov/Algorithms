@@ -26,6 +26,41 @@ Example 2: Input: s = "abab", p = "ab" Output: [0,1,2]
                           The substring with start index = 2 is "ab", which is an anagram of "ab".
 **/
 
+namespace LeetCode
+{
+    using namespace StringAlgorithms;
+
+    bool are_anagrams(const int start,
+                      const int end,
+                      const std::string& str,
+                      std::array<int, 26> map)
+    {
+        for (int idx = start; idx < end; ++idx) {
+            if (--map[str[idx]] < 0)
+                return false;
+        }
+        return true;
+    }
+
+
+    std::vector<int> find_all_anagrams_in_string(const std::string& str,
+                                                 const std::string& mask)
+    {
+        std::array<int, 26> map {0};
+        for (const char ch: mask)
+            ++map[ch];
+
+        std::vector<int> result;
+        for (int idx = 0, len = mask.size(), size = str.size() - len; idx <= size; ++idx) {
+            if (are_anagrams(idx, idx + len, str, map))
+            {
+                result.push_back(idx);
+            }
+        }
+        return result;
+    }
+}
+
 namespace BruteForceOne
 {
     using namespace StringAlgorithms;
@@ -67,19 +102,19 @@ namespace BruteForceTwo
     void find_all_anagrams_in_string(const std::string& str,
                                      const std::string& mask)
     {
-        std::array<int, 256> map { 0 }, mapCurrent { 0 };
+        std::array<int, 26> map { 0 }, mapCurrent { 0 };
         for (const char ch: mask)
-            ++map[ch];
+            ++map[ch - 'a'];
         for (int idx = 0; idx < mask.size(); ++idx)
-            ++mapCurrent[str[idx]];
+            ++mapCurrent[str[idx] - 'a'];
 
         if (map == mapCurrent) {
             std::cout << std::string_view(str.data(), str.data() +mask.size())<< std::endl;
         }
         for (size_t len = mask.size(), idx = len, size = str.size(); idx < size; ++idx)
         {
-            --mapCurrent[str[idx - len]];
-            ++mapCurrent[str[idx]];
+            --mapCurrent[str[idx - len] - 'a'];
+            ++mapCurrent[str[idx] - 'a'];
             if (map == mapCurrent) {
                 std::cout << std::string_view(str.data() +  idx - len  + 1, str.data() + idx + 1)<< std::endl;
             }
@@ -95,9 +130,8 @@ void StringAlgorithms::Find_All_Anagrams_in_String()
             //{ {"abcab", "abc"} , 1 },
     })
     {
-        BruteForceOne::find_all_anagrams_in_string(values.first, values.second);
-
-        std::cout << std::endl;
+        // BruteForceOne::find_all_anagrams_in_string(values.first, values.second);
+        // std::cout << std::endl;
 
         BruteForceTwo::find_all_anagrams_in_string(values.first, values.second);
 
