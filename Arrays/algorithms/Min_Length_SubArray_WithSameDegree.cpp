@@ -43,7 +43,7 @@ namespace
     {
         int maxOccurred = 0;
         std::unordered_map<int, Stats> counter{};
-        for (int idx = 0; idx < values.size(); ++idx) {
+        for (int idx = 0; idx < static_cast<int>(values.size()); ++idx) {
             const auto [iter, ok] = counter.emplace(values[idx], idx);
             ++(iter->second.count);
             iter->second.end = idx;

@@ -12,6 +12,10 @@ Description :
 
 #include <iostream>
 #include <string>
+#include <source_location>
+#include <print>
+#include <format>
+
 #include <list>
 #include <vector>
 #include <deque>
@@ -20,8 +24,11 @@ Description :
 #include <set>
 #include <unordered_set>
 
+
 namespace ArraysAlgorithms
 {
+    using namespace std::string_view_literals;
+
     using StrSizeTPair = std::pair<std::string, size_t>;
     using StringPair = std::pair<std::string, std::string>;
 
@@ -114,6 +121,13 @@ namespace ArraysAlgorithms
     bool operator==(const std::span<const T>& s1, const std::span<const T>& s2)
     {
         return std::equal(s1.cbegin(), s1.cend(), s2.cbegin(), s2.cend());
+    }
+
+    inline void error(const std::string_view message = "Test failed"sv,
+                      const std::source_location location = std::source_location::current())
+    {
+        std::cerr << location.function_name() << " [" << location.line()
+                  << ':' << location.column() << "] : " << message << std::endl;
     }
 }
 

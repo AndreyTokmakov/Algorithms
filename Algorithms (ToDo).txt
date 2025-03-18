@@ -22,6 +22,11 @@ https://dev.to/phoenix_238501d86d417e/two-sum-lg4
 
 https://changhaz.wordpress.com/2014/07/18/leetcode-integer-to-roman/
 
+
+# Telegramm LeetCode:
+
+	https://t.me/Leetcode_fans
+
 =======================================================================================================================================
 							[Array] Algorithms
 =======================================================================================================================================
@@ -60,7 +65,7 @@ https://changhaz.wordpress.com/2014/07/18/leetcode-integer-to-roman/
 =======================================================================================================================================
 
 /**============================================================================
-Name        : Find_Repeated_and_Missing_Numbers.cpp
+Name        : Find_First_Element_Occurred_Once.cpp
 Created on  : 16.03.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
@@ -76,7 +81,7 @@ namespace
     using namespace ArraysAlgorithms;
 }
 
-void ArraysAlgorithms::Find_Repeated_and_Missing_Numbers()
+void ArraysAlgorithms::Find_First_Element_Occurred_Once()
 {
 		using TestData = std::vector<std::pair<std::vector<int>, int>>;
 		for (const auto& [values, expected]:  TestData {
@@ -213,7 +218,7 @@ permutations
  - Course Schedule
  - Implement Trie (Prefix Tree)
  - Coin Change                            					<------- CHECK
- - Product of Array Except Self         					<------- NEXT
+✅ Product of Array Except Self
  - Validate Binary Search Tree                              <------- CHECK
  - Number of Islands
  - Rotting Oranges
@@ -229,7 +234,7 @@ permutations
  - Word Break
 
  - Partition Equal Subset Sum
- - String to Integer (atoi)                                 <------- CHECK
+✅ String to Integer (atoi)
  - Spiral Matrix
  - Subsets
  - Binary Tree Right Side View
@@ -267,6 +272,8 @@ Strings:
 
 Arrays:
   - Find_Pair_with_Maximum_Sum
+  - Find_First_Element_Occured_Odd_Times
+  - Maximum_Product_SubArray
 
 Two pointers
 

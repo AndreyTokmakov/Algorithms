@@ -32,6 +32,7 @@ namespace ArraysAlgorithms
     void Find_SubArrays_Sum_Zero();
     void Find_Element_Encountered_Only_Once();
     void Find_First_Repeating_Element();
+    void Find_First_Element_Occured_Odd_Times();
     void Find_The_Majority_Element();
     void Find_Smallest_Missing_Positive_Number();
     void Find_SubArrays_Sum_Equal_K();
@@ -73,6 +74,7 @@ namespace ArraysAlgorithms
     void Can_Jump();
     void Divide_Without_Division_Operator();
     void Maximum_Sum_SubArray_Algorithms_Kadane();
+    void Maximum_Product_SubArray();
     void Kadane_Algorithm();
     void Sort_Array_By_Parity();
     void Contains_Nearby_Duplicates();

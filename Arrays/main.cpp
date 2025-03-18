@@ -35,6 +35,7 @@ int main([[maybe_unused]] int argc,
 	// ArraysAlgorithms::Find_Smallest_Missing_Positive_Number();
 	// ArraysAlgorithms::Find_Element_Encountered_Only_Once();
 	// ArraysAlgorithms::Find_First_Repeating_Element();
+	// ArraysAlgorithms::Find_First_Element_Occured_Odd_Times();
 	// ArraysAlgorithms::Find_First_and_Last_Position_of_Element_Sorter_Arrays();
 	// ArraysAlgorithms::Find_Longest_SubArray_K_Unique_Elements();
 	// ArraysAlgorithms::Find_Longest_Increasing_Subsequence();
@@ -72,6 +73,7 @@ int main([[maybe_unused]] int argc,
     // ArraysAlgorithms::Can_Jump();
     // ArraysAlgorithms::Divide_Without_Division_Operator();
     // ArraysAlgorithms::Maximum_Sum_SubArray_Algorithms_Kadane();
+    // ArraysAlgorithms::Maximum_Product_SubArray();
     // ArraysAlgorithms::Kadane_Algorithm();
     // ArraysAlgorithms::Sort_Array_By_Parity();
     // ArraysAlgorithms::Contains_Nearby_Duplicates();

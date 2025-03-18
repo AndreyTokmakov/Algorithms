@@ -47,6 +47,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Can_Jump.cpp
 		algorithms/Divide_Without_Division_Operator.cpp
 		algorithms/Maximum_Sum_SubArray_Algorithms_Kadane.cpp
+		algorithms/Maximum_Product_SubArray.cpp
 		algorithms/Kadane_Algorithm.cpp
 		algorithms/Sort_Array_By_Parity.cpp
 		algorithms/Contains_Nearby_Duplicates.cpp
@@ -92,6 +93,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Count_Distinct_Pairs_With_Difference_K.cpp
 		algorithms/Delete_Each_Second_Value_in_Array.cpp
 		algorithms/Product_of_Array_Except_Self.cpp
+		algorithms/Find_First_Element_Occured_Odd_Times.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")
