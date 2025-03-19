@@ -80,6 +80,7 @@ namespace ArraysAlgorithms
     void Contains_Nearby_Duplicates();
     void Longest_Consecutive_Sequence();
     void Longest_Fibonacci_SubArray();
+    void Longest_Fibonacci_Sub_Sequence();
     void Add_One_to_Integer_Array();
     void Sqrt();
     void Min_Length_SubArray_WithSameDegree();
