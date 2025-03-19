@@ -67,6 +67,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Squares_of_a_Sorted_Array.cpp
 		algorithms/Longest_Subarray_With_Sum_Less_Than_K.cpp
 		algorithms/Longest_Subset_With_Positive_Bitwise_AND.cpp
+		algorithms/Longest_Fibonacci_SubArray.cpp
 		algorithms/Container_With_Most_Water.cpp
 		algorithms/Find_Longest_Increasing_Subsequence.cpp
 		algorithms/Find_Rank.cpp
@@ -94,6 +95,8 @@ add_executable(${PROJECT_NAME}
 		algorithms/Delete_Each_Second_Value_in_Array.cpp
 		algorithms/Product_of_Array_Except_Self.cpp
 		algorithms/Find_First_Element_Occured_Odd_Times.cpp
+		algorithms/Online_Stock_Spanner_DailyPrices.cpp
+
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")

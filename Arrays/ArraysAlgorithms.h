@@ -79,6 +79,7 @@ namespace ArraysAlgorithms
     void Sort_Array_By_Parity();
     void Contains_Nearby_Duplicates();
     void Longest_Consecutive_Sequence();
+    void Longest_Fibonacci_SubArray();
     void Add_One_to_Integer_Array();
     void Sqrt();
     void Min_Length_SubArray_WithSameDegree();
@@ -98,7 +99,9 @@ namespace ArraysAlgorithms
     void Sort_Colors();
     void Count_Distinct_Pairs_With_Difference_K();
     void Delete_Each_Second_Value_in_Array();
+    void Online_Stock_Spanner_DailyPrices();
     void Product_of_Array_Except_Self();
+
 }
 
 #endif //ARRAYS_ALGORITHMS_H

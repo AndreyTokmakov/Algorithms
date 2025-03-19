@@ -20,6 +20,7 @@ int main([[maybe_unused]] int argc,
     // ArraysAlgorithms::Two_Sum_Less_Than_K();
     // ArraysAlgorithms::Add_Digits();
     // ArraysAlgorithms::Best_Time_Buy_and_Sell_Stock();
+    // ArraysAlgorithms::Online_Stock_Spanner_DailyPrices();
     // ArraysAlgorithms::Single_Number();
     // ArraysAlgorithms::Single_Number_2();
     // ArraysAlgorithms::Median_of_Two_Sorted_Arrays();
@@ -39,6 +40,8 @@ int main([[maybe_unused]] int argc,
 	// ArraysAlgorithms::Find_First_and_Last_Position_of_Element_Sorter_Arrays();
 	// ArraysAlgorithms::Find_Longest_SubArray_K_Unique_Elements();
 	// ArraysAlgorithms::Find_Longest_Increasing_Subsequence();
+	// ArraysAlgorithms::Longest_Harmonious_Subsequence();
+	ArraysAlgorithms::Longest_Fibonacci_SubArray();
 	// ArraysAlgorithms::Find_Index_In_Array_to_make_Right_Equal_Left();
 	// ArraysAlgorithms::Find_Smallest_Without_Compare();
 	// ArraysAlgorithms::Find_Rank();
@@ -55,13 +58,12 @@ int main([[maybe_unused]] int argc,
 	// ArraysAlgorithms::Find_Missing_K_Number_Unsorted();
 	// ArraysAlgorithms::Find_Missing_K_Positive_Number_Sorted_Array();
 	// ArraysAlgorithms::Find_The_Duplicate_Value();
-	ArraysAlgorithms::Find_Repeated_and_Missing_Numbers();
+	// ArraysAlgorithms::Find_Repeated_and_Missing_Numbers();
     // ArraysAlgorithms::Reverse_Number();
     // ArraysAlgorithms::Remove_Duplicates_From_Sorted_Array();
     // ArraysAlgorithms::Remove_Duplicates();
     // ArraysAlgorithms::Remove_Element();
     // ArraysAlgorithms::Contains_Duplicate();
-    // ArraysAlgorithms::Longest_Harmonious_Subsequence();
     // ArraysAlgorithms::Coins_Change_Problem();
     // ArraysAlgorithms::Get_Number_Of_Digit();
     // ArraysAlgorithms::Greatest_Common_Divisor();

@@ -17,16 +17,6 @@ Description :
 
 namespace
 {
-    void FillVecor(std::vector<int> &vecor,
-                   unsigned int size,
-                   unsigned int range_start = 0,
-                   unsigned int range_end = 10000) {
-        std::random_device random_device;
-        std::mt19937 generator(random_device());
-        std::uniform_int_distribution<> distribution(range_start, range_end);
-        for (unsigned int i = 0; i < size; i++)
-            vecor.push_back(distribution(generator));
-    }
 
     using namespace ArraysAlgorithms;
 }
@@ -189,63 +179,6 @@ namespace Numeric
         {
             std::string token = CountAndSaySequence_Get_Kth_Token_3(7);
             std::cout << token << std::endl;
-        }
-    }
-
-    //---------------------------------------------------------------------------//
-
-    void _find_finabochi_subset(const std::vector<int> &Numeric) {
-        int max = *std::max_element(Numeric.begin(), Numeric.end());
-        int a = 0, b = 1, c = a + b;
-        std::vector<int> finabochiNumeric{a, b};
-
-        while (b < max) {
-            c = a + b;
-            a = b;
-            b = c;
-            finabochiNumeric.push_back(b);
-        }
-
-        size_t offset = 0, max_len = 0, curr_len = 0;
-        std::vector<int>::const_iterator iter = Numeric.begin();
-        while (Numeric.size() >= (max_len + offset)) {
-            iter = std::mismatch(Numeric.begin() + offset, Numeric.end(), finabochiNumeric.begin(), finabochiNumeric.end()).first;
-            curr_len = std::max(int(std::distance(Numeric.begin() + offset, iter)), 1);
-            max_len = std::max(max_len, curr_len);
-            offset += curr_len;
-        }
-        std::cout << max_len << std::endl;
-    }
-
-    void _find_finabochi_subset_2(const std::vector<int> &Numeric) {
-        size_t max_len = 0, len = 0;
-        for (size_t pos = 2; pos < Numeric.size(); ++pos) {
-            if ((Numeric[pos - 2] + Numeric[pos - 1]) == Numeric[pos]) {
-                len = (0 == len) ? 3 : len + 1;
-                max_len = std::max(max_len, len);
-            } else {
-                len = 0;
-            }
-        }
-        std::cout << max_len << std::endl;
-    }
-
-    void LongestSubset_FinabochiNumeric() {
-        {
-            // MAX 22
-            std::vector<int> v{0, 1, 1, 2, 3, 5, 8, 0, 1, 1, 2, 3, 5, 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 8,
-                               8, 8, 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765,
-                               10946};
-            _find_finabochi_subset(v);
-            _find_finabochi_subset_2(v);
-        }
-        std::cout << "\nTEST2:\n" << std::endl;
-        {
-            // MAX 16
-            std::vector<int> v{3, 34, 0, 1, 1, 2, 3, 5, 8, 13, 3, 1343, 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 3, 2, 345, 89, 144, 233,
-                               377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711, 28657, 46368, 75025, 121393};
-            _find_finabochi_subset(v);
-            _find_finabochi_subset_2(v);
         }
     }
 }
@@ -836,29 +769,6 @@ namespace Numeric
 
     void MiniMaxSum_Of4() {
         __MiniMaxSum({1, 2, 3, 4, 5});
-    }
-
-    //--------------------------------------------------------------------------------------//
-
-    void Find_Sum_All_Numeric() {
-        const auto test = [](int max) {
-            std::vector<int> values;
-            values.resize(max);
-            std::iota(values.begin(), values.end(), 1);
-
-            const int sum_expected = std::accumulate(values.begin(), values.end(), 0);
-            const int sum_actual = (max * (max + 1)) / 2;
-
-            if (sum_expected == sum_actual)
-                std::cout << "Test for values [1 - " << max << "]. Passed" << std::endl;
-        };
-
-        std::vector<int> params;
-        FillVecor(params, 20, 20, 1000);
-
-        for (auto i: params) {
-            test(i);
-        }
     }
 }
 
@@ -1492,7 +1402,6 @@ void ArraysAlgorithms::Other()
     // Numeric::Rotate_Array();
     // Numeric::LongestCommonSubsequence();
     // Numeric::FinabochiNumeric();
-    // Numeric::LongestSubset_FinabochiNumeric();
     // Numeric::CountAndSaySequence_Generate();
     // Numeric::CountAndSaySequence_Get_Kth_Token();
     // Numeric::CountOrderedPairs();
@@ -1527,7 +1436,6 @@ void ArraysAlgorithms::Other()
     // Numeric::Sum_Of_ConsecutiveNumeric();
     // Numeric::Is_Array_Elements_Consecutive();
     // Numeric::MiniMaxSum_Of4();
-    // Numeric::Find_Sum_All_Numeric();
     // Numeric::Find_3_Elements_SumX_Unsorted();
     // Numeric::Find_3_Elements_SumX_Sorted();
     // Numeric::DeleteFromArray();

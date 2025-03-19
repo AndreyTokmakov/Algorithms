@@ -65,8 +65,8 @@ https://changhaz.wordpress.com/2014/07/18/leetcode-integer-to-roman/
 =======================================================================================================================================
 
 /**============================================================================
-Name        : Find_First_Element_Occurred_Once.cpp
-Created on  : 16.03.2025
+Name        : Longest_Fibonacci_SubArray.cpp
+Created on  : 19.03.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
 Copyright   : Your copyright notice
@@ -81,7 +81,7 @@ namespace
     using namespace ArraysAlgorithms;
 }
 
-void ArraysAlgorithms::Find_First_Element_Occurred_Once()
+void ArraysAlgorithms::Longest_Fibonacci_SubArray()
 {
 		using TestData = std::vector<std::pair<std::vector<int>, int>>;
 		for (const auto& [values, expected]:  TestData {
@@ -105,8 +105,6 @@ void ArraysAlgorithms::Find_First_Element_Occurred_Once()
 •  hash table 
 		https://leetcode.com/problems/find-all-anagrams-in-a-string/
 
-
-Numeric::Find_Repeating_And_Missing()
 permutations
 
 222. Count Complete Tree Nodes
@@ -274,6 +272,8 @@ Arrays:
   - Find_Pair_with_Maximum_Sum
   - Find_First_Element_Occured_Odd_Times
   - Maximum_Product_SubArray
+  - Online_Stock_Spanner_DailyPrices
+  - Find_Repeating_And_Missing()
 
 Two pointers
 
