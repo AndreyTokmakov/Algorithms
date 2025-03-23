@@ -65,8 +65,8 @@ https://changhaz.wordpress.com/2014/07/18/leetcode-integer-to-roman/
 =======================================================================================================================================
 
 /**============================================================================
-Name        : Longest_Fibonacci_SubArray.cpp
-Created on  : 19.03.2025
+Name        : Is_Array_Consecutive.cpp
+Created on  : 23.03.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
 Copyright   : Your copyright notice
@@ -81,7 +81,7 @@ namespace
     using namespace ArraysAlgorithms;
 }
 
-void ArraysAlgorithms::Longest_Fibonacci_SubArray()
+void ArraysAlgorithms::Is_Array_Consecutive()
 {
 		using TestData = std::vector<std::pair<std::vector<int>, int>>;
 		for (const auto& [values, expected]:  TestData {
@@ -102,15 +102,16 @@ void ArraysAlgorithms::Longest_Fibonacci_SubArray()
 							PLAN
 =======================================================================================================================================
 
-•  hash table 
+- Longest_Fibonacci_SubArray
+
+
+• hash table 
 		https://leetcode.com/problems/find-all-anagrams-in-a-string/
 
 permutations
 
 222. Count Complete Tree Nodes
 88.  Merge Sorted Array
-
-
 
 
 
@@ -274,6 +275,8 @@ Arrays:
   - Maximum_Product_SubArray
   - Online_Stock_Spanner_DailyPrices
   - Find_Repeating_And_Missing()
+  - Longest_Fibonacci_SubArray
+  = Is_Array_Consecutive
 
 Two pointers
 

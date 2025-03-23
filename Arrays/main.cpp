@@ -25,7 +25,6 @@ int main([[maybe_unused]] int argc,
     // ArraysAlgorithms::Single_Number_2();
     // ArraysAlgorithms::Median_of_Two_Sorted_Arrays();
     // ArraysAlgorithms::Reverse_To_Make_Equal();
-    // ArraysAlgorithms::Is_Reversed_Equals();
 	// ArraysAlgorithms::Find_The_Majority_Element();
     // ArraysAlgorithms::Find_Top_K_Frequent_Numbers();
     // ArraysAlgorithms::Find_N_Min_Elements();
@@ -42,7 +41,7 @@ int main([[maybe_unused]] int argc,
 	// ArraysAlgorithms::Find_Longest_Increasing_Subsequence();
 	// ArraysAlgorithms::Longest_Harmonious_Subsequence();
 	// ArraysAlgorithms::Longest_Fibonacci_SubArray();
-	ArraysAlgorithms::Longest_Fibonacci_Sub_Sequence();
+	// ArraysAlgorithms::Longest_Fibonacci_Sub_Sequence();    /** <---------- Needs to be finished **/
 	// ArraysAlgorithms::Find_Index_In_Array_to_make_Right_Equal_Left();
 	// ArraysAlgorithms::Find_Smallest_Without_Compare();
 	// ArraysAlgorithms::Find_Rank();
@@ -69,10 +68,12 @@ int main([[maybe_unused]] int argc,
     // ArraysAlgorithms::Get_Number_Of_Digit();
     // ArraysAlgorithms::Greatest_Common_Divisor();
     // ArraysAlgorithms::Least_Common_Multiple();
+    // ArraysAlgorithms::Is_Reversed_Equals();
 	// ArraysAlgorithms::Is_Palindrome();
     // ArraysAlgorithms::Is_Power_Of2();
 	// ArraysAlgorithms::Is_Prime();
     // ArraysAlgorithms::Is_Permutation();
+    ArraysAlgorithms::Is_Array_Consecutive();
     // ArraysAlgorithms::Can_Jump();
     // ArraysAlgorithms::Divide_Without_Division_Operator();
     // ArraysAlgorithms::Maximum_Sum_SubArray_Algorithms_Kadane();

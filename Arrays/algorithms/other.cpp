@@ -548,28 +548,8 @@ namespace Numeric
 
         std::cout << min1 << "   " << min2 << std::endl;
     }
-
 }
 
-
-namespace Numeric
-{
-    void DeleteFromArray()
-    {
-        std::vector<int> data = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
-
-        const auto pred = [](int v) { return 0 == v % 2; };
-
-        size_t pos = 0;
-        for (auto &v: data) {
-            if (!pred(v))
-                std::swap(data[pos++], v);
-        }
-
-        data.resize(pos);
-        std::cout << data << std::endl;
-    }
-}
 
 namespace Numeric
 {
@@ -694,58 +674,6 @@ namespace Numeric
 
     //--------------------------------------------------------------------------------------//
 
-    bool _is_array_consecutive(const std::vector<int> &array) { // Array shall not contain duplicaties
-        int result = 0, min = array[0];
-        // Following loop is to:
-        // 1. Determine min value
-        // 2. Calculate difference between sum of all elements in range {1... length}
-        //    and sum of all elements in the input array
-        for (size_t i = 0; i < array.size(); result += i++) {
-            result -= array[i];
-            min = std::min(min, array[i]);
-        }
-
-        // Here we have to update 'result' value since the input array
-        // could start not from 1 but from 100500 for example.
-        // 'min' variable is the first value of the potential consecutive array
-        return 0 == (result + min * array.size());
-    }
-
-    bool _is_array_consecutive_2(const std::vector<int> &Numeric) {
-        std::unordered_set<int> tmp(Numeric.begin(), Numeric.end());
-        const auto minmax = std::minmax_element(Numeric.begin(), Numeric.end());
-        for (int i = *minmax.first; i < *minmax.second; ++i) {
-            if (tmp.end() == tmp.find(i))
-                return false;
-        }
-        return true;
-    }
-
-    bool _is_array_consecutive_3(const std::vector<int> &Numeric) {
-        std::set<int> tmp(Numeric.begin(), Numeric.end());
-        for (int first = *tmp.begin(), last = *std::prev(tmp.end()); first < last; ++first) {
-            if (tmp.end() == tmp.find(first))
-                return false;
-        }
-        return true;
-    }
-
-    void Is_Array_Elements_Consecutive() {
-        std::vector<std::vector<int>> testData{
-                {1,  2,  3},
-                {-1, -2, -3, -4, -4, -6},
-                {1,  2,  4},
-                {5,  4,  1,  3,  2}
-        };
-        for (const std::vector<int> &data: testData) {
-            std::cout << "\nIs Consecutive 1: " << std::boolalpha << _is_array_consecutive(data) << std::endl;
-            std::cout << "Is Consecutive 2: " << std::boolalpha << _is_array_consecutive_2(data) << std::endl;
-            std::cout << "Is Consecutive 3: " << std::boolalpha << _is_array_consecutive_3(data) << std::endl;
-        }
-
-    }
-
-    //--------------------------------------------------------------------------------------//
 
     void Sum_Of_ConsecutiveNumeric() {
         // len - length of sequance
@@ -1434,11 +1362,9 @@ void ArraysAlgorithms::Other()
     // Numeric::Subarrays_WithCurrentMaxElement();
     // Numeric::SplitArrayToPieces_FindNumber_ByExample();
     // Numeric::Sum_Of_ConsecutiveNumeric();
-    // Numeric::Is_Array_Elements_Consecutive();
     // Numeric::MiniMaxSum_Of4();
     // Numeric::Find_3_Elements_SumX_Unsorted();
     // Numeric::Find_3_Elements_SumX_Sorted();
-    // Numeric::DeleteFromArray();
     // Numeric::Find_The_Majority_Element();
     // Backtracking::List_Of_Unique_Subsets();
     // Backtracking::Permutations();

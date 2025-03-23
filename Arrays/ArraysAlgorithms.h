@@ -64,6 +64,7 @@ namespace ArraysAlgorithms
     void Remove_Element();
     void Contains_Duplicate();
     void Longest_Harmonious_Subsequence();
+    void Is_Array_Consecutive();
     void Is_Prime();
     void Is_Permutation();
     void Coins_Change_Problem();
