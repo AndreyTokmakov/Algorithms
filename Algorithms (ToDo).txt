@@ -65,8 +65,8 @@ https://changhaz.wordpress.com/2014/07/18/leetcode-integer-to-roman/
 =======================================================================================================================================
 
 /**============================================================================
-Name        : Is_Array_Consecutive.cpp
-Created on  : 23.03.2025
+Name        : Letter_Case_Permutation.cpp
+Created on  : 26.03.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
 Copyright   : Your copyright notice
@@ -74,14 +74,14 @@ Description :
 ============================================================================**/
 
 #include "../common.h"
-#include "../ArraysAlgorithms.h"
+#include "../StringAlgorithms.h"
 
 namespace
 {
-    using namespace ArraysAlgorithms;
+    using namespace StringAlgorithms;
 }
 
-void ArraysAlgorithms::Is_Array_Consecutive()
+void StringAlgorithms::Letter_Case_Permutation()
 {
 		using TestData = std::vector<std::pair<std::vector<int>, int>>;
 		for (const auto& [values, expected]:  TestData {
@@ -102,7 +102,37 @@ void ArraysAlgorithms::Is_Array_Consecutive()
 							PLAN
 =======================================================================================================================================
 
-- Longest_Fibonacci_SubArray
+
+    /*constexpr uint16_t diff = 'a' - 'A';
+    for (char c: std::string{"1A2"})
+    {
+        if (0 != std::isalpha(c))
+        {
+            if (c >= 'A' && c <= 'Z')
+                std::cout << (char)( c +diff) ;
+            else
+                std::cout << (char)( c -diff) ;
+
+        }
+        else
+        {
+            std::cout << c;
+        }
+    }
+    std::cout << '\n';*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 • hash table 
@@ -199,7 +229,7 @@ permutations
 ✅ Majority Element
 ❌ Add Binary
  - Diameter of Binary Tree
- - Middle of the Linked List                                <------- CHECK
+✅ 	Middle of the Linked List                                <------- CHECK
 ✅ Maximum Depth of Binary Tree
  - Contains Duplicate                             		      <------- CHECK
 
@@ -268,6 +298,7 @@ Trees:
 
 Strings:
   - Find_All_Anagrams_in_String
+  - Letter_Case_Permutation
 
 Arrays:
   - Find_Pair_with_Maximum_Sum
@@ -276,7 +307,7 @@ Arrays:
   - Online_Stock_Spanner_DailyPrices
   - Find_Repeating_And_Missing()
   - Longest_Fibonacci_SubArray
-  = Is_Array_Consecutive
+  - Is_Array_Consecutive
 
 Two pointers
 

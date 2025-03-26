@@ -151,21 +151,40 @@ namespace
         }
         return xorVal == 0;
     }
+
+
+    bool sort_based_approach(std::vector<int> values)
+    {
+        int minElement = *std::min_element(values.begin(), values.end());
+        for (int& val: values) {
+            std::swap(val, values[val - minElement]);
+        }
+
+        std::cout << values << std::endl;
+
+        for (const int val: values) {
+            if (val != minElement++)
+                return false;
+        }
+        return true;
+    }
 }
 
 void ArraysAlgorithms::Is_Array_Consecutive()
 {
     using TestData = std::vector<std::pair<std::vector<int>, bool>>;
     for (int testNum = 1; const auto& [values, expected]:  TestData {
-           { {1,2,3} , true },
-           { {-1,-2,-3,-4,-4,-6} , false },
-           { {1,2, 4} , false },
+            { {1,2,3} , true },
+            { {-1,-2,-3,-4,-4,-6} , false },
+            { {1,2, 4} , false },
            { {1,3,3,3,5} , false },
-           { {5,4,1,3, 2} , true },
-           { {-3,-2,-1,0,1,2,3} , true },
-           { {3,2,1,0,-1,-2,-3} , true },
+            { {5,4,1,3, 2} , true },
+            {  {-3,-2,-1,0,1,2,3} , true },
+            { {3,2,1,0,-1,-2,-3} , true },
+           { {6,9,3,1,5,4,7,8,2} , true },
     })
     {
+        /*
         if (const auto actual = is_array_consecutive_1(values); expected != actual) {
             std::cerr << "Test-1 number #" << testNum  << " failed: " <<  expected << " != " << actual << std::endl;
         }
@@ -177,12 +196,19 @@ void ArraysAlgorithms::Is_Array_Consecutive()
         }
         if (const auto actual = is_array_consecutive_XOR(values); expected != actual) {
             std::cerr << "Test-5 number #" << testNum  << " failed: " <<  expected << " != " << actual << std::endl;
-        }
+        }*/
+
         /*
         std::vector<int> vals { values };
         if (const auto actual = is_array_consecutive_Negative(vals); expected != actual) {
             std::cerr << "Test-4 number #" << testNum  << " failed: " <<  expected << " != " << actual << std::endl;
         }*/
+
+
+        if (const auto actual = sort_based_approach(values); expected != actual) {
+            std::cerr << "Test-6 number #" << testNum  << " failed: " <<  expected << " != " << actual << std::endl;
+        }
+
         ++testNum;
     }
     std::cout << "OK: All tests passed\n";

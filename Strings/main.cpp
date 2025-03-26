@@ -19,7 +19,7 @@ int main([[maybe_unused]] int argc,
     // StringAlgorithms::Find_If_String_IsSubstring_OfAnother();
     // StringAlgorithms::Find_Longest_Substring_With_K_Distinct_Characters();
     // StringAlgorithms::Find_First_K_Chars_Encountered_Once();
-    StringAlgorithms::Find_All_Anagrams_in_String();
+    // StringAlgorithms::Find_All_Anagrams_in_String();
     // StringAlgorithms::Is_Palindrome();
     // StringAlgorithms::Is_Palindrome_Ignore_Invalid_Chars();
     // StringAlgorithms::Is_String_Has_Only_Unique_Characters();
@@ -71,6 +71,8 @@ int main([[maybe_unused]] int argc,
 	// StringAlgorithms::Calc_Parentheses_K_Deletions_Make_Valid();
 	// StringAlgorithms::Sum_Strings_As_Binary_Masks();
 	// StringAlgorithms::Compress_String();
+	// StringAlgorithms::Letter_Case_Permutation();
+	StringAlgorithms::Switch_Case();
 
 	return EXIT_SUCCESS;
 }

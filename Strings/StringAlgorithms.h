@@ -71,6 +71,8 @@ namespace StringAlgorithms
     void Calc_Parentheses_K_Deletions_Make_Valid();
     void Sum_Strings_As_Binary_Masks();
     void Compress_String();
+    void Letter_Case_Permutation();
+    void Switch_Case();
 }
 
 #endif //STRING_ALGORITHMS_H
