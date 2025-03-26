@@ -95,6 +95,9 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [Calc_Parentheses_K_Deletions_Make_Valid](https://github.com/AndreyTokmakov/Algorithms/blob/main/Strings/algorithms/Calc_Parentheses_K_Deletions_Make_Valid.cpp)<br/>
 -  [Longest_Common_Prefix](https://github.com/AndreyTokmakov/Algorithms/blob/main/Strings/algorithms/Longest_Common_Prefix.cpp#L26)<br/>
 -  [Compress_String](https://github.com/AndreyTokmakov/Algorithms/blob/main/Strings/algorithms/Compress_String.cpp#L31)<br/>
+-  [Find_All_Anagrams_in_String](https://github.com/AndreyTokmakov/Algorithms/blob/main/Strings/algorithms/Find_All_Anagrams_in_String.cpp#L33)<br/>
+-  [Letter_Case_Permutation](https://github.com/AndreyTokmakov/Algorithms/blob/main/Strings/algorithms/Letter_Case_Permutation.cpp#L29)<br/>
+-  [Switch_Case](https://github.com/AndreyTokmakov/Algorithms/blob/main/Strings/algorithms/Switch_Case.cpp#L17)<br/>
 
 <a id="math_arrays_algorithms"></a>
 ## Math and Arrays Algorithms
@@ -176,6 +179,13 @@ Nothing special, just an attempt to structure and study C++ algorithms
 -  [Count_Distinct_Pairs_With_Difference_K](Count_Distinct_Pairs_With_Difference_K)<br/>
 -  [Delete_Each_Second_Value_in_Array](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Delete_Each_Second_Value_in_Array.cpp#L17)<br/>
 -  [Product_of_Array_Except_Self](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Product_of_Array_Except_Self.cpp#L28)<br/>
+-  [Find_Pair_with_Maximum_Sum](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_Pair_with_Maximum_Sum.cpp#L17)<br/>
+-  [Find_First_Element_Occured_Odd_Times](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_First_Element_Occured_Odd_Times.cpp#L18)<br/>
+-  [Maximum_Product_SubArray](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Maximum_Product_SubArray.cpp#L29)<br/>
+-  [Online_Stock_Spanner_DailyPrices](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Online_Stock_Spanner_DailyPrices.cpp#L50)<br/>
+-  [Find_Repeating_And_Missing](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Find_Repeated_and_Missing_Numbers.cpp#L18)<br/>
+-  [Longest_Fibonacci_SubArray](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Longest_Fibonacci_SubArray.cpp#L17)<br/>
+-  [Is_Array_Consecutive](https://github.com/AndreyTokmakov/Algorithms/blob/main/Arrays/algorithms/Is_Array_Consecutive.cpp#L17)<br/>
 
 <a id="linked_list"></a>
 ## Linked List
