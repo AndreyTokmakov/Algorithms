@@ -65,7 +65,7 @@ https://changhaz.wordpress.com/2014/07/18/leetcode-integer-to-roman/
 =======================================================================================================================================
 
 /**============================================================================
-Name        : Letter_Case_Permutation.cpp
+Name        : Switch_Case.cpp
 Created on  : 26.03.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
@@ -81,7 +81,7 @@ namespace
     using namespace StringAlgorithms;
 }
 
-void StringAlgorithms::Letter_Case_Permutation()
+void StringAlgorithms::Switch_Case()
 {
 		using TestData = std::vector<std::pair<std::vector<int>, int>>;
 		for (const auto& [values, expected]:  TestData {
@@ -101,37 +101,6 @@ void StringAlgorithms::Letter_Case_Permutation()
 =======================================================================================================================================
 							PLAN
 =======================================================================================================================================
-
-
-    /*constexpr uint16_t diff = 'a' - 'A';
-    for (char c: std::string{"1A2"})
-    {
-        if (0 != std::isalpha(c))
-        {
-            if (c >= 'A' && c <= 'Z')
-                std::cout << (char)( c +diff) ;
-            else
-                std::cout << (char)( c -diff) ;
-
-        }
-        else
-        {
-            std::cout << c;
-        }
-    }
-    std::cout << '\n';*/
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -299,6 +268,7 @@ Trees:
 Strings:
   - Find_All_Anagrams_in_String
   - Letter_Case_Permutation
+  - Switch_Case
 
 Arrays:
   - Find_Pair_with_Maximum_Sum
