@@ -17,7 +17,7 @@ int main([[maybe_unused]] int argc,
     // StringAlgorithms::Other();
     // StringAlgorithms::Remove_Adjacent_Duplicates();
     // StringAlgorithms::Find_If_String_IsSubstring_OfAnother();
-    // StringAlgorithms::Find_Longest_Substring_With_K_Distinct_Characters();
+
     // StringAlgorithms::Find_First_K_Chars_Encountered_Once();
     // StringAlgorithms::Find_All_Anagrams_in_String();
     // StringAlgorithms::Is_Palindrome();
@@ -39,6 +39,8 @@ int main([[maybe_unused]] int argc,
     // StringAlgorithms::Are_Anagrams();
     // StringAlgorithms::Check_Valid_Parentheses_1_Bracket();
     // StringAlgorithms::Check_Valid_Parentheses_3_Bracket();
+	// StringAlgorithms::Longest_Substring_With_K_Distinct_Characters();
+	// StringAlgorithms::Longest_Word();
     // StringAlgorithms::Longest_Substring_Without_Repeating_Characters();
     // StringAlgorithms::Longest_Substring_Without_Repeating_Characters_2();
     // StringAlgorithms::Longest_Substring_With_Maximum_K_Unique_Characters();
@@ -50,12 +52,12 @@ int main([[maybe_unused]] int argc,
     // StringAlgorithms::Single_Row_Keyboard();
     // StringAlgorithms::Destination_City();
     // StringAlgorithms::Maximum_Consecutive_Characters_SubString();
+    StringAlgorithms::Minimum_Substring_of_Other_String_Chars();
     // StringAlgorithms::Is_Words_Can_Be_Formed_by_Characters();
     // StringAlgorithms::Int_To_Roman();
     // StringAlgorithms::Roman_To_Int();
     // StringAlgorithms::Count_Anagrams();
     // StringAlgorithms::Intersperse_String();
-    // StringAlgorithms::Find_Longest_Word();
     // StringAlgorithms::Reverse_Words_in_String();
     // StringAlgorithms::Find_Common_Prefix_And_Postfix();
     // StringAlgorithms::Find_Duplicate_Symbols();
@@ -72,7 +74,7 @@ int main([[maybe_unused]] int argc,
 	// StringAlgorithms::Sum_Strings_As_Binary_Masks();
 	// StringAlgorithms::Compress_String();
 	// StringAlgorithms::Letter_Case_Permutation();
-	StringAlgorithms::Switch_Case();
+	// StringAlgorithms::Switch_Case();
 
 	return EXIT_SUCCESS;
 }

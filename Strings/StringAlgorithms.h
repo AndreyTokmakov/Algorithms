@@ -17,7 +17,7 @@ namespace StringAlgorithms
 
     void Remove_Adjacent_Duplicates();
     void Find_If_String_IsSubstring_OfAnother();
-    void Find_Longest_Substring_With_K_Distinct_Characters();
+    void Longest_Substring_With_K_Distinct_Characters();
     void Find_All_Anagrams_in_String();
     void Find_First_K_Chars_Encountered_Once();
     void Is_Palindrome();
@@ -50,12 +50,13 @@ namespace StringAlgorithms
     void Single_Row_Keyboard();
     void Destination_City();
     void Maximum_Consecutive_Characters_SubString();
+    void Minimum_Substring_of_Other_String_Chars();
     void Is_Words_Can_Be_Formed_by_Characters();
     void Int_To_Roman();
     void Roman_To_Int();
     void Count_Anagrams();
     void Intersperse_String();
-    void Find_Longest_Word();
+    void Longest_Word();
     void Reverse_Words_in_String();
     void Find_Common_Prefix_And_Postfix();
     void Find_Duplicate_Symbols();

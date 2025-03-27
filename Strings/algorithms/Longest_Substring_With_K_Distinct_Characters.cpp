@@ -1,5 +1,5 @@
 /**============================================================================
-Name        : Find_Longest_Substring_With_K_Distinct_Characters.cpp
+Name        : Longest_Substring_With_K_Distinct_Characters.cpp
 Created on  : 14.01.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
@@ -19,7 +19,7 @@ namespace
     using namespace StringAlgorithms;
 
 
-    int find_longest_substring_with_k_distinct_characters(const std::string& str, size_t K)
+    int longest_substring_with_k_distinct_characters(const std::string& str, size_t K)
     {
         int chars[256] = { 0 };
 
@@ -44,8 +44,8 @@ namespace
     }
 }
 
-void StringAlgorithms::Find_Longest_Substring_With_K_Distinct_Characters()
+void StringAlgorithms::Longest_Substring_With_K_Distinct_Characters()
 {
     std::string str = "aaabaaaaadddddccccccggggg";
-    find_longest_substring_with_k_distinct_characters(str, 2);
+    longest_substring_with_k_distinct_characters(str, 2);
 }
