@@ -73,8 +73,9 @@ int main([[maybe_unused]] int argc,
     // ArraysAlgorithms::Is_Power_Of2();
 	// ArraysAlgorithms::Is_Prime();
     // ArraysAlgorithms::Is_Permutation();
-    ArraysAlgorithms::Is_Array_Consecutive();
+    // ArraysAlgorithms::Is_Array_Consecutive();
     // ArraysAlgorithms::Can_Jump();
+    ArraysAlgorithms::Construct_the_Rectangle();
     // ArraysAlgorithms::Divide_Without_Division_Operator();
     // ArraysAlgorithms::Maximum_Sum_SubArray_Algorithms_Kadane();
     // ArraysAlgorithms::Maximum_Product_SubArray();
