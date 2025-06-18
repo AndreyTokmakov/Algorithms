@@ -65,8 +65,8 @@ https://changhaz.wordpress.com/2014/07/18/leetcode-integer-to-roman/
 =======================================================================================================================================
 
 /**============================================================================
-Name        : Switch_Case.cpp
-Created on  : 26.03.2025
+Name        : Construct_the_Rectangle.cpp
+Created on  : 15.04.2025
 Author      : Andrei Tokmakov
 Version     : 1.0
 Copyright   : Your copyright notice
@@ -74,14 +74,14 @@ Description :
 ============================================================================**/
 
 #include "../common.h"
-#include "../StringAlgorithms.h"
+#include "../ArraysAlgorithms.h"
 
 namespace
 {
-    using namespace StringAlgorithms;
+    using namespace ArraysAlgorithms;
 }
 
-void StringAlgorithms::Switch_Case()
+void ArraysAlgorithms::Construct_the_Rectangle()
 {
 		using TestData = std::vector<std::pair<std::vector<int>, int>>;
 		for (const auto& [values, expected]:  TestData {
@@ -263,21 +263,15 @@ permutations
 							Update README  |  -  [__NAME__](__LINK__)<br/>
 =======================================================================================================================================
 
-Trees:
-
 Strings:
-  - Find_All_Anagrams_in_String
-  - Letter_Case_Permutation
-  - Switch_Case
 
+	Find_Longest_Substring_With_K_Distinct_Characters ---> Longest_Substring_With_K_Distinct_Characters
+	Find_Longest_Word                                 ---> Find_Longest_Word 
+
+Trees:
 Arrays:
-  - Find_Pair_with_Maximum_Sum
-  - Find_First_Element_Occured_Odd_Times
-  - Maximum_Product_SubArray
-  - Online_Stock_Spanner_DailyPrices
-  - Find_Repeating_And_Missing()
-  - Longest_Fibonacci_SubArray
-  - Is_Array_Consecutive
+
+	Construct_the_Rectangle
 
 Two pointers
 

@@ -11,7 +11,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Remove_Adjacent_Duplicates.cpp
 		algorithms/Other.cpp
 		algorithms/Find_If_String_IsSubstring_OfAnother.cpp
-		algorithms/Find_Longest_Substring_With_K_Distinct_Characters.cpp
+		algorithms/Longest_Substring_With_K_Distinct_Characters.cpp
 		algorithms/Find_First_K_Chars_Encountered_Once.cpp
 		algorithms/Find_All_Anagrams_in_String.cpp
 		algorithms/Is_Palindrome.cpp
@@ -41,12 +41,13 @@ add_executable(${PROJECT_NAME}
 		algorithms/Single_Row_Keyboard.cpp
 		algorithms/Destination_City.cpp
 		algorithms/Maximum_Consecutive_Characters_SubString.cpp
+		algorithms/Minimum_Substring_of_Other_String_Chars.cpp
 		algorithms/Is_Words_Can_Be_Formed_by_Characters.cpp
 		algorithms/Int_To_Roman.cpp
 		algorithms/Roman_To_Int.cpp
 		algorithms/Count_Anagrams.cpp
 		algorithms/Intersperse_String.cpp
-		algorithms/Find_Longest_Word.cpp
+		algorithms/Longest_Word.cpp
 		algorithms/Reverse_Words_in_String.cpp
 		algorithms/Find_Common_Prefix_And_Postfix.cpp
 		algorithms/Find_Duplicate_Symbols.cpp
@@ -67,6 +68,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Compress_String.cpp
 		algorithms/Letter_Case_Permutation.cpp
 		algorithms/Switch_Case.cpp
+		algorithms/Minimum_Substring_of_Other_String_Chars.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")

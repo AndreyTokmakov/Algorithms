@@ -84,6 +84,7 @@ namespace ArraysAlgorithms
     void Longest_Fibonacci_Sub_Sequence();
     void Add_One_to_Integer_Array();
     void Sqrt();
+    void Construct_the_Rectangle();
     void Min_Length_SubArray_WithSameDegree();
     void Maximum_Area_Between_Boundaries();
     void Container_With_Most_Water();

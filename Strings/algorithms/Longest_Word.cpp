@@ -54,7 +54,7 @@ namespace
     }
 }
 
-void StringAlgorithms::Find_Longest_Word()
+void StringAlgorithms::Longest_Word()
 {
     for (const auto  &[value, expected]: std::vector<StringPair> {
             {"11 222 33", "222"},
