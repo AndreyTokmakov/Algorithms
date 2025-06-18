@@ -62,6 +62,7 @@ namespace
         return count;
     }
 
+
     int count_bags2(const std::vector<int>& capacity,
                     const std::vector<int>& rocks,
                     int additionalRocks)
