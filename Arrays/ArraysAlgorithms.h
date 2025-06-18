@@ -103,6 +103,7 @@ namespace ArraysAlgorithms
     void Delete_Each_Second_Value_in_Array();
     void Online_Stock_Spanner_DailyPrices();
     void Product_of_Array_Except_Self();
+    void Maximum_Bags_With_Full_Capacity_of_Rocks();
 
 }
 

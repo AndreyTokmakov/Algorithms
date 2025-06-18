@@ -97,6 +97,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Product_of_Array_Except_Self.cpp
 		algorithms/Find_First_Element_Occured_Odd_Times.cpp
 		algorithms/Online_Stock_Spanner_DailyPrices.cpp
+		algorithms/Maximum_Bags_With_Full_Capacity_of_Rocks.cpp
 
 )
 

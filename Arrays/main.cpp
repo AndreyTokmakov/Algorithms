@@ -73,7 +73,7 @@ int main([[maybe_unused]] int argc,
     // ArraysAlgorithms::Is_Power_Of2();
 	// ArraysAlgorithms::Is_Prime();
     // ArraysAlgorithms::Is_Permutation();
-    ArraysAlgorithms::Is_Array_Consecutive();
+    // ArraysAlgorithms::Is_Array_Consecutive();
     // ArraysAlgorithms::Can_Jump();
     // ArraysAlgorithms::Divide_Without_Division_Operator();
     // ArraysAlgorithms::Maximum_Sum_SubArray_Algorithms_Kadane();
@@ -101,6 +101,7 @@ int main([[maybe_unused]] int argc,
     // ArraysAlgorithms::Count_Distinct_Pairs_With_Difference_K();
     // ArraysAlgorithms::Delete_Each_Second_Value_in_Array();
     // ArraysAlgorithms::Product_of_Array_Except_Self();
+    ArraysAlgorithms::Maximum_Bags_With_Full_Capacity_of_Rocks();
 
 
 
