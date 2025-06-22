@@ -20,6 +20,22 @@ Description :
 
 namespace GraphsAlgorithms
 {
+    template<typename T = int >
+    struct GraphBase
+    {
+        using value_type = T;
+        std::map<value_type, std::vector<value_type>> nodes;
+
+        GraphBase& addEdge(const value_type v, const value_type w)
+        {
+            nodes[v].push_back(w);
+            nodes[w].push_back(v);
+            return *this;
+        }
+    };
+
+
+
     template<typename T>
     std::ostream& operator<<(std::ostream& stream, const std::vector<T>& vect) {
         for (const T& entry : vect)

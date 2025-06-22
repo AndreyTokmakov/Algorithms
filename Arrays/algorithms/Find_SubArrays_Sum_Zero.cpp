@@ -30,7 +30,7 @@ namespace
     find_subArrays_sum_zero(std::span<const int> values)
     {
         std::vector<std::span<const int>> result;
-        std::unordered_multimap<int, int> map = {{0, -1}};
+        std::unordered_multimap<int, int> map {{0, -1}};
         for (int idx = 0, sum = 0, size = values.size(); idx < size; ++idx)
         {
             sum += values[idx];
@@ -43,7 +43,7 @@ namespace
                     ++iter;
                 }
             }
-            map.insert({sum, idx});
+            map.emplace(sum, idx);
         }
         return result;
     }
@@ -51,12 +51,13 @@ namespace
 
 void ArraysAlgorithms::Find_SubArrays_Sum_Zero()
 {
+    /*
     using TestData = std::vector< std::pair<std::vector<int>, std::vector<int>>>;
     for (const auto& [data, expected]:  TestData{
             { {1, 3, 2, -5, 3}, {3, 2, -5}},
     })
     {
-        const std::optional<std::span<const int>> actual = find_sub_arrays_sum_zero_SLOW(data);
+        const std::optional<std::span<const int>> actual = find_sub_arrays_sum_zero_SLOW(96data);
         if (actual.value() != std::span<const int>(expected)) {
             std::cerr << std::boolalpha << expected << " != " << actual.value() << std::endl;
         }
@@ -64,6 +65,12 @@ void ArraysAlgorithms::Find_SubArrays_Sum_Zero()
     std::cout << "OK: All tests passed\n";
 
     const std::vector<int> values = { 3,4,-7,3,1,3,1,-4,-2,-2};
+    std::vector<std::span<const int>> result = find_subArrays_sum_zero(values);
+    for (const auto& span: result)
+        std::cout << span << std::endl;
+    */
+
+    const std::vector<int> values = { 3,4,-7};
     std::vector<std::span<const int>> result = find_subArrays_sum_zero(values);
     for (const auto& span: result)
         std::cout << span << std::endl;

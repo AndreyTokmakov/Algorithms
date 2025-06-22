@@ -13,6 +13,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/DFS.cpp
 		algorithms/DFS_NonRecur.cpp
 		algorithms/Detect_Cycle.cpp
+		algorithms/Detect_Cycle_2.cpp
 		algorithms/Find_Shortest_Path.cpp
 )
 

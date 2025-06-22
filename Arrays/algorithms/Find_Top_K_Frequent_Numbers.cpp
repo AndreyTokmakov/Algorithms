@@ -19,16 +19,15 @@ namespace
         for (int v: nums)
             ++counter[v];
 
-        std::map<int, std::vector<int>> freqs;
+        std::map<int, std::vector<int>, std::greater<>> freqs;
         for (const auto [val, N]: counter)
             freqs[N].emplace_back(val);
 
         std::vector<int> out;
         out.reserve(k);
-        for (auto iter = freqs.rbegin(); freqs.rend() != iter; ++iter) {
-            std::sort(iter->second.begin(), iter->second.end());
-            for (auto &&s: iter->second) {
-                out.push_back(s);
+        for (const auto& [_, values]: freqs) {
+            for (int v: values) {
+                out.push_back(v);
                 if (--k == 0)
                     return out;
             }
@@ -66,7 +65,7 @@ void ArraysAlgorithms::Find_Top_K_Frequent_Numbers()
     // TODO: Fix tests (remove std::cout && add asserts)
     for (const std::pair<std::vector<int>, int>& data: std::vector<std::pair<std::vector<int>, int>> {
             {{1,1,1,2,2,3}, 2}, // ==> { 1,2 }
-            {{1,1,1,2,2,3,4,5,4,4}, 3} // ==> { 1,2, 4 }
+            {{1,1,2,2,3,3,4,4,5,5,6,6,6,7,7,7,8,8}, 2} // ==> { 1,2, 4 }
     })
     {
         std::cout << _top_K_Frequent(data.first, data.second) << std::endl;

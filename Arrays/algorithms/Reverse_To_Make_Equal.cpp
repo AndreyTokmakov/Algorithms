@@ -24,7 +24,8 @@ namespace
         for (start = 0; start < v2.size() && v1[start] == v2[start]; start++) {}
         if ((v1.size() - 1) == start)
             return true;
-        /* Get first from END different element: */
+
+        /* Get first from END a different element: */
         for (end = v2.size() - 1; end >= start && v1[end] == v2[end]; end--) {}
 
         /* Check if */

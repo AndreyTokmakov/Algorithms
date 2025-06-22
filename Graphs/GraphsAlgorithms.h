@@ -19,6 +19,7 @@ namespace GraphsAlgorithms
     void DFS();
     void DFS_NonRecur();
     void Detect_Cycle();
+    void Detect_Cycle_2();
     void Find_Shortest_Path();
 }
 

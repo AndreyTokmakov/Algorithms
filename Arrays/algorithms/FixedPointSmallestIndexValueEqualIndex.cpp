@@ -27,11 +27,11 @@ namespace
         int leftIdx = 0, rightIdx = values.size() - 1;
         while (leftIdx < rightIdx)
         {
-            int middle = (leftIdx + rightIdx) >> 1;
-            if (values[middle] < middle) {
-                leftIdx = middle + 1;
+            int midIdx = (leftIdx + rightIdx) >> 1;
+            if (values[midIdx] < midIdx) {
+                leftIdx = midIdx + 1;
             } else {
-                rightIdx = middle;
+                rightIdx = midIdx;
             }
         }
         return values[leftIdx] == leftIdx ? leftIdx : -1;

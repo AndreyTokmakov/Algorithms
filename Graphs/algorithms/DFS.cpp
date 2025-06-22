@@ -60,12 +60,13 @@ namespace GraphsAlgorithms::DFS_1
 
 namespace GraphsAlgorithms::DFS_2
 {
-    struct  Graph
+    struct Graph
     {
         std::map<int, std::vector<int>> nodes;
 
-        void addEdge(const int v, const int w) {
-            nodes[v].push_back(w); // Add w to v�s list.
+        Graph& addEdge(const int v, const int w) {
+            nodes[v].push_back(w);
+            return *this;
         }
 
         void dfs(const int v,  std::vector<bool>& visited) {
@@ -90,12 +91,7 @@ namespace GraphsAlgorithms::DFS_2
     {
         // Create a graph given in the above diagram
         Graph g;
-        g.addEdge(0, 1);
-        g.addEdge(0, 9);
-        g.addEdge(1, 2);
-        g.addEdge(2, 0);
-        g.addEdge(2, 3);
-        g.addEdge(9, 3);
+        g.addEdge(0, 1).addEdge(0, 9).addEdge(1, 2).addEdge(2, 0).addEdge(2, 3).addEdge(9, 3);
 
         std::cout << "Following is Depth First Traversal (starting from vertex 2) \n";
         g.DFS(2);

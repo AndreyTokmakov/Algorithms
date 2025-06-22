@@ -7,6 +7,7 @@ Copyright   : Your copyright notice
 Description :
 ============================================================================**/
 
+#include <utility>
 #include "../common.h"
 #include "../ArraysAlgorithms.h"
 
@@ -24,7 +25,7 @@ namespace
     {
         int tmp = 0;
         while (value > 9) {
-            tmp = value; value = 0;
+            tmp = std::exchange(value, 0);
             while (tmp > 9) {
                 value += tmp % 10;
                 tmp = tmp / 10;

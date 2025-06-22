@@ -27,7 +27,8 @@ namespace
 
             /// As soon as we meet (sum - K) in the map, it means that there is at least one subarray with
             /// the sum 0. And the beginning of this list (lists) has a second index in the map
-            if (auto iter = map.find(sum - K); map.end() != iter) {
+            if (auto iter = map.find(sum - K); map.end() != iter)
+            {
                 while (iter != map.end() && iter->first == static_cast<int>(sum - K)) {
                     result.push_back(values.subspan(iter->second + 1, idx - iter->second));
                     ++iter;

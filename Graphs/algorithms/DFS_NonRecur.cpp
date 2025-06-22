@@ -15,7 +15,7 @@ namespace
 {
     using namespace GraphsAlgorithms;
 
-    struct  Graph
+    struct Graph
     {
         using value_type = int;
         std::map<value_type, std::vector<value_type>> graph;
@@ -28,8 +28,8 @@ namespace
 
         void dfs(value_type s)
         {
-            std::map<value_type, bool> visited {{s, true} };
-            std::vector<int> vec { s }; // deque contains 1-st node
+            std::map<value_type, bool> visited { {s, true } };
+            std::vector<value_type> vec { s }; // deque contains 1-st node
 
             while (!vec.empty()) {
                 s = vec.back();
@@ -37,7 +37,7 @@ namespace
 
                 std::cout << s << " ";
 
-                for (const auto& nodes = graph[s]; int it: nodes) {
+                for (const auto& nodes = graph[s]; value_type it: nodes) {
                     if (!visited[it]) {
                         visited[it] = true;
                         vec.push_back(it);
@@ -51,6 +51,11 @@ namespace
 
 void GraphsAlgorithms::DFS_NonRecur()
 {
+
+    Graph graph;
+    graph.add(0, 1).add(0, 9).add(1, 2).add(2, 0).add(2, 3).add(9, 3);
+    graph.dfs(2);
+
     /*
     {
         Graph g;
@@ -62,6 +67,7 @@ void GraphsAlgorithms::DFS_NonRecur()
     std::cout << std::endl;
     */
 
+    /*
     {
         Graph g;
         // g.add(0, 1).add(0, 9).add(1, 2).add(2, 0).add(2, 3).add(9, 3);
@@ -71,7 +77,7 @@ void GraphsAlgorithms::DFS_NonRecur()
 
 
         g.dfs(0);
-    }
+    }*/
 
     /*
     std::cout << std::endl;

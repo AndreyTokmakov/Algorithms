@@ -18,7 +18,8 @@ int main([[maybe_unused]] int argc,
 	// GraphsAlgorithms::DFS();
 	// GraphsAlgorithms::DFS_NonRecur();
 	// GraphsAlgorithms::Detect_Cycle();
-	GraphsAlgorithms::Find_Shortest_Path();
+	GraphsAlgorithms::Detect_Cycle_2();
+	// GraphsAlgorithms::Find_Shortest_Path();
 
 
 	return EXIT_SUCCESS;
