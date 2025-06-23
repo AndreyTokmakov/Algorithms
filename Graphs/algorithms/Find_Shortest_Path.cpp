@@ -14,34 +14,38 @@ namespace
 {
     using namespace GraphsAlgorithms;
 
-    struct  Graph
+    struct Graph: GraphBase<int>
     {
-        std::map<int, std::vector<int>> nodes;
+        int maxNode = 0;
         std::vector<int> path;
         std::vector<int> shortest;
-        int maxId {0};
 
-        void addEdge(const int from, const int to) {
-            nodes[from].push_back(to);
-            maxId = std::max(std::max(from, to), maxId) ;
+        GraphBase& addEdge(const value_type v, const value_type w)
+        {
+            maxNode = std::max(maxNode, v);
+            maxNode = std::max(maxNode, w);
+            return GraphBase<int>::addEdge(v ,w);
         }
 
-        void FindPaths(int v, int node_to_find)
+        void findPath(int v, int node_to_find)
         {
             path.clear();
             shortest.clear();
-            std::vector<bool> visited(maxId + 1, false);
 
+            std::vector<bool> visited(maxNode + 1, false);
             findPath(v, node_to_find, visited);
         }
 
-        void findPath(int from, int to, std::vector<bool>& visited) {
+        void findPath(int from, int to, std::vector<bool>& visited)
+        {
             visited[from] = true;
             path.push_back(from);
 
             if (from == to) {
-                if (shortest.empty() || shortest.size() > path.size())
+                if (shortest.empty() || shortest.size() > path.size()) {
                     shortest.assign(path.begin(), path.end());
+                    return;
+                }
             }
             else {
                 for (const auto id : nodes[from])
@@ -53,8 +57,8 @@ namespace
             visited[from] = false;
         }
 
-        void print_max() {
-            std::cout << "shortest_path = " << shortest << std::endl;
+        void printPath() const noexcept {
+            std::cout << shortest << std::endl;
         }
     };
 }
@@ -62,15 +66,15 @@ namespace
 
 void GraphsAlgorithms::Find_Shortest_Path()
 {
-    Graph g;
-    g.addEdge(0, 1);
-    g.addEdge(0, 2);
-    g.addEdge(0, 3);
-    g.addEdge(2, 0);
-    g.addEdge(2, 1);
-    g.addEdge(1, 3);
+    Graph graph;
 
+    graph.addEdge(0, 1).addEdge(0, 2)
+            .addEdge(1, 0).addEdge(1, 3)
+            .addEdge(2, 0).addEdge(2, 4)
+            .addEdge(3, 1).addEdge(3, 5)
+            .addEdge(4, 2).addEdge(5, 3);
 
-    g.FindPaths(2, 3);
-    g.print_max();
+    graph.findPath(0, 5);
+    graph.printPath();
+
 }

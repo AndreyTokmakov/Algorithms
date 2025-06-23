@@ -15,6 +15,8 @@ add_executable(${PROJECT_NAME}
 		algorithms/Detect_Cycle.cpp
 		algorithms/Detect_Cycle_2.cpp
 		algorithms/Find_Shortest_Path.cpp
+		algorithms/Find_Shortest_Path_1.cpp
+		algorithms/Find_Shortest_Path_Dijkstra.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")

@@ -21,6 +21,8 @@ namespace GraphsAlgorithms
     void Detect_Cycle();
     void Detect_Cycle_2();
     void Find_Shortest_Path();
+    void Find_Shortest_Path_1();
+    void Find_Shortest_Path_Dijkstra();
 }
 
 #endif //GRAPHS_ALGORITHMS_H
