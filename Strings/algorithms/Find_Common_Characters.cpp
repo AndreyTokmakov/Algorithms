@@ -94,6 +94,30 @@ namespace
         }
         return ret;
     }
+
+    std::vector<std::string> commonCharsEx(const std::vector<std::string>& strings)
+    {
+        constexpr uint32_t diff = 'z' - 'a';
+        std::vector<std::string> ret;
+        std::array<uint32_t, diff> chars {};
+        for (const std::string& str: strings) {
+            std::array<bool, diff>  tmp{};
+            for (const char ch: str) {
+                tmp[ch - 'a'] = true;
+            }
+            for (uint32_t i = 0; i < tmp.size(); ++i) {
+                chars[i] += tmp[i];
+            }
+        }
+
+        for (uint32_t idx = 0, size = strings.size(); idx < chars.size(); ++idx) {
+            if (size == chars[idx]) {
+                std::cout << (char)(idx +'a') << std::endl;
+            }
+        }
+
+        return ret;
+    }
 }
 
 void StringAlgorithms::Find_Common_Characters()
@@ -103,8 +127,9 @@ void StringAlgorithms::Find_Common_Characters()
             {{"bella","label","roller"},{'e','l','l'}},
     })
     {
-        //std::cout << find_common_characters_without_duplicates(values) << std::endl;
-        std::cout << find_common_characters(values) << std::endl;
+        std::cout << find_common_characters_without_duplicates(values) << std::endl;
+        // std::cout << find_common_characters(values) << std::endl;
+        // commonCharsEx(values);
     }
     std::cout << "OK: All tests passed\n";
 }

@@ -43,6 +43,7 @@ namespace
                 case 'R': ++h; break;
                 case 'D': --v; break;
                 case 'U': ++v; break;
+                default:       break;
             }
         }
         return h == 0 && v == 0;

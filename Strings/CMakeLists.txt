@@ -45,6 +45,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Is_Words_Can_Be_Formed_by_Characters.cpp
 		algorithms/Int_To_Roman.cpp
 		algorithms/Roman_To_Int.cpp
+		algorithms/Roman_To_Int_2.cpp
 		algorithms/Count_Anagrams.cpp
 		algorithms/Intersperse_String.cpp
 		algorithms/Longest_Word.cpp
@@ -69,6 +70,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Letter_Case_Permutation.cpp
 		algorithms/Switch_Case.cpp
 		algorithms/Minimum_Substring_of_Other_String_Chars.cpp
+		algorithms/Restore_Valid_IP_Addresses.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/Utilities")

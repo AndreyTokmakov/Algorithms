@@ -23,9 +23,16 @@ namespace
         for (size_t idx = 0, size = str.size(); idx < str.size(); ++idx)
         {
             const char c = str[idx];
-            if ('M' == c)      result += 1000;
-            else if ('D' == c) result += 500;
-            else if ('C' == c) {
+            if ('M' == c)
+            {
+                result += 1000;
+            }
+            else if ('D' == c)
+            {
+                result += 500;
+            }
+            else if ('C' == c)
+            {
                 if (size > idx && str[idx + 1] == 'D') {
                     result += 400;
                     ++idx;
@@ -36,8 +43,12 @@ namespace
                     result += 100;
                 }
             }
-            else if ('L' == c) result += 50;
-            else if ('X' == c) {
+            else if ('L' == c)
+            {
+                result += 50;
+            }
+            else if ('X' == c)
+            {
                 if (size > idx && str[idx + 1] == 'L') {
                     result += 40;
                     ++idx;
@@ -48,15 +59,22 @@ namespace
                     result += 10;
                 }
             }
-            else if ('V' == c) result += 5;
-            else if ('I' == c) {
-                if (size > idx && str[idx + 1] == 'V') {
+            else if ('V' == c) {
+                result += 5;
+            }
+            else if ('I' == c)
+            {
+                if (size > idx && str[idx + 1] == 'V')
+                {
                     result += 4;
                     ++idx;
-                } else if (size > idx && str[idx + 1] == 'X') {
+                }
+                else if (size > idx && str[idx + 1] == 'X')
+                {
                     result += 9;
                     ++idx;
-                } else {
+                }
+                else {
                     result += 1;
                 }
             }

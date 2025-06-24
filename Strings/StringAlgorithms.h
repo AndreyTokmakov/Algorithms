@@ -54,6 +54,7 @@ namespace StringAlgorithms
     void Is_Words_Can_Be_Formed_by_Characters();
     void Int_To_Roman();
     void Roman_To_Int();
+    void Roman_To_Int_2();
     void Count_Anagrams();
     void Intersperse_String();
     void Longest_Word();
@@ -74,6 +75,7 @@ namespace StringAlgorithms
     void Compress_String();
     void Letter_Case_Permutation();
     void Switch_Case();
+    void Restore_Valid_IP_Addresses();
 }
 
 #endif //STRING_ALGORITHMS_H
