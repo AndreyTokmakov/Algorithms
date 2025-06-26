@@ -14,9 +14,9 @@ namespace
 {
     using namespace StringAlgorithms;
 
+    template<uint16_t diff = 'a' - 'A'>
     void switch_case(std::string& input)
     {
-        constexpr uint16_t diff = 'a' - 'A';
         for (char& c: input) {
             if (0 != std::isalpha(c)) {
                 c = c >= 'a' ? static_cast<char>(c - diff) :static_cast<char>(c + diff);

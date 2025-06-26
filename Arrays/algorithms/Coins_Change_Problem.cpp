@@ -16,21 +16,22 @@ Description :
 namespace
 {
     using namespace ArraysAlgorithms;
+
     bool coins_change_problem(std::vector<int> coins,
                               const int target)
     {
         if (coins.empty())
             return false;
-        std::cout <<"IN: " << coins << std::endl;
+        //std::cout <<"IN: " << coins << std::endl;
 
-        if (const auto sum = std::accumulate(coins.begin(), coins.end(), 0); sum == target) {
+        if (const int sum = std::accumulate(coins.cbegin(), coins.cend(), 0); sum == target) {
             std::cout << sum << ": " << coins << std::endl;
             return true;
         }
         for (size_t i = 0; i < coins.size(); ++i) {
             std::vector<int> tmp(coins);
             tmp.erase(tmp.begin() + i);
-            if (true == coins_change_problem(tmp, target))
+            if (coins_change_problem(tmp, target))
                 return true;
         }
         return false;

@@ -44,15 +44,15 @@ namespace
     int calculateTime(const std::string& keyboard,
                       const std::string& word)
     {
-        int map[256] {};
+        uint8_t map[32] {};
         for (int pos = 0; const char c: keyboard) {
-            map[c] = pos++;
+            map[c - 'a'] = pos++;
         }
 
         int ret = 0;
         for (int prevPos = 0; const char c: word) {
-            ret += abs(map[c] - prevPos);
-            prevPos = map[c];
+            ret += abs(map[c - 'a'] - prevPos);
+            prevPos = map[c - 'a'];
         }
         return ret;
     }

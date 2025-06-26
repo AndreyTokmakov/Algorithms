@@ -38,7 +38,7 @@ int main([[maybe_unused]] int argc,
     // StringAlgorithms::Are_Anagrams();
     // StringAlgorithms::Check_Valid_Parentheses_1_Bracket();
     // StringAlgorithms::Check_Valid_Parentheses_3_Bracket();
-	// StringAlgorithms::Longest_Substring_With_K_Distinct_Characters();
+	StringAlgorithms::Longest_Substring_With_K_Distinct_Characters();
 	// StringAlgorithms::Longest_Word();
     // StringAlgorithms::Longest_Substring_Without_Repeating_Characters();
     // StringAlgorithms::Longest_Substring_Without_Repeating_Characters_2();
@@ -55,7 +55,7 @@ int main([[maybe_unused]] int argc,
     // StringAlgorithms::Is_Words_Can_Be_Formed_by_Characters();
     // StringAlgorithms::Int_To_Roman();
     // StringAlgorithms::Roman_To_Int();
-    StringAlgorithms::Roman_To_Int_2();
+    // StringAlgorithms::Roman_To_Int_2();
     // StringAlgorithms::Count_Anagrams();
     // StringAlgorithms::Intersperse_String();
     // StringAlgorithms::Reverse_Words_in_String();

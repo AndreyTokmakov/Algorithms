@@ -46,4 +46,5 @@ void ArraysAlgorithms::Median_of_Two_Sorted_Arrays()
 {
     std::cout << median_of_two_sorted_arrays({1,3}, {2}) << std::endl;
     std::cout << median_of_two_sorted_arrays({1,2}, {3,4}) << std::endl;
+    std::cout << median_of_two_sorted_arrays({1,2,3,4,5,6}, {12,13}) << std::endl;
 }

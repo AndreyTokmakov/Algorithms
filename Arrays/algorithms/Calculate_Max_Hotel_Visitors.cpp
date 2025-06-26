@@ -24,9 +24,9 @@ namespace
     {
         int maxVisitors = 0;
         std::unordered_map<int, int> dailyVisitors {};
-        for (const auto& [checkIn, checkOut]: intervals) {
-            for (auto day = checkIn; day <= checkOut; ++day) {
-                maxVisitors = std::max(maxVisitors, ++dailyVisitors[day]);
+        for (auto [checkIn, checkOut]: intervals) {
+            for (/** **/; checkIn <= checkOut; ++checkIn) {
+                maxVisitors = std::max(maxVisitors, ++dailyVisitors[checkIn]);
             }
         }
         return maxVisitors;

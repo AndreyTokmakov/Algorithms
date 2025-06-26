@@ -42,6 +42,7 @@ void ArraysAlgorithms::Can_Jump()
     for (const auto& [input, expected]: TestData {
             {{2,3,1,1,4}, true},
             {{3,2,1,0,4}, false},
+            {{3,3,1,0,4}, true},
     })
     {
         if (const bool actual = canJump(input); actual != expected) {

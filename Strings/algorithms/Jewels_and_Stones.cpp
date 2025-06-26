@@ -29,12 +29,14 @@ namespace
 
     int count_jewels(const std::string& jewels,
                      const std::string& stones) {
-        int ret = 0, chars[128] = {0};
+        uint8_t jewelsMap[128] = {0};
         for (const char& jch : jewels) {
-            ++chars[jch];
+            jewelsMap[jch] = 1;
         }
+
+        int ret = 0;
         for (const char& stone :  stones) {
-            ret += chars[stone];
+            ret += jewelsMap[stone];
         }
         return ret;
     }

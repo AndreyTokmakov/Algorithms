@@ -41,7 +41,8 @@ namespace StringAlgorithms
         }
     }
 
-     std::string remove_adjacent_duplicates_2(const std::string& str)
+
+    std::string remove_adjacent_duplicates_2(const std::string& str)
     {
         std::string result;
         std::for_each(str.cbegin(), str.cend(), [&result](const char ch) {

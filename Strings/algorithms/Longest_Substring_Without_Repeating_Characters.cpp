@@ -111,7 +111,7 @@ namespace
         size_t maxLen = 0;
         for (size_t repeatCharsCount = 0, begin = 0, idx = 0, size = str.size(); idx < size; )
         {
-            if (counter[str[idx++]]++ > 0)
+            if (2 == ++counter[str[idx++]])
                 ++repeatCharsCount;
             while (repeatCharsCount > 0) {
                 if (1 == --counter[str[begin++]])
