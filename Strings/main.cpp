@@ -15,7 +15,7 @@ int main([[maybe_unused]] int argc,
 		 [[maybe_unused]] char** argv)
 {
     // StringAlgorithms::Other();
-    // StringAlgorithms::Remove_Adjacent_Duplicates();
+    StringAlgorithms::Remove_Adjacent_Duplicates();
     // StringAlgorithms::Find_If_String_IsSubstring_OfAnother();
     // StringAlgorithms::Find_First_K_Chars_Encountered_Once();
     // StringAlgorithms::Find_All_Anagrams_in_String();
@@ -38,7 +38,7 @@ int main([[maybe_unused]] int argc,
     // StringAlgorithms::Are_Anagrams();
     // StringAlgorithms::Check_Valid_Parentheses_1_Bracket();
     // StringAlgorithms::Check_Valid_Parentheses_3_Bracket();
-	StringAlgorithms::Longest_Substring_With_K_Distinct_Characters();
+	// StringAlgorithms::Longest_Substring_With_K_Distinct_Characters();
 	// StringAlgorithms::Longest_Word();
     // StringAlgorithms::Longest_Substring_Without_Repeating_Characters();
     // StringAlgorithms::Longest_Substring_Without_Repeating_Characters_2();
