@@ -109,13 +109,15 @@ namespace
     {
         std::array<int, 128> counter {0};
         size_t maxLen = 0;
-        for (size_t repeatCharsCount = 0, begin = 0, idx = 0, size = str.size(); idx < size; )
+        bool haveRepeats { false };
+        for (size_t begin = 0, idx = 0, size = str.size(); idx < size; )
         {
             if (2 == ++counter[str[idx++]])
-                ++repeatCharsCount;
-            while (repeatCharsCount > 0) {
-                if (1 == --counter[str[begin++]])
-                    --repeatCharsCount;
+                haveRepeats = true;
+            while (haveRepeats) {
+                if (1 == --counter[str[begin++]]) {
+                    haveRepeats = false;
+                }
             }
             maxLen = std::max(maxLen, idx - begin);
         }
