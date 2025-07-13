@@ -15,7 +15,7 @@ int main([[maybe_unused]] int argc,
 {
     // ArraysAlgorithms::Other();
     // ArraysAlgorithms::Reverse_Bits();
-    // ArraysAlgorithms::MidPoint();
+    ArraysAlgorithms::MidPoint();
     // ArraysAlgorithms::Fixed_Point_SmallestIndex_ValueEqualIndex();
     // ArraysAlgorithms::Two_Sum_Less_Than_K();
     // ArraysAlgorithms::Add_Digits();
@@ -23,7 +23,7 @@ int main([[maybe_unused]] int argc,
     // ArraysAlgorithms::Online_Stock_Spanner_DailyPrices();
     // ArraysAlgorithms::Single_Number();
     // ArraysAlgorithms::Single_Number_2();
-    ArraysAlgorithms::Median_of_Two_Sorted_Arrays();
+    // ArraysAlgorithms::Median_of_Two_Sorted_Arrays();
     // ArraysAlgorithms::Reverse_To_Make_Equal();
 	// ArraysAlgorithms::Find_The_Majority_Element();
     // ArraysAlgorithms::Find_Top_K_Frequent_Numbers();

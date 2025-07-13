@@ -33,7 +33,7 @@ namespace
 
     std::string int_to_roman(int value)
     {
-        constexpr std::array<std::pair<std::string_view, u_int16_t>, 14> numerals {{
+        constexpr std::array<std::pair<std::string_view, uint16_t>, 14> numerals {{
             {"M"sv, 1000}, {"CM"sv, 900}, {"D"sv, 500}, {"CD"sv, 400},
             {"C"sv, 100}, {"XC"sv, 90}, {"LX"sv, 60}, {"L"sv, 50},
             {"XL"sv, 40}, {"X"sv, 10}, {"IX"sv, 9}, {"V"sv, 5}, {"IV"sv, 4}, {"I"sv, 1}

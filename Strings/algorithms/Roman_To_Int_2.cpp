@@ -16,7 +16,7 @@ namespace
     using namespace StringAlgorithms;
     using namespace std::string_view_literals;
 
-    constexpr std::array<std::pair<std::string_view, u_int16_t>, 14> numerals {{
+    constexpr std::array<std::pair<std::string_view, uint16_t>, 14> numerals {{
         {"M"sv, 1000},
         {"CM"sv, 900},
         {"D"sv, 500},
