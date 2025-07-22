@@ -20,7 +20,8 @@ namespace
         using value_type = int;
         std::map<value_type, std::vector<value_type>> graph;
 
-        Graph& add(value_type v, value_type w) {
+        Graph& add(value_type v, value_type w)
+        {
             graph[v].push_back(w);
             graph[w].push_back(v);
             return *this;
@@ -29,7 +30,7 @@ namespace
         void dfs(value_type s)
         {
             std::map<value_type, bool> visited { {s, true } };
-            std::vector<value_type> vec { s }; // deque contains 1-st node
+            std::vector<value_type> vec { s }; // contains 1-st node
 
             while (!vec.empty()) {
                 s = vec.back();
@@ -37,7 +38,7 @@ namespace
 
                 std::cout << s << " ";
 
-                for (const auto& nodes = graph[s]; value_type it: nodes) {
+                for (const std::vector<value_type> & nodes = graph[s]; value_type it: nodes) {
                     if (!visited[it]) {
                         visited[it] = true;
                         vec.push_back(it);

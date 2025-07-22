@@ -70,7 +70,8 @@ namespace
 }
 
 void TreesAlgorithms::Print_Left_View()
-{   //     33   |                33
+{
+    //     33   |                33
     //     22   |            22          85
     //     10   |       10       30           125
     //     6    |    6      23

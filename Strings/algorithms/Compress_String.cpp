@@ -30,9 +30,7 @@ namespace
 
     std::string compress_string(const std::string& input)
     {
-        if (input.empty())
-            return {};
-        if (input.size() == 1)
+        if (1 >= input.size())
             return input;
 
         size_t len = 1;
@@ -100,6 +98,7 @@ void StringAlgorithms::Compress_String()
         { "aaabbbbccc" , "a3b4c3" },
         { "aabbccc" , "a2b2c3" },
         { "abc" , "abc" },
+        { "" , "" },
     })
     {
         if (const auto actual = compress_string(input); expected != actual) {

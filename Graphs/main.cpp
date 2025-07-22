@@ -15,11 +15,13 @@ int main([[maybe_unused]] int argc,
 {
 	// GraphsAlgorithms::Other();
 	// GraphsAlgorithms::BFS();
+
 	// GraphsAlgorithms::DFS();
-	// GraphsAlgorithms::DFS_NonRecur();
+	GraphsAlgorithms::DFS_NonRecur();
+
 	// GraphsAlgorithms::Detect_Cycle();
 	// GraphsAlgorithms::Detect_Cycle_2();
-	GraphsAlgorithms::Find_Shortest_Path();
+	// GraphsAlgorithms::Find_Shortest_Path();
 	// GraphsAlgorithms::Find_Shortest_Path_1();
 	// GraphsAlgorithms::Find_Shortest_Path_Dijkstra();
 

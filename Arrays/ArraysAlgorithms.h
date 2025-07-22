@@ -106,6 +106,7 @@ namespace ArraysAlgorithms
     void Product_of_Array_Except_Self();
     void Maximum_Bags_With_Full_Capacity_of_Rocks();
     void Minimize_Maximum_Difference_of_Pairs();
+    void Minimum_Size_Subarray_Sum();
 
 }
 

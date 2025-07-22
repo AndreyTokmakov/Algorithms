@@ -40,7 +40,7 @@ int main([[maybe_unused]] int argc,
     // StringAlgorithms::Check_Valid_Parentheses_3_Bracket();
 	// StringAlgorithms::Longest_Substring_With_K_Distinct_Characters();
 	// StringAlgorithms::Longest_Word();
-    StringAlgorithms::Longest_Substring_Without_Repeating_Characters();
+    // StringAlgorithms::Longest_Substring_Without_Repeating_Characters();
     // StringAlgorithms::Longest_Substring_Without_Repeating_Characters_2();
     // StringAlgorithms::Longest_Substring_With_Maximum_K_Unique_Characters();
     // StringAlgorithms::Longest_Common_Prefix();
@@ -72,7 +72,7 @@ int main([[maybe_unused]] int argc,
 	// StringAlgorithms::Sort_String__Rearrange_String_2();
 	// StringAlgorithms::Calc_Parentheses_K_Deletions_Make_Valid();
 	// StringAlgorithms::Sum_Strings_As_Binary_Masks();
-	// StringAlgorithms::Compress_String();
+	StringAlgorithms::Compress_String();
 	// StringAlgorithms::Letter_Case_Permutation();
 	// StringAlgorithms::Switch_Case();
 	// StringAlgorithms::Restore_Valid_IP_Addresses();

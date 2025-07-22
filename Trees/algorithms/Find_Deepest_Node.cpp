@@ -22,7 +22,7 @@ namespace
 
         const BinTree::Node* deepest_node { nullptr };
         int maxLevel = 0, currentLevel = 0;
-        std::queue<const Node*> queue ({root});
+        std::queue<const Node*> queue ({ root });
         while (!queue.empty())
         {
             ++currentLevel;
