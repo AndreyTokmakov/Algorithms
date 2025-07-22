@@ -112,7 +112,7 @@ namespace
         bool haveRepeats { false };
         for (size_t begin = 0, idx = 0, size = str.size(); idx < size; )
         {
-            if (2 == ++counter[str[idx++]])
+            if (++counter[str[idx++]] > 1)
                 haveRepeats = true;
             while (haveRepeats) {
                 if (1 == --counter[str[begin++]]) {
