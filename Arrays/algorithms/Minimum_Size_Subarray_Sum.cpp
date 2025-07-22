@@ -37,14 +37,14 @@ namespace
 
     int minimum_size_subarray_sum(const std::vector<int>& values, int target)
     {
-        int left(0), right(0), sum(0), minLength(std::numeric_limits<int>::max());
-        while (right < values.size()){
+        int minLength(std::numeric_limits<int>::max());
+        for (int left = 0, right = 0, size = values.size(), sum = 0; right < size; ++right)
+        {
             sum += values[right];
-            while(sum >= target){
+            while (sum >= target) {
                 minLength = std::min(minLength, right - left + 1);
                 sum -= values[left++];
             }
-            right++;
         }
         return (minLength == std::numeric_limits<int>::max() ? 0 : minLength);
     }
