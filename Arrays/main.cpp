@@ -104,7 +104,8 @@ int main([[maybe_unused]] int argc,
     // ArraysAlgorithms::Product_of_Array_Except_Self();
     // ArraysAlgorithms::Maximum_Bags_With_Full_Capacity_of_Rocks();
     // ArraysAlgorithms::Minimize_Maximum_Difference_of_Pairs();
-    ArraysAlgorithms::Minimum_Size_Subarray_Sum();
+    // ArraysAlgorithms::Minimum_Size_Subarray_Sum();
+    ArraysAlgorithms::Merge_Intervals();
 
 	return EXIT_SUCCESS;
 }

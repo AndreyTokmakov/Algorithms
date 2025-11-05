@@ -101,6 +101,7 @@ add_executable(${PROJECT_NAME}
 		algorithms/Construct_the_Rectangle.cpp
 		algorithms/Minimize_Maximum_Difference_of_Pairs.cpp
 		algorithms/Minimum_Size_Subarray_Sum.cpp
+		algorithms/Merge_Intervals.cpp
 
 )
 
